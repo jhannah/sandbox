@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# http://github.com/jhannah/sandbox
+# http://github.com/jhannah/sandbox / graphviz
 
 use strict;
 use GraphViz;
