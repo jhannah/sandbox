@@ -28,6 +28,11 @@ pair('connect_omnihub()',                  'connect_omnihub_qa()');
 pair('connect_omnihub()',                  'connect_omnihub_dev()');
 pair('connect_omnihub()',                  'connect_omnihub_l3omnihub1()');
 pair('connect_omnihub()',                  'connect_omnihub_intranet2()');
+pair('connect_omnihub_dbic()',             'connect_omnihub_prod_dbic()');
+pair('connect_omnihub_dbic()',             'connect_omnihub_l3omnihub1_dbic()');
+pair('connect_omnihub_dbic()',             'connect_omnihub_l3omnihub2_dbic()');
+pair('connect_omnihub_dbic()',             'connect_omnihub_qa_dbic()');
+pair('connect_omnihub_dbic()',             'connect_omnihub_dev_dbic()');
 pair('connect_rt()',                       'MySQL rt3@rt');
 
 pair('connect_pms()',                      'connect_pms_prod()');
@@ -53,7 +58,7 @@ while (<IN>) {
    my ($file, $connect) = (/(.*?):.*(connect_.*?)\(/);
    $connect =~ s/\s+//;
    $connect = $connect . "()";
-   $file =~ s/$sourcedir\///;
+   $file =~ s#$sourcedir/#Omni2/#;
    next unless ($file && $connect);
    next if ($file =~ /DB\.(pm|t)/);
    # print "$file -> $connect\n";
@@ -74,7 +79,7 @@ foreach my $connect (keys %all_connections) {
 
 
 
-open (PNG, ">out.png");
+open (PNG, ">mysql.png");
 print PNG $g->as_png;
 close PNG;
 
