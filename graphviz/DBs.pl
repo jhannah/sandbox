@@ -79,7 +79,7 @@ foreach my $connect (keys %all_connections) {
 
 
 
-open (PNG, ">mysql.png");
+open (PNG, ">DBs.png");
 print PNG $g->as_png;
 close PNG;
 

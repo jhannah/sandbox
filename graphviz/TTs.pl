@@ -27,8 +27,8 @@ close IN;
 
 my $html = <<EOT;
 <h1>Phoenix templates<br>
-<code><font size=2>$HeadURL<br>
-$Id</font></code></h1>
+<code><font size=2>http://github.com/jhannah/sandbox / graphviz</font></code>
+</h1>
 
 <table>
 <tr><td>
@@ -41,7 +41,7 @@ foreach my $node (sort keys %edges) {
 
 $html .= <<EOT;
 </td>
-<td valign='top'><img src='out.png'></td>
+<td valign='top'><img src='TTs.png'></td>
 </tr>
 </table>
 EOT
@@ -52,7 +52,7 @@ my $g = GraphViz->new();
 $g->add_node($start_with, fontname => 'Courier', fontsize => 9, shape => 'box');
 add_children($start_with);
 
-open (PNG, ">out.png");
+open (PNG, ">TTs.png");
 print PNG $g->as_png;
 close PNG;
 
