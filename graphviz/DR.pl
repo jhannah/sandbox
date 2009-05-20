@@ -14,6 +14,7 @@ my $g = GraphViz->new(
    # layout => 'fdp',   # force directed spring model
                         # makes everything kind of radiate out from center
                         # instead of cascase down
+   rankdir => 1,        # Left to right instead of top to bottom.
 );
 
 my $dbs = join "\n", qw( aspect chartofaccounts cms crm hours ideal_idea phpbb rt3 webcal webcal3 );
