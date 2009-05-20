@@ -35,20 +35,20 @@ $g->add_node('omnimq@l3omnihub2',  cluster=>'l3omnihub2', %repl);
 $g->add_node('phoenix@l3omnihub2', cluster=>'l3omnihub2', %normal);
 
 $g->add_edge('omnimq@l3omnihub1' => 'omnimq@l3omnihub2',        %partial);
-$g->add_edge('omnimq@l3omnihub1' => 'omnimq@omares-omnihub1dr', %partial);
-$g->add_edge('omnimq@l3omnihub1' => 'omnimq@omares-omnihub2dr', %partial);
+$g->add_edge('omnimq@l3omnihub1' => 'omnimq@omares-omnihubdr1', %partial);
+$g->add_edge('omnimq@l3omnihub1' => 'omnimq@omares-omnihubdr2', %partial);
 
 # -----------------------
 # DR some day?
-$g->add_node('omnihub@omares-omnihub1dr', cluster=>'omares-omnihub1dr', %repl);
-$g->add_node('omnimq@omares-omnihub1dr',  cluster=>'omares-omnihub1dr', %repl);
-$g->add_node('phoenix@omares-omnihub1dr', cluster=>'omares-omnihub1dr', %repl);
-$g->add_edge('omnihub@omares-intranet2' => 'omnihub@omares-omnihub1dr');
+$g->add_node('omnihub@omares-omnihubdr1', cluster=>'omares-omnihubdr1', %repl);
+$g->add_node('omnimq@omares-omnihubdr1',  cluster=>'omares-omnihubdr1', %repl);
+$g->add_node('phoenix@omares-omnihubdr1', cluster=>'omares-omnihubdr1', %repl);
+$g->add_edge('omnihub@omares-intranet2' => 'omnihub@omares-omnihubdr1');
 
-$g->add_node('omnihub@omares-omnihub2dr', cluster=>'omares-omnihub2dr', %repl);
-$g->add_node('omnimq@omares-omnihub2dr',  cluster=>'omares-omnihub2dr', %repl);
-$g->add_node('phoenix@omares-omnihub2dr', cluster=>'omares-omnihub2dr', %repl);
-$g->add_edge('omnihub@omares-intranet2' => 'omnihub@omares-omnihub2dr');
+$g->add_node('omnihub@omares-omnihubdr2', cluster=>'omares-omnihubdr2', %repl);
+$g->add_node('omnimq@omares-omnihubdr2',  cluster=>'omares-omnihubdr2', %repl);
+$g->add_node('phoenix@omares-omnihubdr2', cluster=>'omares-omnihubdr2', %repl);
+$g->add_edge('omnihub@omares-intranet2' => 'omnihub@omares-omnihubdr2');
 # -----------------------
 
 $g->add_node('crm', cluster=>'l3omnihub3', %normal);
