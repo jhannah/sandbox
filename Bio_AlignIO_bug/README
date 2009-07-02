@@ -1,3 +1,33 @@
+
+14:28 < balin> deafferret, I only posted about add_seq to bioperl-l. Should I
+               start a new thread for write_aln or can I reuse this one?
+14:28 <@deafferret> If it's a seperate issue I'd post a separate email
+14:29 <@deafferret> ticket 2793 is definately add_seq only
+14:29 < balin> I thought so too
+   --irc.freenode.net #bioperl 20090319
+
+http://bugzilla.open-bio.org/show_bug.cgi?id=2793
+oh... maybe I can patch it before they do
+   --jhannah 20090320
+
+7 email discussion:
+http://thread.gmane.org/gmane.comp.lang.perl.bio.general/18973/focus=18980
+   --jhannah 20090320
+
+12:26 < balin> deafferret, I found that add_seq function does not insert a new sequence into alignment, but replaces the old sequence. So this statement
+               seems to work:
+12:27 < balin> $aln->get_seq_by_pos($i)->display_id("new header");
+12:27 < balin> $aln->add_seq($aln->get_seq_by_pos($i),$i-1);
+12:29 <@deafferret> ahh... congrats.  :)
+12:30 < balin> still, this looks awkward
+12:38 < balin> It turns out I need $i-1 here because get_seq_by_pos counts from 1 and add_seq counts from 0. Would that be considered a bug?
+13:01 <@deafferret> hmm... maybe a bug that can't be fixed because no one wants to break backwards-compatibility ... so a FEATURE?  :)
+13:01 <@deafferret> you should probably post that to bioperl-l and ask the long white beards
+13:37 < balin> yes, I'll probably do that
+13:37 < balin> white beards, haha
+13:46 <@deafferret> :)
+   --irc.freenode.net #bioperl 20090319
+
 Possible bug report from #bioperl balin 
 http://pastebin.com/m182fca5d
    --jhannah 20090318
