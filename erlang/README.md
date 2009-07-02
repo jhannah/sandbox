@@ -1,9 +1,3 @@
----------
-http://erlang.org/download/getting_started-5.4.pdf
-
-You need matching ~.erlang.cookie files.
----------
-
 I'm working on a project that has a couple million nucleic acids sequences, 
 each 18 bases long. Each base is 'A', 'C', 'G', or 'T'. 18 bases in a row 
 makes for 69 billion possible sequences. So my actual data (2M) is very 
@@ -22,10 +16,10 @@ that's nearly 3000* possible mutations for each sequence. So to de-dupe my
 
 And this problem is exponential as 18 bases grows to 19 or 20 or 30...
 
-I want parallel processing solution so it doesn't take so long. Luckily there's 
+I want a parallel processing solution so it doesn't take so long. Luckily there's 
 a 2000 node super-computer I can use. That should help.
 
-So I want to break my 2M sequences into an arbitrary number of shards.  
+The idea is to break my 2M sequences into an arbitrary number of shards.  
 To talk through a simpler example, let's pretend my sequences are 4 bases 
 long instead of 18.
 
@@ -44,4 +38,20 @@ then that number is far less.
 
 
 
+Node methods
+============
+
+So I'm thinking we'll need the following methods in each node
+
+mutate('AAAA') 
+
+  Tells blah blah blah
+  dasjdklajl
+
+
+Jay's notes
+-----------
+http://erlang.org/download/getting_started-5.4.pdf
+You need matching ~.erlang.cookie files.
+http://mad.printf.net/MSCC_matching_instructions/matching.html
 
