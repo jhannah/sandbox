@@ -1,57 +1,47 @@
-% From ndim on Freenode (#erlang)
-% http://github.com/ndim/erlang_stuff/blob/master/src/deafferret.erl
+%% mutate.erl - mutate a sequence of bases in a single place
+%% Author: ndim on Freenode (#erlang)
+%% Written with and for deafferret on freenode/#erlang.
+%%      http://github.com/ndim/erlang_stuff/blob/master/src/deafferret.erl
+%%      http://github.com/jhannah/sandbox/blob/master/erlang/mutate.erl
 
 -module(mutate).
- 
+
 -export([start/0]).
 -export([mutate/1, mutate/2]).
--export([m/1, m/2]).
+
+-define(DEFAULT_ALPHABET, "ACGT").
 
 
-%% BUG: If the OrigSequence contains elements not in Dict -> wrong result.
- 
- 
-%% Mute version
-m([], _Dict, _Prefix, Acc) ->
-    lists:reverse(Acc);
-m([Base|Suffix], Dict, Prefix, Acc) ->
-    m(Suffix, Dict, [Base|Prefix],
-      lists:foldl(fun(El,Ac) -> [El|Ac] end, Acc,
-     [Prefix++[X|Suffix] || X<-Dict, X=/=Base])).
- 
-m(OrigSequence, Dict) ->
-    m(OrigSequence, Dict, "", []).
- 
-m(OrigSequence) ->
-    m(OrigSequence, "ACGT").
- 
- 
-%% Verbose version
-mutate([], _Dict, _Prefix, Acc) ->
-    lists:reverse(Acc);
-mutate([Base|Suffix]=OrigSequence, Dict, Prefix, Acc) ->
-    io:format("mutate(~p,~p,~p,~p)~n", [OrigSequence,Dict,Prefix,Acc]),
-    NewMutations = [Prefix++[X|Suffix] || X<-Dict, X=/=Base],
-    io:format(" new: ~p~n", [NewMutations]),
-    mutate(Suffix, Dict, [Base|Prefix],
-   lists:foldl(fun(El,Ac) -> [El|Ac] end, Acc, NewMutations)).
- 
-mutate(OrigSequence, Dict) ->
-    mutate(OrigSequence, Dict, "", []).
- 
+%% BUG: If the OrigSequence contains elements not in Alphabet -> wrong result.
+%% FIXME: We are using ++ in two places, which mostly is not a good idea.
+%% NOTE: We return the results in a very strange kind of "ordering".
+%% NOTE: A simple test case of "AAAA" lets you miss permutated characters.
+
+
+%% Verbose version. Comment out the io:format stuff for a mute version.
+mutate([], _Alphabet, _Prefix, Acc) ->
+    lists:append(Acc);
+mutate([Base|Suffix]=_OrigSequence, Alphabet, Prefix, Acc) ->
+    io:format("mutate(~p,~p,~p,~p)~n", [_OrigSequence,Alphabet,Prefix,Acc]),
+    NewMutations = [Prefix++[X|Suffix] || X<-Alphabet, X=/=Base],
+    io:format("  new: ~p~n", [NewMutations]),
+    mutate(Suffix, Alphabet, Prefix++[Base], [NewMutations|Acc]).
+
+mutate(OrigSequence, Alphabet) ->
+    mutate(OrigSequence, Alphabet, [], []).
+
 mutate(OrigSequence) ->
-    mutate(OrigSequence, "ACGT").
- 
- 
+    mutate(OrigSequence, ?DEFAULT_ALPHABET).
+
+
 %% Run example.
 example(OrigSequence) ->
-    Dict = "ACGT",
-    Mutations = mutate(OrigSequence, Dict),
-    io:format("Mutations of orig sequence ~p for dictionary ~p:~n ~p~n",
-   [OrigSequence, Dict, Mutations]).
- 
-start() ->
-    % [ example(X) || X <- ["CATTAG", "AAAA"] ].
-    example("AAAA").
- 
+    Mutations = mutate(OrigSequence),
+    io:format("Mutations of orig sequence ~p for default alphabet ~p:~n"
+	      "  ~p~n",
+	      [OrigSequence, ?DEFAULT_ALPHABET,
+	       Mutations]).
 
+%% Run a few examples.
+start() ->
+    [ example(X) || X <- ["CATTAG", "AAAA"] ].
