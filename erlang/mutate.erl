@@ -1,11 +1,14 @@
 % From ndim on Freenode (#erlang)
 % http://github.com/ndim/erlang_stuff/blob/master/src/deafferret.erl
 
--module(deafferret).
+-module(mutate).
  
 -export([start/0]).
 -export([mutate/1, mutate/2]).
 -export([m/1, m/2]).
+
+
+%% BUG: If the OrigSequence contains elements not in Dict -> wrong result.
  
  
 %% Mute version
@@ -44,9 +47,11 @@ mutate(OrigSequence) ->
 example(OrigSequence) ->
     Dict = "ACGT",
     Mutations = mutate(OrigSequence, Dict),
-    io:format("Mutations of ~p for dictionary ~p:~n ~p~n", [OrigSequence, Dict, Mutations]).
+    io:format("Mutations of orig sequence ~p for dictionary ~p:~n ~p~n",
+   [OrigSequence, Dict, Mutations]).
  
 start() ->
     % [ example(X) || X <- ["CATTAG", "AAAA"] ].
-    [ example(X) || X <- [ "AAAA" ] ].
+    example("AAAA").
  
+
