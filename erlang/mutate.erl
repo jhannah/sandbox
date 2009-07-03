@@ -13,9 +13,25 @@
 
 
 %% BUG: If the OrigSequence contains elements not in Alphabet -> wrong result.
+
 %% FIXME: We are using ++ in two places, which mostly is not a good idea.
+
 %% NOTE: We return the results in a very strange kind of "ordering".
+
 %% NOTE: A simple test case of "AAAA" lets you miss permutated characters.
+
+
+%% Author's comments:
+%%
+%% I like the result list construction in mutate() now: Create a list
+%% of lists of strings and then flattening that to a list of strings
+%% at the end.
+%%
+%% I do not like the Prefix++[Base] expression yet, at all. I have no
+%% idea what do do about it (yet), though.
+%%
+%% I have some doubts about the Prefix++[X|Suffix] expression as
+%% well. I have no idea what do do about it (yet), though.
 
 
 %% Verbose version. Comment out the io:format stuff for a mute version.
@@ -45,3 +61,5 @@ example(OrigSequence) ->
 %% Run a few examples.
 start() ->
     [ example(X) || X <- ["CATTAG", "AAAA"] ].
+
+
