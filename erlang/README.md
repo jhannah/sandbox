@@ -4,18 +4,16 @@ Overview
 I'm working on a project which contains a couple million nucleic acids sequences, 
 each 18 bases long. Each base is 'A', 'C', 'G', or 'T'. 18 bases in a row 
 makes for 69 billion possible sequences. So my actual data (2M) is very 
-sparse compared to the potential list (16B).
+sparse compared to the potential list (69B).
 
 I want to eliminate duplicates out of my 2M sequences. But by "duplicate" I 
 don't mean exact match only. I mean any sequence that is one mutation (a 
 single base changes from one letter to another letter) or two mutations distant.
 
 Mutation is quite a problem. When you have 18 bases and mutate 2 of them 
-that's nearly 3000* possible mutations for each sequence. So to de-dupe my 
-2M sequences I actually have to do 6B searches through 2M sequences 
-(12 quadrillion comparisons). That's a lot, even with good indexes.
-
-(* Can someone do the exact math for me?)
+that's 2,754 possible mutations (18 * 3 * 17 * 3 ... right?) for each sequence. 
+So to de-dupe my 2M sequences I actually have to do 5.5B searches through 2M 
+sequences (12 quadrillion comparisons). That's a lot, even with good indexes.
 
 And this problem is exponential as 18 bases grows to 19 or 20 or 30...
 
