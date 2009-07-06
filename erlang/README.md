@@ -11,7 +11,7 @@ don't mean exact match only. I mean any sequence that is one mutation (a
 single base changes from one letter to another letter) or two mutations distant.
 
 Mutation is quite a problem. When you have 18 bases and mutate 2 of them 
-that's 2,754 possible mutations (18 * 3 * 17 * 3 ... right?) for each sequence. 
+that's 2,754 possible mutations (18 \* 3 \* 17 \* 3 ... right?) for each sequence. 
 So to de-dupe my 2M sequences I actually have to do 5.5B searches through 2M 
 sequences (12 quadrillion comparisons). That's a lot, even with good indexes.
 
