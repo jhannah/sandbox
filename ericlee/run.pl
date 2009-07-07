@@ -25,7 +25,7 @@ while ((my $seqobj = $seqIOobj->next_seq()))
   my $raw_seq = $seqobj->seq();
   foreach my $item (@list)
   {
-    if ($item =~ /$id/i)
+    if ($item =~ /\Q$id\E/i)
     {
       push @raw_seq, ">$id\n$raw_seq\n";
       last;
