@@ -69,9 +69,24 @@ hmm... how do we bootstrap each node? text file ssh'd to the node?
   Generate a report of all statistics that have been gathered for all of our Sequences.
 
 
+Status
+======
+
+Participants:
+   Freenode #omaha.dev stesla jhannah dhoss
+
+jhannah's mutate function and a bunch of test stuff:
+
+   http://github.com/jhannah/sandbox/tree/master/erlang
+
+stesla's plumbing:
+
+   http://github.com/stesla/mg/tree/master
+
+
 
 Jay's misc notes
-----------------
+================
 
 * http://erlang.org/download/getting_started-5.4.pdf
 * You need matching ~.erlang.cookie files.
