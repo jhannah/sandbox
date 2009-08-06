@@ -1,0 +1,136 @@
+jhannah@klab:~/src/sandbox/Meteorswarm$ cat medicago_chr0_20080103.xml | perl j.pl tigrxml
+
+--------------------- WARNING ---------------------
+MSG: Unknown element TIGR, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element ASMBL_ID, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element COORDSET, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element END5, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element END3, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element SEQ_LAST_TOUCHED, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element DATE, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element GB_ACCESSION, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element SEQ_GROUP, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element GENE_LIST, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element PROTEIN_CODING, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element FEAT_NAME, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element DATE, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element GENE_INFO, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element LOCUS, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element COM_NAME, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element IS_PSEUDOGENE, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element DATE, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element COORDSET, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element END5, ignored
+
+---------------------------------------------------
+
+--------------------- WARNING ---------------------
+MSG: Unknown element END3, ignored
+
+---------------------------------------------------
+
+------------- EXCEPTION: Bio::Root::Exception -------------
+MSG: start is undefined
+STACK: Error::throw
+STACK: Bio::Root::Root::throw /home/jhannah/src/bioperl-live/Bio/Root/Root.pm:368
+STACK: Bio::RangeI::contains /home/jhannah/src/bioperl-live/Bio/RangeI.pm:255
+STACK: Bio::SeqFeature::Generic::add_SeqFeature /home/jhannah/src/bioperl-live/Bio/SeqFeature/Generic.pm:783
+STACK: Bio::SeqIO::tigrxml::start_element /home/jhannah/src/bioperl-live/Bio/SeqIO/tigrxml.pm:206
+STACK: try{} block /usr/share/perl5/XML/SAX/Base.pm:292
+STACK: XML::SAX::Base::start_element /usr/share/perl5/XML/SAX/Base.pm:266
+STACK: XML::SAX::PurePerl::element /usr/share/perl5/XML/SAX/PurePerl.pm:241
+STACK: XML::SAX::PurePerl::content /usr/share/perl5/XML/SAX/PurePerl.pm:294
+STACK: XML::SAX::PurePerl::element /usr/share/perl5/XML/SAX/PurePerl.pm:246
+STACK: XML::SAX::PurePerl::content /usr/share/perl5/XML/SAX/PurePerl.pm:294
+STACK: XML::SAX::PurePerl::element /usr/share/perl5/XML/SAX/PurePerl.pm:246
+STACK: XML::SAX::PurePerl::content /usr/share/perl5/XML/SAX/PurePerl.pm:294
+STACK: XML::SAX::PurePerl::element /usr/share/perl5/XML/SAX/PurePerl.pm:246
+STACK: XML::SAX::PurePerl::content /usr/share/perl5/XML/SAX/PurePerl.pm:294
+STACK: XML::SAX::PurePerl::element /usr/share/perl5/XML/SAX/PurePerl.pm:246
+STACK: XML::SAX::PurePerl::content /usr/share/perl5/XML/SAX/PurePerl.pm:294
+STACK: XML::SAX::PurePerl::element /usr/share/perl5/XML/SAX/PurePerl.pm:246
+STACK: XML::SAX::PurePerl::document /usr/share/perl5/XML/SAX/PurePerl.pm:131
+STACK: XML::SAX::PurePerl::_parse /usr/share/perl5/XML/SAX/PurePerl.pm:103
+STACK: XML::SAX::PurePerl::_parse_bytestream /usr/share/perl5/XML/SAX/PurePerl.pm:57
+STACK: XML::SAX::Base::parse /usr/share/perl5/XML/SAX/Base.pm:2602
+STACK: XML::SAX::Base::parse_file /usr/share/perl5/XML/SAX/Base.pm:2631
+STACK: Bio::SeqIO::tigrxml::next_seq /home/jhannah/src/bioperl-live/Bio/SeqIO/tigrxml.pm:116
+STACK: j.pl:10
+-----------------------------------------------------------
+jhannah@klab:~/src/sandbox/Meteorswarm$
