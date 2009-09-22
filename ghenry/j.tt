@@ -1,0 +1,23 @@
+[% buy_min_rate = 100 %]
+[% rate = {}  %]
+
+
+[% buy_min_dur = 0; %]
+[% rate.buy_rate_peak = 7 %]
+[% IF rate.buy_rate_peak != 0 %][% buy_min_dur = ( buy_min_rate / rate.buy_rate_peak ) * 60 %][% END %]
+
+[% rate.buy_rate_peak %] -> [% buy_min_dur %]
+
+
+[% buy_min_dur = 0; %]
+[% rate.buy_rate_peak = 0.0055 %]
+[% IF rate.buy_rate_peak != 0 %][% buy_min_dur = ( buy_min_rate / rate.buy_rate_peak ) * 60 %][% END %]
+
+[% rate.buy_rate_peak %] -> [% buy_min_dur %]
+
+
+[% buy_min_dur = 0; %]
+[% rate.buy_rate_peak = 0 %]
+[% IF rate.buy_rate_peak != 0 %][% buy_min_dur = ( buy_min_rate / rate.buy_rate_peak ) * 60 %][% END %]
+
+[% rate.buy_rate_peak %] -> [% buy_min_dur %]
