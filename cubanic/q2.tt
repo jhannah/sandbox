@@ -1,1 +1,2 @@
 [% title.mine = "boo!" %]
+q2 says title is '[% title.mine %]'

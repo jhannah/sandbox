@@ -1,1 +1,3 @@
+q1 says title is '[% title.mine %]'
 [% INCLUDE q2.tt %]
+q1 says title is '[% title.mine %]'
