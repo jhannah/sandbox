@@ -1,33 +1,364 @@
-Query=t120407068 Hit=pdb|1TSR|A Length=219 Percent_id=100 fraq_identical=1
-Query=t120407068 Hit=pdb|1UOL|A Length=219 Percent_id=98.1735159817352 fraq_identical=0.981735159817352
-Query=t120407068 Hit=pdb|2J1W|A Length=219 Percent_id=97.7168949771689 fraq_identical=0.977168949771689
-Query=t120407068 Hit=pdb|2BIM|A Length=219 Percent_id=97.7168949771689 fraq_identical=0.977168949771689
-Query=t120407068 Hit=pdb|2J1Z|A Length=219 Percent_id=97.7168949771689 fraq_identical=0.977168949771689
-Query=t120407068 Hit=pdb|2BIO|A Length=219 Percent_id=97.7168949771689 fraq_identical=0.977168949771689
-Query=t120407068 Hit=pdb|2J21|A Length=219 Percent_id=97.7168949771689 fraq_identical=0.977168949771689
-Query=t120407068 Hit=pdb|2J20|A Length=219 Percent_id=97.7168949771689 fraq_identical=0.977168949771689
-Query=t120407068 Hit=pdb|2BIN|A Length=219 Percent_id=97.7168949771689 fraq_identical=0.977168949771689
-Query=t120407068 Hit=pdb|2J1X|A Length=219 Percent_id=97.7168949771689 fraq_identical=0.977168949771689
-Query=t120407068 Hit=pdb|2WGX|A Length=219 Percent_id=97.2602739726027 fraq_identical=0.972602739726027
-Query=t120407068 Hit=pdb|2BIP|A Length=219 Percent_id=97.2602739726027 fraq_identical=0.972602739726027
-Query=t120407068 Hit=pdb|2BIQ|A Length=219 Percent_id=96.8036529680365 fraq_identical=0.968036529680365
-Query=t120407068 Hit=pdb|2FEJ|A Length=204 Percent_id=100 fraq_identical=1
-Query=t120407068 Hit=pdb|2H1L|M Length=201 Percent_id=100 fraq_identical=1
-Query=t120407068 Hit=pdb|2AC0|A Length=200 Percent_id=100 fraq_identical=1
-Query=t120407068 Hit=pdb|3D05|A Length=200 Percent_id=99.5 fraq_identical=0.995
-Query=t120407068 Hit=pdb|1YCS|A Length=199 Percent_id=100 fraq_identical=1
-Query=t120407068 Hit=pdb|2PCX|A Length=199 Percent_id=99.4974874371859 fraq_identical=0.994974874371859
-Query=t120407068 Hit=pdb|1GZH|C Length=198 Percent_id=100 fraq_identical=1
-Query=t120407068 Hit=pdb|3D08|A Length=200 Percent_id=99 fraq_identical=0.99
-Query=t120407068 Hit=pdb|1GZH|A Length=198 Percent_id=99.4949494949495 fraq_identical=0.994949494949495
-Query=t120407068 Hit=pdb|3D09|A Length=200 Percent_id=98.5 fraq_identical=0.985
-Query=t120407068 Hit=pdb|1KZY|A Length=195 Percent_id=100 fraq_identical=1
-Query=t120407068 Hit=pdb|2J1Y|A Length=200 Percent_id=97.5 fraq_identical=0.975
-Query=t120407068 Hit=pdb|2QXA|A Length=195 Percent_id=99.4871794871795 fraq_identical=0.994871794871795
-Query=t120407068 Hit=pdb|2QXB|A Length=195 Percent_id=99.4871794871795 fraq_identical=0.994871794871795
-Query=t120407068 Hit=pdb|2QXC|A Length=195 Percent_id=99.4871794871795 fraq_identical=0.994871794871795
-Query=t120407068 Hit=pdb|2QVQ|A Length=196 Percent_id=98.469387755102 fraq_identical=0.98469387755102
-Query=t120407068 Hit=pdb|2GEQ|A Length=198 Percent_id=88.3838383838384 fraq_identical=0.883838383838384
-Query=t120407068 Hit=pdb|2P52|A Length=196 Percent_id=88.265306122449 fraq_identical=0.88265306122449
-Query=t120407068 Hit=pdb|3EXJ|A Length=194 Percent_id=88.659793814433 fraq_identical=0.88659793814433
-Query=t120407068 Hit=pdb|1HU8|A Length=186 Percent_id=88.7096774193548 fraq_identical=0.887096774193548
+---NEW HIT---
+Query=t120407068
+Hit=pdb|1TSR|A
+Length=219
+Percent_id=100
+fraq_identical=1
+hit_description=Chain A, P53 Core Domain In Complex With Dnapdb|1TSR|B Chain B, P53 Core Domain In Complex With Dnapdb|1TSR|C Chain C, P53 Core Domain In Complex With Dnapdb|1TUP|A Chain A, Tumor Suppressor P53 Complexed With Dnapdb|1TUP|B Chain B, Tumor Suppressor P53 Complexed With Dnapdb|1TUP|C Chain C, Tumor Suppressor P53 Complexed With Dnapdb|2OCJ|A Chain A, Human P53 Core Domain In The Absence Of Dnapdb|2OCJ|B Chain B, Human P53 Core Domain In The Absence Of Dnapdb|2OCJ|C Chain C, Human P53 Core Domain In The Absence Of Dnapdb|2OCJ|D Chain D, Human P53 Core Domain In The Absence Of Dna
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|1UOL|A
+Length=219
+Percent_id=98.1735159817352
+fraq_identical=0.981735159817352
+hit_description=Chain A, Crystal Structure Of The Human P53 Core Domain Mutant M133lV203AN239YN268D AT 1.9 A RESOLUTION.pdb|1UOL|B Chain B, Crystal Structure Of The Human P53 Core Domain Mutant M133lV203AN239YN268D AT 1.9 A RESOLUTION.
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2J1W|A
+Length=219
+Percent_id=97.7168949771689
+fraq_identical=0.977168949771689
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V143a-V203a-N239y-N268dpdb|2J1W|B Chain B, Human P53 Core Domain Mutant M133l-V143a-V203a-N239y-N268d
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2BIM|A
+Length=219
+Percent_id=97.7168949771689
+fraq_identical=0.977168949771689
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V203a-N239y-N268d-R273hpdb|2BIM|B Chain B, Human P53 Core Domain Mutant M133l-V203a-N239y-N268d-R273h
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2J1Z|A
+Length=219
+Percent_id=97.7168949771689
+fraq_identical=0.977168949771689
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V203a-N239y-N268d-F270lpdb|2J1Z|B Chain B, Human P53 Core Domain Mutant M133l-V203a-N239y-N268d-F270l
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2BIO|A
+Length=219
+Percent_id=97.7168949771689
+fraq_identical=0.977168949771689
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V203a-N239y-R249s-N268d
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2J21|A
+Length=219
+Percent_id=97.7168949771689
+fraq_identical=0.977168949771689
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V203a-N239y-N268d-R282wpdb|2J21|B Chain B, Human P53 Core Domain Mutant M133l-V203a-N239y-N268d-R282w
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2J20|A
+Length=219
+Percent_id=97.7168949771689
+fraq_identical=0.977168949771689
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V203a-N239y-N268d-R273cpdb|2J20|B Chain B, Human P53 Core Domain Mutant M133l-V203a-N239y-N268d-R273c
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2BIN|A
+Length=219
+Percent_id=97.7168949771689
+fraq_identical=0.977168949771689
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-H168r-V203a-N239y-N268d
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2J1X|A
+Length=219
+Percent_id=97.7168949771689
+fraq_identical=0.977168949771689
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V203a-Y220c-N239y-N268dpdb|2J1X|B Chain B, Human P53 Core Domain Mutant M133l-V203a-Y220c-N239y-N268dpdb|2VUK|A Chain A, Structure Of The P53 Core Domain Mutant Y220c Bound To The Stabilizing Small-Molecule Drug Phikan083pdb|2VUK|B Chain B, Structure Of The P53 Core Domain Mutant Y220c Bound To The Stabilizing Small-Molecule Drug Phikan083
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2WGX|A
+Length=219
+Percent_id=97.2602739726027
+fraq_identical=0.972602739726027
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V203a-Y236f-N239y-T253i- N268dpdb|2WGX|B Chain B, Human P53 Core Domain Mutant M133l-V203a-Y236f-N239y-T253i- N268d
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2BIP|A
+Length=219
+Percent_id=97.2602739726027
+fraq_identical=0.972602739726027
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-H168r-V203a-N239y-R249s- N268d
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2BIQ|A
+Length=219
+Percent_id=96.8036529680365
+fraq_identical=0.968036529680365
+hit_description=Chain A, Human P53 Core Domain Mutant T123a-M133l-H168r-V203a-N239y- R249s-N268d
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2FEJ|A
+Length=204
+Percent_id=100
+fraq_identical=1
+hit_description=Chain A, Solution Structure Of Human P53 Dna Binding Domain.
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2H1L|M
+Length=201
+Percent_id=100
+fraq_identical=1
+hit_description=Chain M, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|N Chain N, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|O Chain O, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|P Chain P, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|Q Chain Q, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|R Chain R, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|S Chain S, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|T Chain T, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|U Chain U, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|V Chain V, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|W Chain W, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complexpdb|2H1L|X Chain X, The Structure Of The Oncoprotein Sv40 Large T Antigen And P53 Tumor Suppressor Complex
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2AC0|A
+Length=200
+Percent_id=100
+fraq_identical=1
+hit_description=Chain A, Structural Basis Of Dna Recognition By P53 Tetramers (Complex I)pdb|2AC0|B Chain B, Structural Basis Of Dna Recognition By P53 Tetramers (Complex I)pdb|2AC0|C Chain C, Structural Basis Of Dna Recognition By P53 Tetramers (Complex I)pdb|2AC0|D Chain D, Structural Basis Of Dna Recognition By P53 Tetramers (Complex I)pdb|2ADY|A Chain A, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Iv)pdb|2ADY|B Chain B, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Iv)pdb|2AHI|A Chain A, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Iii)pdb|2AHI|B Chain B, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Iii)pdb|2AHI|C Chain C, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Iii)pdb|2AHI|D Chain D, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Iii)pdb|2ATA|A Chain A, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Ii)pdb|2ATA|B Chain B, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Ii)pdb|2ATA|C Chain C, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Ii)pdb|2ATA|D Chain D, Structural Basis Of Dna Recognition By P53 Tetramers (Complex Ii)
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|3D05|A
+Length=200
+Percent_id=99.5
+fraq_identical=0.995
+hit_description=Chain A, Human P53 Core Domain With Hot Spot Mutation R249s (Ii)pdb|3D06|A Chain A, Human P53 Core Domain With Hot Spot Mutation R249s (I)pdb|3D07|A Chain A, Human P53 Core Domain With Hot Spot Mutation R249s (Iii)pdb|3D07|B Chain B, Human P53 Core Domain With Hot Spot Mutation R249s (Iii)
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|1YCS|A
+Length=199
+Percent_id=100
+fraq_identical=1
+hit_description=Chain A, P53-53bp2 Complex
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2PCX|A
+Length=199
+Percent_id=99.4974874371859
+fraq_identical=0.994974874371859
+hit_description=Chain A, Crystal Structure Of P53dbd(R282q) At 1.54-Angstrom Resolution
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|1GZH|C
+Length=198
+Percent_id=100
+fraq_identical=1
+hit_description=Chain C, Crystal Structure Of The Brct Domains Of Human 53bp1 Bound To The P53 Tumor Supressor
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|3D08|A
+Length=200
+Percent_id=99
+fraq_identical=0.99
+hit_description=Chain A, Human P53 Core Domain With Hot Spot Mutation R249s And Second-Site Suppressor Mutation H168rpdb|3D0A|A Chain A, Human P53 Core Domain With Hot Spot Mutation R249s And Second Site Suppressor Mutation H168r In Sequence-Specific Complex With Dnapdb|3D0A|B Chain B, Human P53 Core Domain With Hot Spot Mutation R249s And Second Site Suppressor Mutation H168r In Sequence-Specific Complex With Dnapdb|3D0A|C Chain C, Human P53 Core Domain With Hot Spot Mutation R249s And Second Site Suppressor Mutation H168r In Sequence-Specific Complex With Dnapdb|3D0A|D Chain D, Human P53 Core Domain With Hot Spot Mutation R249s And Second Site Suppressor Mutation H168r In Sequence-Specific Complex With Dna
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|1GZH|A
+Length=198
+Percent_id=99.4949494949495
+fraq_identical=0.994949494949495
+hit_description=Chain A, Crystal Structure Of The Brct Domains Of Human 53bp1 Bound To The P53 Tumor Supressor
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|3D09|A
+Length=200
+Percent_id=98.5
+fraq_identical=0.985
+hit_description=Chain A, Human P53 Core Domain With Hot Spot Mutation R249s And Second-Site Suppressor Mutations H168r And T123a
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|1KZY|A
+Length=195
+Percent_id=100
+fraq_identical=1
+hit_description=Chain A, Crystal Structure Of The 53bp1 Brct Region Complexed To Tumor Suppressor P53pdb|1KZY|B Chain B, Crystal Structure Of The 53bp1 Brct Region Complexed To Tumor Suppressor P53
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2J1Y|A
+Length=200
+Percent_id=97.5
+fraq_identical=0.975
+hit_description=Chain A, Human P53 Core Domain Mutant M133l-V203a-N239y-G245s-N268dpdb|2J1Y|B Chain B, Human P53 Core Domain Mutant M133l-V203a-N239y-G245s-N268dpdb|2J1Y|C Chain C, Human P53 Core Domain Mutant M133l-V203a-N239y-G245s-N268dpdb|2J1Y|D Chain D, Human P53 Core Domain Mutant M133l-V203a-N239y-G245s-N268d
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2QXA|A
+Length=195
+Percent_id=99.4871794871795
+fraq_identical=0.994871794871795
+hit_description=Chain A, Human P53 Core Domain Mutant V157fpdb|2QXA|B Chain B, Human P53 Core Domain Mutant V157fpdb|2QXA|C Chain C, Human P53 Core Domain Mutant V157fpdb|2QXA|D Chain D, Human P53 Core Domain Mutant V157f
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2QXB|A
+Length=195
+Percent_id=99.4871794871795
+fraq_identical=0.994871794871795
+hit_description=Chain A, Human P53 Core Domain Mutant N235kpdb|2QXB|B Chain B, Human P53 Core Domain Mutant N235kpdb|2QXB|C Chain C, Human P53 Core Domain Mutant N235kpdb|2QXB|D Chain D, Human P53 Core Domain Mutant N235k
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2QXC|A
+Length=195
+Percent_id=99.4871794871795
+fraq_identical=0.994871794871795
+hit_description=Chain A, Human P53 Core Domain Mutant N239ypdb|2QXC|B Chain B, Human P53 Core Domain Mutant N239ypdb|2QXC|C Chain C, Human P53 Core Domain Mutant N239ypdb|2QXC|D Chain D, Human P53 Core Domain Mutant N239y
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2QVQ|A
+Length=196
+Percent_id=98.469387755102
+fraq_identical=0.98469387755102
+hit_description=Chain A, Human P53 Core Domain Mutant V157fN235KN239Y
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2GEQ|A
+Length=198
+Percent_id=88.3838383838384
+fraq_identical=0.883838383838384
+hit_description=Chain A, Crystal Structure Of A P53 Core Dimer Bound To Dnapdb|2GEQ|B Chain B, Crystal Structure Of A P53 Core Dimer Bound To Dnapdb|2IOI|A Chain A, Crystal Structure Of The Mouse P53 Core Domain At 1.55 Apdb|2IOM|A Chain A, Mouse P53 Core Domain Soaked With 2-Propanolpdb|2IOO|A Chain A, Crystal Structure Of The Mouse P53 Core Domain
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|2P52|A
+Length=196
+Percent_id=88.265306122449
+fraq_identical=0.88265306122449
+hit_description=Chain A, Mouse P53 Dna-Binding Domain In Zinc-Free Oxidized State
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|3EXJ|A
+Length=194
+Percent_id=88.659793814433
+fraq_identical=0.88659793814433
+hit_description=Chain A, Crystal Structure Of A P53 Core Tetramer Bound To Dnapdb|3EXJ|B Chain B, Crystal Structure Of A P53 Core Tetramer Bound To Dnapdb|3EXL|A Chain A, Crystal Structure Of A P53 Core Tetramer Bound To Dna
+query_description=
+
+
+---NEW HIT---
+Query=t120407068
+Hit=pdb|1HU8|A
+Length=186
+Percent_id=88.7096774193548
+fraq_identical=0.887096774193548
+hit_description=Chain A, Crystal Structure Of The Mouse P53 Core Dna-Binding Domain At 2.7a Resolutionpdb|1HU8|B Chain B, Crystal Structure Of The Mouse P53 Core Dna-Binding Domain At 2.7a Resolutionpdb|1HU8|C Chain C, Crystal Structure Of The Mouse P53 Core Dna-Binding Domain At 2.7a Resolution
+query_description=
+
+
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
+---NEW HIT---
