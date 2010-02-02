@@ -13,7 +13,8 @@ while( my $result = $in->next_result ) {
           print "Query=",   $result->query_name,
             " Hit=",        $hit->name,
             " Length=",     $hsp->length('total'),
-            " Percent_id=", $hsp->percent_identity, "\n";
+            " Percent_id=", $hsp->percent_identity,
+            " fraq_identical=", $hsp->frac_identical, "\n";
         }
       }
     }  
