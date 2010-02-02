@@ -19,6 +19,9 @@ while( my $result = $in->next_result ) {
             "fraq_identical=",    $hsp->frac_identical,       "\n",
             "hit_description=",   $hit->description,          "\n",
             "query_description=", $result->query_description, "\n",
+            "query_string=   ",   $hsp->query_string,         "\n",
+            "homology_string=",   $hsp->homology_string,      "\n",
+            "hit_string=     ",   $hsp->hit_string,           "\n",
             "\n\n";
         }
       }
