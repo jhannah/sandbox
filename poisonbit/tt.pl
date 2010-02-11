@@ -3,25 +3,29 @@ use Template;
 
 my @data = ( 
    {
-            'name' => 'Koldo Echavarren ',
+            'name' => 'Person1',
             'projects' => {
-                            'Gobierno de Navarra - Aplicaciones Comunicaci�n' => [
-                                                                                   'GOBIERNO NAVARRA',
-                                                                                   'Olatz Zamora',
-                                                                                   '0.6'
-                                                                                 ],
-                            'Project 2' => [ 'foo', 'bar', 'baz'],
-                          },
+                            'Aplicaciones Comunicaci�n' => {
+                                         leader => 'leader 1',
+                                         client => 'client 1',
+                                         time   =>  '0.6',
+                            }, 
+                            'Project 2' =>  {
+                                         leader => 'foo', 
+                                         client => 'bar', 
+                                         time   => 'baz',
+                            }
+                        },
             'id' => 38
    },
    {
-            'name' => 'Adriana Ojuel',
+            'name' => 'person2',
             'projects' => {
-                            'varios proyectos' => [
-                                                    'CAN-JAVA (equipo fijo)',
-                                                    'Joserra Diaz',
-                                                    '1'
-                                                  ]
+                            'varios proyectos' => {
+                                         leader => 'CAN-JAVA (equipo fijo)',
+                                         client => 'Client 2',
+                                         time   => '1'
+                            },
                           },
             'id' => 0
    }
@@ -39,11 +43,12 @@ __DATA__
 User ID:   [% user.id %]
 User name: [% user.name %]
 User work:
-[% FOREACH project_name IN user.projects.keys %]
+[% FOREACH project_name IN user.projects.keys;
+      project = user.projects.$project_name; %]
     Project name:   [% project_name %]
-    Project leader: [% user.projects.$project_name.0 %]
-    Project client: [% user.projects.$project_name.1 %]
-    Project time:   [% user.projects.$project_name.2 %]
+    Project leader: [% project.leader %]
+    Project client: [% project.client %]
+    Project time:   [% project.time %]
 [% END -%]
 [% END -%]
 
