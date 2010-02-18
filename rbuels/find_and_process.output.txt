@@ -1,0 +1,21 @@
+jhannah@dev:~/src/sandbox/rbuels> perl find_and_process.pl
+Child pid 779 started as wheel 1.
+pid 779 STDOUT: /etc/radiusclient
+pid 779 STDOUT: /etc/radiusclient/dictionary.ascend
+pid 779 STDOUT: /etc/radiusclient/dictionary
+pid 779 STDOUT: /etc/radiusclient/dictionary.compat
+pid 779 STDOUT: /etc/radiusclient/dictionary.merit
+pid 779 STDOUT: /etc/radiusclient/issue
+pid 779 STDOUT: /etc/radiusclient/port-id-map
+pid 779 STDOUT: /etc/radiusclient/radiusclient.conf
+pid 779 STDOUT: /etc/radiusclient/servers
+Manager saw this: Hello there! I will now crunch /etc/radiusclient/dictionary.ascend into gff for you!
+Manager saw this: Hello there! I will now crunch /etc/radiusclient/dictionary into gff for you!
+pid 779 closed all pipes.
+Manager saw this: Hello there! I will now crunch /etc/radiusclient into gff for you!
+Manager saw this: Hello there! I will now crunch /etc/radiusclient/dictionary.compat into gff for you!
+Manager saw this: Hello there! I will now crunch /etc/radiusclient/dictionary.merit into gff for you!
+Manager saw this: Hello there! I will now crunch /etc/radiusclient/issue into gff for you!
+Manager saw this: Hello there! I will now crunch /etc/radiusclient/port-id-map into gff for you!
+Manager saw this: Hello there! I will now crunch /etc/radiusclient/radiusclient.conf into gff for you!
+Manager saw this: Hello there! I will now crunch /etc/radiusclient/servers into gff for you!
