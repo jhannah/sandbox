@@ -18,12 +18,23 @@ my $week;
 ##########Main Mathod##########
 
 %weeks = createHash($WCF);
-%types = createHash2($IFH);
-foreach my $date(keys %weeks){
-   $weekNo = $weeks{$date};
-   $type   = $types{$date};
-   print $OFH "$weekNo\t$type\n";
+my %final;
+while (my $line = <$IFH>) {
+   chomp $line;
+   my $type;
+   my %types;
+   my @splitLine;
+   @splitLine = split (/\t/, $line);
+   $type = $splitLine[0];
+   $date = $splitLine[1];
+   my $week = $weeks{$date};
+   $final{"$week\t$type"}++;
 }
+
+foreach my $key (sort keys %final) {
+   print $key . "\t" . $final{$key} . "\n";
+}
+
 
 ###########Subroutine create hash##########
 sub createHash{
@@ -44,22 +55,4 @@ sub createHash{
    return %weeks
 }
 
-###########Subroutine create hash##########
-sub createHash2{
-   
-   ####subroutine variables####
-   my $date;
-   my $type;
-   my %types;
-   my @splitLine;
-   
-   while (my $line = <$IFH>) {
-      chomp $line;
-      @splitLine = split (/\t/, $line);
-      $type = $splitLine[0];
-      $date = $splitLine[1];
-      $types{$date} = $type;
-   }
-   return %types;
-}
 
