@@ -32,7 +32,7 @@ while (my $line = <$IFH>) {
 }
 
 foreach my $key (sort keys %final) {
-   print $key . "\t" . $final{$key} . "\n";
+   print $OFH $key . "\t" . $final{$key} . "\n";
 }
 
 
