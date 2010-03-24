@@ -1,0 +1,6 @@
+jhannah@dev:~/src/sandbox/rbuels/Mason> perl mason_this_shit.pl foo.mason
+Mandatory parameter 'data_dir' missing in call to HTML::Mason::Interp::new
+ at /usr/lib/perl5/site_perl/5.8.8/HTML/Mason/Interp.pm line 93
+        HTML::Mason::Interp::new('undef', 'autohandler_name', '', 'comp_root', 'ARRAY(0x81b16d0)') called at mason_this_shit.pl line 9
+
+

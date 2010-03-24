@@ -1,0 +1,3 @@
+% my $noun = 'World';
+    Hello <% $noun %>!
+    How are ya?
