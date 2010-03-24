@@ -1,0 +1,42 @@
+<h1>Changelog</h1>
+
+<ul>
+<li><code>update</code> should trigger "update" event, add separate <code>merge</code> method.
+</li>
+<li>Fix that persistence failure should not trigger corresponding event.
+</li>
+</ul>
+
+<h2>0.6.0</h2>
+
+<ul>
+<li>Pass only a single callback to save/destroy which is called with a boolean to indicate success/failure.
+</li>
+<li>Bundle release into a single, versioned Javascript file plus minified version.
+</li>
+<li><p>Change behaviour of <code>Model.Collection</code> and don't let duplicates (scoped by id) of the same model to be stored. [Laurie Young]</p>
+
+<p>lib/Bio/Chado/Schema/CellLine/CellLine.pm
+   cell_line_relationship_subject_ids -> cell_line_relationship_subjects
+   cell_line_relationship_object_ids  -> cell_line_relationship_objects</p>
+
+<p>lib/Bio/Chado/Schema/Contact/Contact.pm
+   contact_relationship_object_ids -> contact_relationship_objects
+   contact_relationship_subject_ids -> contact_relationship_subjects</p></li>
+</ul>
+
+<h2>0.5.1</h2>
+
+<ul>
+<li>Fix that setting a null value with <code>attr</code> should be read back correctly from <code>changes</code>.
+</li>
+<li><code>errors</code> array shouldn't have to be manually <code>reset</code> when implementing <code>validate</code>.
+</li>
+</ul>
+
+<h2>0.5.0</h2>
+
+<ul>
+<li>First tagged release.
+</li>
+</ul>
