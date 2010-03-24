@@ -1,0 +1,169 @@
+0.05702
+
+ * that upload was a bit TOO clean, was missing the Build.PL!
+
+0.05701
+
+  * corrected a dirty cpan upload
+
+0.05700
+
+  * re-dumped with latest schema loader devel version
+  * stripped _id suffixes for a number of relationships that still had
+    them.  Hopefully the schema loader patch used for this will make
+    it into schema loader releases.  List of changed relationship names:
+
+     lib/Bio/Chado/Schema/CellLine/CellLine.pm
+      cell_line_relationship_subject_ids -> cell_line_relationship_subjects
+      cell_line_relationship_object_ids  -> cell_line_relationship_objects
+
+     lib/Bio/Chado/Schema/Contact/Contact.pm
+      contact_relationship_object_ids -> contact_relationship_objects
+      contact_relationship_subject_ids -> contact_relationship_subjects
+
+     lib/Bio/Chado/Schema/Cv/Cvterm.pm
+      arraydesign_platformtype_ids -> arraydesign_platformtypes
+      arraydesign_substratetype_ids -> arraydesign_substratetypes
+      cvtermpath_type_ids -> cvtermpath_types
+      cvtermpath_object_ids -> cvtermpath_objects
+      cvtermpath_subject_ids -> cvtermpath_subjects
+      cvtermprop_type_ids -> cvtermprop_types
+      cvtermprop_cvterm_ids -> cvtermprop_cvterms
+      cvterm_relationship_type_ids -> cvterm_relationship_types
+      cvterm_relationship_object_ids -> cvterm_relationship_objects
+      cvterm_relationship_subject_ids -> cvterm_relationship_subjects
+      cvtermsynonym_type_ids -> cvtermsynonym_types
+      cvtermsynonym_cvterm_ids -> cvtermsynonym_cvterms
+      expression_cvterm_cvterm_ids -> expression_cvterm_cvterms
+      expression_cvterm_cvterm_type_ids -> expression_cvterm_cvterm_types
+      phenotype_assay_ids -> phenotype_assays
+      phenotype_attr_ids -> phenotype_attrs
+      phenotype_observable_ids -> phenotype_observables
+      phenotype_cvalue_ids -> phenotype_cvalues
+      protocolparam_unittype_ids -> protocolparam_unittypes
+      protocolparam_datatype_ids -> protocolparam_datatypes
+
+     lib/Bio/Chado/Schema/Genetic/Environment.pm
+      phenotype_comparison_environment2_ids -> phenotype_comparison_environment2s
+      phenotype_comparison_environment1_ids -> phenotype_comparison_environment1s
+
+     lib/Bio/Chado/Schema/Genetic/Genotype.pm
+      phenotype_comparison_genotype1_ids -> phenotype_comparison_genotype1s
+      phenotype_comparison_genotype2_ids -> phenotype_comparison_genotype2s
+
+     lib/Bio/Chado/Schema/Mage/Acquisition.pm
+      acquisition_relationship_subject_ids -> acquisition_relationship_subjects
+      acquisition_relationship_object_ids -> acquisition_relationship_objects
+
+     lib/Bio/Chado/Schema/Mage/Biomaterial.pm
+      biomaterial_relationship_subject_ids -> biomaterial_relationship_subjects
+      biomaterial_relationship_object_ids -> biomaterial_relationship_objects
+
+     lib/Bio/Chado/Schema/Mage/Element.pm
+      element_relationship_object_ids -> element_relationship_objects
+      element_relationship_subject_ids -> element_relationship_subjects
+
+     lib/Bio/Chado/Schema/Mage/Elementresult.pm
+      elementresult_relationship_subject_ids -> elementresult_relationship_subjects
+      elementresult_relationship_object_ids -> elementresult_relationship_objects
+
+     lib/Bio/Chado/Schema/Mage/Quantification.pm
+      quantification_relationship_subject_ids -> quantification_relationship_subjects
+      quantification_relationship_object_ids -> quantification_relationship_objects
+
+     lib/Bio/Chado/Schema/Phenotype/Phenotype.pm
+      phenotype_comparison_phenotype1_ids -> phenotype_comparison_phenotype1s
+      phenotype_comparison_phenotype2_ids -> phenotype_comparison_phenotype2s
+
+     lib/Bio/Chado/Schema/Phylogeny/Phylonode.pm
+      phylonode_relationship_object_ids -> phylonode_relationship_objects
+      phylonode_relationship_subject_ids -> phylonode_relationship_subjects
+
+     lib/Bio/Chado/Schema/Pub/Pub.pm
+      pub_relationship_object_ids -> pub_relationship_objects
+      pub_relationship_subject_ids -> pub_relationship_subjects
+
+     lib/Bio/Chado/Schema/Sequence/Feature.pm
+      feature_genotype_feature_ids -> feature_genotype_features
+      feature_genotype_chromosome_ids -> feature_genotype_chromosomes
+      featureloc_feature_ids -> featureloc_features
+      featureloc_srcfeature_ids -> featureloc_srcfeatures
+      featurepos_feature_ids -> featurepos_features
+      featurepos_map_feature_ids -> featurepos_map_features
+      featurerange_leftendf_ids -> featurerange_leftendfs
+      featurerange_rightstartf_ids -> featurerange_rightstartfs
+      featurerange_rightendf_ids -> featurerange_rightendfs
+      featurerange_leftstartf_ids -> featurerange_leftstartfs
+      featurerange_feature_ids -> featurerange_features
+      feature_relationship_subject_ids -> feature_relationship_subjects
+      feature_relationship_object_ids -> feature_relationship_objects
+
+     lib/Bio/Chado/Schema/Stock/Stock.pm
+      stock_relationship_subject_ids -> stock_relationship_subjects
+      stock_relationship_object_ids -> stock_relationship_objects
+
+  * new create_with() function for creating new cvterms
+  * more POD tweaking to improve CPAN indexing
+
+0.05501
+
+  * tweaked per-chado-module POD for better CPAN indexing
+
+0.05500
+
+  * much better POD, added autogenerated links from Schema.pm to
+    per-chado-module POD files, and links to chado module pod files
+    in Schema.pm
+  * improved slide presentation to the version given at January 2010
+    GMOD meeting
+
+0.05001
+
+  * test count bugfix
+
+0.05000
+
+  * Added DBICSL-generated POD
+  * Turned off DBIC's cascade_delete and cascade_copy on all relations
+    (thanks to Siddhartha Basu for troubleshooting).  Things break if
+    these are on and you don't have every part of the schema installed.
+
+0.04300
+
+  * Corrected a rather dirty CPAN upload, Util.pod file was in the
+    wrong place.
+
+0.04200
+
+  * removed Util.pm, replaced with Util.pod for documentation, moved
+    the actual Util methods into a separate package inside Schema.pm.
+    Thanks to Aure Bombarely.
+
+0.04100
+
+  * added missing dependency on BioPerl
+
+0.04000
+
+  * added new modules and relationships for the newly released
+    cell_line module in Chado
+
+0.03100
+
+  * added $VERSION to Bio::Chado::Schema to support CPAN indexer,
+    bumped version by several numbers to force CPAN reindexing
+
+0.022
+
+  * update to schema dumping script now finds many more inter-module
+    relationships
+  * added the new inter-module relationships found by the dumping
+    script
+
+0.01_03
+
+  * changed namespace to Bio::Chado instead of Chado
+
+0.01_01
+
+  * Initial release.

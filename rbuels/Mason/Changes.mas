@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Changes</title>
+</head>
+
+<h1>Changes</h1>
+<body>
+% open my $in, "<", $ARGV[1] or die;
+% while (my $line = <$in>) {
+%    chomp $line;
+%    if ($line =~ /^\d/) {
+% 
+</pre>
+<h3><% $line %></h3>
+<pre>
+%    } else {
+<% $line %>
+%    }
+% }
+</body>
+</html>
+
