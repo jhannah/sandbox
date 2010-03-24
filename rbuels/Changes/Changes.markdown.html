@@ -14,16 +14,20 @@
 </li>
 <li>Bundle release into a single, versioned Javascript file plus minified version.
 </li>
-<li><p>Change behaviour of <code>Model.Collection</code> and don't let duplicates (scoped by id) of the same model to be stored. [Laurie Young]</p>
-
-<p>lib/Bio/Chado/Schema/CellLine/CellLine.pm
-   cell_line_relationship_subject_ids -> cell_line_relationship_subjects
-   cell_line_relationship_object_ids  -> cell_line_relationship_objects</p>
-
-<p>lib/Bio/Chado/Schema/Contact/Contact.pm
-   contact_relationship_object_ids -> contact_relationship_objects
-   contact_relationship_subject_ids -> contact_relationship_subjects</p></li>
+<li>Change behaviour of <code>Model.Collection</code> and don't let duplicates (scoped by id) of the same model to be stored. [Laurie Young]
+</li>
 </ul>
+
+<blockquote>
+<pre><code>lib/Bio/Chado/Schema/CellLine/CellLine.pm
+   cell_line_relationship_subject_ids -&gt; cell_line_relationship_subjects
+   cell_line_relationship_object_ids  -&gt; cell_line_relationship_objects
+
+lib/Bio/Chado/Schema/Contact/Contact.pm
+   contact_relationship_object_ids -&gt; contact_relationship_objects
+   contact_relationship_subject_ids -&gt; contact_relationship_subjects
+</code></pre>
+</blockquote>
 
 <h2>0.5.1</h2>
 
