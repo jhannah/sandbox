@@ -9,13 +9,15 @@
 * Bundle release into a single, versioned Javascript file plus minified version.
 * Change behaviour of `Model.Collection` and don't let duplicates (scoped by id) of the same model to be stored. [Laurie Young]
 
->     lib/Bio/Chado/Schema/CellLine/CellLine.pm
->        cell_line_relationship_subject_ids -> cell_line_relationship_subjects
->        cell_line_relationship_object_ids  -> cell_line_relationship_objects
->    
->     lib/Bio/Chado/Schema/Contact/Contact.pm
->        contact_relationship_object_ids -> contact_relationship_objects
->        contact_relationship_subject_ids -> contact_relationship_subjects
+     lib/Bio/Chado/Schema/CellLine/CellLine.pm
+        cell_line_relationship_subject_ids -> cell_line_relationship_subjects
+        cell_line_relationship_object_ids  -> cell_line_relationship_objects
+    
+     lib/Bio/Chado/Schema/Contact/Contact.pm
+        contact_relationship_object_ids -> contact_relationship_objects
+        contact_relationship_subject_ids -> contact_relationship_subjects
+
+* blah. test?
 
 ## 0.5.1
 
