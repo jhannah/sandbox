@@ -1,3 +1,4 @@
+<%args>$file</%args>
 <html>
 <head>
 <title>Changes</title>
@@ -5,7 +6,7 @@
 
 <h1>Changes</h1>
 <body>
-% open my $in, "<", $ARGV[1] or die;
+% open my $in, "<", $file or die;
 % while (my $line = <$in>) {
 %    chomp $line;
 %    if ($line =~ /^\d/) {
@@ -17,6 +18,7 @@
 <% $line %>
 %    }
 % }
+</pre>
 </body>
 </html>
 

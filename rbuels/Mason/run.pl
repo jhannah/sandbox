@@ -10,5 +10,5 @@ my $mason = HTML::Mason::Interp
     ->new( autohandler_name => '',
            comp_root => [['conf_templates', getcwd ]],
           )
-    ->exec( '/'.$ARGV[0] );
+    ->exec( '/'.$ARGV[0], file => $ARGV[1] );
 
