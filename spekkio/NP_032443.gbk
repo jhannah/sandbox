@@ -1,0 +1,141 @@
+LOCUS       NP_032443                499 aa            linear   ROD 21-MAR-2010
+DEFINITION  potassium voltage-gated channel subfamily A member 2 [Mus
+            musculus].
+ACCESSION   NP_032443
+VERSION     NP_032443.3  GI:157012015
+DBSOURCE    REFSEQ: accession NM_008417.4
+KEYWORDS    .
+SOURCE      Mus musculus (house mouse)
+  ORGANISM  Mus musculus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
+            Sciurognathi; Muroidea; Muridae; Murinae; Mus.
+REFERENCE   1  (residues 1 to 499)
+  AUTHORS   Schilling,K. and Oberdick,J.
+  TITLE     The treasury of the commons: making use of public gene expression
+            resources to better characterize the molecular diversity of
+            inhibitory interneurons in the cerebellar cortex
+  JOURNAL   Cerebellum 8 (4), 477-489 (2009)
+   PUBMED   19554387
+REFERENCE   2  (residues 1 to 499)
+  AUTHORS   Costagliola,A., Van Nassauw,L., Snyders,D., Adriaensen,D. and
+            Timmermans,J.P.
+  TITLE     Voltage-gated delayed rectifier K v 1-subunits may serve as
+            distinctive markers for enteroglial cells with different phenotypes
+            in the murine ileum
+  JOURNAL   Neurosci. Lett. 461 (2), 80-84 (2009)
+   PUBMED   19549557
+  REMARK    GeneRIF: K(v)1.1 and K(v)1.2 were predominantly expressed in
+            distinct EGC phenotypes. K(v)1.2 was also observed in distinct
+            neuron subpopulations.
+REFERENCE   3  (residues 1 to 499)
+  AUTHORS   Yang,J.W., Vacher,H., Park,K.S., Clark,E. and Trimmer,J.S.
+  TITLE     Trafficking-dependent phosphorylation of Kv1.2 regulates
+            voltage-gated potassium channel cell surface expression
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 104 (50), 20055-20060 (2007)
+   PUBMED   18056633
+  REMARK    GeneRIF: cluster of cytoplasmic C-terminal phosphorylation sites
+            regulates Kv1.2 trafficking
+REFERENCE   4  (residues 1 to 499)
+  AUTHORS   Brew,H.M., Gittelman,J.X., Silverstein,R.S., Hanks,T.D.,
+            Demas,V.P., Robinson,L.C., Robbins,C.A., McKee-Johnson,J.,
+            Chiu,S.Y., Messing,A. and Tempel,B.L.
+  TITLE     Seizures and reduced life span in mice lacking the potassium
+            channel subunit Kv1.2, but hypoexcitability and enlarged Kv1
+            currents in auditory neurons
+  JOURNAL   J. Neurophysiol. 98 (3), 1501-1525 (2007)
+   PUBMED   17634333
+  REMARK    GeneRIF: Kcna2-null mice exhibited increased seizure susceptibility
+            but, in contrast to Kcna1-null mice, hypoexcitability and enlarged
+            Kv1 currents in auditory neurons.
+REFERENCE   5  (residues 1 to 499)
+  AUTHORS   Douglas,C.L., Vyazovskiy,V., Southard,T., Chiu,S.Y., Messing,A.,
+            Tononi,G. and Cirelli,C.
+  TITLE     Sleep in Kcna2 knockout mice
+  JOURNAL   BMC Biol. 5, 42 (2007)
+   PUBMED   17925011
+  REMARK    GeneRIF: Kv1.2, a mammalian homologue of Shaker, regulates neuronal
+            excitability and affects NREM sleep
+            Publication Status: Online-Only
+REFERENCE   6  (residues 1 to 499)
+  AUTHORS   Lesage,F., Attali,B., Lazdunski,M. and Barhanin,J.
+  TITLE     Developmental expression of voltage-sensitive K+ channels in mouse
+            skeletal muscle and C2C12 cells
+  JOURNAL   FEBS Lett. 310 (2), 162-166 (1992)
+   PUBMED   1383027
+REFERENCE   7  (residues 1 to 499)
+  AUTHORS   Migeon,M.B., Street,V.A., Demas,V.P. and Tempel,B.L.
+  TITLE     Cloning, sequence and chromosomal localization of MK6, a murine
+            potassium channel gene
+  JOURNAL   Epilepsy Res. Suppl. 9, 173-180 (1992)
+   PUBMED   1285906
+REFERENCE   8  (residues 1 to 499)
+  AUTHORS   Wei,A., Covarrubias,M., Butler,A., Baker,K., Pak,M. and Salkoff,L.
+  TITLE     K+ current diversity is produced by an extended gene family
+            conserved in Drosophila and mouse
+  JOURNAL   Science 248 (4955), 599-603 (1990)
+   PUBMED   2333511
+REFERENCE   9  (residues 1 to 499)
+  AUTHORS   Betsholtz,C., Baumann,A., Kenna,S., Ashcroft,F.M., Ashcroft,S.J.,
+            Berggren,P.O., Grupe,A., Pongs,O., Rorsman,P., Sandblom,J. et al.
+  TITLE     Expression of voltage-gated K+ channels in insulin-producing cells.
+            Analysis by polymerase chain reaction
+  JOURNAL   FEBS Lett. 263 (1), 121-126 (1990)
+   PUBMED   1691985
+REFERENCE   10 (residues 1 to 499)
+  AUTHORS   Chandy,K.G., Williams,C.B., Spencer,R.H., Aguilar,B.A.,
+            Ghanshani,S., Tempel,B.L. and Gutman,G.A.
+  TITLE     A family of three mouse potassium channel genes with intronless
+            coding regions
+  JOURNAL   Science 247 (4945), 973-975 (1990)
+   PUBMED   2305265
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            AK044342.1 and AC121825.3.
+            On Sep 6, 2007 this sequence version replaced gi:31543024.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the
+            Entrez Gene record to access additional publications.
+FEATURES             Location/Qualifiers
+     source          1..499
+                     /organism="Mus musculus"
+                     /strain="C57BL/6"
+                     /db_xref="taxon:10090"
+                     /chromosome="3"
+                     /map="3 48.8 cM"
+     Protein         1..499
+                     /product="potassium voltage-gated channel subfamily A
+                     member 2"
+                     /note="MK2; voltage-gated potassium channel subunit Kv1.2"
+                     /calculated_mol_wt=56570
+     Region          35..126
+                     /region_name="BTB"
+                     /note="BTB/POZ domain; cl02518"
+                     /db_xref="CDD:154954"
+     Region          224..409
+                     /region_name="Ion_trans"
+                     /note="Ion transport protein; pfam00520"
+                     /db_xref="CDD:144200"
+     Region          <360..410
+                     /region_name="Ion_trans_2"
+                     /note="Ion channel; cl11596"
+                     /db_xref="CDD:159568"
+     CDS             1..499
+                     /gene="Kcna2"
+                     /gene_synonym="Akr6a4; Kca1-2; Kv1.2; Mk-2"
+                     /coded_by="NM_008417.4:682..2181"
+                     /db_xref="CCDS:CCDS17733.1"
+                     /db_xref="GeneID:16490"
+                     /db_xref="MGI:96659"
+ORIGIN      
+        1 mtvatgdpvd eaaalpghpq dtydpeadhe ccervvinis glrfetqlkt laqfpetllg
+       61 dpkkrmryfd plrneyffdr nrpsfdaily yyqsggrlrr pvnvpldifs eeirfyelge
+      121 eamemfrede gyikeeerpl penefqrqvw llfeypessg pariiaivsv mvilisivsf
+      181 cletlpifrd enedmhgggv tfhtysnsti gyqqstsftd pffivetlci iwfsfeflvr
+      241 ffacpskagf ftnimniidi vaiipyfitl gtelaekped aqqgqqamsl ailrvirlvr
+      301 vfrifklsrh skglqilgqt lkasmrelgl lifflfigvi lfssavyfae aderdsqfps
+      361 ipdafwwavv smttvgygdm vpttiggkiv gslcaiagvl tialpvpviv snfnyfyhre
+      421 tegeeqaqyl qvtscpkips spdlkksrsa stisksdyme iqegvnnsne dfreenlkta
+      481 nctlantnyv nitkmltdv
+//
