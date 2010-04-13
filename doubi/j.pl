@@ -8,5 +8,9 @@ sub attr  { return "hello there"; }
 
 package main;
 my $pos = Foo->new;
+
 print [$pos->right]->[3]->attr;
+print "\n";
+print ( ($pos->right)[3]->attr );
+print "\n";
 
