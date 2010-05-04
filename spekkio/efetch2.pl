@@ -26,11 +26,10 @@ my $count = $factory -> get_count;
 my $hist = $factory-> next_History || die 'No History Data returned';
 print "History Returned\n";
 
-__END__
 $factory -> set_parameters(-eutil => 'efetch',
 						-rettype => 'gbwithparts',
 						-retmode => 'text',
-						-history => '$hist');
+						-history => $hist);
 
 my $retry = 0;						
 my $retmax = 500;
