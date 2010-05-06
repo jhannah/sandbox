@@ -1,7 +1,7 @@
 Chr1	MSU_osa1r6	gene	1903	9817	.	+	.	ID=13101.t00001;Name=TBC%20domain%20containing%20protein%2C%20expressed;Alias=LOC_Os01g01010
 Chr1	MSU_osa1r6	mRNA	1903	9817	.	+	.	ID=13101.m00001;Parent=13101.t00001;Alias=LOC_Os01g01010.1
-Chr1	MSU_osa1r6	five_prime_UTR1903	2268	.	+	.	Parent=13101.m00001
-Chr1	MSU_osa1r6	five_prime_UTR2354	2448	.	+	.	Parent=13101.m00001
+Chr1	MSU_osa1r6	five_prime_UTR	1903	2268	.	+	.	Parent=13101.m00001
+Chr1	MSU_osa1r6	five_prime_UTR	2354	2448	.	+	.	Parent=13101.m00001
 Chr1	MSU_osa1r6	CDS	2449	2616	.	+	0	Parent=13101.m00001
 Chr1	MSU_osa1r6	CDS	3357	3455	.	+	0	Parent=13101.m00001
 Chr1	MSU_osa1r6	CDS	4457	4560	.	+	0	Parent=13101.m00001
@@ -12,6 +12,6 @@ Chr1	MSU_osa1r6	CDS	7408	7608	.	+	0	Parent=13101.m00001
 Chr1	MSU_osa1r6	CDS	8210	8617	.	+	0	Parent=13101.m00001
 Chr1	MSU_osa1r6	CDS	9104	9187	.	+	0	Parent=13101.m00001
 Chr1	MSU_osa1r6	CDS	9274	9297	.	+	0	Parent=13101.m00001
-Chr1	MSU_osa1r6	three_prime_UTR9298	9430	.	+	.	Parent=13101.m00001
-Chr1	MSU_osa1r6	three_prime_UTR9504	9817	.	+	.	Parent=13101.m00001
+Chr1	MSU_osa1r6	three_prime_UTR	9298	9430	.	+	.	Parent=13101.m00001
+Chr1	MSU_osa1r6	three_prime_UTR	9504	9817	.	+	.	Parent=13101.m00001
 
