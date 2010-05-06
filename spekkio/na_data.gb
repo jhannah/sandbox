@@ -1,0 +1,91 @@
+LOCUS       AY331142                2052 bp    mRNA    linear   ROD 22-JUN-2004
+DEFINITION  Mus musculus potassium voltage-gated channel major isoform 1
+            (Kcnq1) mRNA, complete cds.
+ACCESSION   AY331142
+VERSION     AY331142.1  GI:33090006
+KEYWORDS    .
+SOURCE      Mus musculus (house mouse)
+  ORGANISM  Mus musculus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
+            Sciurognathi; Muroidea; Muridae; Murinae; Mus.
+REFERENCE   1  (bases 1 to 2052)
+  AUTHORS   Knollmann,B.C., Casimiro,M.C., Katchman,A.N., Sirenko,S.G.,
+            Schober,T., Rong,Q., Pfeifer,K. and Ebert,S.N.
+  TITLE     Isoproterenol exacerbates a long QT phenotype in Kcnq1-deficient
+            neonatal mice: possible roles for human-like Kcnq1 isoform 1 and
+            slow delayed rectifier K+ current
+  JOURNAL   J. Pharmacol. Exp. Ther. 310 (1), 311-318 (2004)
+   PUBMED   15004216
+REFERENCE   2  (bases 1 to 2052)
+  AUTHORS   Casimiro,M.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUN-2003) NICHD, NIH, 9000 Rockville Pike, Bethesda,
+            MD 20852, USA
+FEATURES             Location/Qualifiers
+     source          1..2052
+                     /organism="Mus musculus"
+                     /mol_type="mRNA"
+                     /strain="129/SvJ"
+                     /db_xref="taxon:10090"
+                     /chromosome="7"
+                     /tissue_type="heart"
+                     /dev_stage="neonatal"
+     gene            1..2052
+                     /gene="Kcnq1"
+     CDS             21..2027
+                     /gene="Kcnq1"
+                     /codon_start=1
+                     /product="potassium voltage-gated channel major isoform 1"
+                     /protein_id="AAP93874.1"
+                     /db_xref="GI:33090007"
+                     /translation="MDTASSPPSAERKRAGWSRLLGARRGSAVVKKCPFSLELAEGGP
+                     EGSTVYAPIAPTGAPGLAPPMSTPVSPAPAPADLGPRPRVSLDPRVSIYSARRPLLAR
+                     THIQGRVYNFLERPTGWKCFVYHFTVFLIVLVCLIFSVLSTIEQYAALATGTLFWMEI
+                     VLVVFFGTEYVVRLWSAGCRSKYVGIWGRLRFARKPISIIDLIVVVASMVVLCVGSKG
+                     QVFATSAIRGIRFLQILRMLHVDRQGGTWRLLGSVVFIHRQELITTLYIGFLGLIFSS
+                     YFVYLAEKDAVNESGRIEFGSYADALWWGVVTVTTIGYGDKVPQTWVGKTIASCFSVF
+                     AISFFALPAGILGSGFALKVQQKQRQKHFNRQIPAAASLIQTAWRCYAAENPDSATWK
+                     IYVRKPARSHTLLSPSPKPKKSVMVKKKKFKLDKDNGMSPGEKMFNVPHITYDPPEDR
+                     RPDHFSIDGYDSSVRKSPTLLELSTPHFLRTNSFAEDLDLEGETLLTPITHVSQLRDH
+                     HRATIKVIRRMQYFVAKKKFQQARKPYDVRDVIEQYSQGHLNLMVRIKELQRRLDQSI
+                     GKPSLFIPISEKSKDRGSNTIGARLNRVEDKVTQLDQRLVIITDMLHQLLSMQQGGPT
+                     CNSRSQVVASNEGGSINPELFLPSNSLPTYEQLTVPQTGPDEGS"
+ORIGIN      
+        1 gtcaggggtc ctgtctggcc atggacacgg cctcgtcccc gcccagtgct gaaaggaagc
+       61 gcgcgggttg gagccgcctg ctaggcgccc ggcggggcag cgcggtggtc aagaagtgtc
+      121 ccttctcact ggagctggcc gaaggtggcc ctgagggcag cacggtctat gcgcccatcg
+      181 cgccaaccgg agcccccggg ctcgcgcccc ccatgtcgac cccagtgtcg cccgccccgg
+      241 cccctgcaga cctcggccca cgtccgcggg tgagccttga cccgcgggtc tccatctaca
+      301 gtgcgcgccg cccgctgctg gcgcgcaccc acatccaggg ccgagtctac aacttcctcg
+      361 agcgccccac gggttggaag tgtttcgtgt accacttcac cgtcttcctc attgttctgg
+      421 tctgcctcat cttcagtgtc ctgtccacta ttgagcagta tgccgctctg gccaccggga
+      481 ccctcttctg gatggagatt gtccttgtgg tgttctttgg gacagaatat gtggtccgcc
+      541 tctggtctgc aggctgccgc agcaagtacg tgggcatctg gggccggcta cgttttgccc
+      601 ggaagcccat ttccatcatt gacctcatcg tggttgtagc ctctatggtt gtcctctgcg
+      661 tgggttccaa aggacaagtg ttcgccacat cagctatcag gggtatccgc ttccttcaga
+      721 tcctgcggat gctgcatgtc gatcgccagg ggggtacctg gaggctcctg ggctctgtag
+      781 tcttcattca ccgccaggag ctgatcacca ccctgtacat tggctttctg ggccttatct
+      841 tctcctccta ctttgtctac ttggctgaga aagatgcggt gaacgagtcc ggccgcatcg
+      901 agtttggcag ctacgcagat gctctgtggt ggggggtggt cacagtcact accattggct
+      961 acggggataa ggtacctcag acgtgggttg ggaagaccat cgcctcctgt ttctctgtct
+     1021 tcgccatatc cttctttgca ctcccagcgg ggatacttgg ctctgggttc gcgctgaagg
+     1081 tccagcagaa gcagaggcag aagcacttca accggcagat cccagctgca gcctcactca
+     1141 tccagactgc atggaggtgc tatgccgctg agaaccctga ctcagccact tggaagatct
+     1201 atgtccggaa gcctgctcgg agtcacacgc ttctgtcccc cagccccaaa cctaaaaagt
+     1261 ctgtcatggt aaagaagaag aagttcaagc tggataagga taatgggatg agtcctggag
+     1321 agaagatgtt caatgttcct cacatcactt atgatccccc agaggatagg aggccagacc
+     1381 atttctccat tgatggctat gacagctcag taaggaagag ccctacactg ctggaattaa
+     1441 gcacacccca tttcttgaga acaaacagct ttgcagagga cctggacctg gaaggggaga
+     1501 cactgctgac ccccatcacc catgtgtcac agctgcggga tcaccatcgg gccaccatca
+     1561 aggtcatcag gcgcatgcag tactttgtag ccaagaagaa attccagcaa gcacggaagc
+     1621 cctacgacgt gcgagatgtc atcgagcagt actcccaggg ccacctgaac cttatggtgc
+     1681 gcattaaaga actacagaga aggctggatc agtccattgg gaagccatct ttgttcatcc
+     1741 ccatctcaga aaagagcaaa gaccgtggca gtaacaccat cggtgcccgt ctgaacaggg
+     1801 tggaagacaa ggtgacacaa ctggaccaga gactggtgat catcacagac atgctccacc
+     1861 agctgctgtc catgcaacaa ggtggtccaa cctgcaacag caggtcacaa gttgtagcca
+     1921 gcaatgaagg tggctccatc aaccctgagc tcttcctacc cagcaacagc ctgcccacct
+     1981 acgaacaact gactgtgccc caaacaggcc ctgatgaggg ttcctgaagg agctcacaag
+     2041 ggaggtccag gg
+//
+
