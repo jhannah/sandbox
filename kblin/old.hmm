@@ -1,0 +1,39 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 Pfam_fs
+Sequence file:            BA000019.orf9.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: BA000019.orf9
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+TonB_dep_Rec    TonB dependent receptor                 118.3    2.4e-33   1
+Plug            TonB-dependent Receptor Plug Domain      69.0    1.1e-19   1
+Methyltrans_SAM S-adenosylmethionine-dependent methyl     4.9      0.075   1
+Big_1           Bacterial Ig-like domain (group 1)        6.6       0.11   1
+FmdA_AmdA       Acetamidase/Formamidase family            2.3        1.3   1
+DUF1794         Domain of unknown function (DUF1794)      3.0        1.6   1
+GATase_3        CobB/CobQ-like glutamine amidotransfe     3.0        1.7   1
+CBM_20          Starch binding domain                     4.1        1.7   1
+Secretin        Bacterial type II and III secretion s     2.5        2.4   1
+Grp1_Fun34_YaaH GPR1/FUN34/yaaH family                    1.2        2.5   1
+MOSP_C          Major Outer Sheath Protein C-terminal     1.0        3.1   1
+NRPS            Nonribosomal peptide synthase             1.0        3.3   1
+NODP            NOTCH protein                             3.6        3.4   1
+UPF0228         Uncharacterised protein family (UPF02     2.4          4   1
+CopC            Copper resistance protein CopC            1.9        4.1   1
+v110            Viral family 110                          2.3        4.1   1
+Phycoerythr_ab  Phycoerythrin, alpha/beta chain           1.8        5.5   1
+DegQ            DegQ (SacQ) family                        2.4        5.6   1
+CHASE           CHASE domain                              1.2        6.3   1
+Synaphin        Synaphin protein                          1.1        6.4   1
+DUF2261         Uncharacterized conserved protein (DU    -0.9        6.5   1
+Gp-FAR-1        Nematode fatty acid retinoid binding  
+

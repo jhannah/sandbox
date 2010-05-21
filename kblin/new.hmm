@@ -1,0 +1,31 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.0 (March 2010); http://hmmer.org/
+# Copyright (C) 2010 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             BA000019.orf9.fasta
+# target HMM database:             /data/biodata/HMMerDB/Pfam.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       BA000019.orf9  [L=873]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    7.1e-38  132.2   7.8    7.1e-38  132.2   5.4    3.7  3  TonB_dep_Rec TonB dependent receptor
+    4.7e-33  114.1   1.3    4.7e-33  114.1   0.9    1.8  2  AMIN         Localisation of periplasmic protein complexes
+    9.6e-18   65.5   2.2    9.6e-18   65.5   1.5    2.4  2  Plug         TonB-dependent Receptor Plug Domain
+     0.0027   18.1   0.1     0.0027   18.1   0.1    2.2  2  Pfam-B_17828 
+  ------ inclusion threshold ------
+      0.054   13.8   1.6          1    9.6   0.0    2.8  4  DUF3308      Protein of unknown function (DUF3308)
+       0.36    9.9   1.1       0.62    9.2   0.2    1.8  3  DUF3374      Protein of unknown function (DUF3374)
+
+
+Domain annotation for each model (and alignments):
+>> TonB_dep_Rec  TonB dependent receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.8   0.0     0.035   1.9e+02      43      72 ..     391     420 ..     343     430 .. 0.77
+   2 ?    1.8   0.8     0.073   3.9e+02      82     186 ..     477     582 ..     436     618 .. 0.52
+   3 !  132.2   5.4   1.3e-41   7.1e-38       1     277 []     638     871 ..     638     871 .. 0.97
+
