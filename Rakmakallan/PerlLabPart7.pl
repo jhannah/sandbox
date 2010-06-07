@@ -1,3 +1,13 @@
+# Yee gods. Clean up everything so we can use strict:
+# use strict;
+
+use Bio::SeqIO;
+
+my $in = Bio::SeqIO->new(-file=>$ARGV[0], -format=>'swiss');
+my $seq_obj = $in->next_seq;
+print $seq_obj->seq;
+exit;
+
 open (EPIC,"$ARGV[0]");
 while (<EPIC>)
 	{if ($_=~m/^ID\s{3}(\S*)\s/gi)
