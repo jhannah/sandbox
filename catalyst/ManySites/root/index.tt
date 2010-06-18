@@ -1,0 +1,15 @@
+Foo1<br>
+<a href="/site1/foo/foo1">/site1/foo/foo1</a><br>
+<a href="/site2/foo/foo1">/site2/foo/foo1</a><br>
+<a href="/site3/foo/foo1">/site3/foo/foo1</a><br>
+<br>
+Foo2<br>
+<a href="/site1/foo/foo2">/site1/foo/foo2</a><br>
+<a href="/site2/foo/foo2">/site2/foo/foo2</a><br>
+<a href="/site3/foo/foo2">/site3/foo/foo2</a><br>
+<br>
+Bar<br>
+<a href="/site1/bar/bar1">/site1/bar/bar1</a><br>
+<a href="/site2/bar/bar1">/site2/bar/bar1</a><br>
+<a href="/site3/bar/bar1">/site3/bar/bar1</a><br>
+

@@ -1,0 +1,4 @@
+<h1>Site1</h1>
+[% content %]
+<br><hr>
+Thanks for visiting Site1!
