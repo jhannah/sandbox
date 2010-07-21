@@ -1,0 +1,29 @@
+<document>
+<smth>xxx</smth>
+<important name="1">
+<imp_arg arg="a"></imp_arg>
+<not_imp arg= "123"></not_imp>
+<imp_element>"A"</imp_element>
+</important>
+<important name="2">
+<imp_arg arg= "b"></imp_arg>
+<not_imp arg= "123"></not_imp>
+<imp_element>"B"</imp_element>
+</important>
+<important name="3">
+<imp_arg arg= "c"></imp_arg>
+<not_imp arg= "123"></not_imp>
+<imp_element>"C"</imp_element>
+</important>
+<important name="4">
+<imp_arg arg= "d"></imp_arg>
+<not_imp arg= "123"></not_imp>
+<imp_element>"D"</imp_element>
+</important>
+<important name="5">
+<imp_arg arg= "e"></imp_arg>
+<not_imp arg= "123"></not_imp>
+<imp_element>"E"</imp_element>
+</important>
+<nothing_special></nothing_special>
+</document>
