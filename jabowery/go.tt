@@ -1,0 +1,1 @@
+aaa[% INCLUDE nolinefeed.tt %]bbb[% INCLUDE nolinefeed.tt -%]ccc
