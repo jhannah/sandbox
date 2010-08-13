@@ -9,6 +9,7 @@ my $foo_rs = My::Schema->connect('dbi:SQLite:dbname=demo.sqlite3', undef, undef)
    {
       join     => 'bars',
       prefetch => 'bars',
+      order_by => 'me.id',
    }
 );
 while (my $foo = $foo_rs->next) {
