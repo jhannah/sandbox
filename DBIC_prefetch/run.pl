@@ -17,16 +17,6 @@ my $foo_rs = $schema->resultset('Foo')->search(
    }
 );
 
-$foo_rs = My::Schema->resultset('Foo')->search(
-   {},
-   {
-      join     => 'bars',
-      prefetch => 'bars',
-      order_by => 'me.id',
-   }
-);
-
-
 while (my $foo = $foo_rs->next) {
    printf "%s\n", $foo->id;
    if (my $bar_rs = $foo->bars) {
