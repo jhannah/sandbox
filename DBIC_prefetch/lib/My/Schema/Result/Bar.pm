@@ -46,13 +46,13 @@ Related object: L<My::Schema::Result::Foo>
 __PACKAGE__->belongs_to(
   "id",
   "My::Schema::Result::Foo",
-  { id => "id" },
+  { bar_id => "id" },
   { is_deferrable => 1, on_delete => "CASCADE", on_update => "CASCADE" },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07001 @ 2010-08-13 11:05:54
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:w+qKVRpOjRX0ZXXRD6Havg
+# Created by DBIx::Class::Schema::Loader v0.07001 @ 2010-08-13 11:41:23
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:GpABIOvlGP8eADH7rLW11Q
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration

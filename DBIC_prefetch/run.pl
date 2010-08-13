@@ -4,7 +4,7 @@ use strict;
 use lib 'lib';
 use My::Schema;
 
-my $rs = My::Schema->resultset('Foo')->search(
+my $rs = My::Schema->connect('dbi:SQLite:dbname=demo.sqlite3', undef, undef)->resultset('Foo')->search(
    {},
    {
       join     => 'bar',

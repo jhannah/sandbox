@@ -52,13 +52,13 @@ Related object: L<My::Schema::Result::Bar>
 __PACKAGE__->might_have(
   "bar",
   "My::Schema::Result::Bar",
-  { "foreign.id" => "self.id" },
+  { "foreign.id" => "self.bar_id" },
   { cascade_copy => 0, cascade_delete => 0 },
 );
 
 
-# Created by DBIx::Class::Schema::Loader v0.07001 @ 2010-08-13 11:05:54
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:gHLfcW+Tm4euhhP2VWKjIQ
+# Created by DBIx::Class::Schema::Loader v0.07001 @ 2010-08-13 11:41:23
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:ZTDldPZbXY90i1ChZcRcSg
 
 
 # You can replace this text with custom content, and it will be preserved on regeneration
