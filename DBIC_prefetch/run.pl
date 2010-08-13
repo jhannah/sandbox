@@ -4,7 +4,11 @@ use strict;
 use lib 'lib';
 use My::Schema;
 
-my $foo_rs = My::Schema->connect('dbi:SQLite:dbname=demo.sqlite3', undef, undef)->resultset('Foo')->search(
+my $schema = My::Schema->connect(
+   'dbi:SQLite:dbname=demo.sqlite3', undef, undef
+);
+
+my $foo_rs = $schema->resultset('Foo')->search(
    {},
    {
       join     => 'bars',
@@ -12,6 +16,17 @@ my $foo_rs = My::Schema->connect('dbi:SQLite:dbname=demo.sqlite3', undef, undef)
       order_by => 'me.id',
    }
 );
+
+$foo_rs = My::Schema->resultset('Foo')->search(
+   {},
+   {
+      join     => 'bars',
+      prefetch => 'bars',
+      order_by => 'me.id',
+   }
+);
+
+
 while (my $foo = $foo_rs->next) {
    printf "%s\n", $foo->id;
    if (my $bar_rs = $foo->bars) {
