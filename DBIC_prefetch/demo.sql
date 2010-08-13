@@ -1,10 +1,17 @@
 
-create table foo ( id int not null primary key, bar_id int not null );
-create table bar ( id int not null primary key, foreign key(id) references foo(bar_id) );
-insert into foo ( id, bar_id ) values ( 1, 1 );
-insert into foo ( id, bar_id ) values ( 2, 1 );
-insert into foo ( id, bar_id ) values ( 3, 1 );
-insert into bar ( id ) values ( 1 );
-
-
+create table foo ( 
+   id int not null primary key
+);
+create table bar ( 
+   id int not null primary key, 
+   foo_id int not null,
+   desc text,
+   foreign key(foo_id) references foo(id)
+);
+insert into foo values ( 1 );
+insert into foo values ( 2 );
+insert into foo values ( 3 );
+insert into bar values ( 1, 2, 'aaa' );
+insert into bar values ( 2, 2, 'bbb' );
+insert into bar values ( 3, 2, 'ccc' );
 
