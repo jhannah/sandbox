@@ -33,6 +33,7 @@ my $mismatch;
 my $next_line;
 my %diffhash2;
 my %avg_div;
+my %net_div;
 my $sum;
 
 ###################MAIN###################
@@ -164,7 +165,6 @@ sub Make_Matrix {
         my $sum;
         my $val;
         my $total_sum;
-        my %netdiv;
 
         #my ($input) = @_; #diffhash
         my $num_keys = keys %diffhash2;    #number of values
@@ -183,8 +183,8 @@ sub Make_Matrix {
             print "$sum\n";
 			
 			
-			$netdiv{$i} = $sum;
-			sub Avg_Divergence (@sum) ; 
+			$net_div{$i} = $sum;
+			Avg_Divergence ($sum) ; 
         }
 
     }
@@ -227,12 +227,15 @@ my $avg_div;
         {
 
 
-            print $i "" $j, "\n";
+            print "$i$j\n";
             
-            $avg_div = ($diffhash2($i)($j) - ($sum + $netdiv{$j})) / (scalar(keys %alignhash) - 2);
+            $avg_div = ($diffhash2{$i}{$j} - ($sum + $net_div{$j})) / (scalar(keys %alignhash) - 2);
             
-            print "Average Divergence: $avg_dev, \n";
+            print "Average Divergence: $avg_div, \n";
 
          }
       }   
 }      
+
+
+
