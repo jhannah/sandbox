@@ -2,7 +2,9 @@ use strict;
 use 5.10.0;
 use GraphViz;
 
-my $g = GraphViz->new();
+my $g = GraphViz->new(
+   rankdir => 1,    # left to right instead of top to bottom
+);
 open my $out, '>', 'alchemy.png' or die;
 
 my $cnt;
