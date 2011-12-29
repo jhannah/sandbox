@@ -2,5 +2,5 @@
 * I used [GraphViz](http://www.graphviz.org/) to draw [a graph](/downloads/jhannah/sandbox/alchemy.png) (6MB .png) of all combinations.
 * Patches to the [source code](https://github.com/jhannah/sandbox/tree/master/alchemy) are welcome!  :)
 
-![Screenshot of GraphViz result](result_screenshot.jpg)
+![Screenshot of GraphViz result](https://github.com/jhannah/sandbox/raw/master/alchemy/result_screenshot.jpg)
 
