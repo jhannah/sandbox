@@ -2,6 +2,10 @@ use strict;
 use warnings;
 use 5.10.0;
 
-open my $fh, ">", "$ENV{HOME}/txt/file.txt" or die $!;
+my $home = `echo ~`;
+chomp $home;
+my $file = "$home/txt/file.txt";
+say "Writing $file...";
+open my $fh, ">", $file or die $!;
 say $fh "hi" or die;
 
