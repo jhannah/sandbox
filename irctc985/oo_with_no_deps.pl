@@ -1,3 +1,7 @@
+# Use Moose. Seriously. 
+# But if for some reason you absolutely cannot use anything but core Perl 5, you might
+# start get started doing OO like this:
+
 package Animal;
 use strict; 
 use warnings;
