@@ -12,3 +12,15 @@ say $uri;
 
 
 
+__END__
+
+00:19 < deafferret> 'sse.dll?db=1940usfedcen&rank=1&...' in source code is ugly. that's all I meant.
+00:19 < deafferret> Not your fault, that's their URL.
+00:19 < deafferret> pretty source code looks like   (db => '1940usfedcen', rank => 1, ...)
+00:20 < deafferret> source code, ideally, doesn't have long squished strings of goop in it
+00:20 < deafferret> separating logic from formats is always good.
+00:21 < deafferret> but, in this case, not worth bothering with, in my opinion
+00:21 < deafferret> for the initial $uri. But it IS worth bothering with for all the arguments that YOU'RE 
+                    ADDING with your logic
+00:21 < deafferret> which, currently, is hard to keep track of. in my opinion.
+
