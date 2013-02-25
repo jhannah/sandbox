@@ -27,12 +27,12 @@ $
 ```
 
 Yes, show me everything. I can sift through too much information far faster than I can 
-explain to you what I need and why. Assuming "this is the only bit you need" frequently
-just slows the process down and frustrated me. 
+explain to you what I need and why.  If you assume "this is the only bit you need" you're 
+probably just slowing the process down, wasting your time and mine.
 
 (3) Your current question. **ONE** question. What were you expecting? What did you get instead?
-You may be having a dozen problems all at once, but you need to reduce to one problem so that
-someone can help you. One step at a time. 
+You may have a dozen problems all at once, but you need to start at one question and we'll go
+from there. One step at a time. 
 
 By fully framing one clear question you've got a good chance of realizing the answer yourself. 
 If not, you've greatly helped me (or anyone else!) help you. 
