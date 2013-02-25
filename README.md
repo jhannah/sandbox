@@ -14,6 +14,10 @@ use 5.12.1;
 say "Hello, world!";
 ```
 
+Yes, show me everything. If your question is on line 80, say so. If your program is huge then
+make a small demo program that recreates the part you're struggling with. Programming is mostly 
+about reducing massively complex things into tiny, trivial things. 
+
 (2) You running your program, all output, and the next prompt. e.g.:
 
 ```
@@ -22,9 +26,15 @@ Hello, world!
 $
 ```
 
-(3) Your current question. **ONE** question. What were you expecting? What did you get instead?
+Yes, show me everything. I can sift through too much information far faster than I can 
+explain to you what I need and why. Assuming "this is the only bit you need" frequently
+just slows the process down and frustrated me. 
 
-By fully framing the question you've got a good chance of realizing the answer yourself. 
+(3) Your current question. **ONE** question. What were you expecting? What did you get instead?
+You may be having a dozen problems all at once, but you need to reduce to one problem so that
+someone can help you. One step at a time. 
+
+By fully framing one clear question you've got a good chance of realizing the answer yourself. 
 If not, you've greatly helped me (or anyone else!) help you. 
 
 Thanks! See you online! :)
