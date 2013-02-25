@@ -22,7 +22,7 @@ Hello, world!
 $
 ```
 
-(3) Your current question. What were you expecting? What did you get instead?
+(3) Your current question. **ONE** question. What were you expecting? What did you get instead?
 
 By fully framing the question you've got a good chance of realizing the answer yourself. 
 If not, you've greatly helped me (or anyone else!) help you. 
@@ -31,5 +31,8 @@ Thanks! See you online! :)
 
 j
 
+
+
+( This document is very short version of [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html). Please give that a read at your convenience. Thanks! )
 
 
