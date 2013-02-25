@@ -28,7 +28,7 @@ $
 
 Yes, show me everything. I can sift through too much information far faster than I can 
 explain to you what I need and why.  If you assume "this is the only bit you need" you're 
-probably just slowing the process down, wasting your time and mine.
+probably just slowing us down, wasting your time and mine.
 
 (3) Your current question. **ONE** question. What were you expecting? What did you get instead?
 You may have a dozen problems all at once, but you need to start at one question and we'll go
@@ -43,6 +43,6 @@ j
 
 
 
-( This document is very short version of [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html). Please give that a read at your convenience. Thanks! )
+(This document is short version of [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html). Please give that a read at your convenience. Thanks!)
 
 
