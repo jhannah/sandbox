@@ -20,8 +20,9 @@ foreach my $subtree ($tree->findnodes('//*[@id="defaultFooter"]//*[@href]')) {
 
    # So now we call HTML::Element methods on this tree...
    # e.g.: https://metacpan.org/module/HTML::Element#attr
-   say $subtree->attr('href');
-   say "-" x 50;
+   # say $subtree->attr('href');
+   # say "-" x 50;
+   say $subtree;
 }
 
 
