@@ -1,0 +1,20 @@
+$ perl error_test.pl
+Use of uninitialized value $token in string eq at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 805.
+Use of uninitialized value $token in pattern match (m//) at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 815.
+Use of uninitialized value $token in pattern match (m//) at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 836.
+Use of uninitialized value $token in pattern match (m//) at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 842.
+Use of uninitialized value $token in pattern match (m//) at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 848.
+Use of uninitialized value $token in string eq at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 854.
+Use of uninitialized value $token in string eq at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 859.
+Use of uninitialized value $token in string eq at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 864.
+Use of uninitialized value $token in string eq at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 869.
+Use of uninitialized value $token in pattern match (m//) at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 874.
+Use of uninitialized value $token in concatenation (.) or string at /usr/local/lib/perl5/site_perl/5.12.2/XML/XPathEngine.pm line 932.
+token  doesn't match format of a 'Step'
+HTML::TreeBuilder::XPath=HASH(0x9497508)
+
+
+jhannah@li109-243:~/src/sandbox/jack_knife$ uname -a
+Linux li109-243 2.6.32.16-linode28 #1 SMP Sun Jul 25 21:32:42 UTC 2010 i686 GNU/Linux
+
+
