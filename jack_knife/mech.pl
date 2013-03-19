@@ -10,12 +10,18 @@ my $tree= HTML::TreeBuilder::XPath->new();
 my $mech = WWW::Mechanize->new();
 
 my $page = $mech->get("http://m.yahoo.com");
-# say Dumper $mech->content();
+# say $mech->content();
+# say "-" x 50;
 $tree->parse_content( $mech->content() ) or die $!;
-# say $tree->as_XML_indented;
 
 # my $url = $tree->find('//*[@id="defaultFooter"]/div/div[4]/a[1]');
-say Dumper $tree->findnodes('//*[@id="defaultFooter"]/div/div[4]');
-# say Dumper $url;
+foreach my $subtree ($tree->findnodes('//*[@id="defaultFooter"]//*[@href]')) {
+   # say $subtree->as_XML_indented;
+
+   # So now we call HTML::Element methods on this tree...
+   # e.g.: https://metacpan.org/module/HTML::Element#attr
+   say $subtree->attr('href');
+   say "-" x 50;
+}
 
 
