@@ -1,14 +1,14 @@
 *.class
 *.log
+*.swp
 
-*/.cache
-*/.classpath
+.cache
+.classpath
 project
-*/.project
-*/.settings
+.project
+.settings
 */bin
 .metadata
-build.sbt
 
 # sbt specific
 dist/*
