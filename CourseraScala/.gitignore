@@ -2,13 +2,14 @@
 *.log
 *.swp
 
-.cache
-.classpath
 project
 .project
+.cache
+.classpath
 .settings
-*/bin
+.worksheet
 .metadata
+*/bin
 
 # sbt specific
 dist/*
