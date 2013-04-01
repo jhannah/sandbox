@@ -8,8 +8,7 @@ object Sand {
 
 	def loop: Boolean = loop
 
-/* 
-	-----------------------------------------------------------
+/* -----------------------------------------------------------
 	From https://class.coursera.org/progfun-002/lecture/5
 	-----------------------------------------------------------
 So with Booleans this 'and' (&&) implementation would be fine:          */
@@ -25,5 +24,18 @@ So we change y from "pass by parameter" to "pass by expression" (call-by-name):
 // Here's a convenience pointer to the one that works:
 	def and(x: Boolean, y: => Boolean): Boolean = and2(x, y)
 	// -----------------------------------------------------------
+
+
+/* -----------------------------------------------------------
+	From https://class.coursera.org/progfun-002/lecture/6
+	-----------------------------------------------------------       
+	def sqrt(x: Double): Double = ???
+   // Recursive functions always require an explicit return type.
+	def sqrtIter(guess: Double, x: Double): Double = 
+		if (isGoodEnough(guess, x)) guess
+		else sqrtIter(improve(guess, x), x)
+*/
+
 }
+
 
