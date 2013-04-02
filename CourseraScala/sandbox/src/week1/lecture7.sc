@@ -1,41 +1,55 @@
 package week1
 
+// https://class.coursera.org/progfun-002/lecture/7
 object lecture7 {
-  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
-	def x = 3 - 32                            //> x: => Int
-	def abs(x: Double) = if (x < 0) -x else x //> abs: (x: Double)Double
-	def loop: Boolean = loop                  //> loop: => Boolean
-	abs(x)                                    //> res0: Double = 29.0
+  1 + 3                                           //> res0: Int(4) = 4
+  def abs(x: Double) = if (x < 0) -x else x       //> abs: (x: Double)Double
 
-	// ---------------------------------------------------------
-	// https://class.coursera.org/progfun-002/lecture/6
-	def sqrt(x: Double) = sqrtIter(1.0, x)    //> sqrt: (x: Double)Double
-	
-	def sqrtIter(guess: Double, x: Double): Double =
-		if (isGoodEnough(guess, x)) guess
-		else sqrtIter(improve(guess, x), x)
-                                                  //> sqrtIter: (guess: Double, x: Double)Double
-		
-	def isGoodEnough(guess: Double, x: Double) =
-		// abs(guess * guess - x) < 0.001   // Broken for very large, very small numbers below.
-		abs(guess * guess - x) / x < 0.001//> isGoodEnough: (guess: Double, x: Double)Boolean
-    
-	def improve(guess: Double, x: Double) =
-		(guess + x / guess) / 2           //> improve: (guess: Double, x: Double)Double
-	
-	sqrt(2)                                   //> res1: Double = 1.4142156862745097
-	sqrt(7)                                   //> res2: Double = 2.64576704419029
-	sqrt(1e-6)                                //> res3: Double = 0.0010000001533016628
-	// Infinite loop creates an ASCII swirly thing! LOL
-	// sqrt(1e60)
-	// Hit Esc to exit
-	// loop
-	
-	// 1e60
-	// 1e60 + 2 / 1e60
-	sqrt(0.001)                               //> res4: Double = 0.03162278245070105
-	sqrt(0.1e-20)                             //> res5: Double = 3.1633394544890125E-11
-	sqrt(1.0e20)                              //> res6: Double = 1.0000021484861237E10
-	sqrt(1.0e50)                              //> res7: Double = 1.0000003807575104E25
+  def sqrt(x: Double) = {
+  
+    def sqrtIter(guess: Double, x: Double): Double =
+      if (isGoodEnough(guess, x)) guess
+      else sqrtIter(improve(guess, x), x)
+  
+    def isGoodEnough(guess: Double, x: Double) =
+      abs(guess * guess - x) / x < 0.001
 
+    def improve(guess: Double, x: Double) =
+      (guess + x / guess) / 2
+
+    sqrtIter(1.0, x)
+  }                                               //> sqrt: (x: Double)Double
+
+  sqrt(2)                                         //> res1: Double = 1.4142156862745097
+  sqrt(7)                                         //> res2: Double = 2.64576704419029
+  sqrt(1e-6)                                      //> res3: Double = 0.0010000001533016628
+  sqrt(1e60)                                      //> res4: Double = 1.0000788456669446E30
+
+
+	val x = 0                                 //> x  : Int = 0
+	def f(y: Int) = y + 1                     //> f: (y: Int)Int
+	val result = {
+		val x = f(3); x * x
+	} + x                                     //> result  : Int = 16
+	
+
+	// ---------------------------------------
+	// Now that we're in a block x is available everywhere in the block, so the above code can be reduced:
+	def sqrt_simpler(x: Double) = {
+  
+    def sqrtIter(guess: Double): Double =
+      if (isGoodEnough(guess)) guess
+      else sqrtIter(improve(guess))
+  
+    def isGoodEnough(guess: Double) =
+      abs(guess * guess - x) / x < 0.001
+
+    def improve(guess: Double) =
+      (guess + x / guess) / 2
+
+    sqrtIter(1.0)
+  }                                               //> sqrt_simpler: (x: Double)Double
+  sqrt_simpler(7)                                 //> res5: Double = 2.64576704419029
+	// ---------------------------------------
+  
 }
