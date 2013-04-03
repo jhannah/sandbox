@@ -9,8 +9,9 @@ object sandbox {
   def List1 = (1,2)                               //> List1: => (Int, Int)
     
     
-  countChange(105, List(10, 5))                   //> 10 10s
+  countChange(107, List(10, 5))                   //> 10 10s
                                                   //| 1 5s
                                                   //| res5: Int = 0
+  
   
 }

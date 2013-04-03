@@ -40,7 +40,10 @@ object Main {
    */
   def countChange(money: Int, denoms: List[Int]): Int = {
     def loop(sol_cnt: Int, money: Int, denoms: List[Int]): Int = {
-      if (denoms.isEmpty) sol_cnt else {
+      if (denoms.isEmpty) 
+        if (money == 0) sol_cnt + 1 
+        else sol_cnt
+      else {
         def this_denom = denoms.head
         def quant = money / this_denom
         def money_left = money - (this_denom * quant)
