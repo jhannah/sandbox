@@ -3,7 +3,7 @@ package week1
 object lecture33 {
 	// https://class.coursera.org/progfun-002/lecture/33
 	// Lecture 1.7 - Tail Recursion
-	
+	 
 	def gcd(a: Int, b: Int): Int =
 		if (b == 0) a else gcd(b, a % b)  //> gcd: (a: Int, b: Int)Int
 		

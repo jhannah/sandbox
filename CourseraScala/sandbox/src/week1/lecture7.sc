@@ -51,5 +51,8 @@ object lecture7 {
   }                                               //> sqrt_simpler: (x: Double)Double
   sqrt_simpler(7)                                 //> res5: Double = 2.64576704419029
 	// ---------------------------------------
+	
+	
+	
   
 }
