@@ -39,6 +39,17 @@ object Main {
    * Exercise 3
    */
   def countChange(money: Int, denoms: List[Int]): Int = {
-    denoms.size    
+    def loop(sol_cnt: Int, money: Int, denoms: List[Int]): Int = {
+      if (denoms.isEmpty) sol_cnt else {
+        def this_denom = denoms.head
+        def quant = money / this_denom
+        def money_left = money - (this_denom * quant)
+        println(quant + " " + this_denom + "s")
+        loop(sol_cnt, money_left, denoms.tail)
+      }
+    }
+    loop(0, money, denoms)
   }
+  
+  
 }
