@@ -26,20 +26,11 @@ object Main {
   def balance(chars: List[Char]): Boolean = {  
     def loop(open_count: Int, chars: List[Char]): Boolean = {  
       // println(open_count + " " + chars.isEmpty + " " + chars.toString)
-      if (open_count < 0) return false else 
-      if (chars.isEmpty) {
-        // println("all done! returning " + open_count);
-        return open_count == 0
-      } else {
-        if (chars.head == '(') {
-          return loop(open_count + 1, chars.tail)
-        } else {
-          if (chars.head == ')') {
-            return loop(open_count - 1, chars.tail)
-          }
-        } 
-        loop(open_count, chars.tail)
-      }
+      if (open_count < 0)    false else 
+      if (chars.isEmpty)     open_count == 0 else
+      if (chars.head == '(') loop(open_count + 1, chars.tail) else
+      if (chars.head == ')') loop(open_count - 1, chars.tail) else
+      loop(open_count, chars.tail)
     }
     loop(0, chars)
   }
