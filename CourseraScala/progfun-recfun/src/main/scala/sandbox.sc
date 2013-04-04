@@ -6,10 +6,15 @@ object sandbox {
   27 / 10                                         //> res3: Int(2) = 2
   27 % 10                                         //> res4: Int(7) = 7
  
+  // def is function definition
+  // val is immutable
+  // var is mutable
+ 
   def List1 = (1,2)                               //> List1: => (Int, Int)
     
-    0 to 3                                        //> res5: scala.collection.immutable.Range.Inclusive = Range(0, 1, 2, 3)
-    3 to 1 by -1                                  //> res6: scala.collection.immutable.Range = Range(3, 2, 1)
+  0 to 3                                          //> res5: scala.collection.immutable.Range.Inclusive = Range(0, 1, 2, 3)
+  3 to 1 by -1                                    //> res6: scala.collection.immutable.Range = Range(3, 2, 1)
+  1 to 0                                          //> res7: scala.collection.immutable.Range.Inclusive = Range()
     
   countChange(4, List(2, 1))                      //> 1 2s (money_left is 2, sol_cnt is 0)
                                                   //| 1 1s (money_left is 1, sol_cnt is 0)
@@ -17,19 +22,18 @@ object sandbox {
                                                   //| 2 1s (money_left is 0, sol_cnt is 0)
                                                   //| done. money is 0
                                                   //| done. money is 2
-                                                  //| 2 2s (money_left is 0, sol_cnt is 0)
+                                                  //| 2 2s (money_left is 0, sol_cnt is 1)
                                                   //| done. money is 0
-                                                  //| 1 1s (money_left is 3, sol_cnt is 0)
+                                                  //| 1 1s (money_left is 3, sol_cnt is 2)
                                                   //| done. money is 3
-                                                  //| 2 1s (money_left is 2, sol_cnt is 0)
+                                                  //| 2 1s (money_left is 2, sol_cnt is 2)
                                                   //| done. money is 2
-                                                  //| 3 1s (money_left is 1, sol_cnt is 0)
+                                                  //| 3 1s (money_left is 1, sol_cnt is 2)
                                                   //| done. money is 1
-                                                  //| 4 1s (money_left is 0, sol_cnt is 0)
+                                                  //| 4 1s (money_left is 0, sol_cnt is 2)
                                                   //| done. money is 0
                                                   //| done. money is 4
-                                                  //| res7: Int = 0
+                                                  //| res8: Int = 3
   
-  1 to 0                                          //> res8: scala.collection.immutable.Range.Inclusive = Range()
   
 }

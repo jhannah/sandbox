@@ -39,14 +39,16 @@ object Main {
    * Exercise 3
    */
   def countChange(money: Int, denoms: List[Int]): Int = {
-    def loop(sol_cnt: Int, money: Int, denoms: List[Int]): Int = {
+    var sol_cnt = 0
+    def loop(money: Int, denoms: List[Int]): Int = {
       if (denoms.isEmpty) 
         if (money == 0) {
           println("done. money is " + money)
-          return (sol_cnt + 1) 
+          sol_cnt = sol_cnt + 1; 
+          return 1;
         } else { 
           println("done. money is " + money)
-          return sol_cnt
+          1;
         }
       else {
         val this_denom = denoms.head
@@ -57,12 +59,13 @@ object Main {
             "(money_left is " + money_left +
             ", sol_cnt is " + sol_cnt + ")"
           )
-          loop(sol_cnt, money_left, denoms.tail)
+          loop(money_left, denoms.tail)
         }
-        loop(sol_cnt, money, denoms.tail)
+        loop(money, denoms.tail)
       }
     }
-    loop(0, money, denoms)
+    loop(money, denoms)
+    return sol_cnt;
   }
   
   
