@@ -41,14 +41,25 @@ object Main {
   def countChange(money: Int, denoms: List[Int]): Int = {
     def loop(sol_cnt: Int, money: Int, denoms: List[Int]): Int = {
       if (denoms.isEmpty) 
-        if (money == 0) sol_cnt + 1 
-        else sol_cnt
+        if (money == 0) {
+          println("done. money is " + money)
+          return (sol_cnt + 1) 
+        } else { 
+          println("done. money is " + money)
+          return sol_cnt
+        }
       else {
-        def this_denom = denoms.head
-        def quant = money / this_denom
-        def money_left = money - (this_denom * quant)
-        println(quant + " " + this_denom + "s")
-        loop(sol_cnt, money_left, denoms.tail)
+        val this_denom = denoms.head
+        val max_quant = money / this_denom
+        for (q <- 1 to max_quant) {
+          val money_left = money - (this_denom * q)
+          println(q + " " + this_denom + "s " + 
+            "(money_left is " + money_left +
+            ", sol_cnt is " + sol_cnt + ")"
+          )
+          loop(sol_cnt, money_left, denoms.tail)
+        }
+        loop(sol_cnt, money, denoms.tail)
       }
     }
     loop(0, money, denoms)
