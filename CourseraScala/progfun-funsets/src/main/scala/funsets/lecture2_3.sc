@@ -56,6 +56,7 @@ object lecture2_3 {
                                                   //| guess = 1.4142156862745097
                                                   //| res2: Double = 1.4142135623746899
 
+	fixedPoint(x => x) _                      //> res3: Double => Double = <function1>
 	
 	
 }

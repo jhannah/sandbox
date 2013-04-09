@@ -31,9 +31,3 @@ object sandbox {
 	sumCubes(1, 10) + sumFactorials(10, 20)   //> res3: Int = 267634641
 }
 
-object exercise {
-	def product(f: Int => Int)(a: Int, b: Int): Int =
-		if (a > b) 1
-		else f(a) * product(f)(a + 1, b)
-	product(x => x * x)(3, 4)
-}
