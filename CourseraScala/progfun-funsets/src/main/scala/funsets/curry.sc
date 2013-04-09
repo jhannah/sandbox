@@ -2,7 +2,6 @@ package mycurry
 
 object mycurry {
 	// http://www.codecommit.com/blog/scala/function-currying-in-scala
-		
 	def process[A](filter:A=>Boolean)(list:List[A]):List[A] = {
   	lazy val recurse = process(filter) _
  
