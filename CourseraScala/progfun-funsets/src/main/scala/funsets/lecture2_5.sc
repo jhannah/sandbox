@@ -1,7 +1,7 @@
 package lecture2_5
 
 object lecture2_5 {
-	val x = new Rational(1, 2)                //> x  : lecture2_5.Rational = lecture2_5.Rational@74b23210
+	val x = new Rational(1, 2)                //> x  : lecture2_5.Rational = lecture2_5.Rational@5557c2bd
 	x.numer                                   //> res0: Int = 1
 	x.denom                                   //> res1: Int = 2
 	
@@ -21,14 +21,18 @@ object lecture2_5 {
   val x2 = new Rational2(1, 2)                    //> x2  : lecture2_5.Rational2 = 1/2
   val y2 = new Rational2(2, 3)                    //> y2  : lecture2_5.Rational2 = 2/3
   x2.add(y2)                                      //> res3: lecture2_5.Rational2 = 7/6
-  x2.neg()                                        //> res4: lecture2_5.Rational2 = -1/2
-  x2.sub(y2)                                      //> res5: lecture2_5.Rational2 = -1/6
+  x2.neg                                          //> res4: lecture2_5.Rational2 = -1/2
+  // x2.neg()   // compile error
+  x2.neg2                                         //> res5: lecture2_5.Rational2 = -1/2
+  x2.neg2()                                       //> res6: lecture2_5.Rational2 = -1/2
+  x2.sub(y2)                                      //> res7: lecture2_5.Rational2 = -1/6
   
   // Exercise
   val x3 = new Rational2(1, 3)                    //> x3  : lecture2_5.Rational2 = 1/3
   val y3 = new Rational2(5, 7)                    //> y3  : lecture2_5.Rational2 = 5/7
   val z3 = new Rational2(3, 2)                    //> z3  : lecture2_5.Rational2 = 3/2
-  x3.sub(y3).sub(z3)                              //> res6: lecture2_5.Rational2 = -79/42
+  x3.sub(y3).sub(z3)                              //> res8: lecture2_5.Rational2 = -79/42
+  x3.sub2(y3).sub2(z3)                            //> res9: lecture2_5.Rational2 = -79/42
 }
 
 class Rational(x: Int, y: Int) {
@@ -45,7 +49,9 @@ class Rational2(x: Int, y: Int) {
 		new Rational2(
 			numer * that.denom + that.numer * denom,
 			denom * that.denom)
-	def neg() = new Rational2(- numer, denom)
+	def neg: Rational2 = new Rational2(- numer, denom)
+	def neg2() = new Rational2(- numer, denom)
 	def sub(that: Rational2) = this.add(that.neg)
+	def sub2(that: Rational2) = add(that.neg)
 	override def toString = numer + "/" + denom
 }
