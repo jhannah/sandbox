@@ -141,8 +141,35 @@ class FunSetSuite extends FunSuite {
     new TestSets {
       val s = filter(s1, { x => x == 2 } )
       assert(!contains(s, 1), "Diff 1")
-      assert( contains(s, 2), "Diff 2")
-      assert(!contains(s, 3), "Diff 3")
+      assert(!contains(s, 2), "Diff 2")
+      val ss = filter(s2, { x => x == 2 } )
+      assert(!contains(ss, 1), "Diff 1")
+      assert( contains(ss, 2), "Diff 2")
+    }
+  }
+
+  test("forall") {
+    new TestSets {
+      assert( forall(s1, x => x > -2000), "> -2000")
+      assert(!forall(s1, x => x > 20),    "> 20")
+      assert( forall(s1, x => x != 2),    "!= 2")
+      assert(!forall(s1, x => x != 1),    "!= 1")
+    }
+  }
+  
+  test("exists") {
+    new TestSets {
+      assert( exists(s1, x => x == 1), "== 1")
+      assert(!exists(s2, x => x == 1), "== 1")
+    }
+  }
+    
+  test("map") {
+    new TestSets {
+      val s = map(s1, { x => x + 5 } )
+      assert( contains(s, 6), "6")
+      assert(!contains(s, 1), "1")
+      assert(!contains(s, 5), "5")
     }
   }
 
