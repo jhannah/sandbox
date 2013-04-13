@@ -1,6 +1,6 @@
 package funsets
 
-import common._
+// import common._
 
 /**
  * 2. Purely Functional Sets.
@@ -90,6 +90,7 @@ object FunSets {
       else iter(a + 1)
     }
     iter(-bound)
+    // Huh. Mine's not even close to http://pastebin.com/0gGJCerW
   }    
 
   /**
