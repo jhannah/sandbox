@@ -32,7 +32,7 @@ my $company = Company->new( name => "foo" );
 
 my $contact = Contact->new( firstname => 'foo', lastname => 'bar' );
 $company->add_contact($contact);
-my $contact = Contact->new( firstname => 'foo2', lastname => 'bar2' );
+$contact = Contact->new( firstname => 'foo2', lastname => 'bar2' );
 $company->add_contact($contact);
 
 my $dumper = Data::Tabular::Dumper->open(
@@ -40,9 +40,14 @@ my $dumper = Data::Tabular::Dumper->open(
 );
 
 # So, this works fine (but not tabular):
-say Dumper($company->all_contacts);
+# say Dumper($company->all_contacts);
 
-# $dumper->dump( $company->all_contacts ); # won't accept blessed objects, just ref HASH/ARRAY
+my @x;
+for ($company->all_contacts) {
+   push @x, { %$_ };
+}
+# say Dumper(@x);
+$dumper->dump(@x);
 
 # brute force works (unbless from Data::Structure::Util)
 # $dumper->dump( unbless($company->contacts) );
