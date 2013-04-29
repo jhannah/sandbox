@@ -157,8 +157,8 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
   override def union(that: TweetSet): TweetSet = {
     if (that.empty) this 
     else (that.head, that.tail.empty) match {
-    		case (_ , true) => if (!contains(that.head)) incl(that.head)else this
-    		case (_, false) => if (!contains(that.head)) incl(that.head).union(that.tail) else union(that.tail)
+    	case (_ , true) => if (!contains(that.head)) incl(that.head)else this
+    	case (_, false) => if (!contains(that.head)) incl(that.head).union(that.tail) else union(that.tail)
     }
    //  ((left union right) union that) incl elem
   }
