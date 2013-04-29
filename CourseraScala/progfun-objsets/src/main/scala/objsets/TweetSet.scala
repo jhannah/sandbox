@@ -34,7 +34,10 @@ class Tweet(val user: String, val text: String, val retweets: Int) {
  * [1] http://en.wikipedia.org/wiki/Binary_search_tree
  */
 abstract class TweetSet {
-
+  def empty: Boolean
+  def head: Tweet
+  def tail: TweetSet
+  
   /**
    * This method takes a predicate and returns a subset of all the elements
    * in the original set for which the predicate is true.
@@ -52,7 +55,7 @@ abstract class TweetSet {
   /**
    * Returns a new `TweetSet` that is the union of `TweetSet`s `this` and `that`.
    *
-   * Question: Should we implment this method here, or should it remain abstract
+   * Question: Should we implement this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
    def union(that: TweetSet): TweetSet  = new Empty
@@ -111,6 +114,9 @@ abstract class TweetSet {
 
 class Empty extends TweetSet {
   def empty: Boolean = true
+  def head = throw new Exception("Empty.head")
+  def tail = throw new Exception("Empty.tail")
+  
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = new Empty
 
   def contains(tweet: Tweet): Boolean = false
@@ -121,6 +127,9 @@ class Empty extends TweetSet {
 
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
   def empty: Boolean = false
+  def head = if (left.empty) elem else left.head
+  def tail = if (left.empty) right else new NonEmpty(elem, left.tail, right)
+  
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
     println("JAY0 NonEmpty(" + elem + "|" + left + "|" + right + ")")
     if (p(elem)) {
@@ -145,6 +154,15 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
     else this
   }
 
+  override def union(that: TweetSet): TweetSet = {
+    if (that.empty) this 
+    else (that.head, that.tail.empty) match {
+    		case (_ , true) => if (!contains(that.head)) incl(that.head)else this
+    		case (_, false) => if (!contains(that.head)) incl(that.head).union(that.tail) else union(that.tail)
+    }
+   //  ((left union right) union that) incl elem
+  }
+  
   def remove(tw: Tweet): TweetSet =
     if (tw.text < elem.text) new NonEmpty(elem, left.remove(tw), right)
     else if (elem.text < tw.text) new NonEmpty(elem, left, right.remove(tw))
