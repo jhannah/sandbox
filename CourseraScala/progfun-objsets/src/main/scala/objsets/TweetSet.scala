@@ -7,9 +7,9 @@ import TweetReader._
  * A class to represent tweets.
  */
 class Tweet(val user: String, val text: String, val retweets: Int) {
-  override def toString: String =
-    "User: " + user + "\n" +
-    "Text: " + text + " [" + retweets + "]"
+  //override def toString: String =
+  //  "User: " + user + "\n" +
+  //  "Text: " + text + " [" + retweets + "]"
 }
 
 /**
@@ -42,7 +42,7 @@ abstract class TweetSet {
    * Question: Can we implement this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-  def filter(p: Tweet => Boolean): TweetSet = ???
+  def filter(p: Tweet => Boolean): TweetSet = filterAcc(p, new Empty)
 
   /**
    * This is a helper method for `filter` that propagates the accumulated tweets.
@@ -55,7 +55,7 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-   def union(that: TweetSet): TweetSet = ???
+   def union(that: TweetSet): TweetSet  = new Empty
 
   /**
    * Returns the tweet from this set which has the greatest retweet count.
@@ -106,30 +106,29 @@ abstract class TweetSet {
    * This method takes a function and applies it to every element in the set.
    */
   def foreach(f: Tweet => Unit): Unit
+  
 }
 
 class Empty extends TweetSet {
-
-  def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = ???
-
-
-  /**
-   * The following methods are already implemented
-   */
+  def empty: Boolean = true
+  def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = new Empty
 
   def contains(tweet: Tweet): Boolean = false
-
   def incl(tweet: Tweet): TweetSet = new NonEmpty(tweet, new Empty, new Empty)
-
   def remove(tweet: Tweet): TweetSet = this
-
   def foreach(f: Tweet => Unit): Unit = ()
 }
 
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
-
-  def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = ???
-
+  def empty: Boolean = false
+  def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
+    println("JAY0 NonEmpty(" + elem + "|" + left + "|" + right + ")")
+    if (p(elem)) {
+      right.filterAcc(p, left.filterAcc(p, acc)).incl(elem)
+    } else {
+      right.filterAcc(p, left.filterAcc(p, acc))
+    }
+  }
 
   /**
    * The following methods are already implemented
