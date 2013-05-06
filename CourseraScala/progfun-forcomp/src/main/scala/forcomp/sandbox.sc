@@ -1,7 +1,11 @@
 package forcomp
 
+import common._
+
 object sandbox {
   type Word = String
+  type Sentence = List[Word]
+  type Occurrences = List[(Char, Int)]
   val dictionary: List[Word] = loadDictionary     //> dictionary  : List[forcomp.sandbox.Word] = List(Aarhus, Aaron, Ababa, aback,
                                                   //|  abaft, abandon, abandoned, abandoning, abandonment, abandons, abase, abased
                                                   //| , abasement, abasements, abases, abash, abashed, abashes, abashing, abasing,
@@ -16,5 +20,11 @@ object sandbox {
                                                   //| s, abjectly, abjectness, abjure, abjured, abjures, abjuring, ablate, ablated
                                                   //| , ablates, ablating, abl
                                                   //| Output exceeds cutoff limit.
+  
+  
+  1 + 1                                           //> res0: Int(2) = 2
+  // Why the fuck doesn't this work in a Worksheet?
+  // List("Every", "student", "likes", "Scala").groupBy((element String) => element.length)
+  "abc".toList                                    //> res1: List[Char] = List(a, b, c)
   
 }
