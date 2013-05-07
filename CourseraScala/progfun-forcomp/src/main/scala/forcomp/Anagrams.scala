@@ -84,9 +84,20 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
-  def combinations(occurrences: Occurrences): List[Occurrences] = ???
+    
+    
+  // ya... So I Googled, found this, have no idea what's going on: 
+  // https://github.com/ferhatelmas/funprog/blob/5c25d40274174f63eb7e37dad67120f192fb5673/progfun-forcomp/src/main/scala/forcomp/Anagrams.scala
+  def combinations(occurrences: Occurrences): List[Occurrences] = occurrences match {
+    case List() => List(List())
+    case x :: xs => {
+      val xc: Occurrences = (for { o <- 1 to x._2 } yield (x._1, o)).toList
+      val xsc = combinations(xs)
+      (xsc ::: (for{l <- xc} yield List(l)) ::: (for { l1 <- xsc; l2 <- xc } yield l2 :: l1)) distinct
+    }
+  }
 
-  /** Subtracts occurrence list `y` from occurrence list `x`.
+/** Subtracts occurrence list `y` from occurrence list `x`.
    * 
    *  The precondition is that the occurrence list `y` is a subset of
    *  the occurrence list `x` -- any character appearing in `y` must
