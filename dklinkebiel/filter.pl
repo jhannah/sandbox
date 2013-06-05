@@ -35,14 +35,12 @@ while (<$in>) {
 }
 
 open $in, '<', $file1;
-print <$in>;   # header line
+print scalar(<$in>);   # header line
 while (<$in>) { 
    my @l = split /\t/;
    # print "[[$l[$col]]]\n";
-   print if ($genes{ $l[$col] }); 
+   print if ($l[$col] && $genes{ $l[$col] }); 
 }
 
 
 
-
- 
