@@ -1,0 +1,151 @@
+SUBSET II technologies and skills list
+======================================
+* Web Technologies
+** HTML 3.2, 4 and 5
+** Flash (Actionscript 2 and 3)
+** Javascript (1.2 to present)
+*** jQuery
+*** YUI
+*** hand-written
+*** jQuery Mobile
+*** TypeScript
+** XML/XSLT
+** JSON
+** AJAX
+** iOS/Xcode
+** RSS
+** ATOM
+* Mobile
+** Xamarin/C#
+** iOS/Objective C
+** Android
+* Social Media
+** XFBML (Facebook)
+** Facebook Social Plugins
+** AddThis
+** Twitter
+** Google Maps API
+* Analytics
+** Google Analytics
+** Adobe SiteCatalyst (Omniture)
+** HitBox
+** Facebook Insight
+** Doubleclick (Floodlight/Spotlight)
+* Web Services
+** WSDL
+** SOAP
+** REST
+** HATEOAS
+* Databases
+** MySQL
+** Oracle
+** Microsoft SQL Server
+** Informix
+** SQLite
+** PostgreSQL
+* NoSQL
+** MongoDB
+** Riak
+** Redis
+** Elastic Search
+* Reporting Tools
+** Crystal Reports
+** MSSQL SSIS
+* Programming Languages
+** C#/C++/C
+** Java
+** Javascript
+** Groovy
+** Perl
+** Scala
+** PHP
+** VB.NET
+** Classic ASP
+** Ruby
+** Python
+* Platforms and Frameworks
+** Perl
+*** Catalyst
+*** Moose (Created at II)
+*** DBIx::Class
+*** PSGI/Plack
+** C#/VB.NET
+*** ASP.NET
+*** ASP.NET MVC
+*** ASP.NET Razor
+*** MOSS
+*** Entity Framework
+*** NHibernate
+** Java
+*** WebLogic
+*** Tomcat
+*** JBoss
+*** Documentum
+*** WebSphere
+*** Spring MVC
+*** Struts
+*** Grails
+** PHP
+*** Drupal
+*** Joomla
+** VBScript/Javascript
+*** Classic ASP
+*** Node.JS
+*** Express
+** Scala
+*** Scalatra
+** iOS
+*** Core Data
+*** Interface Builder
+*** AFNetworking
+** OS X
+*** Cocoa
+* Web Servers
+** Apache
+** Lighttpd
+** Nginx
+** IIS 6, 7, 7.5
+** WebMatrix
+* Operating Systems
+** Linux
+*** Debian
+*** Red Hat Enterprise Linux
+*** CentOS
+*** Fedora
+*** Slackware
+*** Ubuntu
+*** deb+APT packaging & distribution
+*** RPM+YUM packaging & distribution
+** Windows Server 2003, 2008, 2012
+*** Active Directory
+* Virtualization
+** Cloud Platforms
+*** Amazon (AWS)
+*** Microsoft Azure
+*** Rackspace
+*** SoftLayer
+** Citrix XenServer
+** VMWare
+* Networking
+** F5 BigIP
+** Cisco IOS
+** Storage
+*** Oracle/Sun ZFS
+*** Oracle/Sun/StorageTek ACSLS
+** Ethernet
+*** 802.3 10/100/1000BaseTX
+*** 802.11a/b/g/n WiFi
+** VPN
+*** Cisco
+*** IPSec
+*** OpenVPN
+*** PPTP
+** PPP
+** SLIP
+* Search Engines
+** Google Search Appliance
+** Microsoft Indexing Services
+** Solr
+** ElasticSearch
+* Caching
+** Memcached
