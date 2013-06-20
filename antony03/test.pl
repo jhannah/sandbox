@@ -41,8 +41,8 @@ my $fa = Bio::SeqIO->new(-file   => ">new_db/$filename",
  
 while($seq = $gb->next_seq) {
     my $id_and_desc = $seq->id . " " . $seq->desc;
-    $fa->write_seq($seq) if (grep {$_ eq $id_and_desc} @taxa_name);
- 
+    $fa->write_seq($seq) if ($id_and_desc =~ /B-12345/);
+    # $fa->write_seq($seq) if (grep {$_ eq $id_and_desc} @taxa_name);
 }
  
  
