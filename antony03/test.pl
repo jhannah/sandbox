@@ -41,7 +41,7 @@ my $fa = Bio::SeqIO->new(-file   => ">new_db/$filename",
  
 while($seq = $gb->next_seq) {
  
- 
+    print $seq->id . "\n";
     $fa->write_seq($seq) if (grep {$_ eq $seq->id} @taxa_name);
  
 }
