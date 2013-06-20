@@ -40,9 +40,8 @@ my $fa = Bio::SeqIO->new(-file   => ">new_db/$filename",
                               -flush  => 0);
  
 while($seq = $gb->next_seq) {
- 
-    print $seq->id . "\n";
-    $fa->write_seq($seq) if (grep {$_ eq $seq->id} @taxa_name);
+    my $id_and_desc = $seq->id . " " . $seq->desc;
+    $fa->write_seq($seq) if (grep {$_ eq $id_and_desc} @taxa_name);
  
 }
  
