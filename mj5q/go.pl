@@ -5,8 +5,8 @@ use Bio::SeqIO;
 # Memorize all rsids
 # These files should be small-ish, always fit in available RAM
 my $all_rsids = {};
-my $file = "7R.MDR.SNP130_dropped.txt";
-open my $in, $file, or die "Can't open $file";
+my $file1 = "7R.MDR.SNP130_dropped.txt";
+open my $in, $file1, or die "Can't open $file1";
 while (<$in>) {
    chomp;
    my @line = split /\t/;
@@ -21,16 +21,23 @@ printf "We have memorized %d rsids, from '%d' to '%d'\n",
     pop @keys;
     
 
+my $file2 = "sample_fasta_file2.txt";
 # Scan a fasta file (several GBs)
-my $seqin = Bio::SeqIO->new(-file   => "sample_fasta_file.txt", 
+my $seqin = Bio::SeqIO->new(-file   => $file2,
                             -format => "fasta");
 while (my $seq = $seqin->next_seq) {
     my ($dbSNP) = ($seq->desc =~ / dbSNP:(\d+)/);
-    printf "%s %s %s\n", 
-        $dbSNP, $seq->id, $seq->seq;
     if ($all_rsids->{$dbSNP}) {
-        printf "Found a match! %s %s %s\n", 
-            $seq->id, $dbSNP, $seq->seq;
+        print "Found a metch!\n";
+        my @file1_row = @{$all_rsids->{$dbSNP}};
+        printf "   %s: %s\n",
+            $file1, 
+            join "|", @file1_row;
+        printf "   %s:    %s %s %s ...\n",
+            $file2, 
+            $seq->id, 
+            $dbSNP, 
+            $seq->seq;
     }
 }
 
