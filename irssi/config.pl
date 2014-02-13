@@ -35,19 +35,16 @@ our @servers = (
 );
 
 our @channels = qw(
-   10   #perl-help      perl            
-   11   #perl++         perl            
-   12   #uno            uno        
-   13   #OmahaLUG       freenode        
-   14   #omaha.dev      freenode        
-   15   #omahamaker     freenode        
-   16   #mongers        perl            
-   17   #bioperl        freenode        
+   2    #ii             ii
+   30   #perl-help      perl            
+   31   #perl++         perl            
+   33   #omaha.dev      freenode        
+   34   #mongers        perl            
+   35   #bioperl        freenode        
+   36   #paleo          perl        
    30   #axkit-dahut    perl            
-   31   #perl           perl            
    40   #moose          perl            
    41   #moose-dev      perl            
-   42   #kiokudb        perl            
    43   #plack          perl            
    50   #catalyst       perl            
    51   #catalyst-dev   perl            
