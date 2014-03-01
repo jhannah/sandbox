@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Slider - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css">  -->
+  <script>
+  $(function() {
+    $( "#slider" ).slider({
+      slide: function( event, ui ) {
+        console.debug(ui.value);
+	   $("#jtext").css("font-size", ui.value);
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="slider"></div>
+<div id="jtext">Jay's website</div>
+ 
+ 
+</body>
+</html>
