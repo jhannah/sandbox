@@ -2,7 +2,7 @@ name <<= submitProjectName(pname => "progfun-"+ pname)
 
 version := "1.0.0"
 
-scalaVersion := "2.10.1"
+scalaVersion := "2.10.2"
 
 scalacOptions ++= Seq("-deprecation", "-feature")
 
@@ -14,9 +14,39 @@ libraryDependencies += "junit" % "junit" % "4.10" % "test"
 // handout, the 'createHandout' task will make sure that its value is correct.
 submitProjectName := "recfun"
 
+libraryDependencies <++= (currentProject) { c =>
+  if (c.isEmpty || c == "quickcheck") Seq(
+    "org.scalacheck" %% "scalacheck" % "1.10.1"
+  )
+  else Seq.empty
+}
+
+libraryDependencies <++= (currentProject) { c =>
+  if (c.isEmpty || c == "nodescala" || c == "suggestions") Seq(
+    "com.netflix.rxjava" % "rxjava-scala" % "0.15.0",
+    "org.json4s" % "json4s-native_2.10" % "3.2.5",
+    "org.scala-lang" % "scala-swing" % "2.10.3",
+    "net.databinder.dispatch" % "dispatch-core_2.10" % "0.11.0",
+    "org.scala-lang" % "scala-reflect" % "2.10.3",
+    "org.slf4j" % "slf4j-api" % "1.7.5",
+    "org.slf4j" % "slf4j-simple" % "1.7.5",
+    "com.squareup.retrofit" % "retrofit" % "1.0.0",
+    "org.scala-lang.modules" %% "scala-async" % "0.9.0-M2"
+     )
+  else Seq.empty
+}
+
+libraryDependencies <++= (currentProject) { c =>
+  if (c.isEmpty || c == "actorbintree" || c == "kvstore") Seq(
+    "com.typesafe.akka" %% "akka-actor" % "2.2.3",
+    "com.typesafe.akka" %% "akka-testkit" % "2.2.3"
+    )
+  else Seq.empty
+}
+
 // See documentation in ProgFunBuild.scala
 projectDetailsMap := {
-val currentCourseId = "progfun-002"
+val currentCourseId = "progfun-004"
 Map(
   "example" ->  ProjectDetails(
                   packageName = "example",
@@ -32,48 +62,71 @@ Map(
                   courseId=currentCourseId),
   "funsets" ->    ProjectDetails(
                   packageName = "funsets",
-                  assignmentPartId = "fBXOL6Qd",
+                  assignmentPartId = "fBXOL7Rd",
                   maxScore = 10d,
                   styleScoreRatio = 0.2,
                   courseId=currentCourseId),
   "objsets" ->    ProjectDetails(
                   packageName = "objsets",
-                  assignmentPartId = "95dMMEz7",
+                  assignmentPartId = "15dMMEz7",
                   maxScore = 10d,
                   styleScoreRatio = 0.2,
                   courseId=currentCourseId),
   "patmat" ->     ProjectDetails(
                   packageName = "patmat",
-                  assignmentPartId = "3gPmpcif",
-                  maxScore = 10d,
+                  assignmentPartId = "5gPmpcif",
+                  maxScore = 20d,
                   styleScoreRatio = 0.2,
                   courseId=currentCourseId),
   "forcomp" ->    ProjectDetails(
                   packageName = "forcomp",
-                  assignmentPartId = "fG1oZGIO",
+                  assignmentPartId = "fG3oZGIO",
                   maxScore = 10d,
                   styleScoreRatio = 0.2,
                   courseId=currentCourseId),
   "streams" ->    ProjectDetails(
                   packageName = "streams",
-                  assignmentPartId = "CWKgCFCi",
-                  maxScore = 10d,
+                  assignmentPartId = "0WKgCFCi",
+                  maxScore = 20d,
                   styleScoreRatio = 0.2,
                   courseId=currentCourseId),
+  "quickcheck" -> ProjectDetails(
+                  packageName = "quickcheck",
+                  assignmentPartId = "02Vi5q7m",
+                  maxScore = 10d,
+                  styleScoreRatio = 0.0,
+                  courseId=currentCourseId),
   "simulations" -> ProjectDetails(
-                   packageName = "simulations",
-                   assignmentPartId = "iYs4GARk",
-                   maxScore = 10d,
-                   styleScoreRatio = 0.2,
-                   courseId="progfun2-001"),
-  "interpreter" -> ProjectDetails(
-                   packageName = "interpreter",
-                   assignmentPartId = "1SZhe1Ut",
-                   maxScore = 10d,
-                   styleScoreRatio = 0.2,
-                   courseId="progfun2-001")
-)
-}
+                  packageName = "simulations",
+                  assignmentPartId = "pA3TAeu1",
+                  maxScore = 10d,
+                  styleScoreRatio = 0.0,
+                  courseId=currentCourseId),
+  "nodescala" -> ProjectDetails(
+                  packageName = "nodescala",
+                  assignmentPartId = "RvoTAbRy",
+                  maxScore = 10d,
+                  styleScoreRatio = 0.0,
+                  courseId=currentCourseId),
+  "suggestions" -> ProjectDetails(
+                  packageName = "suggestions",
+                  assignmentPartId = "rLLdQLGN",
+                  maxScore = 10d,
+                  styleScoreRatio = 0.0,
+                  courseId=currentCourseId),
+  "actorbintree" -> ProjectDetails(
+                  packageName = "actorbintree",
+                  assignmentPartId = "VxIlIKoW",
+                  maxScore = 10d,
+                  styleScoreRatio = 0.0,
+                  courseId=currentCourseId),
+  "kvstore"      -> ProjectDetails(
+                  packageName = "kvstore",
+                  assignmentPartId = "nuvh59Zi",
+                  maxScore = 20d,
+                  styleScoreRatio = 0.0,
+                  courseId=currentCourseId)
+)}
 
 // Files that we hand out to the students
 handoutFiles <<= (baseDirectory, projectDetailsMap, commonSourcePackages) map { (basedir, detailsMap, commonSrcs) =>
@@ -90,6 +143,7 @@ handoutFiles <<= (baseDirectory, projectDetailsMap, commonSourcePackages) map { 
     (basedir / "project" / "build.properties") +++
     (basedir / "project" ** ("*.scala" || "*.sbt")) +++
     (basedir / "project" / "scalastyle_config.xml") +++
+    (basedir / "project" / "scalastyle_config_reactive.xml") +++
     (basedir / "lib_managed" ** "*.jar") +++
     (basedir * (".classpath" || ".project")) +++
     (basedir / ".settings" / "org.scala-ide.sdt.core.prefs")
