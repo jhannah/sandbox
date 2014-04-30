@@ -41,11 +41,11 @@ object Main {
     def loop(money: Int, denoms: List[Int]): Int = {
       if (denoms.isEmpty)
         if (money == 0) {
-          println("done. money is " + money)
+          /* println("done. money is " + money) */
           sol_cnt = sol_cnt + 1;
-          return 1;
+          1;
         } else {
-          println("done. money is " + money)
+          /* println("done. money is " + money) */
           1;
         }
       else {
@@ -53,16 +53,18 @@ object Main {
         val max_quant = money / this_denom
         for (q <- 1 to max_quant) {
           val money_left = money - (this_denom * q)
+          /* 
           println(q + " " + this_denom + "s " +
             "(money_left is " + money_left +
             ", sol_cnt is " + sol_cnt + ")"
-          )
+          )  
+          */
           loop(money_left, denoms.tail)
         }
         loop(money, denoms.tail)
       }
     }
     loop(money, denoms)
-    return sol_cnt;
+    sol_cnt;
   }
 }
