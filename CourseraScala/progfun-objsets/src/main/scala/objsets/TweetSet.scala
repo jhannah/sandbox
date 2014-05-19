@@ -7,9 +7,9 @@ import TweetReader._
  * A class to represent tweets.
  */
 class Tweet(val user: String, val text: String, val retweets: Int) {
-  //override def toString: String =
-  //  "User: " + user + "\n" +
-  //  "Text: " + text + " [" + retweets + "]"
+  override def toString: String =
+    "User: " + user + "\n" +
+    "Text: " + text + " [" + retweets + "]"
 }
 
 /**
@@ -69,7 +69,10 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-  def mostRetweeted: Tweet = ???
+  def mostRetweeted: Tweet = mostRetweetedAcc(elem)
+  def mostRetweetedAcc(acc: Tweet): Tweet = {
+    right.mostRetweetedAcc(left.mostRetweetedAcc(if (elem.retweets > acc.retweets) elem else acc))
+  }
 
   /**
    * Returns a list containing all tweets of this set, sorted by retweet count
