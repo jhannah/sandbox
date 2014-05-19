@@ -69,10 +69,8 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-  def mostRetweeted: Tweet = mostRetweetedAcc(elem)
-  def mostRetweetedAcc(acc: Tweet): Tweet = {
-    right.mostRetweetedAcc(left.mostRetweetedAcc(if (elem.retweets > acc.retweets) elem else acc))
-  }
+  def mostRetweeted: Tweet
+  def isEmpty: Boolean
 
   /**
    * Returns a list containing all tweets of this set, sorted by retweet count
@@ -83,7 +81,13 @@ abstract class TweetSet {
    * Question: Should we implment this method here, or should it remain abstract
    * and be implemented in the subclasses?
    */
-  def descendingByRetweet: TweetList = ???
+  def descendingByRetweet: TweetList = {
+    if(isEmpty) Nil
+    else {
+      val mostret = mostRetweeted
+      new Cons(mostret,remove(mostret).descendingByRetweet)
+    }
+  }
 
 
   /**
@@ -120,7 +124,7 @@ class Empty extends TweetSet {
   def head = throw new Exception("Empty.head")
   def tail = throw new Exception("Empty.tail")
   
-  def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = new Empty
+  def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = new acc
 
   def contains(tweet: Tweet): Boolean = false
   def incl(tweet: Tweet): TweetSet = new NonEmpty(tweet, new Empty, new Empty)
@@ -204,8 +208,8 @@ object GoogleVsApple {
   val google = List("android", "Android", "galaxy", "Galaxy", "nexus", "Nexus")
   val apple = List("ios", "iOS", "iphone", "iPhone", "ipad", "iPad")
 
-  lazy val googleTweets: TweetSet = ???
-  lazy val appleTweets: TweetSet = ???
+  lazy val googleTweets: TweetSet = TweetReader.allTweets.filter(t => google.exists(s => t.text.contains(s)))
+  lazy val appleTweets:  TweetSet = TweetReader.allTweets.filter(t => apple.exists( s => t.text.contains(s)))
 
   /**
    * A list of all tweets mentioning a keyword from either apple or google,
