@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ifconfig eth0 10.42.66.2 netmask 255.255.255.0
+
+# Run this as root on the Raspberry Pi to get the
+# USB -> ethernet cable working so you can ssh into the
+# Raspberry Pi from your laptop (USB)
+
