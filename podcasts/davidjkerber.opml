@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+	<title>Instacast Subscriptions from dave1</title>
+	<dateCreated>Tue, 10 Dec 2013 19:07:04 GMT</dateCreated>
+	<dateModified>Tue, 10 Dec 2013 19:07:04 GMT</dateModified>
+</head>
+<body>
+	<outline text="Social Triggers Insider with Derek Halpern" type="rss" xmlUrl="http://feeds.feedburner.com/socialtriggersinsider" htmlUrl="http://socialtriggers.com" />
+	<outline text="Software Engineering Radio - the podcast for professional software developers" type="rss" xmlUrl="http://feeds.feedburner.com/se-radio" htmlUrl="http://www.se-radio.net" />
+	<outline text="EconTalk Archives, 2007" type="rss" xmlUrl="http://files.libertyfund.org/econtalk/EconTalk2007.xml" htmlUrl="http://www.EconTalk.org" />
+	<outline text="Manager Tools - Members-Only" type="rss" xmlUrl="http://www.manager-tools.com/registered-members/rss.xml" htmlUrl="http://www.manager-tools.com/podcasts/manager-tools" />
+	<outline text="Where the Money Is" type="rss" xmlUrl="http://wherethemoneyis.libsyn.com/rss" htmlUrl="http://wherethemoneyis.libsyn.com" />
+	<outline text="iPhreaks Show" type="rss" xmlUrl="http://iphreaksshow.com/feed/" htmlUrl="http://iphreaksshow.com" />
+	<outline text="Build Phase" type="rss" xmlUrl="http://podcasts.thoughtbot.com/buildphase.xml" />
+	<outline text="Central Church of the Nazarene" type="rss" xmlUrl="http://omahacentral.sermon.tv/rss/main_channel" htmlUrl="http://www.omahacentral.org" />
+	<outline text="Wide Teams" type="rss" xmlUrl="http://www.wideteams.com/feed/podcast" htmlUrl="http://www.wideteams.com" />
+	<outline text="1 Year Daily Audio Bible" type="rss" xmlUrl="http://feeds.feedburner.com/dailyaudiobible" htmlUrl="http://feeds.feedburner.com/dailyaudiobible" />
+	<outline text="Ruby5" type="rss" xmlUrl="http://feeds.feedburner.com/Ruby5" htmlUrl="http://ruby5.envylabs.com/" />
+	<outline text="JavaScript Jabber" type="rss" xmlUrl="http://javascriptjabber.com/podcast.rss" htmlUrl="http://javascriptjabber.com" />
+	<outline text="Giant Robots Smashing into other Giant Robots Podcast" type="rss" xmlUrl="http://podcasts.thoughtbot.com/giantrobots.xml" />
+	<outline text="FLOSS Weekly (MP3)" type="rss" xmlUrl="http://leoville.tv/podcasts/floss.xml" htmlUrl="http://twit.tv/floss" />
+	<outline text="The EntreLeadership Podcast" type="rss" xmlUrl="http://www.daveramsey.com/media/audio/podcast/entreleadership.xml" htmlUrl="http://www.daveramsey.com/entreleadership/podcast?ectid=itunes-entreleadership" />
+	<outline text="EconTalk" type="rss" xmlUrl="http://files.libertyfund.org/econtalk/EconTalk.xml" htmlUrl="http://www.EconTalk.org" />
+	<outline text="The Economist: All audio" type="rss" xmlUrl="http://feeds.feedburner.com/economist/audio_all" htmlUrl="http://www.economist.com/podcast/itunes/All%20audio" />
+	<outline text="Entrepreneurial Thought Leaders" type="rss" xmlUrl="http://www.stanford.edu/group/edcorner/uploads/podcast/EducatorsCorner.xml" htmlUrl="http://ecorner.stanford.edu" />
+	<outline text="The Java Posse" type="rss" xmlUrl="http://feeds.feedburner.com/javaposse" htmlUrl="http://javaposse.com" />
+	<outline text="Ruby Rogues" type="rss" xmlUrl="http://rubyrogues.com/podcast.rss" htmlUrl="http://rubyrogues.com" />
+	<outline text="Startups For the Rest of Us" type="rss" xmlUrl="http://feeds.feedburner.com/StartupsForTheRestOfUs" htmlUrl="http://www.startupsfortherestofus.com" />
+	<outline text="MarketFoolery" type="rss" xmlUrl="http://feeds.feedburner.com/Marketfoolery" htmlUrl="http://marketfoolery.libsyn.com" />
+	<outline text="Motley Fool Money" type="rss" xmlUrl="http://feeds2.feedburner.com/MotleyFoolMoney" htmlUrl="http://fool.libsyn.com" />
+</body>
+</opml>

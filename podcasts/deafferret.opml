@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+	<title>iTunes Subscribed Feeds</title>
+	<dateCreated>Tue, 28 Oct 2014 16:04:46 GMT</dateCreated>
+	<dateModified>Tue, 28 Oct 2014 16:04:46 GMT</dateModified>
+</head>
+<body>
+	<outline text="Friday Night Comedy from BBC Radio 4" type="rss" xmlUrl="http://downloads.bbc.co.uk/podcasts/radio4/fricomedy/rss.xml" htmlUrl="http://www.bbc.co.uk/radio4/programmes/genres/comedy/satire/" />
+	<outline text="NPR Programs: Fresh Air Podcast" type="rss" xmlUrl="http://www.npr.org/rss/podcast.php?id=13" htmlUrl="http://freshair.npr.org" />
+	<outline text="NPR: Car Talk Podcast" type="rss" xmlUrl="http://www.npr.org/rss/podcast.php?id=510208" htmlUrl="http://www.cartalk.com" />
+	<outline text="NPR: Bullseye with Jesse Thorn" type="rss" xmlUrl="http://feeds.feedburner.com/tsoya" htmlUrl="http://www.maximumfun.org" />
+	<outline text="TEDTalks (audio)" type="rss" xmlUrl="http://feeds.feedburner.com/tedtalks_audio" htmlUrl="http://www.ted.com/talks/list" />
+	<outline text="The Adam Carolla Show" type="rss" xmlUrl="http://feeds.feedburner.com/TheAdamCarollaPodcast" htmlUrl="http://adamcarolla.com" />
+	<outline text="The Moth Podcast" type="rss" xmlUrl="http://feeds.feedburner.com/themothpodcast" htmlUrl="http://themoth.prx.org" />
+	<outline text="This American Life" type="rss" xmlUrl="http://feeds.thisamericanlife.org/talpodcast" htmlUrl="http://www.thisamericanlife.org" />
+	<outline text="Who Charted?" type="rss" xmlUrl="http://rss.earwolf.com/who-charted" htmlUrl="http://www.earwolf.com/show/who-charted/" />
+	<outline text="Radiolab from WNYC" type="rss" xmlUrl="http://www.wnyc.org/shows/radiolab/index.xml" htmlUrl="http://www.radiolab.org/series/podcasts/" />
+	<outline text="NPR: Planet Money Podcast" type="rss" xmlUrl="http://www.npr.org/rss/podcast.php?id=510289" htmlUrl="http://www.npr.org/planetmoney" />
+	<outline text="File on 4" type="rss" xmlUrl="http://downloads.bbc.co.uk/podcasts/radio4/fileon4/rss.xml" htmlUrl="http://www.bbc.co.uk/programmes/b006th08" />
+	<outline text="World at One: BBC Radio 4 News" type="rss" xmlUrl="http://downloads.bbc.co.uk/podcasts/radio4/wato/rss.xml" htmlUrl="http://www.bbc.co.uk/programmes/b006qptc" />
+	<outline text="Comedy of the Week" type="rss" xmlUrl="http://downloads.bbc.co.uk/podcasts/radio4/comedy/rss.xml" htmlUrl="http://www.bbc.co.uk/radio4/programmes/genres/comedy" />
+	<outline text="The Bottom Line with Evan Davis" type="rss" xmlUrl="http://downloads.bbc.co.uk/podcasts/radio4/bottomline/rss.xml" htmlUrl="http://www.bbc.co.uk/radio4/news/bottomline" />
+	<outline text="This Week with Larry Miller" type="rss" xmlUrl="http://feeds.feedburner.com/ThisWeekWithLarryMiller" htmlUrl="http://null" />
+	<outline text="Penn's Sunday School" type="rss" xmlUrl="http://feeds.feedburner.com/PennSundaySchool" htmlUrl="http://null" />
+	<outline text="The Joe Rogan Experience" type="rss" xmlUrl="http://joeroganexp.joerogan.libsynpro.com/rss" htmlUrl="http://blog.joerogan.net" />
+	<outline text="You Made It Weird with Pete Holmes" type="rss" xmlUrl="http://feeds.feedburner.com/YouMadeItWeird" htmlUrl="http://youmadeitweird.libsyn.com" />
+	<outline text="Alison Rosen Is Your New Best Friend" type="rss" xmlUrl="http://ariynbf.libsyn.com/rss" htmlUrl="http://www.alisonrosen.com" />
+	<outline text="Jordan, Jesse GO!" type="rss" xmlUrl="http://feeds.feedburner.com/thornmorris" htmlUrl="http://www.maximumfun.org" />
+	<outline text="My Brother, My Brother And Me" type="rss" xmlUrl="http://mbmbam.libsyn.com/rss" htmlUrl="http://www.mbmbam.com" />
+	<outline text="RISK!" type="rss" xmlUrl="http://risk.libsyn.com/rss" htmlUrl="http://www.risk-show.com" />
+	<outline text="Comedy Bang Bang: The Podcast" type="rss" xmlUrl="http://rss.earwolf.com/comedy-bang-bang" htmlUrl="http://www.earwolf.com/show/comedy-bang-bang/" />
+	<outline text="Jaret Reddick's Podcast!" type="rss" xmlUrl="http://bfsrocks.podbean.com/feed/" htmlUrl="http://bfsrocks.podbean.com" />
+	<outline text="Escape Pod" type="rss" xmlUrl="http://escapepod.org/feed/" htmlUrl="http://escapepod.org" />
+	<outline text="Paul Mecurio Show" type="rss" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:35134811/sounds.rss" htmlUrl="http://www.sideshownetwork.tv" />
+	<outline text="GitMinutes" type="rss" xmlUrl="http://feeds.gitminutes.com/gitminutes-podcast" htmlUrl="http://episodes.gitminutes.com/search/label/podcast" />
+	<outline text="Stop Podcasting Yourself" type="rss" xmlUrl="http://stoppodcastingyourself.libsyn.com/rss" htmlUrl="http://stoppodcastingyourself.com" />
+	<outline text="The CrabFeast with Ryan Sickler and Jay Larson" type="rss" xmlUrl="http://crabfeast.fakemustache.libsynpro.com/rss" htmlUrl="http://www.thecrabfeast.com" />
+	<outline text="The Libertarian Solution Radio Program" type="rss" xmlUrl="http://www.libertariansolution.com/audio/podcast.xml.php" htmlUrl="http://www.libertariansolution.com" />
+	<outline text="WTF with Marc Maron Podcast" type="rss" xmlUrl="http://wtfpod.libsyn.com/rss" htmlUrl="http://wtfpod.com" />
+	<outline text="99% Invisible" type="rss" xmlUrl="http://feeds.99percentinvisible.org/99percentinvisible" htmlUrl="http://99percentinvisible.prx.org" />
+	<outline text="Transom » Format » Audio" type="rss" xmlUrl="http://transom.org/?feed=rss2&#38;post_format=audio" htmlUrl="http://transom.org" />
+	<outline text="Sawbones: A Marital Tour of Misguided Medicine" type="rss" xmlUrl="http://sawbones.libsyn.com/rss" htmlUrl="http://sawbones.libsyn.com" />
+	<outline text="Science Talk" type="rss" xmlUrl="http://www.scientificamerican.com/podcast/sciam_podcast_i.xml" htmlUrl="http://www.scientificamerican.com/podcast/science-talk/" />
+	<outline text="The Nerdist" type="rss" xmlUrl="http://nerdist.libsyn.com/rss" htmlUrl="http://nerdist.com" />
+	<outline text="Fitzdog Radio" type="rss" xmlUrl="http://feeds.feedburner.com/FitzdogRadio" htmlUrl="http://gregfitz.libsyn.com" />
+	<outline text="The Indoor Kids with Kumail Nanjiani and Emily V. Gordon" type="rss" xmlUrl="http://theindoorkids.libsyn.com/rss" htmlUrl="http://theindoorkids.libsyn.com" />
+	<outline text="The YoGPoD" type="rss" xmlUrl="http://yogpod.libsyn.com/rss" htmlUrl="http://yogpod.libsyn.com" />
+	<outline text="Freakonomics Radio" type="rss" xmlUrl="http://feeds.feedburner.com/freakonomicsradio" htmlUrl="http://www.wnyc.org/articles/freakonomics-podcast/" />
+	<outline text="The Tobolowsky Files" type="rss" xmlUrl="http://feeds.feedburner.com/tobolowskyfiles" htmlUrl="http://www.slashfilm.com" />
+	<outline text="Living After Faith" type="rss" xmlUrl="http://feeds.feedburner.com/LivingAfterFaith" htmlUrl="http://livingafterfaith.blogspot.com/" />
+	<outline text="TheThinkingAtheist" type="rss" xmlUrl="http://www.blogtalkradio.com/thethinkingatheist.rss" htmlUrl="http://www.blogtalkradio.com/thethinkingatheist" />
+	<outline text="A Matter of Doubt" type="rss" xmlUrl="http://feeds.feedburner.com/amatterofdoubt/LsrB" htmlUrl="http://www.amatterofdoubt.com" />
+	<outline text="Social Triggers Insider with Derek Halpern" type="rss" xmlUrl="http://feeds.feedburner.com/socialtriggersinsider" htmlUrl="http://socialtriggers.com" />
+	<outline text="The Primal Blueprint Podcast" type="rss" xmlUrl="http://primalblueprint.libsyn.com/rss" htmlUrl="http://www.primalblueprint.com/" />
+	<outline text="Oh No Ross and Carrie" type="rss" xmlUrl="http://feeds.feedburner.com/OhNoPodcast" htmlUrl="http://ohnopodcast.com/" />
+	<outline text="Worlds of Wayne" type="rss" xmlUrl="http://worldsofwayne.libsyn.com/rss" htmlUrl="http://worldsofwayne.libsyn.com" />
+	<outline text="Love + Radio" type="rss" xmlUrl="http://feeds.feedburner.com/loveplusradio" htmlUrl="http://loveandradio.org" />
+	<outline text="Weekends On All Things Considered Podcast" type="rss" xmlUrl="http://www.npr.org/templates/rss/podlayer.php?id=129577422" htmlUrl="http://www.npr.org/templates/story/story.php?storyId=129577422" />
+</body>
+</opml>
