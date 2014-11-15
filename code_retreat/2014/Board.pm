@@ -33,13 +33,11 @@ sub check_cell {
 sub will_survive {
   my ($self, $x, $y) = @_;
 
-my $neighbors = 0;
+  my $neighbor_count;
 
-  $self->board->{$x}->{$y};
-
-  for(my $i = $x-1; $i < $x+3; ++$i)
+  for(my $i = $x-1; $i <= $x+1; ++$i)
   {
-      for(my $j = $y-1; $j < $y+3; ++$j)
+      for(my $j = $y-1; $j <= $y+1; ++$j)
       {
           if($i == $x && $j == $y)
           {
@@ -48,11 +46,11 @@ my $neighbors = 0;
 
           if($self->board->{$x}->{$y} == 1)
           {
-              $neighbors += 1;
+              $neighbor_count += 1;
           }
       }
   }
-  print("cell at $x,$y has $neighbors neighbors\n");
+  print("cell at $x,$y has $neighbor_count neighbors\n");
 }
 
 1;
