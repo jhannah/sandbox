@@ -66,8 +66,8 @@ sub all_living_cells {
     my $self = shift;
     my @cells;
 
-    foreach (my $x (keys($self->board))) {
-        foreach (my $y (keys($self->board->{$x}))) {
+    foreach my $x (keys($self->board)) {
+        foreach my $y (keys($self->board->{$x})) {
             if($self->board->{$x}->{$y} == 1) {
                 push (@cells, "$x,$y");
             }
