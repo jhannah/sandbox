@@ -5,7 +5,14 @@ use Moose;
 has 'board' => (is => 'rw', isa => 'HashRef', default => sub { {} });
 
 sub go {
-  1;
+  my ($self) = @_;
+  my $new_board = Board->new();
+  foreach my $x (keys %{$self->board}) {
+    foreach my $y (keys %{$self->board->{$x}}) {
+      $new_board->set_cell($x, $y, $self->will_survive($x, $y));
+    }
+  }
+  return $new_board;
 }
 
 sub display {
@@ -23,6 +30,30 @@ sub check_cell {
   $self->board->{$x}->{$y};
 }
 
+sub will_survive {
+  my ($self, $x, $y) = @_;
+
+my $neighbors = 0;
+
+  $self->board->{$x}->{$y};
+
+  for(my $i = $x-1; $i < $x+3; ++$i)
+  {
+      for(my $j = $y-1; $j < $y+3; ++$j)
+      {
+          if($i == $x && $j == $y)
+          {
+              next;
+          }
+
+          if($self->board->{$x}->{$y} == 1)
+          {
+              $neighbors += 1;
+          }
+      }
+  }
+  print("cell at $x,$y has $neighbors neighbors\n");
+}
 
 1;
 
