@@ -11,23 +11,23 @@ n3 = gets.to_i
 if n1 <= n2 and n1 <= n3
   print n1
   if n2 <= n3
-    puts " " + n2.to_s + " " + n3.to_s
+    puts " #{n2} #{n3}"
   else
-    puts " " + n3.to_s + " " + n2.to_s
+    puts " #{n3} #{n2}"
   end
 elsif n2 <= n1 and n2 <= n3
   print n2
   if n1 <= n3
-    puts " " + n1.to_s + " " + n3.to_s
+    puts " #{n1} #{n3}"
   else
-    puts " " + n3.to_s + " " + n1.to_s
+    puts " #{n3} #{n1}"
   end
 elsif n3 <= n1 and n3 <= n2
   print n3
   if n1 <= n2
-    puts " " + n1.to_s + " " + n2.to_s
+    puts " #{n1} #{n2}"
   else
-    puts " " + n2.to_s + " " + n1.to_s
+    puts " #{n2} #{n1}"
   end
 end
 
