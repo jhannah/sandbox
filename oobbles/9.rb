@@ -7,6 +7,4 @@ password = "yup"
     exit
   end
 end
-
 puts "YOU LOSE"
-
