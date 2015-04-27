@@ -1,0 +1,42 @@
+[9:58 AM] Jay Hannah: huh. what's wrong with my zero-width negative look behind assertion? https://github.com/jhannah/sandbox/tree/master/jhannah
+[10:00 AM] Jay Hannah: oh... -p is looping per line
+[10:02 AM] Matthew Horsfall: Heh
+[10:03 AM] Jay Hannah: i guess this isn't a one-liner. it's a 3 liner :(
+[10:07 AM] Matthew Horsfall: @jhannah perl -p -i -e 'unless (/no/ .. /^a/) { s/a/a yes/}' in
+[10:07 AM] Jay Hannah: doesn't -p slurp one line at a time, so I can't use it for multi-line analysis?
+[10:08 AM] Matthew Horsfall: -p effectively puts a while loop around your code
+[10:08 AM] Florian Ragwitz: (which you can see if you run the program with -MO=Deparse,-p
+[10:09 AM] Matthew Horsfall: So you can do normal things like track state, etc
+        I think my one-liner does what you're looking for
+        Albeit in a rather confusing and evil perlish way
+[10:12 AM] Florian Ragwitz: my favourite bit of how those options add extra code is that it's done on a character level rather than in the ast
+        so you can do stuff like -e'... } { ...'
+[10:14 AM] Matthew Horsfall: Yeah; I wonder if it was intentional or because it's far easier to append perl to the tokenizer than it is to generate op trees
+        (I suspect the latter...)
+[10:15 AM] Florian Ragwitz: i think it started out as an unintended side effect of the implementation
+        then people figured out that they could do terrible things with it
+        so now it's a feature that can never be removed again ;)
+[10:16 AM] Matthew Horsfall: By "it was intentional" I meant implementing it the way they did (which is to wrap your code in the tokenizer with generated perl)
+        :)
+[10:16 AM] Florian Ragwitz: yeah i don't think it was intentional
+[10:19 AM] Jay Hannah: @alh huh. so the output that gives me is
+[10:19 AM] Jay Hannah:   a yes
+  a yes
+  no
+  a
+  a
+        and I expected "a yes" on the last line
+        not that I'm going to use this anyway, probably...? :)
+        but good to see the evil behind the curtain
+        ... i think?
+[10:21 AM] Jay Hannah: /no/ .. /^a/
+        ? regex range regex?
+        bubble bubble toil and trouble...
+[10:30 AM] Matthew Horsfall: @jhannah Weird, works for me
+        I get a yes as the last line
+        So it's a flip-flop operator, not a range operator (in this case)
+[10:32 AM] Matthew Horsfall: From perlop:
+[10:32 AM] Matthew Horsfall: It is false as long as its left operand is false.  Once the left
+      operand is true, the range operator stays true until the right operand
+      is true, AFTER which the range operator becomes false again.
+
