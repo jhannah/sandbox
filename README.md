@@ -1,5 +1,5 @@
 
-Hi! My name is Jay. I've been coding since 1995. 
+Hi! My name is Jay. I've been coding since YOL 1995. 
 
 I hang out on IRC all the time. I like helping people. But I've very busy. Mostly
 with computer stuff. :)   If you want my help, here's how to get it. 
