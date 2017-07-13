@@ -1,0 +1,8 @@
+%syntax-version=1.0.0
+%project=MyProj
+
+functions/foo 2017-07-13T23:16:32Z Jay Hannah <jay.hannah@iinteractive.com> # My 1st function
+@v1 2017-07-13T23:39:17Z Jay Hannah <jay.hannah@iinteractive.com> # v1
+functions/foo [functions/foo@v1] 2017-07-13T23:39:25Z Jay Hannah <jay.hannah@iinteractive.com> # Reworking foo(int)
+@v2 2017-07-13T23:42:36Z Jay Hannah <jay.hannah@iinteractive.com> # v2
+functions/foo [functions/foo@v2] 2017-07-13T23:42:47Z Jay Hannah <jay.hannah@iinteractive.com> # changing again
