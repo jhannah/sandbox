@@ -4,3 +4,4 @@
 functions/foo 2017-07-14T00:08:57Z Jay Hannah <jay.hannah@iinteractive.com> # adding foo(1)
 @v1 2017-07-14T00:12:07Z Jay Hannah <jay.hannah@iinteractive.com> # v1
 functions/foo [functions/foo@v1] 2017-07-14T00:12:36Z Jay Hannah <jay.hannah@iinteractive.com> # first rework
+@v2 2017-07-14T00:15:12Z Jay Hannah <jay.hannah@iinteractive.com> # v2
