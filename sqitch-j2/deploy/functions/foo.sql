@@ -4,7 +4,7 @@ BEGIN;
 
 CREATE OR REPLACE FUNCTION foo(input INT) RETURNS VOID AS $EOT$
   BEGIN
-    IF input <> 1 THEN
+    IF input <> 2 THEN
       RAISE EXCEPTION 'nope';
     END IF;
   END;

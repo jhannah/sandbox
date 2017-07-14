@@ -2,6 +2,6 @@
 
 BEGIN;
 
-SELECT foo(2);
+SELECT foo(1);
 
 ROLLBACK;
