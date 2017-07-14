@@ -1,6 +1,6 @@
 sqitch rework 101
 
-If this isn't Best Practice, please slap me. :)
+If I'm not following Best Practice, please slap me. :)
 
 sqitch init MyProj --engine pg
 sqitch add functions/foo
