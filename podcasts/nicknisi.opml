@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+    <head>
+        <title>Nick's Podcast Subscriptions</title>
+    </head>
+    <body>
+        <outline type="rss" text="The Web Platform Podcast" title="The Web Platform Podcast" xmlUrl="http://thewebplatform.libsyn.com/rss" htmlUrl="https://thewebplatformpodcast.com/" />
+        <outline type="rss" text="Do By Friday" title="Do By Friday" xmlUrl="https://rss.simplecast.com/podcasts/2389/rss" htmlUrl="http://dobyfriday.com/" />
+        <outline type="rss" text="Fusion" title="Fusion" xmlUrl="https://www.relay.fm/fusionmembers/feed" htmlUrl="https://www.relay.fm/fusionmembers" />
+        <outline type="rss" text="Back to Work" title="Back to Work" xmlUrl="http://feeds.5by5.tv/b2w" htmlUrl="http://5by5.tv/b2w" />
+        <outline type="rss" text="The Frontside Podcast" title="The Frontside Podcast" xmlUrl="https://rss.simplecast.com/podcasts/96/rss" htmlUrl="http://frontside.io/" />
+        <outline type="rss" text="TalkScript" title="TalkScript" xmlUrl="https://www.sitepen.com/blog/feed/podcast/" htmlUrl="https://www.sitepen.com/blog" />
+        <outline type="rss" text="Upgrade" title="Upgrade" xmlUrl="https://www.relay.fm/upgrade/feed" htmlUrl="https://www.relay.fm/upgrade" />
+        <outline type="rss" text="The Official Impractical Jokers Podcast" title="The Official Impractical Jokers Podcast" xmlUrl="http://feeds.adknit.com/app-search/trutv/the-official-impractical-jokers-podcast/all/1440/200/" htmlUrl="http://www.trutv.com/shows/impractical-jokers/index.html" />
+        <outline type="rss" text="Harmontown" title="Harmontown" xmlUrl="http://feeds.feedburner.com/HarmontownPodcast" htmlUrl="http://www.harmontown.com/" />
+        <outline type="rss" text="Connected" title="Connected" xmlUrl="http://www.relay.fm/connected/feed" htmlUrl="https://www.relay.fm/connected" />
+        <outline type="rss" text="Bunker Politics" title="Bunker Politics" xmlUrl="http://bunkerpolitics.libsyn.com/rss" htmlUrl="http://bunkerpolitics.libsyn.com/podcast" />
+        <outline type="rss" text="Wisecrack's THE SQUANCH: A Rick &amp; Morty Podcast" title="Wisecrack's THE SQUANCH: A Rick &amp; Morty Podcast" xmlUrl="http://squanch.libsyn.com/rss" htmlUrl="http://wisecrack.co/" />
+        <outline type="rss" text="Accidental Tech Podcast" title="Accidental Tech Podcast" xmlUrl="http://atp.fm/episodes?format=rss" htmlUrl="http://atp.fm/" />
+        <outline type="rss" text="The Incomparable" title="The Incomparable" xmlUrl="http://feeds.theincomparable.com/theincomparable" htmlUrl="https://www.theincomparable.com/theincomparable/" />
+        <outline type="rss" text="All JavaScript Podcasts by Devchat.tv" title="All JavaScript Podcasts by Devchat.tv" xmlUrl="https://feeds.feedwrench.com/JavaScriptJabber.rss" htmlUrl="http://devchat.tv/" />
+        <outline type="rss" text="Toolsday" title="Toolsday" xmlUrl="http://toolsday.io/feeds/rss.xml" htmlUrl="http://toolsday.io/" />
+        <outline type="rss" text="The Talk Show With John Gruber" title="The Talk Show With John Gruber" xmlUrl="http://daringfireball.net/thetalkshow/rss" htmlUrl="https://daringfireball.net/thetalkshow" />
+        <outline type="rss" text="The Adventure Zone" title="The Adventure Zone" xmlUrl="http://adventurezone.libsyn.com/rss" htmlUrl="http://adventurezone.libsyn.com/podcast" />
+        <outline type="rss" text="Pursuit Podcast" title="Pursuit Podcast" xmlUrl="http://pursuitpod.libsyn.com/rss" htmlUrl="http://pursuitpod.com/" />
+        <outline type="rss" text="Dan Carlin's Hardcore History" title="Dan Carlin's Hardcore History" xmlUrl="http://feeds.feedburner.com/dancarlin/history?format=xml" htmlUrl="http://www.dancarlin.com/" />
+        <outline type="rss" text="Welcome to Macintosh" title="Welcome to Macintosh" xmlUrl="https://macintoshfm.squarespace.com/episodes?format=rss" htmlUrl="https://www.macintosh.fm/episodes/" />
+        <outline type="rss" text="Dads In Development" title="Dads In Development" xmlUrl="https://rss.simplecast.com/podcasts/1656/rss" htmlUrl="http://dadsindev.com/" />
+        <outline type="rss" text="AppStories" title="AppStories" xmlUrl="https://appstories.net/episodes/feed/" htmlUrl="https://appstories.net/" />
+        <outline type="rss" text="Syntax - Tasty Web Development Treats" title="Syntax - Tasty Web Development Treats" xmlUrl="https://feed.syntax.fm/rss" htmlUrl="https://syntax.fm/" />
+        <outline type="rss" text="Boars, Gore, and Swords: A Game of Thrones Podcast" title="Boars, Gore, and Swords: A Game of Thrones Podcast" xmlUrl="http://boarsgoreandswords.libsyn.com/rss" htmlUrl="http://boarsgoreandswords.com/" />
+        <outline type="rss" text="Waking Up with Sam Harris" title="Waking Up with Sam Harris" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:59753170/sounds.rss" htmlUrl="http://www.samharris.org/" />
+        <outline type="rss" text="Full Stack Radio" title="Full Stack Radio" xmlUrl="https://simplecast.com/podcasts/279/rss" htmlUrl="http://fullstackradio.com/" />
+        <outline type="rss" text="The Productivity Show | Getting Things Done (GTD) | Time Management | Evernote" title="The Productivity Show | Getting Things Done (GTD) | Time Management | Evernote" xmlUrl="http://www.asianefficiency.com/feed/podcast/" htmlUrl="http://www.asianefficiency.com/" />
+        <outline type="rss" text="Reconcilable Differences" title="Reconcilable Differences" xmlUrl="https://www.relay.fm/rd/feed" htmlUrl="https://www.relay.fm/rd" />
+        <outline type="rss" text="The Path to Performance" title="The Path to Performance" xmlUrl="https://rss.simplecast.com/podcasts/1103/rss" htmlUrl="http://pathtoperf.com/" />
+        <outline type="rss" text="Lovett or Leave It" title="Lovett or Leave It" xmlUrl="http://feeds.feedburner.com/lovett-or-leave-it" htmlUrl="https://art19.com/shows/lovett-or-leave-it" />
+        <outline type="rss" text="Cortex" title="Cortex" xmlUrl="https://www.relay.fm/cortex/feed" htmlUrl="https://www.relay.fm/cortex" />
+        <outline type="rss" text="Canvas" title="Canvas" xmlUrl="https://www.relay.fm/canvas/feed" htmlUrl="https://www.relay.fm/canvas" />
+        <outline type="rss" text="Front End Happy Hour" title="Front End Happy Hour" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:206137365/sounds.rss" htmlUrl="http://frontendhappyhour.com/" />
+        <outline type="rss" text="My Brother, My Brother And Me" title="My Brother, My Brother And Me" xmlUrl="http://mbmbam.libsyn.com/rss" htmlUrl="http://www.mbmbam.com/" />
+        <outline type="rss" text="The Changelog" title="The Changelog" xmlUrl="http://feeds.5by5.tv/changelog" htmlUrl="http://changelog.fm/" />
+        <outline type="rss" text="The Flop House" title="The Flop House" xmlUrl="http://theflophouse.libsyn.com/rss" htmlUrl="http://www.flophousepodcast.com/" />
+        <outline type="rss" text="Soft Skills Engineering" title="Soft Skills Engineering" xmlUrl="http://feeds.feedburner.com/SoftSkillsEngineering" htmlUrl="https://softskills.audio/" />
+        <outline type="rss" text="Slate's Trumpcast" title="Slate's Trumpcast" xmlUrl="http://feeds.feedburner.com/SlatesTrumpcast" htmlUrl="http://www.slate.com/" />
+        <outline type="rss" text="2 Frugal Dudes Podcast: Personal Finance in Layman's Terms to Simplify Investing, Paying Off Debt, Student Loans, Taxes, Frugal Living, Saving Money, Budgeting, Entrepreneurship, Freelancing, Early Retirement and Financial Freedom/Independence" title="2 Frugal Dudes Podcast: Personal Finance in Layman's Terms to Simplify Investing, Paying Off Debt, Student Loans, Taxes, Frugal Living, Saving Money, Budgeting, Entrepreneurship, Freelancing, Early Retirement and Financial Freedom/Independence" xmlUrl="http://2frugaldudes.com/feed/podcast/" htmlUrl="http://2frugaldudes.com/" />
+        <outline type="rss" text="Pod Save America" title="Pod Save America" xmlUrl="http://feeds.feedburner.com/pod-save-america" htmlUrl="https://art19.com/shows/pod-save-america" />
+        <outline type="rss" text="JS Party" title="JS Party" xmlUrl="https://changelog.com/jsparty/feed" htmlUrl="http://jsparty.fm/" />
+        <outline type="rss" text="Citations Needed" title="Citations Needed" xmlUrl="http://citationsneeded.libsyn.com/rss" htmlUrl="https://www.facebook.com/citationsneeded/" />
+        <outline type="rss" text="Developer On Fire" title="Developer On Fire" xmlUrl="http://developeronfire.com/rss.xml" htmlUrl="http://developeronfire.com/" />
+        <outline type="rss" text="Jay Flaunts His Ignorance. The podcast." title="Jay Flaunts His Ignorance. The podcast." xmlUrl="http://jhannah.github.io/jayflaunts/podcast.xml" htmlUrl="http://jhannah.github.io/jayflaunts/" />
+    </body>
+</opml>
