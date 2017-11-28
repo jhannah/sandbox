@@ -6,6 +6,7 @@
   <body>
     <outline text="feeds">
       <outline type="rss" text="The Moth" xmlUrl="http://feeds.feedburner.com/themothpodcast" />
+      <outline type="rss" text="Revolutions" xmlUrl="http://revolutionspodcast.libsyn.com/rss" />
       <outline type="rss" text="The CrabFeast with Ryan Sickler and Jay Larson" xmlUrl="http://crabfeast.fakemustache.libsynpro.com/rss" />
       <outline type="rss" text="The Smartest Man in the World" xmlUrl="http://feeds.feedburner.com/TheSmartest" />
       <outline type="rss" text="Sooo Many White Guys" xmlUrl="http://feeds.wnyc.org/sooomanywhiteguys" />
@@ -55,6 +56,7 @@
       <outline type="rss" text="The Joe Rogan Experience" xmlUrl="http://joeroganexp.joerogan.libsynpro.com/rss" />
       <outline type="rss" text="Live from the Poundstone Institute" xmlUrl="https://www.npr.org/rss/podcast.php?id=510322" />
       <outline type="rss" text="Rough Translation" xmlUrl="https://www.npr.org/rss/podcast.php?id=510324" />
+      <outline type="rss" text="Spielcast" xmlUrl="http://spielbound.com/spielcast?format=rss" />
       <outline type="rss" text="We Live Here" xmlUrl="http://feeds.stlpublicradio.org/weliveherestl" />
       <outline type="rss" text="Pod Save the People" xmlUrl="http://feeds.feedburner.com/pod-save-the-people" />
       <outline type="rss" text="The Ben Shapiro Show" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:174770374/sounds.rss" />
