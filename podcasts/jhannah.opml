@@ -13,6 +13,7 @@
       <outline type="rss" text="Longform" xmlUrl="http://longform.libsyn.com/rss" />
       <outline type="rss" text='We&apos;re Alive - A "Zombie" Story of Survival' xmlUrl="http://feeds.feedburner.com/itpc/wwwwaylandws/Wayland_Productions/Were_Alive_-_Podcast/rssxml" />
       <outline type="rss" text="This American Life" xmlUrl="http://feed.thisamericanlife.org/talpodcast" />
+      <outline type="rss" text="Seriously..." xmlUrl="https://podcasts.files.bbci.co.uk/p02pc9qx.rss" />
       <outline type="rss" text="It's Been a Minute with Sam Sanders" xmlUrl="https://www.npr.org/rss/podcast.php?id=510317" />
       <outline type="rss" text="Upvoted by Reddit" xmlUrl="http://upvoted.libsyn.com/rss" />
       <outline type="rss" text="Invisibilia" xmlUrl="https://www.npr.org/rss/podcast.php?id=510307" />
@@ -22,13 +23,16 @@
       <outline type="rss" text="Outside/In" xmlUrl="http://feeds.megaphone.fm/PPY5156495451" />
       <outline type="rss" text="North Omaha History Podcast, Omaha History, South Omaha History" xmlUrl="https://earn.show/feeds/omahahistory.xml" />
       <outline type="rss" text="The Way I Heard It with Mike Rowe" xmlUrl="http://thewayiheardit.rsvmedia.com/rss/" />
+      <outline type="rss" text="No Such Thing As A Fish" xmlUrl="https://audioboom.com/channels/2399216.rss" />
       <outline type="rss" text="Oh No Ross and Carrie" xmlUrl="http://feeds.feedburner.com/OhNoPodcast" />
       <outline type="rss" text="Radiolab" xmlUrl="http://feeds.wnyc.org/radiolab" />
       <outline type="rss" text="Primary Concerns" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:205120113/sounds.rss" />
       <outline type="rss" text="Reply All" xmlUrl="HTTP://Feeds.gimletmedia.com/hearreplyall" />
+      <outline type="rss" text="The Allusionist" xmlUrl="http://feeds.theallusionist.org/Allusionist" />
       <outline type="rss" text="You Are Not So Smart" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:16745745/sounds.rss" />
       <outline type="rss" text="Keepin' it 1600" xmlUrl="http://feeds.feedburner.com/keepinit1600" />
       <outline type="rss" text="Reveal" xmlUrl="http://feeds.revealradio.org/revealpodcast" />
+      <outline type="rss" text="The Story Collider" xmlUrl="http://feeds.feedburner.com/TheStoryCollider" />
       <outline type="rss" text="NPR News Now" xmlUrl="https://www.npr.org/rss/podcast.php?id=500005" />
       <outline type="rss" text="Comedy Bang Bang: The Podcast" xmlUrl="http://rss.earwolf.com/comedy-bang-bang" />
       <outline type="rss" text="On the Media" xmlUrl="http://feeds.wnyc.org/onthemedia" />
@@ -53,6 +57,7 @@
       <outline type="rss" text="Drunk Ex-Pastors" xmlUrl="http://drunkexpastors.libsyn.com/feed" />
       <outline type="rss" text="The Bugle" xmlUrl="http://feeds.feedburner.com/thebuglefeed/" />
       <outline type="rss" text="Planet Money" xmlUrl="http://www.npr.org/rss/podcast.php?id=510289" />
+      <outline type="rss" text="Ear Hustle" xmlUrl="http://feeds.earhustlesq.com/earhustlesq" />
       <outline type="rss" text="Ten Minute Podcast" xmlUrl="http://tenminutepodcast.libsyn.com/rss" />
       <outline type="rss" text="The Joe Rogan Experience" xmlUrl="http://joeroganexp.joerogan.libsynpro.com/rss" />
       <outline type="rss" text="Live from the Poundstone Institute" xmlUrl="https://www.npr.org/rss/podcast.php?id=510322" />
@@ -61,6 +66,7 @@
       <outline type="rss" text="We Live Here" xmlUrl="http://feeds.stlpublicradio.org/weliveherestl" />
       <outline type="rss" text="Pod Save the People" xmlUrl="http://feeds.feedburner.com/pod-save-the-people" />
       <outline type="rss" text="The Ben Shapiro Show" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:174770374/sounds.rss" />
+      <outline type="rss" text="More or Less: Behind the Stats" xmlUrl="https://podcasts.files.bbci.co.uk/p02nrss1.rss" />
       <outline type="rss" text="S-Town" xmlUrl="http://feeds.stownpodcast.org/stownpodcast" />
       <outline type="rss" text="SPONTANEANATION with Paul F. Tompkins" xmlUrl="http://rss.earwolf.com/spontaneanation-with-paul-f-tompkins" />
       <outline type="rss" text="Coverville: The Cover Music Show (AAC Edition)" xmlUrl="http://feeds.feedburner.com/CovervilleAAC" />
@@ -71,8 +77,8 @@
       <outline type="rss" text="Heavyweight" xmlUrl="http://feeds.gimletmedia.com/heavyweightpodcast" />
       <outline type="rss" text="Radiolab Presents: More Perfect" xmlUrl="http://feeds.wnyc.org/moreperfect" />
       <outline type="rss" text="Note to Self" xmlUrl="http://feeds.wnyc.org/notetoself-podcast" />
-      <outline type="rss" text="The Truth" xmlUrl="http://feeds.feedburner.com/thetruthapm" />
       <outline type="rss" text="StartUp Podcast" xmlUrl="http://feeds.hearstartup.com/hearstartup" />
+      <outline type="rss" text="The Truth" xmlUrl="http://feeds.feedburner.com/thetruthapm" />
       <outline type="rss" text="WTF with Marc Maron Podcast" xmlUrl="http://wtfpod.libsyn.com/rss" />
       <outline type="rss" text="Outside Podcast" xmlUrl="http://podcast.outsideonline.com/OutsidePodcast" />
       <outline type="rss" text="Waking Up with Sam Harris" xmlUrl="http://wakingup.libsyn.com/rss" />
