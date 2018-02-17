@@ -1,14 +1,15 @@
 import pandas as pd
 data = [
-  [1,2,3,None,'will be a formula'],
-  [2,3,4,3],
-  [5,6,7,4]
+  [1,2,3,'will be a shift() copy','will be a formula'],
+  [2,3,4],
+  [5,6,7]
 ]
 df = pd.DataFrame(
   data,
   columns=['A', 'B', 'C', 'D', 'E'],
   dtype=float
 )
+df['D'] = df['C'].shift(1)
 df['E'] = pd.eval('df.D - df.C')
 
 print (df)
