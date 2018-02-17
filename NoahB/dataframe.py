@@ -1,8 +1,8 @@
 import pandas as pd
 data = [
-  [1,2,3],
-  [2,3,4,3,'D1-C1'],
-  [5,6,7,4,'D2-C2'],
+  [1,2,3,None,'will be a formula'],
+  [2,3,4,3],
+  [5,6,7,4]
 ]
 df = pd.DataFrame(
   data,
