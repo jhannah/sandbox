@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+	<head>
+		<title>Overcast Podcast Subscriptions</title>
+	</head>
+	<body>
+		<outline htmlUrl="https://loadingreadyrun.com/lrrcasts/archive/qwerp" text="Qwerpline - LoadingReadyRun" title="Qwerpline - LoadingReadyRun" type="rss" xmlUrl="https://loadingreadyrun.com/lrrcasts/feed/qwerp"/>
+		<outline htmlUrl="https://www.patristicapress.com/podcasticapatristica/" text="Podcastica Patristica" title="Podcastica Patristica" type="rss" xmlUrl="https://www.patristicapress.com/podcasticapatristica?format=RSS"/>
+		<outline htmlUrl="" text="A Very Fatal Murder" title="A Very Fatal Murder" type="rss" xmlUrl="http://feeds.megaphone.fm/veryfatalmurder"/>
+		<outline htmlUrl="http://www.idlethumbs.net/idlethumbs" text="Idle Thumbs" title="Idle Thumbs" type="rss" xmlUrl="http://www.idlethumbs.net/feeds/idle-thumbs"/>
+		<outline htmlUrl="http://developingperspective.com/" text="Developing Perspective" title="Developing Perspective" type="rss" xmlUrl="http://developingperspective.com/feed/podcast/"/>
+		<outline htmlUrl="http://www.mode7games.com/blog" text="Podcast – Visiting the Village" title="Podcast – Visiting the Village" type="rss" xmlUrl="http://www.mode7games.com/blog/category/podcast/feed/"/>
+		<outline htmlUrl="https://developers.google.com/web/shows/http203/podcast/" text="HTTP 203" title="HTTP 203" type="rss" xmlUrl="http://feeds.feedburner.com/Http203Podcast"/>
+		<outline htmlUrl="https://headgum.com/we-hate-movies" text="We Hate Movies" title="We Hate Movies" type="rss" xmlUrl="https://rss.art19.com/we-hate-movies"/>
+		<outline htmlUrl="https://www.relay.fm/cortex" text="Cortex" title="Cortex" type="rss" xmlUrl="https://www.relay.fm/cortex/feed"/>
+		<outline htmlUrl="http://atp.fm/" text="Accidental Tech Podcast" title="Accidental Tech Podcast" type="rss" xmlUrl="http://atp.fm/episodes?format=rss"/>
+		<outline htmlUrl="https://thecyberwire.com/podcasts/hacking-humans.html" text="Hacking Humans" title="Hacking Humans" type="rss" xmlUrl="http://hackinghumans.libsyn.com/rss"/>
+		<outline htmlUrl="http://www.idontevenownatelevision.com/" text="I Don't Even Own a Television" title="I Don't Even Own a Television" type="rss" xmlUrl="http://ideotvpod.libsyn.com/rss"/>
+		<outline htmlUrl="http://dchhaddendum.libsyn.com/website" text="Dan Carlin's Hardcore History: Addendum" title="Dan Carlin's Hardcore History: Addendum" type="rss" xmlUrl="http://dchhaddendum.libsyn.com/rss"/>
+		<outline htmlUrl="https://developers.google.com/web/shows/designer-vs-developer/podcast/" text="Designer Vs Developer" title="Designer Vs Developer" type="rss" xmlUrl="http://feeds.feedburner.com/DesignerVsDeveloper"/>
+		<outline htmlUrl="http://www.dancarlin.com/" text="Common Sense with Dan Carlin" title="Common Sense with Dan Carlin" type="rss" xmlUrl="http://feeds.feedburner.com/dancarlin/commonsense?format=xml"/>
+		<outline htmlUrl="http://www.dancarlin.com/" text="Dan Carlin's Hardcore History" title="Dan Carlin's Hardcore History" type="rss" xmlUrl="http://feeds.feedburner.com/dancarlin/history?format=xml"/>
+		<outline htmlUrl="https://www.theincomparable.com/robot/" text="Robot or Not?" title="Robot or Not?" type="rss" xmlUrl="https://feeds.theincomparable.com/robot"/>
+		<outline htmlUrl="http://www.ditchinghourly.com/" text="Ditching Hourly" title="Ditching Hourly" type="rss" xmlUrl="https://rss.simplecast.com/podcasts/1986/rss"/>
+		<outline htmlUrl="http://www.shutupandsitdown.com/" text="Shut Up &amp; Sit Down" title="Shut Up &amp; Sit Down" type="rss" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:39885437/sounds.rss"/>
+		<outline htmlUrl="https://www.shamusyoung.com/twentysidedtale" text="Diecast – Twenty Sided" title="Diecast – Twenty Sided" type="rss" xmlUrl="http://random.davidlynch.org/feed2pod/feeds/feed-httpshamusyoung.comtwentysidedtalefeedrss2cat287.xml"/>
+		<outline htmlUrl="http://thehistoryofrome.typepad.com/the_history_of_rome/" text="The History of Rome" title="The History of Rome" type="rss" xmlUrl="http://historyofrome.libsyn.com/rss"/>
+		<outline htmlUrl="http://wehearthartnett.libsyn.com/" text="We Heart Hartnett" title="We Heart Hartnett" type="rss" xmlUrl="http://wehearthartnett.libsyn.com/rss"/>
+		<outline htmlUrl="http://spielbound.com/spielcast/" text="Podcast" title="Podcast" type="rss" xmlUrl="http://spielbound.com/spielcast?format=rss"/>
+		<outline htmlUrl="https://art19.com/shows/levar-burton-reads" text="LeVar Burton Reads" title="LeVar Burton Reads" type="rss" xmlUrl="https://rss.art19.com/levar-burton-reads"/>
+		<outline htmlUrl="https://anchor.fm/techmeme-ride-home" text="Techmeme Ride Home" title="Techmeme Ride Home" type="rss" xmlUrl="https://feedpress.me/RideHome"/>
+		<outline htmlUrl="http://www.hellointernet.fm/" text="Hello Internet" title="Hello Internet" type="rss" xmlUrl="http://www.hellointernet.fm/podcast?format=rss"/>
+		<outline htmlUrl="http://gimletmedia.com/shows/reply-all" text="Reply All" title="Reply All" type="rss" xmlUrl="http://feeds.gimletmedia.com/hearreplyall"/>
+		<outline htmlUrl="http://www.mikerowe.com/podcast/" text="The Way I Heard It with Mike Rowe" title="The Way I Heard It with Mike Rowe" type="rss" xmlUrl="http://thewayiheardit.rsvmedia.com/rss/"/>
+		<outline htmlUrl="http://makenolaw.ltn.libsynpro.com/website" text="Make No Law: The First Amendment Podcast" title="Make No Law: The First Amendment Podcast" type="rss" xmlUrl="http://makenolaw.ltn.libsynpro.com/rss"/>
+		<outline htmlUrl="http://www.penny-arcade.com/podcasts" text="Downloadable Content" title="Downloadable Content" type="rss" xmlUrl="https://www.penny-arcade.com/feed/podcasts"/>
+		<outline htmlUrl="https://play.acast.com/s/internethistorypodcast" text="Internet History Podcast" title="Internet History Podcast" type="rss" xmlUrl="https://feedpress.me/InternetHistoryPodcast"/>
+		<outline htmlUrl="http://www.revolutionspodcast.com/" text="Revolutions" title="Revolutions" type="rss" xmlUrl="http://revolutionspodcast.libsyn.com/rss"/>
+		<outline htmlUrl="https://revelation.biblicalblueprints.org/sermons" text="Revelation Project: Sermons" title="Revelation Project: Sermons" type="rss" xmlUrl="https://revelation.biblicalblueprints.org/static/podcast.xml"/>
+		<outline htmlUrl="http://slate.com/slowburn" text="Slow Burn" title="Slow Burn" type="rss" xmlUrl="http://feeds.megaphone.fm/watergate"/>
+		<outline htmlUrl="https://www.farmtotaber.com/episodes/" text="Farm To Taber" title="Farm To Taber" type="rss" xmlUrl="https://sarah-taber-mets.squarespace.com/episodes?format=rss"/>
+	</body>
+</opml>
