@@ -10,8 +10,7 @@ use File::Spec;
 use GraphViz2;
 use Log::Handler;
  
-my($logger) = Log::Handler -> new;
- 
+my($logger) = Log::Handler->new;
 $logger->add(
   screen => {
     maxlevel       => 'debug',
@@ -19,15 +18,20 @@ $logger->add(
     minlevel       => 'error',
   }
 );
- 
-my($graph) = GraphViz2 -> new
-        (
-         edge   => {color => 'grey'},
-         global => {directed => 1},
-         graph  => {rankdir => 'LR'},
-         logger => $logger,
-         # node   => {shape => 'oval'},
-        );
+my($graph) = GraphViz2->new(
+  edge   => {color => 'grey'},
+  global => {directed => 1},
+  graph  => {rankdir => 'LR'},
+  logger => $logger,
+  # node   => {shape => 'oval'},
+);
+
+my $note = <<EOT;
+data source: http://www.ram.org/music/primus/misc/family_tree.html
+GraphViz2 source code: https://github.com/jhannah/sandbox/blob/master/graphviz/primus.pl
+EOT
+$graph->add_node(name => $note, shape => 'square');
+
 
 while (my $line = <DATA>) {
   chomp $line;
