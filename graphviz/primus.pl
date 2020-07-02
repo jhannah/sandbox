@@ -41,7 +41,7 @@ while (my $line = <DATA>) {
  
 # my($format)      = shift || 'svg';
 my($format)      = shift || 'png';
-my($output_file) = shift || File::Spec -> catfile("sub.graph.$format");
+my($output_file) = shift || File::Spec -> catfile("primus.$format");
  
 $graph -> run(format => $format, output_file => $output_file);
 
