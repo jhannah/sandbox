@@ -52,8 +52,9 @@ while (my $row = $csv->getline ($fh)) {
   $total += $row->[12];
 }
 close $fh;
-say "Total: $total\n";
+say "Total: $total\n\n";
 
+say "https://github.com/jhannah/sandbox/blob/main/personal_capital/positions.pl";
 my $total_perc; 
 $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
 open $fh, "<:encoding(utf8)", $infile or die $!;
@@ -62,13 +63,14 @@ while (my $row = $csv->getline ($fh)) {
   #say $row->[18];
   $row->[19] =~ m/COMMON STOCK/ or next;
   $row->[12] =~ s/,//g;
+  my $this_sus = $sus{$row->[0]} ? sprintf("%.1f", $sus{$row->[0]}) : "";
   my $this_perc = $row->[12] / $total * 100;
-  printf("%-5s %-7s %-40s %0.2f%%  %s\n",
+  printf("%-5s %-7s %-40s %0.2f%%  %-4s\n",
     $row->[0],
     $row->[18],
     $row->[4],
     $this_perc,
-    $sus{$row->[0]} || '',
+    $this_sus,
   );
   $total_perc += $this_perc;
 }
