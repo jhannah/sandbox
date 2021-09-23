@@ -39,8 +39,6 @@ my %sus = (
   DISCA => 17.2, # https://www.sustainalytics.com/esg-rating/discovery-inc/1030544339
   D    => 28.2,  # https://www.sustainalytics.com/esg-rating/dominion-energy-inc/1008145351
 );
-use Data::Dumper;
-warn Dumper(\%sus);
 
 my $total;
 my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
