@@ -1,6 +1,8 @@
 #! env perl
 
 use 5.30.0;
+use strict;
+use warnings;
 use Text::CSV_XS;
 
 # https://investor.pershing.com/nxi/portfolio/holdings Download
@@ -12,7 +14,7 @@ my $infile = "/Users/jhannah/Dropbox/personal_capital/Positions_09_23_2021.csv";
 # 20-30 Medium
 # 30-40 High
 # 40+ Severe
-my %sus = {
+my %sus = (
   AGCO => 23,    # https://www.sustainalytics.com/esg-rating/agco-corp/1008195765
   T    => 19.1,  # https://www.sustainalytics.com/esg-rating/at-t-inc/1007978477
   ABT  => 26,    # https://www.sustainalytics.com/esg-rating/abbott-laboratories/1008125729
@@ -36,7 +38,9 @@ my %sus = {
   COST => 23.2,  # https://www.sustainalytics.com/esg-rating/costco-wholesale-corp/1007971063
   DISCA => 17.2, # https://www.sustainalytics.com/esg-rating/discovery-inc/1030544339
   D    => 28.2,  # https://www.sustainalytics.com/esg-rating/dominion-energy-inc/1008145351
-};
+);
+use Data::Dumper;
+warn Dumper(\%sus);
 
 my $total;
 my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
@@ -44,26 +48,27 @@ open my $fh, "<:encoding(utf8)", $infile or die $!;
 while (my $row = $csv->getline ($fh)) {
   $row->[19] =~ m/COMMON STOCK/ or next;
   $row->[12] =~ s/,//g;
-  say "$row->[0] $row->[12]";
+  printf("%-5s %10s\n", $row->[0], $row->[12]);
   $total += $row->[12];
 }
 close $fh;
 say "Total: $total\n";
 
 my $total_perc; 
-my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
-open my $fh, "<:encoding(utf8)", $infile or die $!;
+$csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
+open $fh, "<:encoding(utf8)", $infile or die $!;
 while (my $row = $csv->getline ($fh)) {
   # Security ID,USIP/ISIN/SEDOL,Account Number,Account Nickname/Title,Description,Asset Classification,Quantity,Price,Price as of date,Timezone,Change Price Amount,Change Price %,Market Value,Market Value Change,Last Activity Date,Accrued Interest,Disposition Method,Dividend Reinvestment,Market,Sub-Asset Classification
   #say $row->[18];
   $row->[19] =~ m/COMMON STOCK/ or next;
   $row->[12] =~ s/,//g;
   my $this_perc = $row->[12] / $total * 100;
-  printf("%-5s %-7s %-40s %0.2f%\n",
+  printf("%-5s %-7s %-40s %0.2f%%  %s\n",
     $row->[0],
     $row->[18],
     $row->[4],
     $this_perc,
+    $sus{$row->[0]} || '',
   );
   $total_perc += $this_perc;
 }
