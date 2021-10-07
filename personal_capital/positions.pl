@@ -9,11 +9,11 @@ use Text::CSV_XS;
 my $infile = "/Users/jhannah/Dropbox/personal_capital/Positions_09_23_2021.csv";
 
 # https://www.sustainalytics.com/
-# 0-10 Negligible
+# 0-10  Negligible
 # 10-20 Low
 # 20-30 Medium
 # 30-40 High
-# 40+ Severe
+# 40+   Severe
 my %sus = (
   AGCO => 23,    # https://www.sustainalytics.com/esg-rating/agco-corp/1008195765
   T    => 19.1,  # https://www.sustainalytics.com/esg-rating/at-t-inc/1007978477
