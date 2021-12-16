@@ -25,6 +25,12 @@ Usage:
   amortize.pl --principle=176000 --periods=180 --interest_rate=2.13 \\
     --principle_payment=12:2000 \\
     --principle_payment=24:2000
+
+Take out a \$176,000 loan at 2.13% APR, pay it back over 15 years.
+But make a \$2,000 principle-only payment after payment #12.
+And another after payment #24.
+Those extra payments shorten the number of payments we have to make,
+and make the last payment we have to make smaller.
 EOT
   exit;
 }
@@ -39,10 +45,6 @@ print <<EOT;
 ---  --------  ------  --------  ----------
 EOT
 
-# https://github.com/roniemartinez/amortization/blob/master/amortization/amount.py
-# my $i = $interest_rate / 100 / 12;
-# my $x = (1 + $i) ** $periods;
-# $each_payment = $principle * $i * $x / $x - 1;
 my $each_payment = each_payment();
 my $this_period = 1;
 # heh. Floating point math is sloppy, so we do a sloppy check:
@@ -81,9 +83,8 @@ sub each_payment {
   # r = Interest rate per period (in our example, that's 7.5% divided by 12 months)
   # n = Total number of payments or periods
   # A = P (r (1+r)^n) / ( (1+r)^n -1 )
-  my $a;
   my $r = $interest_rate / 100 / 12;
-  $a = $principle * $r * (1 + $r) ** $periods / ((1 + $r) ** $periods - 1);
+  my $a = $principle * $r * (1 + $r) ** $periods / ((1 + $r) ** $periods - 1);
   return $a;
 }
 
