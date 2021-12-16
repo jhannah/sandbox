@@ -47,9 +47,11 @@ EOT
 
 my $each_payment = each_payment();
 my $this_period = 1;
+my $total_interest_paid;
 # heh. Floating point math is sloppy, so we do a sloppy check:
 while (sprintf("%.2f", $principle) > 0) {
   my $this_interest = $principle * $interest_rate / 100 / 12;
+  $total_interest_paid += $this_interest;
   if ($each_payment > $principle) {
     # Whoops! We would have overpaid the loan on the last payment.
     # Adjust the payment amount for this (the last) month
@@ -75,6 +77,7 @@ while (sprintf("%.2f", $principle) > 0) {
   }
   $this_period++;
 }
+say "Total interest paid: " . format_number($total_interest_paid, 2, 2);
 
 sub each_payment {
   # https://www.kasasa.com/blog/how-to-calculate-loan-payments-in-3-easy-steps
