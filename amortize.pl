@@ -32,13 +32,13 @@ EOT
 # my $x = (1 + $i) ** $periods;
 # $each_payment = $principle * $i * $x / $x - 1;
 my $each_payment = each_payment();
-# say "Monthly payment: $each_payment";
 my $this_period = 1;
-while ($principle > 0) {
+# heh. Floating point math is sloppy, so we do a sloppy check:
+while (sprintf("%.2f", $principle) > 0) {
   my $this_interest = $principle * $interest_rate / 100 / 12;
   my $this_principle = $each_payment - $this_interest;
   $principle -= $this_principle;
-  say sprintf("%3s  %6s  %6s  %6s  %10s",
+  say sprintf("%3s  %6s  %6s  %8s  %10s",
     $this_period,
     format_number($each_payment,   2, 2), 
     format_number($this_interest,  2, 2), 
