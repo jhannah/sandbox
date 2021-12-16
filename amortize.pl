@@ -26,11 +26,11 @@ Usage:
     --principle_payment=12:2000 \\
     --principle_payment=24:2000
 
-Take out a \$176,000 loan at 2.13% APR, pay it back over 15 years.
+Take out a \$176,000 loan over 15 years at 2.13% APR.
 But make a \$2,000 principle-only payment after payment #12.
 And another after payment #24.
 Those extra payments shorten the number of payments we have to make,
-and make the last payment we have to make smaller.
+and make the last payment smaller.
 EOT
   exit;
 }
