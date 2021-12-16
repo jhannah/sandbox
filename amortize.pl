@@ -72,7 +72,7 @@ while (sprintf("%.2f", $principle) > 0) {
   if ($principle_payments{$this_period}) {
     my $a = $principle_payments{$this_period};
     $principle -= $a;
-    say sprintf("Principle-only payment made:\n%22s %8s  %10s",
+    say sprintf("Principle-only payment made:\n%21s %9s  %10s",
       '',
       format_number($a, 2, 2),
       format_number($principle, 2, 2),
