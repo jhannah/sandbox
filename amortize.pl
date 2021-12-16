@@ -48,9 +48,14 @@ my $this_period = 1;
 # heh. Floating point math is sloppy, so we do a sloppy check:
 while (sprintf("%.2f", $principle) > 0) {
   my $this_interest = $principle * $interest_rate / 100 / 12;
+  if ($each_payment > $principle) {
+    # Whoops! We would have overpaid the loan on the last payment.
+    # Adjust the payment amount for this (the last) month
+    $each_payment = $principle + $this_interest;
+  }
   my $this_principle = $each_payment - $this_interest;
   $principle -= $this_principle;
-  say sprintf("%3s  %6s  %6s  %8s  %10s",
+  say sprintf("%3s  %8s  %6s  %8s  %10s",
     $this_period,
     format_number($each_payment,   2, 2), 
     format_number($this_interest,  2, 2), 
