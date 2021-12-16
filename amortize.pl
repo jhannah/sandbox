@@ -8,24 +8,36 @@ use Number::Format qw(format_number);
 # pip3 install amortization     (https://github.com/roniemartinez/amortization)
 # amortize --principal 176000 --period 180 --interest-rate 0.0213 --schedule
 
-# But in my case I want to make principle-only payments without the monthly
+# But in my case I also want to make principle-only payments without the monthly
 # payment changing.
 
 my ($principle, $periods, $interest_rate, @principle_payments);
 GetOptions(
-  "principle=f"          => \$principle,
-  "periods=i"            => \$periods,
-  "interest_rate=f"      => \$interest_rate,
-  "principle_payments=s" => \@principle_payments,
+  "principle=f"         => \$principle,
+  "periods=i"           => \$periods,
+  "interest_rate=f"     => \$interest_rate,
+  "principle_payment=s" => \@principle_payments,
 ) or die "Error in command line arguments";
 
 unless ($principle && $periods && $interest_rate) {
   print <<EOT;
 Usage:
-  amortize.pl --principle=176000 --periods=180 --interest_rate=2.13
+  amortize.pl --principle=176000 --periods=180 --interest_rate=2.13 \\
+    --principle_payment=12:2000 \\
+    --principle_payment=24:2000
 EOT
   exit;
 }
+my %principle_payments;
+foreach my $pp (@principle_payments) {
+  my ($period, $amount) = split /:/, $pp;
+  $principle_payments{$period} = $amount;
+}
+
+print <<EOT;
+  #   Payment     Int     Princ     Balance
+---  --------  ------  --------  ----------
+EOT
 
 # https://github.com/roniemartinez/amortization/blob/master/amortization/amount.py
 # my $i = $interest_rate / 100 / 12;
@@ -45,6 +57,15 @@ while (sprintf("%.2f", $principle) > 0) {
     format_number($this_principle, 2, 2), 
     format_number($principle,      2, 2),
   );
+  if ($principle_payments{$this_period}) {
+    my $a = $principle_payments{$this_period};
+    $principle -= $a;
+    say sprintf("Principle-only payment made:\n%22s %8s  %10s",
+      '',
+      format_number($a, 2, 2),
+      format_number($principle, 2, 2),
+    );
+  }
   $this_period++;
 }
 
