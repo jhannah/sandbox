@@ -2,6 +2,7 @@
 
 use Modern::Perl;
 use Getopt::Long;
+use Number::Format qw(format_number);
 
 # This Python tool almost does what I want:
 # pip3 install amortization     (https://github.com/roniemartinez/amortization)
@@ -37,8 +38,13 @@ while ($principle > 0) {
   my $this_interest = $principle * $interest_rate / 100 / 12;
   my $this_principle = $each_payment - $this_interest;
   $principle -= $this_principle;
-  say sprintf("%d %.2f %.2f %.2f %.2f", 
-    $this_period, $each_payment, $this_interest, $this_principle, $principle);
+  say sprintf("%3s  %6s  %6s  %6s  %10s",
+    $this_period,
+    format_number($each_payment,   2, 2), 
+    format_number($this_interest,  2, 2), 
+    format_number($this_principle, 2, 2), 
+    format_number($principle,      2, 2),
+  );
   $this_period++;
 }
 
