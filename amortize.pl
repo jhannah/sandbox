@@ -1,5 +1,8 @@
 #! env perl
 
+# Sample output:
+#   https://gist.github.com/jhannah/4c74c240ba987edea6e5f0f72a342ab3
+
 use Modern::Perl;
 use Getopt::Long;
 use Number::Format qw(format_number);
