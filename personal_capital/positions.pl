@@ -5,6 +5,10 @@ use Text::CSV_XS;
 # https://investor.pershing.com/nxi/portfolio/holdings Download
 my $infile = "/Users/jhannah/Dropbox/personal_capital/Positions_09_23_2021.csv";
 
+# Maybe someday grab quotes?
+# https://www.yahoofinanceapi.com/
+# curl -H 'x-api-key: 8SxtiLtqHL3IePi2PpYSw7LskQeAaJQe9CqPBf70' -H 'accept: application/json' -v 'https://yfapi.net/v6/finance/quote?region=US&lang=en&symbols=AAPL%2CBTC-USD%2CEURUSD%3DX' | jq
+
 # https://www.sustainalytics.com/
 # 0-10  Negligible
 # 10-20 Low
