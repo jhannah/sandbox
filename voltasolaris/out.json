@@ -1,0 +1,36 @@
+{
+   "header" : {
+      "program" : "jackprogram"
+   },
+   "lines" : [
+      {
+         "qty" : "1",
+         "partnum" : "SE7600H-US000BNW4"
+      },
+      {
+         "qty" : "1",
+         "partnum" : "SE7600H-US000BNW4"
+      },
+      {
+         "partnum" : "SE7600A-USS2RLCB2",
+         "qty" : "2"
+      },
+      {
+         "partnum" : "SE7600A-USS2RLCB2",
+         "qty" : "2"
+      },
+      {
+         "partnum" : "ALG-030-04010Z",
+         "qty" : "3"
+      },
+      {
+         "partnum" : "ALG-030-04010Z",
+         "qty" : "3"
+      }
+   ],
+   "meta" : {
+      "username" : "api",
+      "api" : "saveorder",
+      "password" : "...."
+   }
+}

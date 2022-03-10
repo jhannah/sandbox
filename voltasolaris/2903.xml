@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StepExecArchive xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="2903" SysStepId="4" SysStepDesc="Scheduling" ExecDate="2022-03-04T15:20:08.267" org="test603" username="jack">
+  <TransformationParams />
+  <OrderHeader>
+    <Id>5119</Id>
+    <CreationDate>2022-03-01T10:49:00</CreationDate>
+    <OrderDate>2022-03-01T10:49:00</OrderDate>
+    <DueDate>2022-03-01T10:49:00</DueDate>
+    <SchedDate>2022-03-01T10:49:00</SchedDate>
+    <PurchaseOrderNum />
+    <PackageTrackingNum />
+    <DropShip>false</DropShip>
+    <OnHold>false</OnHold>
+    <Comment />
+    <ServiceType />
+    <TotalNetWeight>117</TotalNetWeight>
+    <TotalGrossWeight>70</TotalGrossWeight>
+    <TotalVolume>0</TotalVolume>
+    <Ref1 />
+    <Ref2 />
+    <Ref3 />
+    <Ref4 />
+    <Ref5 />
+    <Program>
+      <Name>Solar Supply</Name>
+      <CustomerID>2248</CustomerID>
+      <VendorID>2020</VendorID>
+      <CustomerAccount>202</CustomerAccount>
+      <VendorAccount>102</VendorAccount>
+      <Comment />
+      <Ref1 />
+      <Ref2 />
+      <Ref3 />
+      <Ref4 />
+      <Ref5 />
+      <ShippingAgent>CanadaPost</ShippingAgent>
+      <TaxCode>Taxable</TaxCode>
+      <ProgramAttributeList />
+    </Program>
+    <LocFrom>
+      <Name>Vancouver</Name>
+      <Discount>0</Discount>
+      <Contact />
+      <Address1 />
+      <Address2 />
+      <City />
+      <State />
+      <Zip />
+      <Country />
+      <Company>ABC co</Company>
+      <CompanyID>2020</CompanyID>
+      <Note />
+      <Email />
+      <Comment />
+      <Ref1 />
+      <Ref2 />
+      <Ref3 />
+      <Phone />
+      <Fax />
+    </LocFrom>
+    <LocTo>
+      <Name>East Cal Storage Facilities </Name>
+      <Discount>0</Discount>
+      <Contact>Joe Chung </Contact>
+      <Address1 />
+      <Address2 />
+      <City>Calgary </City>
+      <State />
+      <Zip />
+      <Country>Canada</Country>
+      <Company>Calgary Electric </Company>
+      <CompanyID>2020</CompanyID>
+      <Note />
+      <Email />
+      <Comment />
+      <Ref1 />
+      <Ref2 />
+      <Ref3 />
+      <Phone />
+      <Fax />
+    </LocTo>
+    <LocInventoryOwner>
+      <Name>Contact Info</Name>
+      <Discount>0</Discount>
+      <Contact>Jack Test</Contact>
+      <Address1>Applewood Avenue</Address1>
+      <Address2 />
+      <City>Mississauga</City>
+      <State />
+      <Zip />
+      <Country>Canada</Country>
+      <Company />
+      <CompanyID>0</CompanyID>
+      <Note />
+      <Email>jack@abcc.com</Email>
+      <Comment />
+      <Ref1 />
+      <Ref2 />
+      <Ref3 />
+      <Phone>905-478-2345</Phone>
+      <Fax />
+    </LocInventoryOwner>
+    <ShippingAgent>CanadaPost</ShippingAgent>
+    <TaxCode />
+    <Status>Open</Status>
+    <Resource />
+    <Process>Replenishment</Process>
+    <ProcessSteps>Acknowledgement, Scheduling, Receiving</ProcessSteps>
+    <Type>In</Type>
+    <OHAttribute />
+    <Packages />
+  </OrderHeader>
+  <Lines>
+    <Line>
+      <OrderLineId>11189</OrderLineId>
+      <ExecQty>1</ExecQty>
+      <OrderQty>1</OrderQty>
+      <BackorderQty>1</BackorderQty>
+      <TaxCode>Taxable</TaxCode>
+      <Cost>0.0000</Cost>
+      <Price>2339.0000</Price>
+      <Comments />
+      <Ref1 />
+      <Ref2 />
+      <Ref3 />
+      <UomCode>EA</UomCode>
+      <Item>
+        <ID>11756</ID>
+        <Description>SOLAREDGE EV CHARING SE7600H-US 7.6KW INVERTER</Description>
+        <QtyOnHand>227</QtyOnHand>
+        <MinOrderQty>120</MinOrderQty>
+        <MaxOrderQty>2000</MaxOrderQty>
+        <MinInventory>100</MinInventory>
+        <MaxInventory>2000</MaxInventory>
+        <UnitPrice>2339.0000</UnitPrice>
+        <UnitCost>0.0000</UnitCost>
+        <MSRP>3585.9900</MSRP>
+        <NetWeigth>65</NetWeigth>
+        <GrossWeight>70</GrossWeight>
+        <Volume>0</Volume>
+        <QtyOnOrder>1.00000</QtyOnOrder>
+        <QtyAllocated>0.00000</QtyAllocated>
+        <QtyAvailable>228.00000</QtyAvailable>
+        <Inbound-LeadTime>15</Inbound-LeadTime>
+        <Outbound-LeadTime>21</Outbound-LeadTime>
+        <ReorderPoint>200</ReorderPoint>
+        <SafetyStock>100</SafetyStock>
+        <OrderMultiple>10</OrderMultiple>
+        <ReorderQty>100</ReorderQty>
+        <Forecast>45</Forecast>
+        <Replenish>false</Replenish>
+        <Consigned>false</Consigned>
+        <LotControlled>0</LotControlled>
+        <FixedLocation>Bin-A21</FixedLocation>
+        <ReorderingPolicy>Reorder point</ReorderingPolicy>
+        <Group>Inverters</Group>
+        <Category>Solar</Category>
+        <Manufacturer>Solar Edge</Manufacturer>
+        <PlanningGroup>A-Solar</PlanningGroup>
+        <NetPrice>0</NetPrice>
+        <ExtPrice>0</ExtPrice>
+        <Comment />
+        <Ref1 />
+        <Ref2 />
+        <Ref3 />
+        <Ref4 />
+        <Ref5 />
+        <CountryOfOrigin />
+        <ShippingAgentCode />
+        <TaxCode>Taxable</TaxCode>
+        <UomCode>EA</UomCode>
+        <InboundUom>EA</InboundUom>
+        <OutboundUom>EA</OutboundUom>
+        <InnerPackUom>EA</InnerPackUom>
+        <OuterPackUom>EA</OuterPackUom>
+        <AdjustmentUom>EA</AdjustmentUom>
+        <ConsumptionUom>EA</ConsumptionUom>
+        <StatusCode />
+        <SupercedeItem />
+        <DefaultPartNumber>1010</DefaultPartNumber>
+        <ExpiredDate>9999-12-31T23:59:59.9999999</ExpiredDate>
+        <Supplier>
+          <Name>default</Name>
+          <Discount>0</Discount>
+          <Contact />
+          <Address1>Tetherly lane</Address1>
+          <Address2 />
+          <City>Dublin</City>
+          <State>County Dublin</State>
+          <Zip />
+          <Country>Ireland</Country>
+          <Company />
+          <CompanyID>2248</CompanyID>
+          <Note />
+          <Email />
+          <Comment />
+          <Ref1 />
+          <Ref2 />
+          <Ref3 />
+          <Phone>+353 8 728 2 0327</Phone>
+          <Fax />
+        </Supplier>
+        <PartNumbers>
+          <PartNumber>
+            <ItemID>11756</ItemID>
+            <PartNumber>SE7600H-US000BNW4</PartNumber>
+            <Desc>SOLAREDGE EV CHARING SE7600H-US 7.6KW INVERTER</Desc>
+            <CompanyId>2020</CompanyId>
+            <Company>ABC Co</Company>
+            <UomDesc>EA</UomDesc>
+            <Type>Default</Type>
+          </PartNumber>
+          <PartNumber>
+            <ItemID>11756</ItemID>
+            <PartNumber>SE7600H-US000BNW4</PartNumber>
+            <Desc>SOLAREDGE EV CHARING SE7600H-US 7.6KW INVERTER</Desc>
+            <CompanyId>2248</CompanyId>
+            <Company>Solar Sea</Company>
+            <UomDesc>EA</UomDesc>
+            <Type>Default</Type>
+          </PartNumber>
+        </PartNumbers>
+        <Attributes />
+        <UomConversions>
+          <UomConversion>
+            <UomCode>EA</UomCode>
+            <UomFactorCode>1</UomFactorCode>
+            <UomDividedFactorCode>1</UomDividedFactorCode>
+          </UomConversion>
+        </UomConversions>
+      </Item>
+      <OLAttributeLists />
+      <PackageDetails />
+      <OrderDate>2022-03-01T10:48:39.06</OrderDate>
+      <DueDate>2022-03-16T10:48:39.06</DueDate>
+      <ScheduleDate>2022-03-01T10:48:39.06</ScheduleDate>
+      <InvTransactionId>0</InvTransactionId>
+      <qtyreject>0</qtyreject>
+    </Line>
+    <Line>
+      <OrderLineId>11190</OrderLineId>
+      <ExecQty>2</ExecQty>
+      <OrderQty>2</OrderQty>
+      <BackorderQty>2</BackorderQty>
+      <TaxCode>Taxable</TaxCode>
+      <Cost>0.0000</Cost>
+      <Price>3412.0000</Price>
+      <Comments />
+      <Ref1 />
+      <Ref2 />
+      <Ref3 />
+      <UomCode>EA</UomCode>
+      <Item>
+        <ID>11757</ID>
+        <Description>SOLAREDGE 7600W HYBRID INVERTER - SE7600A-USS2RLCB</Description>
+        <QtyOnHand>33</QtyOnHand>
+        <MinOrderQty>10</MinOrderQty>
+        <MaxOrderQty>100</MaxOrderQty>
+        <MinInventory>5</MinInventory>
+        <MaxInventory>80</MaxInventory>
+        <UnitPrice>3412.0000</UnitPrice>
+        <UnitCost>0.0000</UnitCost>
+        <MSRP>4725.0000</MSRP>
+        <NetWeigth>26</NetWeigth>
+        <GrossWeight>0</GrossWeight>
+        <Volume>0</Volume>
+        <QtyOnOrder>2.00000</QtyOnOrder>
+        <QtyAllocated>0.00000</QtyAllocated>
+        <QtyAvailable>35.00000</QtyAvailable>
+        <Inbound-LeadTime>12</Inbound-LeadTime>
+        <Outbound-LeadTime>7</Outbound-LeadTime>
+        <ReorderPoint>10</ReorderPoint>
+        <SafetyStock>2</SafetyStock>
+        <OrderMultiple>2</OrderMultiple>
+        <ReorderQty>10</ReorderQty>
+        <Forecast>30</Forecast>
+        <Replenish>false</Replenish>
+        <Consigned>false</Consigned>
+        <LotControlled>0</LotControlled>
+        <FixedLocation>Bin-A21</FixedLocation>
+        <ReorderingPolicy>Reorder point</ReorderingPolicy>
+        <Group>Inverters</Group>
+        <Category>Solar</Category>
+        <Manufacturer>Solar Edge</Manufacturer>
+        <PlanningGroup>A-Solar</PlanningGroup>
+        <NetPrice>0</NetPrice>
+        <ExtPrice>0</ExtPrice>
+        <Comment />
+        <Ref1 />
+        <Ref2 />
+        <Ref3 />
+        <Ref4 />
+        <Ref5 />
+        <CountryOfOrigin />
+        <ShippingAgentCode />
+        <TaxCode>Taxable</TaxCode>
+        <UomCode>EA</UomCode>
+        <InboundUom>EA</InboundUom>
+        <OutboundUom>EA</OutboundUom>
+        <InnerPackUom>EA</InnerPackUom>
+        <OuterPackUom>EA</OuterPackUom>
+        <AdjustmentUom>EA</AdjustmentUom>
+        <ConsumptionUom>EA</ConsumptionUom>
+        <StatusCode />
+        <SupercedeItem />
+        <DefaultPartNumber>1006</DefaultPartNumber>
+        <ExpiredDate>9999-12-31T23:59:59.9999999</ExpiredDate>
+        <Supplier>
+          <Name>default</Name>
+          <Discount>0</Discount>
+          <Contact />
+          <Address1>Tetherly lane</Address1>
+          <Address2 />
+          <City>Dublin</City>
+          <State>County Dublin</State>
+          <Zip />
+          <Country>Ireland</Country>
+          <Company />
+          <CompanyID>2248</CompanyID>
+          <Note />
+          <Email />
+          <Comment />
+          <Ref1 />
+          <Ref2 />
+          <Ref3 />
+          <Phone>+353 8 728 2 0327</Phone>
+          <Fax />
+        </Supplier>
+        <PartNumbers>
+          <PartNumber>
+            <ItemID>11757</ItemID>
+            <PartNumber>SE7600A-USS2RLCB2</PartNumber>
+            <Desc>SOLAREDGE 7600W HYBRID INVERTER - SE7600A-USS2RLCB</Desc>
+            <CompanyId>2020</CompanyId>
+            <Company>ABC Co</Company>
+            <UomDesc>EA</UomDesc>
+            <Type>Default</Type>
+          </PartNumber>
+          <PartNumber>
+            <ItemID>11757</ItemID>
+            <PartNumber>SE7600A-USS2RLCB2</PartNumber>
+            <Desc>SOLAREDGE 7600W HYBRID INVERTER - SE7600A-USS2RLCB</Desc>
+            <CompanyId>2248</CompanyId>
+            <Company>Solar Sea</Company>
+            <UomDesc>EA</UomDesc>
+            <Type>Default</Type>
+          </PartNumber>
+        </PartNumbers>
+        <Attributes />
+        <UomConversions>
+          <UomConversion>
+            <UomCode>EA</UomCode>
+            <UomFactorCode>1</UomFactorCode>
+            <UomDividedFactorCode>1</UomDividedFactorCode>
+          </UomConversion>
+        </UomConversions>
+      </Item>
+      <OLAttributeLists />
+      <PackageDetails />
+      <OrderDate>2022-03-01T10:48:39.06</OrderDate>
+      <DueDate>2022-03-13T10:48:39.06</DueDate>
+      <ScheduleDate>2022-03-01T10:48:39.06</ScheduleDate>
+      <InvTransactionId>0</InvTransactionId>
+      <qtyreject>0</qtyreject>
+    </Line>
+    <Line>
+      <OrderLineId>11191</OrderLineId>
+      <ExecQty>3</ExecQty>
+      <OrderQty>3</OrderQty>
+      <BackorderQty>3</BackorderQty>
+      <TaxCode>Taxable</TaxCode>
+      <Cost>0.0000</Cost>
+      <Price>3745.0000</Price>
+      <Comments />
+      <Ref1 />
+      <Ref2 />
+      <Ref3 />
+      <UomCode>EA</UomCode>
+      <Item>
+        <ID>11758</ID>
+        <Description>OUTBACK POWER 5KW HYBRID INVERTER - SBX5048-120/24</Description>
+        <QtyOnHand>136</QtyOnHand>
+        <MinOrderQty>5</MinOrderQty>
+        <MaxOrderQty>35</MaxOrderQty>
+        <MinInventory>1</MinInventory>
+        <MaxInventory>50</MaxInventory>
+        <UnitPrice>3745.0000</UnitPrice>
+        <UnitCost>0.0000</UnitCost>
+        <MSRP>4795.9500</MSRP>
+        <NetWeigth>0</NetWeigth>
+        <GrossWeight>0</GrossWeight>
+        <Volume>0</Volume>
+        <QtyOnOrder>3.00000</QtyOnOrder>
+        <QtyAllocated>0.00000</QtyAllocated>
+        <QtyAvailable>139.00000</QtyAvailable>
+        <Inbound-LeadTime>15</Inbound-LeadTime>
+        <Outbound-LeadTime>25</Outbound-LeadTime>
+        <ReorderPoint>12</ReorderPoint>
+        <SafetyStock>1</SafetyStock>
+        <OrderMultiple>10</OrderMultiple>
+        <ReorderQty>20</ReorderQty>
+        <Forecast>51</Forecast>
+        <Replenish>false</Replenish>
+        <Consigned>false</Consigned>
+        <LotControlled>0</LotControlled>
+        <FixedLocation>Bin-A21</FixedLocation>
+        <ReorderingPolicy>Reorder point</ReorderingPolicy>
+        <Group>Inverters</Group>
+        <Category>Solar</Category>
+        <Manufacturer>Outback</Manufacturer>
+        <PlanningGroup>A-Solar</PlanningGroup>
+        <NetPrice>0</NetPrice>
+        <ExtPrice>0</ExtPrice>
+        <Comment>Buy 2 - 4 and get 1% off
+Buy 5 or above and get 2% off</Comment>
+        <Ref1 />
+        <Ref2 />
+        <Ref3 />
+        <Ref4 />
+        <Ref5 />
+        <CountryOfOrigin />
+        <ShippingAgentCode />
+        <TaxCode>Taxable</TaxCode>
+        <UomCode>EA</UomCode>
+        <InboundUom>EA</InboundUom>
+        <OutboundUom>EA</OutboundUom>
+        <InnerPackUom>EA</InnerPackUom>
+        <OuterPackUom>EA</OuterPackUom>
+        <AdjustmentUom>EA</AdjustmentUom>
+        <ConsumptionUom>EA</ConsumptionUom>
+        <StatusCode />
+        <SupercedeItem />
+        <DefaultPartNumber>1001</DefaultPartNumber>
+        <ExpiredDate>9999-12-31T23:59:59.9999999</ExpiredDate>
+        <Supplier>
+          <Name>default</Name>
+          <Discount>0</Discount>
+          <Contact />
+          <Address1>Tetherly lane</Address1>
+          <Address2 />
+          <City>Dublin</City>
+          <State>County Dublin</State>
+          <Zip />
+          <Country>Ireland</Country>
+          <Company />
+          <CompanyID>2248</CompanyID>
+          <Note />
+          <Email />
+          <Comment />
+          <Ref1 />
+          <Ref2 />
+          <Ref3 />
+          <Phone>+353 8 728 2 0327</Phone>
+          <Fax />
+        </Supplier>
+        <PartNumbers>
+          <PartNumber>
+            <ItemID>11758</ItemID>
+            <PartNumber>ALG-030-04010Z</PartNumber>
+            <Desc>OUTBACK POWER 5KW HYBRID INVERTER - SBX5048-120/24</Desc>
+            <CompanyId>2020</CompanyId>
+            <Company>ABC Co</Company>
+            <UomDesc>EA</UomDesc>
+            <Type>Default</Type>
+          </PartNumber>
+          <PartNumber>
+            <ItemID>11758</ItemID>
+            <PartNumber>ALG-030-04010Z</PartNumber>
+            <Desc>OUTBACK POWER 5KW HYBRID INVERTER - SBX5048-120/24</Desc>
+            <CompanyId>2248</CompanyId>
+            <Company>Solar Sea</Company>
+            <UomDesc>EA</UomDesc>
+            <Type>Default</Type>
+          </PartNumber>
+        </PartNumbers>
+        <Attributes />
+        <UomConversions>
+          <UomConversion>
+            <UomCode>EA</UomCode>
+            <UomFactorCode>1</UomFactorCode>
+            <UomDividedFactorCode>1</UomDividedFactorCode>
+          </UomConversion>
+        </UomConversions>
+      </Item>
+      <OLAttributeLists />
+      <PackageDetails />
+      <OrderDate>2022-03-01T10:48:39.06</OrderDate>
+      <DueDate>2022-03-16T10:48:39.06</DueDate>
+      <ScheduleDate>2022-03-01T10:48:39.06</ScheduleDate>
+      <InvTransactionId>0</InvTransactionId>
+      <qtyreject>0</qtyreject>
+    </Line>
+  </Lines>
+  <Notifications>
+    <Notification>
+      <EmailSubject>mailgate test %o - %p - %n - %1</EmailSubject>
+      <EmailFrom>jack@clearspider.net</EmailFrom>
+      <EmailEncoding>UTF8</EmailEncoding>
+      <UserEmail />
+      <OtherEmail />
+      <HttpPostUrl />
+      <HttpPostContextType>text/xml</HttpPostContextType>
+      <Adaptor />
+      <fSendEmailToOrderTo>false</fSendEmailToOrderTo>
+      <fSendEmailToOrderFrom>false</fSendEmailToOrderFrom>
+      <fEmbedAtt>false</fEmbedAtt>
+      <TransDocID>0</TransDocID>
+      <TransDocFileName />
+      <Params />
+      <SMTPServer>mailgate.ica.net</SMTPServer>
+      <SMTPPort>587</SMTPPort>
+    </Notification>
+    <Notification>
+      <EmailSubject>new alert</EmailSubject>
+      <EmailEncoding>UTF8</EmailEncoding>
+      <UserEmail />
+      <OtherEmail />
+      <HttpPostContextType>text/plain</HttpPostContextType>
+      <Adaptor />
+      <fSendEmailToOrderTo>false</fSendEmailToOrderTo>
+      <fSendEmailToOrderFrom>false</fSendEmailToOrderFrom>
+      <fEmbedAtt>false</fEmbedAtt>
+      <TransDocID>1</TransDocID>
+      <TransDocFileName>order#.html</TransDocFileName>
+      <Params />
+      <SMTPServer />
+      <SMTPPort xsi:nil="true" />
+      <SMTPUser />
+      <SMTPPassword />
+    </Notification>
+    <Notification>
+      <EmailSubject />
+      <EmailFrom />
+      <EmailEncoding>UTF8</EmailEncoding>
+      <UserEmail />
+      <OtherEmail />
+      <HttpPostUrl />
+      <HttpPostContextType>text/plain</HttpPostContextType>
+      <Adaptor>test/adaptor</Adaptor>
+      <fSendEmailToOrderTo>false</fSendEmailToOrderTo>
+      <fSendEmailToOrderFrom>false</fSendEmailToOrderFrom>
+      <fEmbedAtt>false</fEmbedAtt>
+      <TransDocID>0</TransDocID>
+      <TransDocFileName />
+      <Params />
+      <SMTPServer />
+      <SMTPPort xsi:nil="true" />
+    </Notification>
+    <Notification>
+      <EmailSubject>email xml</EmailSubject>
+      <EmailFrom>noreply@clearspider.com</EmailFrom>
+      <EmailEncoding>UTF8</EmailEncoding>
+      <UserEmail />
+      <OtherEmail />
+      <HttpPostUrl />
+      <HttpPostContextType>text/xml</HttpPostContextType>
+      <Adaptor />
+      <fSendEmailToOrderTo>false</fSendEmailToOrderTo>
+      <fSendEmailToOrderFrom>false</fSendEmailToOrderFrom>
+      <fEmbedAtt>false</fEmbedAtt>
+      <TransDocID>0</TransDocID>
+      <TransDocFileName />
+      <Params />
+      <SMTPServer />
+      <SMTPPort xsi:nil="true" />
+      <SMTPUser />
+      <SMTPPassword />
+    </Notification>
+    <Notification>
+      <EmailSubject>step notification</EmailSubject>
+      <EmailFrom>noreply@clearspider.com</EmailFrom>
+      <EmailEncoding>UTF8</EmailEncoding>
+      <UserEmail>jack@clearspider.net</UserEmail>
+      <OtherEmail />
+      <HttpPostUrl />
+      <HttpPostContextType>text/xml</HttpPostContextType>
+      <Adaptor />
+      <fSendEmailToOrderTo>false</fSendEmailToOrderTo>
+      <fSendEmailToOrderFrom>false</fSendEmailToOrderFrom>
+      <fEmbedAtt>false</fEmbedAtt>
+      <TransDocID>0</TransDocID>
+      <TransDocFileName />
+      <Params />
+      <SMTPServer />
+      <SMTPPort xsi:nil="true" />
+      <SMTPUser />
+      <SMTPPassword />
+    </Notification>
+  </Notifications>
+  <Charges />
+</StepExecArchive>
