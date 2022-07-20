@@ -4,76 +4,100 @@
         <title>Downcast Podcasts</title>
     </head>
     <body>
-        <outline text="30 For 30 Podcasts" type="rss" title="30 For 30 Podcasts" xmlUrl="http://www.espn.com/espnradio/podcast/feeds/itunes/podCast?id=19472136" htmlUrl="http://www.espn.com/espnradio/podcast/index" />
-        <outline text="99% Invisible" type="rss" title="99% Invisible" xmlUrl="http://feeds.99percentinvisible.org/99percentinvisible" htmlUrl="http://99percentinvisible.org" />
+        <outline text="30 For 30 Podcasts" type="rss" title="30 For 30 Podcasts" xmlUrl="https://feeds.megaphone.fm/ESP5765452710" htmlUrl="http://www.espn.com/espnradio/podcast/index" />
+        <outline text="99% Invisible" type="rss" title="99% Invisible" xmlUrl="https://feeds.simplecast.com/BqbsxVfO" htmlUrl="https://99percentinvisible.org" />
         <outline text="A Very Fatal Murder" type="rss" title="A Very Fatal Murder" xmlUrl="http://feeds.megaphone.fm/veryfatalmurder" htmlUrl="" />
-        <outline text="All Angular Podcasts by Devchat.tv" type="rss" title="All Angular Podcasts by Devchat.tv" xmlUrl="https://feeds.feedwrench.com/AdventuresInAngular.rss" htmlUrl="http://devchat.tv" />
-        <outline text="Amicus With Dahlia Lithwick | Law, Justice, and the Courts" type="rss" title="Amicus With Dahlia Lithwick | Law, Justice, and the Courts" xmlUrl="https://feeds.megaphone.fm/slatesamicuswithdahlialithwick" htmlUrl="http://www.slate.com/podcasts" />
-        <outline text="Angular Air" type="rss" title="Angular Air" xmlUrl="http://audio.angularair.com/feed/" htmlUrl="https://angularair.podbean.com" />
+        <outline text="Adventures in Angular" type="rss" title="Adventures in Angular" xmlUrl="https://topenddevs.com/podcasts/adventures-in-angular/rss" htmlUrl="https://topenddevs.com/podcasts/adventures-in-angular" />
+        <outline text="Amicus With Dahlia Lithwick | Law, justice, and the courts" type="rss" title="Amicus With Dahlia Lithwick | Law, justice, and the courts" xmlUrl="https://feeds.megaphone.fm/slatesamicuswithdahlialithwick" htmlUrl="http://www.slate.com/podcasts" />
+        <outline text="Angular Air" type="rss" title="Angular Air" xmlUrl="https://audio.angularair.com/feed/" htmlUrl="https://angularair.com" />
+        <outline text="Angular Rocks" type="rss" title="Angular Rocks" xmlUrl="https://feeds.transistor.fm/angularrocks" htmlUrl="https://angularrocks.com" />
         <outline text="Audible" type="rss" title="Audible" xmlUrl="E38B5EF5-69DA-41F8-B681-74ABC46B4EAE" htmlUrl="http://www.downcastapp.com" />
-        <outline text="Bike Shop CX" type="rss" title="Bike Shop CX" xmlUrl="http://bikeshopshow.libsyn.com/rss" htmlUrl="http://wideanglepodium.com/category/bike-shop-cx/" />
-        <outline text="Bubble" type="rss" title="Bubble" xmlUrl="https://maximumfun.org/feeds/bubble.xml" htmlUrl="https://maximumfun.org/shows/bubble" />
+        <outline text="Bike Shop Show" type="rss" title="Bike Shop Show" xmlUrl="https://bikeshopshow.libsyn.com/rss" htmlUrl="https://www.thegravellot.com/the-bike-shop-show" />
+        <outline text="Blocked and Reported" type="rss" title="Blocked and Reported" xmlUrl="https://api.substack.com/feed/podcast/500230.rss" htmlUrl="https://www.blockedandreported.org/podcast" />
+        <outline text="Bubble" type="rss" title="Bubble" xmlUrl="https://feeds.simplecast.com/XqNLT4El" htmlUrl="https://maximumfun.org/shows/bubble" />
+        <outline text="Build For Tomorrow" type="rss" title="Build For Tomorrow" xmlUrl="https://feeds.megaphone.fm/pessimistsarchive" htmlUrl="http://jasonfeifer.com/build-for-tomorrow" />
+        <outline text="Bully Pulpit with Bob Garfield by Booksmart Studios" type="rss" title="Bully Pulpit with Bob Garfield by Booksmart Studios" xmlUrl="https://api.substack.com/feed/podcast/791377.rss" htmlUrl="https://bullypulpit.substack.com/podcast" />
+        <outline text="California King" type="rss" title="California King" xmlUrl="https://www.californiaking.org/rss" htmlUrl="https://www.californiaking.org" />
+        <outline text="Car Free Midwest" type="rss" title="Car Free Midwest" xmlUrl="https://anchor.fm/s/43815388/podcast/rss" htmlUrl="https://carfreemidwest.creator-spring.com" />
+        <outline text="Comedy Bang Bang: The Podcast" type="rss" title="Comedy Bang Bang: The Podcast" xmlUrl="https://feeds.simplecast.com/byb4nhvN" htmlUrl="http://www.earwolf.com/show/comedy-bang-bang/" />
         <outline text="Common Sense with Dan Carlin" type="rss" title="Common Sense with Dan Carlin" xmlUrl="http://feeds.feedburner.com/dancarlin/commonsense?format=xml" htmlUrl="http://www.dancarlin.com" />
         <outline text="Competitive Erotic Fan Fiction with Bryan Cook" type="rss" title="Competitive Erotic Fan Fiction with Bryan Cook" xmlUrl="http://feeds.feedburner.com/competitiveeroticfanfiction" htmlUrl="http://eroticfanfiction.libsyn.com" />
-        <outline text="Culture Gabfest" type="rss" title="Culture Gabfest" xmlUrl="https://feeds.megaphone.fm/slatesculturegabfest" htmlUrl="http://www.slate.com/culturefest" />
-        <outline text="Cyclocross Radio" type="rss" title="Cyclocross Radio" xmlUrl="http://crosshairsradio.libsyn.com/rss" htmlUrl="http://crosshairsradio.libsyn.com/podcast" />
+        <outline text="Conversations with Tyler" type="rss" title="Conversations with Tyler" xmlUrl="http://cowenconvos.libsyn.com/rss" htmlUrl="https://www.conversationswithtyler.com" />
+        <outline text="Cool Stuff Ride Home" type="rss" title="Cool Stuff Ride Home" xmlUrl="https://rss.art19.com/coronavirus-daily-briefing" htmlUrl="https://www.ridehome.info/show/kottke-ride-home/" />
+        <outline text="Crypto Island" type="rss" title="Crypto Island" xmlUrl="https://anchor.fm/s/8a05e74c/podcast/rss" htmlUrl="http://www.pjvogt.com" />
+        <outline text="Culture Gabfest" type="rss" title="Culture Gabfest" xmlUrl="https://feeds.megaphone.fm/culturefestonly" htmlUrl="http://www.slate.com/culturefest" />
+        <outline text="Cyclocross Radio" type="rss" title="Cyclocross Radio" xmlUrl="https://crosshairsradio.libsyn.com/rss" htmlUrl="http://crosshairsradio.libsyn.com/podcast" />
         <outline text="Dan Carlin&amp;apos;s Hardcore History" type="rss" title="Dan Carlin&amp;apos;s Hardcore History" xmlUrl="http://feeds.feedburner.com/dancarlin/history?format=xml" htmlUrl="http://www.dancarlin.com" />
-        <outline text="Doughboys" type="rss" title="Doughboys" xmlUrl="https://rss.art19.com/doughboys" htmlUrl="https://headgum.com/doughboys" />
-        <outline text="Downloadable Content" type="rss" title="Downloadable Content" xmlUrl="https://www.penny-arcade.com/feed/podcasts" htmlUrl="http://www.penny-arcade.com/podcasts" />
-        <outline text="Every Little Thing" type="rss" title="Every Little Thing" xmlUrl="http://feeds.gimletmedia.com/eltshow" htmlUrl="https://www.gimletmedia.com/elt" />
-        <outline text="Free Thoughts" type="rss" title="Free Thoughts" xmlUrl="https://www.libertarianism.org/rss/podcast/free-thoughts" htmlUrl="https://www.libertarianism.org/podcasts/free-thoughts" />
-        <outline text="Gastropod" type="rss" title="Gastropod" xmlUrl="https://gastropod.com/feed/" htmlUrl="https://gastropod.com" />
+        <outline text="Decoder Ring" type="rss" title="Decoder Ring" xmlUrl="https://feeds.megaphone.fm/decoderring" htmlUrl="http://www.slate.com/decoderring" />
+        <outline text="Doughboys" type="rss" title="Doughboys" xmlUrl="https://www.omnycontent.com/d/playlist/77bedd50-a734-42aa-9c08-ad86013ca0f9/bb15eb7d-0e1d-4fe0-b333-ad8e00138f1d/5f63c2d0-6c12-4e4a-8457-ad8e00138f26/podcast.rss" htmlUrl="https://headgum.com/doughboys" />
+        <outline text="Downloadable Content" type="rss" title="Downloadable Content" xmlUrl="https://www.penny-arcade.com/feed/podcasts" htmlUrl="https://www.penny-arcade.com/podcast/dlc" />
+        <outline text="Free Thoughts" type="rss" title="Free Thoughts" xmlUrl="https://feeds.acast.com/public/shows/5e3852cbdb67c0f94f393857" htmlUrl="https://www.libertarianism.org/podcasts/free-thoughts" />
+        <outline text="Friendly Fire" type="rss" title="Friendly Fire" xmlUrl="https://feeds.simplecast.com/LRWNKz1u" htmlUrl="https://maximumfun.org/podcasts/friendly-fire/" />
+        <outline text="Gastropod" type="rss" title="Gastropod" xmlUrl="https://feeds.megaphone.fm/VMP6255701211" htmlUrl="https://gastropod.com/" />
+        <outline text="Get Played" type="rss" title="Get Played" xmlUrl="https://feeds.simplecast.com/afafh2s6" htmlUrl="https://get-played.simplecast.com" />
+        <outline text="Go Time: Golang, Software Engineering" type="rss" title="Go Time: Golang, Software Engineering" xmlUrl="https://changelog.com/gotime/feed" htmlUrl="https://changelog.com/gotime" />
+        <outline text="Groadio - The Premier Gravel Cycling &amp; Racing Podcast" type="rss" title="Groadio - The Premier Gravel Cycling &amp; Racing Podcast" xmlUrl="https://groadio.libsyn.com/rss" htmlUrl="http://www.wideanglepodium.com" />
         <outline text="HTTP 203" type="rss" title="HTTP 203" xmlUrl="http://feeds.feedburner.com/Http203Podcast" htmlUrl="https://developers.google.com/web/shows/http203/podcast/" />
         <outline text="Hang Up and Listen" type="rss" title="Hang Up and Listen" xmlUrl="https://feeds.megaphone.fm/slateshangupandlisten" htmlUrl="http://www.slate.com/hangup" />
         <outline text="Hi-Phi Nation" type="rss" title="Hi-Phi Nation" xmlUrl="https://feeds.megaphone.fm/hiphination" htmlUrl="http://www.hiphination.org" />
-        <outline text="Invisibilia" type="rss" title="Invisibilia" xmlUrl="https://www.npr.org/rss/podcast.php?id=510307" htmlUrl="https://www.npr.org/programs/invisibilia" />
-        <outline text="JS Party" type="rss" title="JS Party" xmlUrl="https://changelog.com/jsparty/feed" htmlUrl="https://changelog.com/jsparty" />
+        <outline text="Hit Parade Plus" type="rss" title="Hit Parade Plus" xmlUrl="https://slateprivate.supportingcast.fm/content/eyJ0IjoicCIsImMiOiIzMjEiLCJ1IjoiOTA3MSIsImQiOiIxNTg1MDY4NDEyIiwiayI6ODV9fDA1NTYyNjc5ZjNlMzEzOTBiMWVhZGRhY2E3OGNhZDA3NGE0ZDJlYTNmMDI0ZjkwNGY0N2QxZWUxYTYzMjJhZjU.rss" htmlUrl="http://www.slate.com/podcasts" />
+        <outline text="How Did This Get Made?" type="rss" title="How Did This Get Made?" xmlUrl="https://feeds.simplecast.com/Ao0C24M8" htmlUrl="http://www.earwolf.com/show/how-did-this-get-made/" />
+        <outline text="ICYMI" type="rss" title="ICYMI" xmlUrl="https://feeds.megaphone.fm/icymi" htmlUrl="https://slate.com/podcasts" />
+        <outline text="InsideEVs - Electric Vehicle News" type="rss" title="InsideEVs - Electric Vehicle News" xmlUrl="https://audioboom.com/channels/5048390.rss" htmlUrl="https://audioboom.com/channels/5048390" />
+        <outline text="Invisibilia" type="rss" title="Invisibilia" xmlUrl="https://feeds.npr.org/510307/podcast.xml" htmlUrl="https://www.npr.org/programs/invisibilia" />
+        <outline text="Iowa Cyclocross Podcast" type="rss" title="Iowa Cyclocross Podcast" xmlUrl="https://anchor.fm/s/69aebc8/podcast/rss" htmlUrl="https://anchor.fm/iacxpod" />
+        <outline text="JS Party: JavaScript, CSS, Web Development" type="rss" title="JS Party: JavaScript, CSS, Web Development" xmlUrl="https://changelog.com/jsparty/feed" htmlUrl="https://changelog.com/jsparty" />
         <outline text="Jay Flaunts His Ignorance. The podcast." type="rss" title="Jay Flaunts His Ignorance. The podcast." xmlUrl="http://jhannah.github.io/jayflaunts/podcast.xml" htmlUrl="http://jhannah.github.io/jayflaunts/" />
-        <outline text="Jordan, Jesse GO!" type="rss" title="Jordan, Jesse GO!" xmlUrl="http://feeds.feedburner.com/thornmorris" htmlUrl="http://www.maximumfun.org" />
-        <outline text="Lend Me Your Ears | A Podcast About Shakespeare and Modern Politics" type="rss" title="Lend Me Your Ears | A Podcast About Shakespeare and Modern Politics" xmlUrl="https://feeds.megaphone.fm/SLT4814603818" htmlUrl="slate.com/shakespeare" />
-        <outline text="Lexicon Valley" type="rss" title="Lexicon Valley" xmlUrl="https://feeds.megaphone.fm/slatelexiconvalley" htmlUrl="http://www.slate.com/lexiconvalley" />
-        <outline text="Making Sense with Sam Harris" type="rss" title="Making Sense with Sam Harris" xmlUrl="http://wakingup.libsyn.com/rss" htmlUrl="http://www.samharris.org" />
-        <outline text="Maximum Fun Bonus Content 2019" type="rss" title="Maximum Fun Bonus Content 2019" xmlUrl="https://maximumfun.org/maxfunboco2019.xml" htmlUrl="http://www.maximumfun.org" />
-        <outline text="My Brother, My Brother And Me" type="rss" title="My Brother, My Brother And Me" xmlUrl="http://mbmbam.libsyn.com/rss" htmlUrl="http://www.mbmbam.com" />
+        <outline text="Jesuitical" type="rss" title="Jesuitical" xmlUrl="https://feeds.megaphone.fm/AMMD2442073612" htmlUrl="https://www.americamagazine.org/jesuiticalshow" />
+        <outline text="Jordan, Jesse, GO!" type="rss" title="Jordan, Jesse, GO!" xmlUrl="https://feeds.simplecast.com/NDAi3mtz" htmlUrl="https://maximumfun.org/podcasts/jordan-jesse-go/" />
+        <outline text="Kermode &amp; Mayo’s Take" type="rss" title="Kermode &amp; Mayo’s Take" xmlUrl="https://feeds.megaphone.fm/kermodeandmayo" htmlUrl="(null)" />
+        <outline text="Lexicon Valley from Booksmart Studios" type="rss" title="Lexicon Valley from Booksmart Studios" xmlUrl="https://api.substack.com/feed/podcast/791421.rss" htmlUrl="https://lexiconvalley.substack.com/podcast" />
+        <outline text="Making Sense with Sam Harris" type="rss" title="Making Sense with Sam Harris" xmlUrl="https://wakingup.libsyn.com/rss" htmlUrl="http://www.samharris.org" />
+        <outline text="Maximum Fun Bonus Content 2022" type="rss" title="Maximum Fun Bonus Content 2022" xmlUrl="https://feeds.simplecast.com/R4NASDJb" htmlUrl="https://www.maximumfun.org" />
+        <outline text="More Perfect" type="rss" title="More Perfect" xmlUrl="http://feeds.wnyc.org/moreperfect" htmlUrl="https://www.wnycstudios.org/podcasts/radiolabmoreperfect" />
+        <outline text="My Brother, My Brother And Me" type="rss" title="My Brother, My Brother And Me" xmlUrl="https://feeds.simplecast.com/wjQvYtdl" htmlUrl="http://www.mbmbam.com" />
         <outline text="Mystery Show" type="rss" title="Mystery Show" xmlUrl="https://feeds.megaphone.fm/mysteryshow" htmlUrl="https://www.gimletmedia.com/mystery-show" />
+        <outline text="Nebraska Public Media | News" type="rss" title="Nebraska Public Media | News" xmlUrl="https://www.spreaker.com/show/4876916/episodes/feed" htmlUrl="https://www.spreaker.com/show/nebraska-public-media-news" />
         <outline text="North Omaha History Podcast, Omaha History, South Omaha History" type="rss" title="North Omaha History Podcast, Omaha History, South Omaha History" xmlUrl="https://omahahistorygo.com/feed/podcast/" htmlUrl="https://omahahistorygo.com" />
-        <outline text="Off Book: The Improvised Musical" type="rss" title="Off Book: The Improvised Musical" xmlUrl="https://rss.art19.com/off-book" htmlUrl="http://www.earwolf.com/show/off-book/" />
-        <outline text="On the Media" type="rss" title="On the Media" xmlUrl="http://feeds.wnyc.org/onthemedia" htmlUrl="http://www.wnycstudios.org/shows/otm" />
-        <outline text="Outside/In" type="rss" title="Outside/In" xmlUrl="http://feeds.megaphone.fm/PPY5156495451" htmlUrl="http://outsideinradio.org/" />
-        <outline text="Pessimists Archive Podcast" type="rss" title="Pessimists Archive Podcast" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:220006686/sounds.rss" htmlUrl="http://www.pessimists.co" />
-        <outline text="Planet Money" type="rss" title="Planet Money" xmlUrl="https://www.npr.org/rss/podcast.php?id=510289" htmlUrl="https://www.npr.org/planetmoney" />
+        <outline text="Nowhere Fast: A Virtual Bike Racing Podcast" type="rss" title="Nowhere Fast: A Virtual Bike Racing Podcast" xmlUrl="https://nowherefast.libsyn.com/rss" htmlUrl="http://www.wideanglepodium.com" />
+        <outline text="Off Book: The Improvised Musical" type="rss" title="Off Book: The Improvised Musical" xmlUrl="https://rss.art19.com/off-book" htmlUrl="https://www.thezachandthejess.com/podcast-off-book.html" />
+        <outline text="Omnibus" type="rss" title="Omnibus" xmlUrl="https://feeds.fireside.fm/omnibus/rss" htmlUrl="https://www.omnibusproject.com" />
+        <outline text="On the Media" type="rss" title="On the Media" xmlUrl="http://feeds.wnyc.org/onthemedia" htmlUrl="https://www.wnycstudios.org/podcasts/otm" />
+        <outline text="Outside/In" type="rss" title="Outside/In" xmlUrl="https://feeds.simplecast.com/LkRPyEJS" htmlUrl="http://outsideinradio.org/" />
+        <outline text="Planet Money" type="rss" title="Planet Money" xmlUrl="https://feeds.npr.org/510289/podcast.xml" htmlUrl="https://www.npr.org/podcasts/510289/planet-money" />
         <outline text="Political Gabfest" type="rss" title="Political Gabfest" xmlUrl="https://feeds.megaphone.fm/slatespoliticalgabfest" htmlUrl="http://www.slate.com/gabfest" />
-        <outline text="Pop Culture Happy Hour" type="rss" title="Pop Culture Happy Hour" xmlUrl="https://www.npr.org/rss/podcast.php?id=510282" htmlUrl="https://www.npr.org/series/pop-culture-happy-hour/" />
-        <outline text="Radio Atlantic" type="rss" title="Radio Atlantic" xmlUrl="http://feeds.megaphone.fm/radioatlantic" htmlUrl="https://www.theatlantic.com/podcasts/radio-atlantic/" />
-        <outline text="Radiolab Presents: More Perfect" type="rss" title="Radiolab Presents: More Perfect" xmlUrl="http://feeds.wnyc.org/moreperfect" htmlUrl="http://www.wnycstudios.org/shows/radiolabmoreperfect" />
-        <outline text="Radiolab" type="rss" title="Radiolab" xmlUrl="http://feeds.wnyc.org/radiolab" htmlUrl="http://www.wnycstudios.org/shows/radiolab/projects/podcasts" />
-        <outline text="Reply All" type="rss" title="Reply All" xmlUrl="http://feeds.gimletmedia.com/hearreplyall" htmlUrl="http://gimletmedia.com/shows/reply-all" />
-        <outline text="Revisionist History" type="rss" title="Revisionist History" xmlUrl="https://feeds.megaphone.fm/revisionisthistory" htmlUrl="http://revisionisthistory.com/" />
-        <outline text="S-Town" type="rss" title="S-Town" xmlUrl="http://feeds.stownpodcast.org/stownpodcast" htmlUrl="https://stownpodcast.org" />
-        <outline text="Serial" type="rss" title="Serial" xmlUrl="http://feeds.serialpodcast.org/serialpodcast" htmlUrl="https://serialpodcast.org" />
+        <outline text="Pop Culture Happy Hour" type="rss" title="Pop Culture Happy Hour" xmlUrl="https://feeds.npr.org/510282/podcast.xml" htmlUrl="https://www.npr.org/podcasts/510282/pop-culture-happy-hour" />
+        <outline text="Radio Atlantic" type="rss" title="Radio Atlantic" xmlUrl="http://feeds.megaphone.fm/radioatlantic" htmlUrl="https://www.theatlantic.com/" />
+        <outline text="Radiolab Podcasts (Radiolab)" type="rss" title="Radiolab Podcasts (Radiolab)" xmlUrl="http://feeds.wnyc.org/radiolab" htmlUrl="https://www.wnycstudios.org/podcasts/radiolab/projects/podcasts" />
+        <outline text="Reply All" type="rss" title="Reply All" xmlUrl="https://feeds.megaphone.fm/replyall" htmlUrl="http://gimletmedia.com/shows/reply-all" />
+        <outline text="Revisionist History" type="rss" title="Revisionist History" xmlUrl="https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/0d4cc74d-fff7-4b89-8818-ae32006cd7f0/podcast.rss" htmlUrl="http://revisionisthistory.com/" />
+        <outline text="S-Town" type="rss" title="S-Town" xmlUrl="https://feeds.simplecast.com/CpvnpIaj" htmlUrl="https://stownpodcast.org" />
+        <outline text="Serial" type="rss" title="Serial" xmlUrl="https://feeds.simplecast.com/xl36XBC2" htmlUrl="https://serialpodcast.org" />
         <outline text="Slate Money" type="rss" title="Slate Money" xmlUrl="https://feeds.megaphone.fm/slatemoney" htmlUrl="http://www.slate.com/slatemoney" />
+        <outline text="Slate&amp;apos;s Spoiler Specials" type="rss" title="Slate&amp;apos;s Spoiler Specials" xmlUrl="https://feeds.megaphone.fm/slatesspoilerspecials" htmlUrl="http://www.slate.com/podcasts" />
         <outline text="Slow Burn" type="rss" title="Slow Burn" xmlUrl="http://feeds.megaphone.fm/watergate" htmlUrl="http://slate.com/slowburn" />
         <outline text="Song Exploder" type="rss" title="Song Exploder" xmlUrl="http://feed.songexploder.net/SongExploder" htmlUrl="http://www.songexploder.net" />
+        <outline text="StaffEng" type="rss" title="StaffEng" xmlUrl="https://feeds.buzzsprout.com/1687069.rss" htmlUrl="https://podcast.staffeng.com" />
         <outline text="Star Wars Minute" type="rss" title="Star Wars Minute" xmlUrl="https://rss.art19.com/star-wars-minute" htmlUrl="http://www.StarWarsMinute.com" />
-        <outline text="Stop Podcasting Yourself" type="rss" title="Stop Podcasting Yourself" xmlUrl="http://stoppodcastingyourself.libsyn.com/rss" htmlUrl="http://stoppodcastingyourself.com" />
+        <outline text="Stop Podcasting Yourself" type="rss" title="Stop Podcasting Yourself" xmlUrl="https://stoppodcastingyourself.libsyn.com/rss" htmlUrl="http://stoppodcastingyourself.com" />
         <outline text="Switched on Pop" type="rss" title="Switched on Pop" xmlUrl="https://feeds.megaphone.fm/switchedonpop" htmlUrl="http://www.switchedonpop.com" />
-        <outline text="TLDR" type="rss" title="TLDR" xmlUrl="http://feeds.wnyc.org/otm_tldr" htmlUrl="https://www.wnyc.org/tags/tldr_podcast" />
-        <outline text="The Adventure Zone" type="rss" title="The Adventure Zone" xmlUrl="http://adventurezone.libsyn.com/rss" htmlUrl="http://adventurezone.libsyn.com/podcast" />
-        <outline text="The Changelog" type="rss" title="The Changelog" xmlUrl="https://changelog.com/podcast/feed" htmlUrl="http://changelog.fm" />
-        <outline text="The Editors" type="rss" title="The Editors" xmlUrl="https://podcasts.nationalreview.com/category/the-editors/feed/" htmlUrl="https://www.nationalreview.com/podcasts/the-editors/" />
-        <outline text="The Ezra Klein Show" type="rss" title="The Ezra Klein Show" xmlUrl="https://feeds.megaphone.fm/theezrakleinshow" htmlUrl="https://www.vox.com/ezra-klein-show-podcast" />
-        <outline text="The Faith Angle" type="rss" title="The Faith Angle" xmlUrl="https://relevantmagazine.com/feed/podcast/the-faith-angle" htmlUrl="https://relevantmagazine.com/" />
-        <outline text="The Flop House" type="rss" title="The Flop House" xmlUrl="http://theflophouse.libsyn.com/rss" htmlUrl="http://www.flophousepodcast.com" />
-        <outline text="The Gist" type="rss" title="The Gist" xmlUrl="https://feeds.megaphone.fm/slatesthegist" htmlUrl="http://www.slate.com/thegist" />
-        <outline text="The History of Fun" type="rss" title="The History of Fun" xmlUrl="https://feeds.megaphone.fm/historyoffun" htmlUrl="https://polygon.com/podcasts" />
-        <outline text="The InfoQ Podcast" type="rss" title="The InfoQ Podcast" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:215740450/sounds.rss" htmlUrl="http://bit.ly/1Xc6w4R" />
-        <outline text="The Turnaround with Jesse Thorn" type="rss" title="The Turnaround with Jesse Thorn" xmlUrl="https://maximumfun.org/feeds/tt.xml" htmlUrl="http://maximumfun.org/shows/the-turnaround" />
-        <outline text="The Web Platform Podcast" type="rss" title="The Web Platform Podcast" xmlUrl="http://thewebplatform.libsyn.com/rss" htmlUrl="https://thewebplatformpodcast.com/" />
+        <outline text="Talking Cars (MP3)" type="rss" title="Talking Cars (MP3)" xmlUrl="https://talkingcarsmp3.libsyn.com/rss" htmlUrl="https://consumerreports.org/" />
+        <outline text="The Angular Plus Show" type="rss" title="The Angular Plus Show" xmlUrl="https://www.spreaker.com/show/4175221/episodes/feed" htmlUrl="https://www.spreaker.com/show/angular-show" />
+        <outline text="The Argument" type="rss" title="The Argument" xmlUrl="https://feeds.simplecast.com/2xzUiHxw" htmlUrl="https://www.nytimes.com/the-argument" />
+        <outline text="The Atlantic Magazine in Audio" type="rss" title="The Atlantic Magazine in Audio" xmlUrl="https://feeds.megaphone.fm/the-atlantic-magazine-in-audio" htmlUrl="www.theatlantic.com/magazine" />
+        <outline text="The Changelog: Software Development, Open Source" type="rss" title="The Changelog: Software Development, Open Source" xmlUrl="https://changelog.com/podcast/feed" htmlUrl="https://changelog.com/podcast" />
+        <outline text="The Editors" type="rss" title="The Editors" xmlUrl="https://feeds.simplecast.com/bAMj0tiC" htmlUrl="https://www.nationalreview.com/podcasts/the-editors/" />
+        <outline text="The Ezra Klein Show" type="rss" title="The Ezra Klein Show" xmlUrl="https://feeds.simplecast.com/82FI35Px" htmlUrl="https://www.nytimes.com/ezra-klein-podcast" />
+        <outline text="The Fifth Column" type="rss" title="The Fifth Column" xmlUrl="https://api.substack.com/feed/podcast/815642.rss" htmlUrl="https://wethefifth.substack.com/podcast" />
+        <outline text="The Flop House" type="rss" title="The Flop House" xmlUrl="https://feeds.simplecast.com/EOAFriME" htmlUrl="http://www.flophousepodcast.com" />
+        <outline text="The Gist" type="rss" title="The Gist" xmlUrl="https://feeds.megaphone.fm/slatesthegist" htmlUrl="http://www.mikepesca.com" />
+        <outline text="The Web Platform Podcast" type="rss" title="The Web Platform Podcast" xmlUrl="https://thewebplatform.libsyn.com/rss" htmlUrl="https://thewebplatformpodcast.com/" />
+        <outline text="The Weeds" type="rss" title="The Weeds" xmlUrl="https://feeds.megaphone.fm/theweeds" htmlUrl="https://www.vox.com/the-weeds" />
         <outline text="This American Life" type="rss" title="This American Life" xmlUrl="http://feed.thisamericanlife.org/talpodcast" htmlUrl="https://www.thisamericanlife.org" />
-        <outline text="Vox&amp;apos;s The Weeds" type="rss" title="Vox&amp;apos;s The Weeds" xmlUrl="https://feeds.megaphone.fm/theweeds" htmlUrl="https://www.vox.com/the-weeds" />
-        <outline text="Whistlestop: Presidential History and Trivia" type="rss" title="Whistlestop: Presidential History and Trivia" xmlUrl="https://feeds.megaphone.fm/slateswhistlestop" htmlUrl="http://www.slate.com/podcasts/" />
-        <outline text="You Look Nice Today" type="rss" title="You Look Nice Today" xmlUrl="http://feeds.feedburner.com/YouLookNiceToday" htmlUrl="http://youlooknicetoday.com" />
-        <outline text="jesuitical" type="rss" title="jesuitical" xmlUrl="http://jesuitical.libsyn.com/rss" htmlUrl="http://jesuitical.libsyn.com" />
+        <outline text="Til Death Do Us Blart" type="rss" title="Til Death Do Us Blart" xmlUrl="https://blart.libsyn.com/rss" htmlUrl="http://blart.libsyn.com/podcast" />
+        <outline text="WAP Presents: The Parts Bin" type="rss" title="WAP Presents: The Parts Bin" xmlUrl="https://slowridereviews.libsyn.com/rss" htmlUrl="http://www.wideanglepodium.com/" />
+        <outline text="You Look Nice Today" type="rss" title="You Look Nice Today" xmlUrl="http://feeds.feedburner.com/YouLookNiceToday" htmlUrl="https://www.youlooknicetoday.com" />
         <outline text="the memory palace" type="rss" title="the memory palace" xmlUrl="http://feeds.thememorypalace.us/thememorypalace" htmlUrl="http://thememorypalace.us" />
+        <outline text="tldr_podcast" type="rss" title="tldr_podcast" xmlUrl="http://feeds.wnyc.org/otm_tldr" htmlUrl="https://www.wnyc.org/tags/tldr_podcast" />
     </body>
 </opml>
