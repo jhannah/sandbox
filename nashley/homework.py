@@ -6,8 +6,11 @@
 # E + F = G + 1
 # F + G = A - 1
 # G + A = B + 1
-# pip3 install sympy
 
+# uh... beats me. I haven't done Algebra since... 1992?
+# Luckily its 2022 now, and Python is pretty neato:
+
+# pip3 install sympy
 import sympy as sym
 a,b,c,d,e,f,g = sym.symbols('a,b,c,d,e,f,g')
 eq1 = sym.Eq(a+b,c+1)
