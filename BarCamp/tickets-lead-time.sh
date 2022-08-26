@@ -14,7 +14,7 @@ curl -s https://opencollective.com/barcamp-omaha-2022-location-tbd-6df56ef2/memb
 
 # 2020-03-28 Lincoln
 curl -s https://opencollective.com/barcamp-lincoln-2020-ffe4c560/members/all.json | jq -c '.[] | select(.role == "ATTENDEE") | [ .createdAt, .totalAmountDonated, .name ]'
-# 13 rows. Oof, presumably a lot more people than this attended? Where's the data actually?
+# 13 rows. Cancelled, all tickets refunded due to covid-19.
 
 # 2019-11-09 Omaha
 curl -s https://opencollective.com/barcamp-omaha-2019-at-kaneko-on-november-9th-52953ev/members/all.json | jq -c '.[] | select(.role == "ATTENDEE") | [ .createdAt, .totalAmountDonated, .name ]'
