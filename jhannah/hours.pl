@@ -1,19 +1,20 @@
 use 5.26.0;
 
-# 40 hours per week. 52 weeks a year, 3 weeks off for whatever (PTO / sick).
-# Minus 11 holiday days.
-my $quota_per_month = (40 * 49 - (8 * 11)) / 12;
-say "Monthly quota: $quota_per_month";
+my $weeks_off = 5;
+# 40 hours per week. Minus 11 holiday days.
+my $quota_per_month = (40 * (52 - $weeks_off) - (8 * 11)) / 12;
+printf("Monthly quota: %.1f\n", $quota_per_month);
 
 my $bank;
 while (<DATA>) {
   chomp;
   my ($ym, $hours_worked) = split /\t/;
   $bank = $bank - $quota_per_month + $hours_worked;
-  printf("%s %.0f %.0f\n", $ym, $hours_worked, $bank);
+  printf("%s %7s %7s\n", $ym, $hours_worked, sprintf("%.0f", $bank));
 }
 
 # https://docs.google.com/spreadsheets/d/19YVGu_-Ga8Uyqgvo6EMzSses3yadqPj7JC8n8pPGMIs/edit#gid=0
+# year-month hours_worked
 __DATA__
 2018-01	197
 2018-02	162
