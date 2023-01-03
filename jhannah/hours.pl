@@ -1,6 +1,6 @@
 use 5.26.0;
 
-my $weeks_off = 5;
+my $weeks_off = 4;
 # 40 hours per week. Minus 11 holiday days.
 my $quota_per_month = (40 * (52 - $weeks_off) - (8 * 11)) / 12;
 printf("Monthly quota: %.1f\n", $quota_per_month);
