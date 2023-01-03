@@ -4,7 +4,7 @@ my $weeks_off = 4;
 my $holidays = 11;
 # 40 hours per week. Minus holidays.
 my $quota_per_month = (40 * (52 - $weeks_off) - (8 * $holidays)) / 12;
-say "$weeks_off weeks off, $holidays holidays";
+say "Per year: $weeks_off weeks off (PTO + sick) + $holidays holidays";
 printf("Monthly quota: %.1f\n", $quota_per_month);
 say "year-month hours_worked hours_banked";
 
