@@ -21,4 +21,6 @@ __END__
 ✗ ./poker.pl
 That's the Q of H
 
-
+Want more?
+Blog: https://chris.prather.org/perl-roguelike-part-0.html
+Tutorial: https://gist.github.com/Ovid/4cc649c1eb3142b6a856d94c54b1d4ed
