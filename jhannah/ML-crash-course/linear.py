@@ -1,8 +1,14 @@
 # https://colab.research.google.com/github/google/eng-edu/blob/main/ml/cc/exercises/linear_regression_with_synthetic_data.ipynb
-# pip3 install tensorflow matplotlib
+# pip3 install pandas==1.5.3      # not 2.1.0 sigh
+# pip3 install tensorflow
+# pip3 install matplotlib==3.7.1  # not 3.7.2 sigh
 
 import pandas as pd
+print("Pandas: " + pd.__version__)
 import tensorflow as tf
+print("Tensorflow: " + tf.__version__)
+import matplotlib
+print("matplotlib: " + matplotlib.__version__)
 from matplotlib import pyplot as plt
 
 
