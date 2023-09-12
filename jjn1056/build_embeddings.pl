@@ -9,7 +9,16 @@ use 5.28.0;
 use AI::Embedding;
 use Data::Printer;
 
-$ENV{OPENAPI_key} || die "You need to set ENV var OPENAPI_key";
+$ENV{OPENAI_API_KEY} || die "You need to set ENV var OPENAI_API_KEY";
+
+die "curl works fine, AI::Embedding is broken apparently. Migrate to OpenAPI::API?";
+# curl https://api.openai.com/v1/embeddings \
+#   -H "Content-Type: application/json" \
+#   -H "Authorization: Bearer $OPENAI_API_KEY" \
+#   -d '{
+#     "input": "Your text string goes here",
+#     "model": "text-embedding-ada-002"
+#   }'
 
 # my $dbh = DBI->connect(
 #   'DBI:Pg:dbname=[DB]',
@@ -26,14 +35,14 @@ $ENV{OPENAPI_key} || die "You need to set ENV var OPENAPI_key";
 
 my $embedding_api = AI::Embedding->new(
   api => 'OpenAI',
-  key => $ENV{OPENAPI_key},
+  key => $ENV{OPENAI_API_KEY},
 );
 
 # my $insert_stmt = $dbh->prepare('INSERT INTO meals (name, vector_info) VALUES (?, ?)');
 foreach my $meal (<DATA>) {
   chomp($meal);
   print "Getting Embedding info for ..$meal..\n";
-  my $embedding = $embedding_api->embedding($meal);
+  my $embedding = $embedding_api->embedding($meal, [1]);
   p $embedding_api;
   die $embedding_api->error unless $embedding_api->success;
 
