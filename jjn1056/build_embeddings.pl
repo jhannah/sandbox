@@ -1,18 +1,21 @@
 #! env perl
+
 # Written by John Napiorkowski
-# https://dev.to/jjn1056/using-postgresql-pgvector-for-ai-part-2-using-vectors-for-natural-language-processing-b40
+#   https://dev.to/jjn1056/using-postgresql-pgvector-for-ai-part-2-using-vectors-for-natural-language-processing-b40
+# Hacked by Jay Hannah
 
-use warnings;
-use strict;
-
-use DBI;
+use 5.28.0;
+# use DBI;
 use AI::Embedding;
+use Data::Printer;
 
-my $dbh = DBI->connect(
-  'DBI:Pg:dbname=[DB]',
-  '[USER]',
-  '[PASSWORD',
-) || die "Can't connect to DB";
+$ENV{OPENAPI_key} || die "You need to set ENV var OPENAPI_key";
+
+# my $dbh = DBI->connect(
+#   'DBI:Pg:dbname=[DB]',
+#   '[USER]',
+#   '[PASSWORD',
+# ) || die "Can't connect to DB";
 
 # Here's the table
 # CREATE TABLE meals (
@@ -22,21 +25,25 @@ my $dbh = DBI->connect(
 # );
 
 my $embedding_api = AI::Embedding->new(
-    api => 'OpenAI',
-    key => '[API-KEY]'
+  api => 'OpenAI',
+  key => $ENV{OPENAPI_key},
 );
 
-my $insert_stmt = $dbh->prepare('INSERT INTO meals (name, vector_info) VALUES (?, ?)');
+# my $insert_stmt = $dbh->prepare('INSERT INTO meals (name, vector_info) VALUES (?, ?)');
 foreach my $meal (<DATA>) {
   chomp($meal);
   print "Getting Embedding info for ..$meal..\n";
   my $embedding = $embedding_api->embedding($meal);
+  p $embedding_api;
   die $embedding_api->error unless $embedding_api->success;
-  $insert_stmt->execute($meal, "[${embedding}]")
-    or die "Couldn't execute statement: $DBI::errstr";
+
+  # $insert_stmt->execute($meal, "[${embedding}]")
+  #   or die "Couldn't execute statement: $DBI::errstr";
+
+  last;
 }
-$insert_stmt->finish();
-$dbh->disconnect();
+#$insert_stmt->finish();
+#$dbh->disconnect();
 
 __DATA__
 French Croissant with Jam and Coffee
