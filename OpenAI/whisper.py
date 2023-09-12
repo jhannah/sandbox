@@ -1,3 +1,4 @@
+# https://platform.openai.com/docs/tutorials/meeting-minutes
 # pip3 install openai
 
 import openai
