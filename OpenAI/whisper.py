@@ -1,6 +1,10 @@
 # https://platform.openai.com/docs/tutorials/meeting-minutes
 # pip3 install openai
 
+# Gotta split into ~10MB files because 25MB is the theoretical max
+# ffmpeg -i /Users/jhannah/Dropbox/Public/jay_flaunts/041.mp3 -f segment -segment_time 1200 -c copy ./out%03d.mp3
+# In vim: gq to add hard word wrapping
+
 import openai
 
 def transcribe_audio(audio_file_path):
@@ -8,7 +12,7 @@ def transcribe_audio(audio_file_path):
     transcription = openai.Audio.transcribe("whisper-1", audio_file)
   return transcription['text']
 
-text = transcribe_audio("/Users/jhannah/Dropbox/Public/jay_flaunts/025.mp3")
+text = transcribe_audio("out002.mp3")
 print(text)
 
 
