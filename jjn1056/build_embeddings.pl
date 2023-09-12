@@ -12,6 +12,7 @@ use Data::Printer;
 $ENV{OPENAI_API_KEY} || die "You need to set ENV var OPENAI_API_KEY";
 
 die "curl works fine, AI::Embedding is broken apparently. Migrate to OpenAPI::API?";
+# https://platform.openai.com/docs/guides/embeddings/what-are-embeddings
 # curl https://api.openai.com/v1/embeddings \
 #   -H "Content-Type: application/json" \
 #   -H "Authorization: Bearer $OPENAI_API_KEY" \
