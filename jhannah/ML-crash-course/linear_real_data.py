@@ -54,6 +54,11 @@ def train_model(model, df, feature, label, epochs, batch_size):
   trained_weight = model.get_weights()[0]
   trained_bias = model.get_weights()[1]
 
+  # My local numpy -> pandas is mad. Gotta flatten these to make it happy:
+  # https://numpy.org/doc/stable/reference/generated/numpy.ndarray.item.html#numpy-ndarray-item
+  trained_weight = trained_weight.item(0)
+  trained_bias = trained_bias.item(0)
+
   # The list of epochs is stored separately from the rest of history.
   epochs = history.epoch
   
