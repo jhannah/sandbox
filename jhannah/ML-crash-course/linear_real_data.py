@@ -141,6 +141,7 @@ def predict_house_values(n, feature, label):
 
 # Define a synthetic feature named rooms_per_person
 training_df["rooms_per_person"] = training_df["total_rooms"] / training_df["population"]
+'''
 my_feature = "rooms_per_person"
 
 # Assign values to these three hyperparameters.
@@ -155,4 +156,7 @@ weight, bias, epochs, rmse = train_model(my_model, training_df,
                                          epochs, batch_size)
 plot_the_loss_curve(epochs, rmse)
 predict_house_values(15, my_feature, my_label)
+'''
+
+print(training_df.corr())
 
