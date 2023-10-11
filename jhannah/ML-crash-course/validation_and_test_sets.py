@@ -100,11 +100,30 @@ my_label = "median_house_value" # the median house value on a specific city bloc
 # That is, you're going to create a model that predicts house value based 
 # solely on the neighborhood's median income.  
 
+'''
+Task 2
 # Invoke the functions to build and train the model.
 my_model = build_model(learning_rate)
 epochs, rmse, history = train_model(my_model, train_df, my_feature, 
                                     my_label, epochs, batch_size, 
                                     validation_split)
-
 plot_the_loss_curve(epochs, history["root_mean_squared_error"], 
                     history["val_root_mean_squared_error"])
+'''
+
+# Task 3
+my_model = build_model(learning_rate)
+shuffled_train_df = train_df.reindex(np.random.permutation(train_df.index))
+epochs, rmse, history = train_model(my_model, shuffled_train_df, my_feature,
+                                    my_label, epochs, batch_size,
+                                    validation_split)
+#plot_the_loss_curve(epochs, history["root_mean_squared_error"],
+#                    history["val_root_mean_squared_error"])
+
+# Task 4
+x_test = test_df[my_feature]
+y_test = test_df[my_label]
+
+print("Final test evaluation:")
+results = my_model.evaluate(x_test, y_test, batch_size=batch_size)
+#print (results)
