@@ -39,7 +39,6 @@ def build_model(my_learning_rate):
 
   return model        
 
-
 def train_model(model, df, feature, label, epochs, batch_size):
   """Train the model by feeding it data."""
 
@@ -70,9 +69,7 @@ def train_model(model, df, feature, label, epochs, batch_size):
   rmse = hist["root_mean_squared_error"]
 
   return trained_weight, trained_bias, epochs, rmse
-
-print("Defined the build_model and train_model functions.")
-
+# print("Defined the build_model and train_model functions.")
 
 def plot_the_model(trained_weight, trained_bias, feature, label):
   """Plot the trained model against 200 random training examples."""
@@ -96,7 +93,6 @@ def plot_the_model(trained_weight, trained_bias, feature, label):
   # Render the scatter plot and the red line.
   plt.show()
 
-
 def plot_the_loss_curve(epochs, rmse):
   """Plot a curve of loss vs. epoch."""
 
@@ -108,35 +104,23 @@ def plot_the_loss_curve(epochs, rmse):
   plt.legend()
   plt.ylim([rmse.min()*0.97, rmse.max()])
   plt.show()  
+# print("Defined the plot_the_model and plot_the_loss_curve functions.")
 
-print("Defined the plot_the_model and plot_the_loss_curve functions.")
-
-# The following variables are the hyperparameters.
-learning_rate = 0.01
-epochs = 30
-batch_size = 30
-
-# Specify the feature and the label.
-my_feature = "total_rooms"  # the total number of rooms on a specific city block.
 my_label="median_house_value" # the median value of a house on a specific city block.
-# That is, you're going to create a model that predicts house value based 
-# solely on total_rooms.  
-
-# Discard any pre-existing version of the model.
 my_model = None
 
+'''
 # Invoke the functions.
 my_model = build_model(learning_rate)
 weight, bias, epochs, rmse = train_model(my_model, training_df, 
                                          my_feature, my_label,
                                          epochs, batch_size)
-
 print("\nThe learned weight for your model is %.4f" % weight)
 print("The learned bias for your model is %.4f\n" % bias )
 
 plot_the_model(weight, bias, my_feature, my_label)
 plot_the_loss_curve(epochs, rmse)
-
+'''
 
 def predict_house_values(n, feature, label):
   """Predict house values based on a feature."""
@@ -155,24 +139,20 @@ def predict_house_values(n, feature, label):
                                    training_df[label][10000 + i],
                                    predicted_values[i][0] ))
 
+# Define a synthetic feature named rooms_per_person
+training_df["rooms_per_person"] = training_df["total_rooms"] / training_df["population"]
+my_feature = "rooms_per_person"
 
-predict_house_values(10, my_feature, my_label)
-
-
-my_feature = "population"   # Replace the ? with population or possibly
-                            # a different column name.
-
-# Experiment with the hyperparameters.
-learning_rate = 100
-epochs = 30
-batch_size = 120
+# Assign values to these three hyperparameters.
+learning_rate = .06
+epochs = 24
+batch_size = 30
 
 # Don't change anything below this line.
 my_model = build_model(learning_rate)
 weight, bias, epochs, rmse = train_model(my_model, training_df,
                                          my_feature, my_label,
                                          epochs, batch_size)
-plot_the_model(weight, bias, my_feature, my_label)
 plot_the_loss_curve(epochs, rmse)
-
 predict_house_values(15, my_feature, my_label)
+
