@@ -120,7 +120,7 @@ my_feature = ([1.0, 2.0,  3.0,  4.0,  5.0,  6.0,  7.0,  8.0,  9.0, 10.0, 11.0, 1
 my_label   = ([5.0, 8.8,  9.6, 14.2, 18.8, 19.5, 21.4, 26.8, 28.9, 32.0, 33.8, 38.2])
 
 learning_rate=0.01
-epochs=10
+epochs=450
 my_batch_size=12
 
 my_model = build_model(learning_rate)
