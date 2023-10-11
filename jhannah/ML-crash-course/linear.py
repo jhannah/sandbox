@@ -5,6 +5,8 @@
 
 import sys
 print("Python: " + sys.version)   # website is 3.10.12. My laptop is 3.11.4. Surely this doesn't matter?
+import numpy
+print("numpy: " + numpy.__version__)
 import pandas as pd
 print("Pandas: " + pd.__version__)
 import tensorflow as tf
@@ -52,6 +54,13 @@ def train_model(model, feature, label, epochs, batch_size):
   # Gather the trained model's weight and bias.
   trained_weight = model.get_weights()[0]
   trained_bias = model.get_weights()[1]
+  print("Got back trained_weight", type(trained_weight), trained_weight)
+  print("Got back trained_bias", type(trained_bias), trained_bias)
+
+  # My local numpy -> pandas is mad. Gotta flatten these to make it happy:
+  # https://numpy.org/doc/stable/reference/generated/numpy.ndarray.item.html#numpy-ndarray-item
+  trained_weight = trained_weight.item(0)
+  trained_bias = trained_bias.item(0)
 
   # The list of epochs is stored separately from the 
   # rest of history.
@@ -86,6 +95,7 @@ def plot_the_model(trained_weight, trained_bias, feature, label):
   y0 = trained_bias
   x1 = feature[-1]
   y1 = trained_bias + (trained_weight * x1)
+  print("Going to call plt.plot with", x0, x1, type(y0), type(y1))
   plt.plot([x0, x1], [y0, y1], c='r')
 
   # Render the scatter plot and the red line.
@@ -117,6 +127,11 @@ my_model = build_model(learning_rate)
 trained_weight, trained_bias, epochs, rmse = train_model(my_model, my_feature, 
                                                          my_label, epochs,
                                                          my_batch_size)
+print("trained_weight", type(trained_weight))
+print("trained_bias", type(trained_bias))
+print("epochs", type(epochs))
+print("rmse", type(rmse))
+print("Gonna try to plot_the_model now")
 plot_the_model(trained_weight, trained_bias, my_feature, my_label)
 plot_the_loss_curve(epochs, rmse)
 
