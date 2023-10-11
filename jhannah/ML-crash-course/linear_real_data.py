@@ -136,3 +136,43 @@ print("The learned bias for your model is %.4f\n" % bias )
 
 plot_the_model(weight, bias, my_feature, my_label)
 plot_the_loss_curve(epochs, rmse)
+
+
+def predict_house_values(n, feature, label):
+  """Predict house values based on a feature."""
+
+  batch = training_df[feature][10000:10000 + n]
+  predicted_values = my_model.predict_on_batch(x=batch)
+
+  print("feature is", feature)
+  print("label is", label)
+  print("feature   label          predicted")
+  print("  value   value          value")
+  print("          in thousand$   in thousand$")
+  print("--------------------------------------")
+  for i in range(n):
+    print ("%5.0f %6.0f %15.0f" % (training_df[feature][10000 + i],
+                                   training_df[label][10000 + i],
+                                   predicted_values[i][0] ))
+
+
+predict_house_values(10, my_feature, my_label)
+
+
+my_feature = "population"   # Replace the ? with population or possibly
+                            # a different column name.
+
+# Experiment with the hyperparameters.
+learning_rate = 100
+epochs = 30
+batch_size = 120
+
+# Don't change anything below this line.
+my_model = build_model(learning_rate)
+weight, bias, epochs, rmse = train_model(my_model, training_df,
+                                         my_feature, my_label,
+                                         epochs, batch_size)
+plot_the_model(weight, bias, my_feature, my_label)
+plot_the_loss_curve(epochs, rmse)
+
+predict_house_values(15, my_feature, my_label)
