@@ -82,8 +82,9 @@ def plot_the_loss_curve(epochs, rmse):
   plt.show()
 
 # The following variables are the hyperparameters.
-learning_rate = 0.05
-epochs = 30
+learning_rate = 0.05 # default
+# learning_rate = 10
+epochs = 70
 batch_size = 100
 label_name = 'median_house_value'
 
@@ -97,6 +98,8 @@ outputs = {
   'dense_output': dense_output
 }
 
+'''
+Task 1
 # Create and compile the model's topography.
 my_model = create_model(inputs, outputs, learning_rate)
 
@@ -112,14 +115,15 @@ epochs, rmse = train_model(my_model, train_df, epochs, batch_size, label_name)
 my_model.summary(expand_nested=True)
 
 plot_the_loss_curve(epochs, rmse)
-
 print("\n: Evaluate the new model against the test set:")
+'''
+
 test_features = {name:np.array(value) for name, value in test_df.items()}
 test_label = np.array(test_features.pop(label_name))
+'''
 my_model.evaluate(x=test_features, y=test_label, batch_size=batch_size)
 
 
-'''
 Task 2
 resolution_in_degrees = 1.0
 
@@ -188,7 +192,11 @@ my_model.evaluate(x=test_features, y=test_label, batch_size=batch_size)
 '''
 
 # Task 3
-resolution_in_degrees = 1.0
+resolution_in_degrees = 1.0 # root_mean_squared_error: 96.5423
+resolution_in_degrees = .1  # root_mean_squared_error: 80.2074
+resolution_in_degrees = .05 # root_mean_squared_error: 82.2592
+resolution_in_degrees = .08 # root_mean_squared_error: 80.2413
+resolution_in_degrees = .04 # root_mean_squared_error: 85.8200
 
 # Create a list of numbers representing the bucket boundaries for latitude.
 latitude_boundaries = list(np.arange(int(min(train_df['latitude'])),
@@ -225,7 +233,7 @@ outputs = {
 
 # The following variables are the hyperparameters.
 learning_rate = 0.04
-epochs = 35
+epochs = 70
 
 # Build the model, this time passing in the feature_cross_feature_layer:
 my_model = create_model(inputs, outputs, learning_rate)
