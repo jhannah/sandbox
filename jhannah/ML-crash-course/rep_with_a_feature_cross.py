@@ -233,7 +233,7 @@ outputs = {
 
 # The following variables are the hyperparameters.
 learning_rate = 0.04
-epochs = 70
+epochs = 30
 
 # Build the model, this time passing in the feature_cross_feature_layer:
 my_model = create_model(inputs, outputs, learning_rate)
