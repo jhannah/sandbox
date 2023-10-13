@@ -122,6 +122,8 @@ def plot_curve(epochs, hist, list_of_metrics):
   plt.show()
 
 
+'''
+Task 2
 # The following variables are the hyperparameters.
 learning_rate = 0.001
 epochs = 20
@@ -151,4 +153,42 @@ epochs, hist = train_model(my_model, train_df_norm, epochs,
 list_of_metrics_to_plot = ['accuracy']
 
 plot_curve(epochs, hist, list_of_metrics_to_plot)
+
+
+features = {name:np.array(value) for name, value in test_df_norm.items()}
+label = np.array(features.pop(label_name))
+
+my_model.evaluate(x = features, y = label, batch_size=batch_size)
+'''
+
+# Task 3
+# The following variables are the hyperparameters.
+learning_rate = 0.001
+epochs = 20
+batch_size = 100
+classification_threshold = 0.35
+label_name = "median_house_value_is_high"
+
+# Modify the following definition of METRICS to generate
+# not only accuracy and precision, but also recall:
+METRICS = [
+  tf.keras.metrics.BinaryAccuracy(name='accuracy',
+                                  threshold=classification_threshold),
+  tf.keras.metrics.Precision(thresholds=classification_threshold,
+                              name='precision'),
+  tf.keras.metrics.Recall(thresholds=classification_threshold,
+                          name='recall')
+]
+
+# Establish the model's topography.
+my_model = create_model(inputs, learning_rate, METRICS)
+
+# Train the model on the training set.
+epochs, hist = train_model(my_model, train_df_norm, epochs,
+                           label_name, batch_size)
+
+# Plot metrics vs. epochs
+list_of_metrics_to_plot = ['accuracy', 'precision', 'recall']
+plot_curve(epochs, hist, list_of_metrics_to_plot)
+
 
