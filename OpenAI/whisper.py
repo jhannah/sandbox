@@ -2,7 +2,7 @@
 # pip3 install openai
 
 # Gotta split into ~10MB files because 25MB is the theoretical max
-# ffmpeg -i /Users/jhannah/Dropbox/Public/jay_flaunts/042.mp3 -f segment -segment_time 1200 -c copy ./out%03d.mp3
+# ffmpeg -i /Users/jhannah/Dropbox/Public/jay_flaunts/043.mp3 -f segment -segment_time 1200 -c copy ./out%03d.mp3
 # In vim: gq to add hard word wrapping
 
 import openai
