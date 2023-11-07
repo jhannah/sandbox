@@ -7,6 +7,8 @@ iTunes:
   File > Library > Export Playlist > Format: OPML
 
 
+See also ../blogs where I'm dumping OPMLs from RSS readers for blogs.
+
 
 Huh. Not a single podcast we all listen to:
 $ perl -nE '/text="(.*?)"/ && say $1' *.opml | sort | uniq -c | sort -rn | head
@@ -20,4 +22,5 @@ $ perl -nE '/text="(.*?)"/ && say $1' *.opml | sort | uniq -c | sort -rn | head
    2 The Flop House
    2 The Changelog
    2 The Adventure Zone
+
 
