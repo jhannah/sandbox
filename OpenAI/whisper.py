@@ -8,11 +8,19 @@
 # ffmpeg -i /Users/jhannah/Dropbox/Public/jay_flaunts/043.mp3 -f segment -segment_time 1200 -c copy ./out%03d.mp3
 # In vim: gq to add hard word wrapping
 
+# python whisper.py ~/Dropbox/Hasani_Lee/20240507\ Douglas_CR20__sel_9-15-03_to_9-15-53.mp3
+
 from openai import OpenAI
+import argparse
+import re
 
 client = OpenAI()  # defaults to os.environ.get("OPENAI_API_KEY")
 
-from docx import Document
+
+parser = argparse.ArgumentParser()
+parser.add_argument("input", help="Input audio file.", type=str)
+args = parser.parse_args()
+
 
 def transcribe_audio(audio_file_path):
   with open(audio_file_path, 'rb') as audio_file:
@@ -22,7 +30,9 @@ def transcribe_audio(audio_file_path):
     )
   return transcription
 
-transcription = transcribe_audio("out001.mp3")
-print(transcription.text)
 
-
+transcription = transcribe_audio(args.input)
+text_file_path = re.sub('mp3$', 'txt', args.input)
+print("writing file", text_file_path)
+with open(text_file_path, 'w') as f:
+  f.write(transcription.text)
