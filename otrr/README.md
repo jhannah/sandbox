@@ -7,4 +7,9 @@ I love my podcast player, so I want to listen to those shows as podcasts.
 
 This software generates RSS feeds you can stick in your podcast player app.
 
+e.g. Stick this RSS URL in your podcast player:
+* Have Gun Will Travel: 106 episodes 1958-1960: https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/otrr/have_gun_will_travel.rss
+
+Debugging:
+
 [RSS validation](https://podba.se/validate/?url=https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/otrr/have_gun_will_travel.rss)
