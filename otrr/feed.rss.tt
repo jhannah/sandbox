@@ -23,5 +23,5 @@
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		[% END %]
-</channel>
+	</channel>
 </rss>
