@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+	<channel>
+		<title>Jay Flaunts His Ignorance. The podcast.</title>
+		<link>http://jhannah.github.io/jayflaunts/</link>
+		<language>en</language>
+		<copyright>&#xA9; 2015-2023 Jay Hannah</copyright>
+    <!--  <itunes:subtitle>Jay Hannah running around talking to interesting people about whatever they're excited about.</itunes:subtitle>  -->
+		<itunes:author>Jay Hannah</itunes:author>
+		<itunes:keywords>talk,interview</itunes:keywords>
+		<itunes:summary>Hi. My name is Je wants to listen. :)</itunes:summary>
+		<description>Hi. My name is Jayo listen. :)</description>
+		<itunes:owner>
+			<itunes:name>Jay Hannah</itunes:name>
+			<itunes:email>jay+flaunts@jays.net</itunes:email>
+		</itunes:owner>
+		<itunes:image href="https://s3.amazonaws.com/jayflaunts.jays.net/logo.jpg" />
+		<itunes:category text="Society &amp; Culture" />
+		<itunes:explicit>yes</itunes:explicit>
+		<itunes:new-feed-url>http://jhannah.github.io/jayflaunts/podcast.xml</itunes:new-feed-url>
+
+			 <item>
+				<title>49 Born in 1947: Jim Hannah</title>
+				<itunes:author>Jay Hannah</itunes:author>
+				<itunes:subtitle>49 Born in 1947: Jim Hannah</itunes:subtitle>
+				<itunes:summary>&lt;p&gt;Dad was born in 1947, raise</itunes:summary>
+				<description>&lt;p&gt;Dad was born in 1947, raised</description>
+				<itunes:image href="https://s3.amazonaws.com/jayflaunts.jays.net/logo.jpg" />
+				<enclosure url="https://s3.amazonaws.com/jayflaunts.jays.net/049.mp3" length="37769241" type="audio/x-m4a" />
+				<guid>https://s3.amazonaws.com/jayflaunts.jays.net/049.mp3</guid>
+				<pubDate>Wed, 25 Dec 2024 00:20:34 GMT</pubDate>
+				<itunes:duration>5160.0</itunes:duration>
+				<itunes:keywords>talk,interview</itunes:keywords>
+				<itunes:explicit>yes</itunes:explicit>
+			</item>
+		
+</channel>
+</rss>
