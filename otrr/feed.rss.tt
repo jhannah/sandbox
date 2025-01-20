@@ -15,10 +15,9 @@
 			<item>
 				<title>[% e.title %]</title>
 				<itunes:image href="[% image %]" />
-				<enclosure url="[% per_ep_root_url %]/[% e | url %]"/>
-				<guid>[% per_ep_root_url %]/[% e | url %]</guid>
-				<pubDate>Wed, 25 Dec 2024 00:20:34 GMT</pubDate>
-				[% e.pub_date %]
+				<enclosure url="[% per_ep_root_url %]/[% e.filename | url %]"/>
+				<guid>[% per_ep_root_url %]/[% e.filename | url %]</guid>
+				<pubDate>[% e.pub_date %]</pubDate>
 				<itunes:episode>[% e.ep_number %]</itunes:episode>
 				<!-- <itunes:duration>5160.0</itunes:duration> -->
 				<itunes:explicit>no</itunes:explicit>

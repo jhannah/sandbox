@@ -16,7 +16,8 @@ while (<DATA>) {
     push @episodes, {
       filename  => $_,
       title     => "OTRR Introduction",
-      pub_date  => "19 May 2024 00:20:34 GMT",
+      # pub_date  => "19 May 2024 00:20:34 GMT",
+      pub_date  => "2024-05-19",
       ep_number => 0,
     };
   } else {
