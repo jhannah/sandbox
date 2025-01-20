@@ -6,3 +6,5 @@ have compiled thousands of episodes of old radio shows and uploaded them to the
 I love my podcast player, so I want to listen to those shows as podcasts.
 
 This software generates RSS feeds you can stick in your podcast player app.
+
+[RSS validation](https://podba.se/validate/?url=https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/otrr/have_gun_will_travel.rss)

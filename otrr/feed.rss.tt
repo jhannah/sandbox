@@ -14,7 +14,7 @@
 		[% FOREACH e = episodes %]
 			<item>
 				<title>[% e.title %]</title>
-				<itunes:image href="[% image %]" />
+				<itunes:image href="[% image %]"/>
 				<enclosure url="[% per_ep_root_url %]/[% e.filename | url %]"/>
 				<guid>[% per_ep_root_url %]/[% e.filename | url %]</guid>
 				<pubDate>[% e.pub_date %]</pubDate>
