@@ -16,9 +16,9 @@ while (<DATA>) {
     push @episodes, {
       filename  => $_,
       title     => "OTRR Introduction",
-      # pub_date  => "19 May 2024 00:20:34 GMT",
       pub_date  => "2024-05-19",
       ep_number => 0,
+      duration  => 3 * 60,    # 3 minutes
     };
   } else {
     my $filename = $_;
@@ -30,6 +30,7 @@ while (<DATA>) {
       title     => $title,
       pub_date  => $pub_date,
       ep_number => $ep_number,
+      duration  => 24 * 60,   # 24 minutes
     };
   }
 }

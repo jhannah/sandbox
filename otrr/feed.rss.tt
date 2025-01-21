@@ -19,7 +19,7 @@
 				<guid>[% per_ep_root_url %]/[% e.filename | url %]</guid>
 				<pubDate>[% e.pub_date %]</pubDate>
 				<itunes:episode>[% e.ep_number %]</itunes:episode>
-				<!-- <itunes:duration>5160.0</itunes:duration> -->
+				<itunes:duration>[% e.duration %]</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		[% END %]
