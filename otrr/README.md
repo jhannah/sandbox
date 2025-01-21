@@ -7,7 +7,7 @@ I love my podcast player, so I want to listen to those shows as podcasts.
 
 This software generates RSS feeds you can stick in your podcast player app.
 
-Have Gun Will Travel: 106 episodes 1958-1960:
+**Have Gun Will Travel:** 106 episodes 1958-1960:
 * [Read all about the program and volunteers](https://archive.org/details/OTRR_Maintained_Have_Gun_Will_Travel)
   who saved the original audio.
 * [RSS](https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/otrr/have_gun_will_travel.rss)
