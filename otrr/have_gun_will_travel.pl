@@ -18,7 +18,7 @@ while (<DATA>) {
       title     => "OTRR Introduction",
       pub_date  => "2024-05-19",
       ep_number => 0,
-      duration  => 3 * 60,    # 3 minutes
+      duration  => "0:03:00",    # 3 minutes
     };
   } else {
     my $filename = $_;
@@ -30,7 +30,7 @@ while (<DATA>) {
       title     => $title,
       pub_date  => $pub_date,
       ep_number => $ep_number,
-      duration  => 24 * 60,   # 24 minutes
+      duration  => "0:24:00",   # 24 minutes
     };
   }
 }
