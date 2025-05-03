@@ -94,14 +94,16 @@ func main() {
 func main() {
 	discordBotToken := os.Getenv("DISCORD_BOT_TOKEN")
 	discordChannelID := os.Getenv("DISCORD_CHANNEL_ID")
-	fmt.Println("DID:", discordChannelID)
-	message := "Hello from Go!"
 
-	err := postToDiscordChannel(discordBotToken, discordChannelID, message)
-	if err != nil {
-		fmt.Println("Error posting to Discord:", err)
-	} else {
-		fmt.Println("Message posted successfully!")
+	// You can get these strings by typing \:dfflirt: into Discord
+	messages := []string{"<:dfflirt:796580268374884372>", "<:dfflirt1:796582372078125097>", "<:dfflirt2:796582435332161567>"}
+	for _, message := range messages {
+		err := postToDiscordChannel(discordBotToken, discordChannelID, message)
+		if err != nil {
+			fmt.Println("Error posting to Discord:", err)
+		} else {
+			fmt.Println("Message posted successfully!")
+		}
 	}
 }
 
