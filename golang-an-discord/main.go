@@ -56,6 +56,7 @@ func init() {
 	}
 }
 
+/*
 func main() {
 	actions, err := fetchActions()
 	if err != nil {
@@ -87,6 +88,50 @@ func main() {
 	if err != nil {
 		fmt.Println("Error saving posted actions:", err)
 	}
+}
+*/
+
+func main() {
+	discordBotToken := os.Getenv("DISCORD_BOT_TOKEN")
+	discordChannelID := os.Getenv("DISCORD_CHANNEL_ID")
+	fmt.Println("DID:", discordChannelID)
+	message := "Hello from Go!"
+
+	err := postToDiscordChannel(discordBotToken, discordChannelID, message)
+	if err != nil {
+		fmt.Println("Error posting to Discord:", err)
+	} else {
+		fmt.Println("Message posted successfully!")
+	}
+}
+
+func postToDiscordChannel(discordBotToken string, discordChannelID string, message string) error {
+	url := fmt.Sprintf("https://discord.com/api/v10/channels/%s/messages", discordChannelID)
+
+	payload := map[string]string{"content": message}
+	body, err := json.Marshal(payload)
+	if err != nil {
+		return err
+	}
+
+	req, err := http.NewRequest("POST", url, bytes.NewBuffer(body))
+	if err != nil {
+		return err
+	}
+	req.Header.Set("Authorization", "Bot "+discordBotToken)
+	req.Header.Set("Content-Type", "application/json")
+
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode >= 300 {
+		return fmt.Errorf("discord API error: %s", resp.Status)
+	}
+
+	return nil
 }
 
 // Stub — replace with real Action Network API call
