@@ -17,7 +17,7 @@ DISCORD_CHANNEL_ID=your_real_channel_id
 Then run these:
 
 ```
-go mod init github.com/jhannah/sandbox/golang-an-discord
+go mod init github.com/wherever_your_code_lives
 go get github.com/joho/godotenv
 go run main.go
 ```
