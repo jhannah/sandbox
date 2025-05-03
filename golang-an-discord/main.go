@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 	"os"
@@ -133,7 +133,7 @@ func createDiscordEvent(action Action) error {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusCreated {
-		body, _ := ioutil.ReadAll(resp.Body)
+		body, _ := io.ReadAll(resp.Body)
 		return fmt.Errorf("Discord API error: %s", string(body))
 	}
 
@@ -141,7 +141,7 @@ func createDiscordEvent(action Action) error {
 }
 
 func loadPostedActions() (map[string]bool, error) {
-	data, err := ioutil.ReadFile(postedActionsFile)
+	data, err := os.ReadFile(postedActionsFile)
 	if err != nil {
 		if os.IsNotExist(err) {
 			return make(map[string]bool), nil
@@ -159,5 +159,5 @@ func savePostedActions(posted map[string]bool) error {
 	if err != nil {
 		return err
 	}
-	return ioutil.WriteFile(postedActionsFile, data, 0644)
+	return os.WriteFile(postedActionsFile, data, 0644)
 }
