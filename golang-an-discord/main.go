@@ -134,7 +134,7 @@ func createDiscordEvent(action Action) error {
 
 	if resp.StatusCode != http.StatusCreated {
 		body, _ := io.ReadAll(resp.Body)
-		return fmt.Errorf("Discord API error: %s", string(body))
+		return fmt.Errorf("discord API error: %s", string(body))
 	}
 
 	return nil
