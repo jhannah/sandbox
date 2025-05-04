@@ -104,6 +104,6 @@ func main() {
 
 	fmt.Println("\n📊 Top Activity (Toots + Boosts):")
 	for _, entry := range sortByCountDescending(activityCount) {
-		fmt.Printf("👤 @%s → %d posts (toots or boosts)\n", entry.Acct, entry.Count)
+		fmt.Printf("👤 @%s → %d\n", entry.Acct, entry.Count)
 	}
 }
