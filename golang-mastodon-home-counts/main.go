@@ -99,9 +99,14 @@ func main() {
 		pageNum++
 	}
 
-	// Display sorted summary
-	fmt.Println("\nSummary of Home Timeline Activity (last", cutoffHoursStr, "hours):")
+	// Calculate total post activity
+	total := 0
+	for _, count := range activityCount {
+		total += count
+	}
+	fmt.Printf("\n📊 Total timeline posts in last %d hours: %d\n", cutoffHours, total)
 
+	// Display sorted summary
 	fmt.Println("\n📊 Top Activity (Toots + Boosts):")
 	for _, entry := range sortByCountDescending(activityCount) {
 		fmt.Printf("👤 @%s → %d\n", entry.Acct, entry.Count)
