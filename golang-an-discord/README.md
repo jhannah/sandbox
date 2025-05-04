@@ -1,4 +1,4 @@
-Playing around with Golang for Action Network API -> Discord API.
+Playing around with Golang:
 
 * read from the [Action Network REST API](https://actionnetwork.org/docs/)
 * write to [Discord REST API](https://discord.com/developers/docs/reference)
