@@ -1,5 +1,9 @@
 Playing around with Golang for Action Network API -> Discord API.
 
+* read from the [Action Network REST API](https://actionnetwork.org/docs/)
+* write to [Discord REST API](https://discord.com/developers/docs/reference)
+   * specifically [Guild Scheduled Events](https://discord.com/developers/docs/resources/guild-scheduled-event#guild-scheduled-event)
+
 The original version of this (first commit) written by ChatGPT 4o
 
 > Write me a Golang program that reads from actionnetwork.org REST API and posts new "Actions" into Discord API as "Guild Scheduled Events."
