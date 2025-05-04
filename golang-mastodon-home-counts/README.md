@@ -14,13 +14,13 @@ The original version of this (first commit) written by ChatGPT 4o
 You'll need an `.env` file with your secrets in it that looks like this:
 
 ```
-MASTODON_ACCESS_TOKEN=your_access_token
 MASTODON_SERVER=https://your.instance.domain
+MASTODON_ACCESS_TOKEN=your_access_token
 ```
 
 Then run these:
 
 ```
-go mod tidy
+go mod init github.com/wherever_your_code_lives
 go run main.go
 ```
