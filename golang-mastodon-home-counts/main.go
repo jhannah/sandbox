@@ -5,14 +5,30 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"sort"
 	"time"
 
 	"github.com/joho/godotenv"
 	"github.com/mattn/go-mastodon"
 )
 
+type countEntry struct {
+	Acct  string
+	Count int
+}
+
+func sortByCountDescending(m map[string]int) []countEntry {
+	var sorted []countEntry
+	for k, v := range m {
+		sorted = append(sorted, countEntry{Acct: k, Count: v})
+	}
+	sort.Slice(sorted, func(i, j int) bool {
+		return sorted[i].Count > sorted[j].Count
+	})
+	return sorted
+}
+
 func main() {
-	// Load environment variables
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
@@ -50,7 +66,6 @@ func main() {
 		if err != nil {
 			log.Fatalf("Error fetching timeline: %v", err)
 		}
-
 		if len(statuses) == 0 {
 			break
 		}
@@ -61,7 +76,6 @@ func main() {
 				stop = true
 				break
 			}
-
 			var acct string
 			if status.Reblog != nil {
 				acct = status.Reblog.Account.Acct
@@ -80,12 +94,16 @@ func main() {
 		pageNum++
 	}
 
-	// Output summary
+	// Display sorted summary
 	fmt.Println("\nSummary of Home Timeline Activity (last 24 hours):")
-	for acct, count := range tootCount {
-		fmt.Printf("👤 @%s → 📝 %d toots\n", acct, count)
+
+	fmt.Println("\n📝 Top Toots:")
+	for _, entry := range sortByCountDescending(tootCount) {
+		fmt.Printf("👤 @%s → %d toots\n", entry.Acct, entry.Count)
 	}
-	for acct, count := range boostCount {
-		fmt.Printf("👤 @%s → 🔁 %d boosts\n", acct, count)
+
+	fmt.Println("\n🔁 Top Boosts:")
+	for _, entry := range sortByCountDescending(boostCount) {
+		fmt.Printf("👤 @%s → %d boosts\n", entry.Acct, entry.Count)
 	}
 }
