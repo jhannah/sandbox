@@ -16,6 +16,7 @@ You'll need an `.env` file with your secrets in it that looks like this:
 ```
 MASTODON_SERVER=https://your.instance.domain
 MASTODON_ACCESS_TOKEN=your_access_token
+MASTODON_CUTOFF_HOURS=2
 ```
 
 Then run these:

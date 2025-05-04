@@ -54,8 +54,7 @@ func main() {
 		AccessToken: token,
 	})
 
-	tootCount := make(map[string]int)
-	boostCount := make(map[string]int)
+	activityCount := make(map[string]int)
 
 	var maxID mastodon.ID
 	limit := 40
@@ -86,11 +85,10 @@ func main() {
 			var acct string
 			if status.Reblog != nil {
 				acct = status.Reblog.Account.Acct
-				boostCount[acct]++
 			} else {
 				acct = status.Account.Acct
-				tootCount[acct]++
 			}
+			activityCount[acct]++
 		}
 
 		if stop {
@@ -104,13 +102,8 @@ func main() {
 	// Display sorted summary
 	fmt.Println("\nSummary of Home Timeline Activity (last", cutoffHoursStr, "hours):")
 
-	fmt.Println("\n📝 Top Toots:")
-	for _, entry := range sortByCountDescending(tootCount) {
-		fmt.Printf("👤 @%s → %d toots\n", entry.Acct, entry.Count)
-	}
-
-	fmt.Println("\n🔁 Top Boosts:")
-	for _, entry := range sortByCountDescending(boostCount) {
-		fmt.Printf("👤 @%s → %d boosts\n", entry.Acct, entry.Count)
+	fmt.Println("\n📊 Top Activity (Toots + Boosts):")
+	for _, entry := range sortByCountDescending(activityCount) {
+		fmt.Printf("👤 @%s → %d posts (toots or boosts)\n", entry.Acct, entry.Count)
 	}
 }
