@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"sort"
+	"strconv"
 	"time"
 
 	"github.com/joho/godotenv"
@@ -37,6 +38,13 @@ func main() {
 	server := os.Getenv("MASTODON_SERVER")
 	token := os.Getenv("MASTODON_ACCESS_TOKEN")
 
+	cutoffHoursStr := os.Getenv("MASTODON_CUTOFF_HOURS")
+	cutoffHours, err := strconv.Atoi(cutoffHoursStr)
+	if err != nil || cutoffHours <= 0 {
+		log.Fatalf("Invalid MASTODON_CUTOFF_HOURS: %v", cutoffHoursStr)
+	}
+	cutoff := time.Now().Add(-time.Duration(cutoffHours) * time.Hour)
+
 	if server == "" || token == "" {
 		log.Fatal("MASTODON_SERVER and MASTODON_ACCESS_TOKEN must be set in .env")
 	}
@@ -46,7 +54,6 @@ func main() {
 		AccessToken: token,
 	})
 
-	cutoff := time.Now().Add(-24 * time.Hour)
 	tootCount := make(map[string]int)
 	boostCount := make(map[string]int)
 
@@ -95,7 +102,7 @@ func main() {
 	}
 
 	// Display sorted summary
-	fmt.Println("\nSummary of Home Timeline Activity (last 24 hours):")
+	fmt.Println("\nSummary of Home Timeline Activity (last", cutoffHoursStr, "hours):")
 
 	fmt.Println("\n📝 Top Toots:")
 	for _, entry := range sortByCountDescending(tootCount) {
