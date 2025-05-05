@@ -114,7 +114,7 @@ func main() {
 		Title:       "super party",
 		Description: "it's lit, yo",
 		StartTime:   time.Now().Add(24 * time.Hour),
-		EndTime:     time.Now().Add(48 * time.Hour),
+		EndTime:     time.Now().Add(26 * time.Hour),
 		Location:    "your mom's house",
 	}
 	err := createDiscordEvent(action)
