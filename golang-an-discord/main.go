@@ -24,17 +24,26 @@ var (
 
 // Action represents a simplified structure of an Action Network action.
 type Action struct {
-	ID          string    `json:"id"`
+	Identifiers []string  `json:"identifiers"`
 	Title       string    `json:"title"`
 	Description string    `json:"description"`
-	StartTime   time.Time `json:"start_time"`
+	StartDate   time.Time `json:"start_date"`
 	EndTime     time.Time `json:"end_time"`
 	Location    struct {
-		Venue      string `json:"venue"`
-		Locality   string `json:"locality"`
-		Region     string `json:"region"`
-		PostalCode string `json:"postal_code"`
+		Venue        string   `json:"venue"`
+		AddressLines []string `json:"address_lines"`
+		Locality     string   `json:"locality"`
+		Region       string   `json:"region"`
+		PostalCode   string   `json:"postal_code"`
+		Country      string   `json:"country"`
+		Location     struct {
+			Latitude  float64 `json:"latitude"`
+			Longitude float64 `json:"longitude"`
+			Accuracy  string  `json:"accuracy"`
+		} `json:"location"`
 	} `json:"location"`
+	BrowserUrl   string `json:"browser_url"`
+	Instructions string `json:"instructions"`
 }
 
 type ActionNetworkApiResponse struct {
@@ -142,7 +151,7 @@ func main() {
 				log.Fatal(err)
 			}
 			for _, action := range actions {
-				message := fmt.Sprintf("📅 %s at %s (%s, %s)\n", action.Title, action.Location.Venue, action.Location.Locality, action.StartTime.Format(time.RFC1123))
+				message := fmt.Sprintf("📅 %s at %s (%s, %s)\n", action.Title, action.Location.Venue, action.Location.Locality, action.StartDate.Format(time.RFC1123))
 				fmt.Print(message)
 				postToDiscordChannel(discordBotToken, discordChannelID, message)
 			}
@@ -235,7 +244,7 @@ func createDiscordEvent(action Action) error {
 	event := DiscordEvent{
 		Name:               action.Title,
 		Description:        action.Description,
-		ScheduledStartTime: action.StartTime,
+		ScheduledStartTime: action.StartDate,
 		ScheduledEndTime:   action.EndTime,
 		PrivacyLevel:       2, // GUILD_ONLY
 		EntityType:         3, // EXTERNAL
