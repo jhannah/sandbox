@@ -36,41 +36,6 @@ func init() {
 	actionNetworkAPIKeys = strings.Split(rawKeys, ",")
 }
 
-/*
-func main() {
-	actions, err := fetchActions()
-	if err != nil {
-		fmt.Println("Error fetching actions:", err)
-		return
-	}
-
-	postedActions, err := loadPostedActions()
-	if err != nil {
-		fmt.Println("Error loading posted actions:", err)
-		return
-	}
-
-	for _, action := range actions {
-		if _, posted := postedActions[action.ID]; posted {
-			continue
-		}
-
-		err := createDiscordEvent(action)
-		if err != nil {
-			fmt.Println("Error creating Discord event:", err)
-			continue
-		}
-
-		postedActions[action.ID] = true
-	}
-
-	err = savePostedActions(postedActions)
-	if err != nil {
-		fmt.Println("Error saving posted actions:", err)
-	}
-}
-*/
-
 func main() {
 	discordBotToken := os.Getenv("DISCORD_BOT_TOKEN")
 	discordChannelID := os.Getenv("DISCORD_CHANNEL_ID")
@@ -89,6 +54,8 @@ func main() {
 		}
 	}
 
+	allActions := []Action{}
+
 	for _, key := range actionNetworkAPIKeys {
 		fmt.Println("Fetching from Action Network with API key:", key)
 
@@ -99,6 +66,7 @@ func main() {
 				log.Fatal(err)
 			}
 			for _, action := range actions {
+				allActions = append(allActions, action)
 				message := fmt.Sprintf("📅 %s at %s (%s, %s)\n", action.Title, action.Location.Venue, action.Location.Locality, action.StartDate.Format(time.RFC1123))
 				fmt.Print(message)
 				postToDiscordChannel(discordBotToken, discordChannelID, message)
@@ -108,6 +76,34 @@ func main() {
 			}
 			next = nextPage
 		}
+	}
+
+	postedActions, err := loadPostedActions()
+	if err != nil {
+		fmt.Println("Error loading posted actions:", err)
+		return
+	}
+
+	for _, action := range allActions {
+		fmt.Printf("... found ActionNetworkID: %s", action.ActionNetworkID)
+
+		if _, posted := postedActions[action.ActionNetworkID]; posted {
+			continue
+		}
+
+		/*
+			err := createDiscordEvent(action)
+			if err != nil {
+				fmt.Println("Error creating Discord event:", err)
+				continue
+			}
+		*/
+		postedActions[action.ActionNetworkID] = true
+	}
+
+	err = savePostedActions(postedActions)
+	if err != nil {
+		fmt.Println("Error saving posted actions:", err)
 	}
 
 	/*

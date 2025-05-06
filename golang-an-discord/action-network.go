@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 )
 
@@ -22,12 +23,13 @@ type ActionNetworkApiResponse struct {
 
 // Action represents a simplified structure of an Action Network action.
 type Action struct {
-	Identifiers []string  `json:"identifiers"`
-	Title       string    `json:"title"`
-	Description string    `json:"description"`
-	StartDate   time.Time `json:"start_date"`
-	EndTime     time.Time `json:"end_time"`
-	Location    struct {
+	ActionNetworkID string
+	Identifiers     []string  `json:"identifiers"`
+	Title           string    `json:"title"`
+	Description     string    `json:"description"`
+	StartDate       time.Time `json:"start_date"`
+	EndTime         time.Time `json:"end_time"`
+	Location        struct {
 		Venue        string   `json:"venue"`
 		AddressLines []string `json:"address_lines"`
 		Locality     string   `json:"locality"`
@@ -74,6 +76,13 @@ func fetchActions(apiKey string, pageURL string) ([]Action, string, error) {
 	actions := result.Embedded.Events
 	next := result.Links.Next.Href
 
+	for i := range actions {
+		if id, ok := getActionNetworkID(actions[i]); ok {
+			fmt.Printf("setting ActionNetworkID: %s\n", id)
+			actions[i].ActionNetworkID = id
+		}
+	}
+
 	return actions, next, nil
 }
 
@@ -97,4 +106,13 @@ func savePostedActions(posted map[string]bool) error {
 		return err
 	}
 	return os.WriteFile(postedActionsFile, data, 0644)
+}
+
+func getActionNetworkID(a Action) (string, bool) {
+	for _, id := range a.Identifiers {
+		if strings.HasPrefix(id, "action_network:") {
+			return strings.TrimPrefix(id, "action_network:"), true
+		}
+	}
+	return "", false
 }
