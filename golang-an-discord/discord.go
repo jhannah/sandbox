@@ -4,8 +4,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"html"
 	"io"
 	"net/http"
+	"regexp"
+	"strings"
 	"time"
 )
 
@@ -54,7 +57,7 @@ func postToDiscordChannel(discordBotToken string, discordChannelID string, messa
 func createDiscordEvent(action Action) error {
 	event := DiscordEvent{
 		Name:               action.Title,
-		Description:        action.Description,
+		Description:        htmlToDiscord(action.Description),
 		ScheduledStartTime: action.StartDate,
 		ScheduledEndTime:   action.EndDate,
 		PrivacyLevel:       2, // GUILD_ONLY
@@ -98,4 +101,49 @@ func createDiscordEvent(action Action) error {
 	}
 
 	return nil
+}
+
+func htmlToDiscord(input string) string {
+	// Normalize line endings
+	input = strings.ReplaceAll(input, "\r\n", "\n")
+
+	// Convert common block elements to newlines
+	input = strings.ReplaceAll(input, "<p>", "\n\n")
+	input = strings.ReplaceAll(input, "</p>", "")
+	input = strings.ReplaceAll(input, "<br>", "\n")
+	input = strings.ReplaceAll(input, "<br/>", "\n")
+	input = strings.ReplaceAll(input, "<ul>", "")
+	input = strings.ReplaceAll(input, "</ul>", "")
+	input = strings.ReplaceAll(input, "<ol>", "")
+	input = strings.ReplaceAll(input, "</ol>", "")
+
+	// List items
+	input = strings.ReplaceAll(input, "<li>", "• ")
+	input = strings.ReplaceAll(input, "</li>", "\n")
+
+	// Bold and italics
+	input = strings.ReplaceAll(input, "<strong>", "**")
+	input = strings.ReplaceAll(input, "</strong>", "**")
+	input = strings.ReplaceAll(input, "<b>", "**")
+	input = strings.ReplaceAll(input, "</b>", "**")
+	input = strings.ReplaceAll(input, "<em>", "*")
+	input = strings.ReplaceAll(input, "</em>", "*")
+	input = strings.ReplaceAll(input, "<i>", "*")
+	input = strings.ReplaceAll(input, "</i>", "*")
+
+	// Convert <a href="URL">text</a> to [text](URL)
+	linkRE := regexp.MustCompile(`<a\s+href=["']([^"']+)["'][^>]*>(.*?)</a>`)
+	input = linkRE.ReplaceAllString(input, "[$2]($1)")
+
+	// Strip all remaining tags
+	tagRE := regexp.MustCompile(`<[^>]+>`)
+	input = tagRE.ReplaceAllString(input, "")
+
+	// Unescape HTML entities
+	input = html.UnescapeString(input)
+
+	// Clean up extra whitespace
+	input = strings.TrimSpace(input)
+
+	return input
 }
