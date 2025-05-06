@@ -29,6 +29,13 @@ type Action struct {
 	Description     string    `json:"description"`
 	StartDate       time.Time `json:"start_date"`
 	EndDate         time.Time `json:"end_date"`
+	Status          string    `json:"status"`
+	Type            string    `json:"type"`
+	FeaturedImage   string    `json:"featured_image_url"`
+	TotalAccepted   int       `json:"total_accepted"`
+	TotalDeclined   int       `json:"total_declined"`
+	TotalTentative  int       `json:"total_tentative"`
+	TotalCount      int       `json:"total_count"`
 	Location        struct {
 		Venue        string   `json:"venue"`
 		AddressLines []string `json:"address_lines"`
@@ -42,8 +49,27 @@ type Action struct {
 			Accuracy  string  `json:"accuracy"`
 		} `json:"location"`
 	} `json:"location"`
-	BrowserUrl   string `json:"browser_url"`
-	Instructions string `json:"instructions"`
+	BrowserUrl    string    `json:"browser_url"`
+	Instructions  string    `json:"instructions"`
+	CreatedDate   time.Time `json:"created_date"`
+	ModifiedDate  time.Time `json:"modified_date"`
+	OriginSystem  string    `json:"origin_system"`
+	OriginDetails struct {
+		Source   string `json:"source"`
+		SourceID string `json:"source_id"`
+	} `json:"origin_details"`
+	Tags  []string `json:"tags"`
+	Links struct {
+		Self struct {
+			Href string `json:"href"`
+		} `json:"self"`
+		Creator struct {
+			Href string `json:"href"`
+		} `json:"creator"`
+		Attendances struct {
+			Href string `json:"href"`
+		} `json:"attendances"`
+	} `json:"_links"`
 }
 
 func fetchActions(apiKey string, pageURL string) ([]Action, string, error) {
