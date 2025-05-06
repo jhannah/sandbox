@@ -28,7 +28,7 @@ type Action struct {
 	Title           string    `json:"title"`
 	Description     string    `json:"description"`
 	StartDate       time.Time `json:"start_date"`
-	EndTime         time.Time `json:"end_time"`
+	EndDate         time.Time `json:"end_date"`
 	Location        struct {
 		Venue        string   `json:"venue"`
 		AddressLines []string `json:"address_lines"`
@@ -76,9 +76,10 @@ func fetchActions(apiKey string, pageURL string) ([]Action, string, error) {
 	actions := result.Embedded.Events
 	next := result.Links.Next.Href
 
+	// AN returns a slice of strings of various IDs. For our "cache" (posted_actions.json)
+	// we're going to use the action_network: one.
 	for i := range actions {
 		if id, ok := getActionNetworkID(actions[i]); ok {
-			fmt.Printf("setting ActionNetworkID: %s\n", id)
 			actions[i].ActionNetworkID = id
 		}
 	}

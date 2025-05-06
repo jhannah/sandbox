@@ -1,6 +1,8 @@
 package main
 
 import (
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"log"
 	"os"
@@ -67,9 +69,6 @@ func main() {
 			}
 			for _, action := range actions {
 				allActions = append(allActions, action)
-				message := fmt.Sprintf("📅 %s at %s (%s, %s)\n", action.Title, action.Location.Venue, action.Location.Locality, action.StartDate.Format(time.RFC1123))
-				fmt.Print(message)
-				postToDiscordChannel(discordBotToken, discordChannelID, message)
 			}
 			if nextPage == "" {
 				break
@@ -85,19 +84,18 @@ func main() {
 	}
 
 	for _, action := range allActions {
-		fmt.Printf("... found ActionNetworkID: %s", action.ActionNetworkID)
-
 		if _, posted := postedActions[action.ActionNetworkID]; posted {
+			fmt.Printf("already in posted_actions.json: %s Skipping.\n", action.ActionNetworkID)
 			continue
 		}
-
-		/*
-			err := createDiscordEvent(action)
-			if err != nil {
-				fmt.Println("Error creating Discord event:", err)
-				continue
-			}
-		*/
+		message := fmt.Sprintf("NEW: 📅 %s at %s (%s, %s)\n", action.Title, action.Location.Venue, action.Location.Locality, action.StartDate.Format(time.RFC1123))
+		fmt.Print(message)
+		postToDiscordChannel(discordBotToken, discordChannelID, message)
+		err := createDiscordEvent(action)
+		if err != nil {
+			fmt.Println("Error creating Discord event:", err)
+			continue
+		}
 		postedActions[action.ActionNetworkID] = true
 	}
 
@@ -105,6 +103,8 @@ func main() {
 	if err != nil {
 		fmt.Println("Error saving posted actions:", err)
 	}
+
+	fmt.Print("All done. Exiting.\n")
 
 	/*
 		action := Action{
@@ -120,4 +120,13 @@ func main() {
 			fmt.Println("Error creating Discord event:", err)
 		}
 	*/
+}
+
+func prettyPrintJSON(raw []byte) {
+	var pretty bytes.Buffer
+	err := json.Indent(&pretty, raw, "", "  ")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(pretty.String())
 }

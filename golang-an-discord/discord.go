@@ -56,7 +56,7 @@ func createDiscordEvent(action Action) error {
 		Name:               action.Title,
 		Description:        action.Description,
 		ScheduledStartTime: action.StartDate,
-		ScheduledEndTime:   action.EndTime,
+		ScheduledEndTime:   action.EndDate,
 		PrivacyLevel:       2, // GUILD_ONLY
 		EntityType:         3, // EXTERNAL
 	}
@@ -66,6 +66,7 @@ func createDiscordEvent(action Action) error {
 	if err != nil {
 		return err
 	}
+	prettyPrintJSON(payload)
 
 	url := fmt.Sprintf("https://discord.com/api/v10/guilds/%s/scheduled-events", discordGuildID)
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(payload))
@@ -82,9 +83,18 @@ func createDiscordEvent(action Action) error {
 	}
 	defer resp.Body.Close()
 
-	if resp.StatusCode != http.StatusCreated {
+	// Discord returns 200 OK
+	//   not the more correct 201 Created (http.StatusCreated)
+	if resp.StatusCode != http.StatusOK {
 		body, _ := io.ReadAll(resp.Body)
-		return fmt.Errorf("discord API error: %s", string(body))
+		fmt.Printf(
+			"Discord API error:\nStatus: %d %s\nHeaders: %v\nBody: %s",
+			resp.StatusCode,
+			http.StatusText(resp.StatusCode),
+			resp.Header,
+			string(body),
+		)
+		return fmt.Errorf("discord API error: %d", resp.StatusCode)
 	}
 
 	return nil
