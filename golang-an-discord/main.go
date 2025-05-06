@@ -8,6 +8,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/joho/godotenv"
@@ -16,9 +17,9 @@ import (
 const postedActionsFile = "posted_actions.json"
 
 var (
-	discordBotToken     string
-	discordGuildID      string
-	actionNetworkAPIKey string
+	discordBotToken      string
+	discordGuildID       string
+	actionNetworkAPIKeys []string
 )
 
 // Action represents a simplified structure of an Action Network action.
@@ -28,7 +29,23 @@ type Action struct {
 	Description string    `json:"description"`
 	StartTime   time.Time `json:"start_time"`
 	EndTime     time.Time `json:"end_time"`
-	Location    string    `json:"location"`
+	Location    struct {
+		Venue      string `json:"venue"`
+		Locality   string `json:"locality"`
+		Region     string `json:"region"`
+		PostalCode string `json:"postal_code"`
+	} `json:"location"`
+}
+
+type ActionNetworkApiResponse struct {
+	Embedded struct {
+		Events []Action `json:"osdi:events"`
+	} `json:"_embedded"`
+	Links struct {
+		Next struct {
+			Href string `json:"href"`
+		} `json:"next"`
+	} `json:"_links"`
 }
 
 // DiscordEvent represents the payload to create a Discord scheduled event.
@@ -51,11 +68,15 @@ func init() {
 	}
 	discordBotToken = os.Getenv("DISCORD_BOT_TOKEN")
 	discordGuildID = os.Getenv("DISCORD_GUILD_ID")
-	actionNetworkAPIKey = os.Getenv("ACTIONNETWORK_API_KEY")
-
-	if discordBotToken == "" || discordGuildID == "" || actionNetworkAPIKey == "" {
+	if discordBotToken == "" || discordGuildID == "" {
 		log.Fatal("One or more required environment variables are missing.")
 	}
+
+	rawKeys := os.Getenv("ACTIONNETWORK_API_KEYS")
+	if rawKeys == "" {
+		log.Fatal("ACTIONNETWORK_API_KEYS must be set in .env")
+	}
+	actionNetworkAPIKeys = strings.Split(rawKeys, ",")
 }
 
 /*
@@ -99,8 +120,10 @@ func main() {
 
 	// You can get these strings by typing \:dfflirt: into Discord
 	messages := []string{"<:dfflirt:796580268374884372>", "<:dfflirt1:796582372078125097>", "<:dfflirt2:796582435332161567>"}
+	messages = []string{"Let's go fetch from AN..."}
 	messages = []string{}
 	for _, message := range messages {
+		fmt.Println(message)
 		err := postToDiscordChannel(discordBotToken, discordChannelID, message)
 		if err != nil {
 			fmt.Println("Error posting to Discord:", err)
@@ -109,18 +132,41 @@ func main() {
 		}
 	}
 
-	action := Action{
-		ID:          "1",
-		Title:       "super party",
-		Description: "it's lit, yo",
-		StartTime:   time.Now().Add(24 * time.Hour),
-		EndTime:     time.Now().Add(26 * time.Hour),
-		Location:    "your mom's house",
+	for _, key := range actionNetworkAPIKeys {
+		fmt.Println("Fetching with Action Network API key:", key)
+
+		next := ""
+		for {
+			actions, nextPage, err := fetchActions(key, next)
+			if err != nil {
+				log.Fatal(err)
+			}
+			for _, action := range actions {
+				message := fmt.Sprintf("📅 %s at %s (%s, %s)\n", action.Title, action.Location.Venue, action.Location.Locality, action.StartTime.Format(time.RFC1123))
+				fmt.Print(message)
+				postToDiscordChannel(discordBotToken, discordChannelID, message)
+			}
+			if nextPage == "" {
+				break
+			}
+			next = nextPage
+		}
 	}
-	err := createDiscordEvent(action)
-	if err != nil {
-		fmt.Println("Error creating Discord event:", err)
-	}
+
+	/*
+		action := Action{
+			ID:          "1",
+			Title:       "super party",
+			Description: "it's lit, yo",
+			StartTime:   time.Now().Add(24 * time.Hour),
+			EndTime:     time.Now().Add(26 * time.Hour),
+			Location:    "your mom's house",
+		}
+		err := createDiscordEvent(action)
+		if err != nil {
+			fmt.Println("Error creating Discord event:", err)
+		}
+	*/
 }
 
 func postToDiscordChannel(discordBotToken string, discordChannelID string, message string) error {
@@ -152,17 +198,37 @@ func postToDiscordChannel(discordBotToken string, discordChannelID string, messa
 	return nil
 }
 
-// Stub — replace with real Action Network API call
-func fetchActions() ([]Action, error) {
-	return []Action{
-		{
-			ID:          "example-action-001",
-			Title:       "Community Meetup",
-			Description: "Let's talk about change!",
-			StartTime:   time.Now().Add(36 * time.Hour),
-			Location:    "Public Library, Omaha",
-		},
-	}, nil
+func fetchActions(apiKey string, pageURL string) ([]Action, string, error) {
+	if pageURL == "" {
+		pageURL = "https://actionnetwork.org/api/v2/events"
+	}
+	req, err := http.NewRequest("GET", pageURL, nil)
+	if err != nil {
+		return nil, "", err
+	}
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("OSDI-API-Token", apiKey)
+
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return nil, "", err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		body, _ := io.ReadAll(resp.Body)
+		return nil, "", fmt.Errorf("API error %d: %s", resp.StatusCode, string(body))
+	}
+
+	var result ActionNetworkApiResponse
+	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
+		return nil, "", err
+	}
+
+	actions := result.Embedded.Events
+	next := result.Links.Next.Href
+
+	return actions, next, nil
 }
 
 func createDiscordEvent(action Action) error {
@@ -174,7 +240,7 @@ func createDiscordEvent(action Action) error {
 		PrivacyLevel:       2, // GUILD_ONLY
 		EntityType:         3, // EXTERNAL
 	}
-	event.EntityMetadata.Location = action.Location
+	event.EntityMetadata.Location = action.Location.Venue
 
 	payload, err := json.Marshal(event)
 	if err != nil {
