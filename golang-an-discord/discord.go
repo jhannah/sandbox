@@ -69,7 +69,7 @@ func createDiscordEvent(action Action) error {
 	if err != nil {
 		return err
 	}
-	prettyPrintJSON(payload)
+	// prettyPrintJSON(payload)
 
 	url := fmt.Sprintf("https://discord.com/api/v10/guilds/%s/scheduled-events", discordGuildID)
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(payload))
