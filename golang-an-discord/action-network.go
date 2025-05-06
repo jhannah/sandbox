@@ -1,6 +1,13 @@
 package main
 
-import "time"
+import (
+	"encoding/json"
+	"fmt"
+	"io"
+	"net/http"
+	"os"
+	"time"
+)
 
 type ActionNetworkApiResponse struct {
 	Embedded struct {
@@ -35,4 +42,59 @@ type Action struct {
 	} `json:"location"`
 	BrowserUrl   string `json:"browser_url"`
 	Instructions string `json:"instructions"`
+}
+
+func fetchActions(apiKey string, pageURL string) ([]Action, string, error) {
+	if pageURL == "" {
+		pageURL = "https://actionnetwork.org/api/v2/events"
+	}
+	req, err := http.NewRequest("GET", pageURL, nil)
+	if err != nil {
+		return nil, "", err
+	}
+	req.Header.Set("Content-Type", "application/json")
+	req.Header.Set("OSDI-API-Token", apiKey)
+
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return nil, "", err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		body, _ := io.ReadAll(resp.Body)
+		return nil, "", fmt.Errorf("API error %d: %s", resp.StatusCode, string(body))
+	}
+
+	var result ActionNetworkApiResponse
+	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
+		return nil, "", err
+	}
+
+	actions := result.Embedded.Events
+	next := result.Links.Next.Href
+
+	return actions, next, nil
+}
+
+func loadPostedActions() (map[string]bool, error) {
+	data, err := os.ReadFile(postedActionsFile)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return make(map[string]bool), nil
+		}
+		return nil, err
+	}
+
+	var posted map[string]bool
+	err = json.Unmarshal(data, &posted)
+	return posted, err
+}
+
+func savePostedActions(posted map[string]bool) error {
+	data, err := json.MarshalIndent(posted, "", "  ")
+	if err != nil {
+		return err
+	}
+	return os.WriteFile(postedActionsFile, data, 0644)
 }

@@ -1,12 +1,8 @@
 package main
 
 import (
-	"bytes"
-	"encoding/json"
 	"fmt"
-	"io"
 	"log"
-	"net/http"
 	"os"
 	"strings"
 	"time"
@@ -94,7 +90,7 @@ func main() {
 	}
 
 	for _, key := range actionNetworkAPIKeys {
-		fmt.Println("Fetching with Action Network API key:", key)
+		fmt.Println("Fetching from Action Network with API key:", key)
 
 		next := ""
 		for {
@@ -128,127 +124,4 @@ func main() {
 			fmt.Println("Error creating Discord event:", err)
 		}
 	*/
-}
-
-func postToDiscordChannel(discordBotToken string, discordChannelID string, message string) error {
-	url := fmt.Sprintf("https://discord.com/api/v10/channels/%s/messages", discordChannelID)
-
-	payload := map[string]string{"content": message}
-	body, err := json.Marshal(payload)
-	if err != nil {
-		return err
-	}
-
-	req, err := http.NewRequest("POST", url, bytes.NewBuffer(body))
-	if err != nil {
-		return err
-	}
-	req.Header.Set("Authorization", "Bot "+discordBotToken)
-	req.Header.Set("Content-Type", "application/json")
-
-	resp, err := http.DefaultClient.Do(req)
-	if err != nil {
-		return err
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode >= 300 {
-		return fmt.Errorf("discord API error: %s", resp.Status)
-	}
-
-	return nil
-}
-
-func fetchActions(apiKey string, pageURL string) ([]Action, string, error) {
-	if pageURL == "" {
-		pageURL = "https://actionnetwork.org/api/v2/events"
-	}
-	req, err := http.NewRequest("GET", pageURL, nil)
-	if err != nil {
-		return nil, "", err
-	}
-	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("OSDI-API-Token", apiKey)
-
-	resp, err := http.DefaultClient.Do(req)
-	if err != nil {
-		return nil, "", err
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		body, _ := io.ReadAll(resp.Body)
-		return nil, "", fmt.Errorf("API error %d: %s", resp.StatusCode, string(body))
-	}
-
-	var result ActionNetworkApiResponse
-	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
-		return nil, "", err
-	}
-
-	actions := result.Embedded.Events
-	next := result.Links.Next.Href
-
-	return actions, next, nil
-}
-
-func createDiscordEvent(action Action) error {
-	event := DiscordEvent{
-		Name:               action.Title,
-		Description:        action.Description,
-		ScheduledStartTime: action.StartDate,
-		ScheduledEndTime:   action.EndTime,
-		PrivacyLevel:       2, // GUILD_ONLY
-		EntityType:         3, // EXTERNAL
-	}
-	event.EntityMetadata.Location = action.Location.Venue
-
-	payload, err := json.Marshal(event)
-	if err != nil {
-		return err
-	}
-
-	url := fmt.Sprintf("https://discord.com/api/v10/guilds/%s/scheduled-events", discordGuildID)
-	req, err := http.NewRequest("POST", url, bytes.NewBuffer(payload))
-	if err != nil {
-		return err
-	}
-	req.Header.Set("Authorization", "Bot "+discordBotToken)
-	req.Header.Set("Content-Type", "application/json")
-
-	client := &http.Client{}
-	resp, err := client.Do(req)
-	if err != nil {
-		return err
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusCreated {
-		body, _ := io.ReadAll(resp.Body)
-		return fmt.Errorf("discord API error: %s", string(body))
-	}
-
-	return nil
-}
-
-func loadPostedActions() (map[string]bool, error) {
-	data, err := os.ReadFile(postedActionsFile)
-	if err != nil {
-		if os.IsNotExist(err) {
-			return make(map[string]bool), nil
-		}
-		return nil, err
-	}
-
-	var posted map[string]bool
-	err = json.Unmarshal(data, &posted)
-	return posted, err
-}
-
-func savePostedActions(posted map[string]bool) error {
-	data, err := json.MarshalIndent(posted, "", "  ")
-	if err != nil {
-		return err
-	}
-	return os.WriteFile(postedActionsFile, data, 0644)
 }
