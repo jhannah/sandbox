@@ -23,5 +23,5 @@ Then run these:
 ```
 go mod init github.com/wherever_your_code_lives
 go get github.com/joho/godotenv
-go run main.go
+go run .
 ```
