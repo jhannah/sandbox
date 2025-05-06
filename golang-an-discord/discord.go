@@ -55,11 +55,16 @@ func postToDiscordChannel(discordBotToken string, discordChannelID string, messa
 }
 
 func createDiscordEvent(action Action) error {
+	endDate := action.EndDate
+	if endDate.IsZero() {
+		endDate = action.StartDate.Add(2 * time.Hour)
+	}
+
 	event := DiscordEvent{
 		Name:               action.Title,
 		Description:        htmlToDiscord(action.Description),
 		ScheduledStartTime: action.StartDate,
-		ScheduledEndTime:   action.EndDate,
+		ScheduledEndTime:   endDate,
 		PrivacyLevel:       2, // GUILD_ONLY
 		EntityType:         3, // EXTERNAL
 	}
