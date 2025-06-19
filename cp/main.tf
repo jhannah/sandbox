@@ -47,6 +47,32 @@ resource "aws_iam_role_policy_attachment" "glue_policy" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole"
 }
 
+resource "aws_iam_policy" "glue_s3_access" {
+  name        = "glue-s3-access"
+  description = "Allow Glue to access S3 bucket for crawling"
+  policy      = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Effect = "Allow",
+        Action = [
+          "s3:GetObject",
+          "s3:ListBucket"
+        ],
+        Resource = [
+          aws_s3_bucket.cp-s3.arn,
+          "${aws_s3_bucket.cp-s3.arn}/*"
+        ]
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "glue_s3_access_attach" {
+  role       = aws_iam_role.glue_crawler_role.name
+  policy_arn = aws_iam_policy.glue_s3_access.arn
+}
+
 resource "aws_glue_crawler" "csv_crawler" {
   name          = "csv-data-crawler"
   role          = aws_iam_role.glue_crawler_role.arn
