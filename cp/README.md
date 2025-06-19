@@ -53,9 +53,27 @@ Now we can run `SELECT * FROM user_events` via AWS Athena. So we can run our Pyt
 program and enjoy the new output file it created:
 
 ```
-python3 query.py
-aws s3 cp s3://cp-s3-bucket-fy02qh9e/python_out/user_events_with_lag.csv /dev/stdout --quiet
+✗ python3 query.py
+/Users/jhannah/src/sandbox/cp/query.py:22: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+Uploading python_out/user_events_with_lag.csv to S3
 ```
+
+(Do we want to switch to SQLAlchemy? Normally I would, but I that's probably out of scope for this demo?)
+
+```
+✗ aws s3 cp s3://cp-s3-bucket-fy02qh9e/python_out/user_events_with_lag.csv /dev/stdout --quiet
+
+user_id,event_type,event_time,lag_seconds
+1,login,2023-01-01 09:00:00,
+1,click,2023-01-01 09:05:00,300.0
+1,logout,2023-01-01 09:10:00,300.0
+2,login,2023-01-01 10:00:00,
+2,click,2023-01-01 10:05:00,300.0
+2,click,2023-01-01 10:10:00,300.0
+```
+
+It's working, yay!
 
 Across those steps, you'll probably want to click around in AWS Console
 to make sure steps are working, debug them:
