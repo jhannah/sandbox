@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "cp-s3" {
 
 resource "aws_s3_object" "user_events_csv" {
   bucket = aws_s3_bucket.cp-s3.id
-  key    = "user_events.csv"
+  key    = "csv/user_events.csv"
   source = "user_events.csv"
   etag   = filemd5("user_events.csv")
 }
@@ -79,7 +79,7 @@ resource "aws_glue_crawler" "csv_crawler" {
   database_name = aws_glue_catalog_database.cp_data_lake_db.name
 
   s3_target {
-    path = "s3://${aws_s3_bucket.cp-s3.id}"
+    path = "s3://${aws_s3_bucket.cp-s3.id}/csv"
   }
 
   configuration = jsonencode({
@@ -90,43 +90,5 @@ resource "aws_glue_crawler" "csv_crawler" {
   })
 
   schedule = null  # on-demand; remove or change to run automatically
-}
-
-resource "aws_glue_catalog_table" "user_events" {
-  name          = "user_events"
-  database_name = aws_glue_catalog_database.cp_data_lake_db.name
-  table_type    = "EXTERNAL_TABLE"
-
-  parameters = {
-    "classification" = "csv"
-    "compressionType" = "none"
-    "typeOfData" = "file"
-  }
-
-  storage_descriptor {
-    columns {
-      name = "user_id"
-      type = "string"
-    }
-    columns {
-      name = "event_type"
-      type = "string"
-    }
-    columns {
-      name = "event_timestamp"
-      type = "string"
-    }
-    location      = "s3://${aws_s3_bucket.cp-s3.id}/user_events.csv"
-    input_format  = "org.apache.hadoop.mapred.TextInputFormat"
-    output_format = "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat"
-    ser_de_info {
-      name                  = "user_events"
-      serialization_library = "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe"
-      parameters = {
-        "field.delim" = ","
-        "skip.header.line.count" = "1"
-      }
-    }
-  }
 }
 
