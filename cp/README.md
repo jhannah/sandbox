@@ -43,7 +43,7 @@ aws s3 cp s3://cp-s3-bucket-fy02qh9e/csv/user_events.csv /dev/stdout --quiet
 
 We have to run our Terraform-defined AWS Glue Crawler once to discover our input CSV file
 and "turn it into" an AWS Glue Table. (The data actually lives in S3 forever, it's not actually
-"pulled into" AWS Glue. AWS Glue just auto-discovers the CSV meta-data for us.)
+"pulled into" AWS Glue. AWS Glue just auto-discovers and remembers the CSV meta-data for us.)
 
 ```
 aws glue start-crawler --name csv-data-crawler --region us-east-1
@@ -56,3 +56,13 @@ program and enjoy the new output file it created:
 python3 query.py
 aws s3 cp s3://cp-s3-bucket-fy02qh9e/python_out/user_events_with_lag.csv /dev/stdout --quiet
 ```
+
+Across those steps, you'll probably want to click around in AWS Console
+to make sure steps are working, debug them:
+* [IAM](https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/home)
+* [S3 buckets](https://us-east-1.console.aws.amazon.com/s3/buckets?region=us-east-1&bucketType=general)
+* [AWS Glue Crawlers](https://us-east-1.console.aws.amazon.com/glue/home?region=us-east-1#/v2/data-catalog/crawlers/view/csv-data-crawler)
+* [AWS Glue Tables](https://us-east-1.console.aws.amazon.com/glue/home?region=us-east-1#/v2/data-catalog/tables)
+* [AWS Athena SQL](https://us-east-1.console.aws.amazon.com/athena/home?region=us-east-1#/query-editor/history/da2df5ac-e759-4ac0-a6fb-1efd3dbfd118)
+  * `SHOW TABLES;`
+  * `SELECT * FROM user_events;`
