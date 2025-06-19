@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "cp-s3" {
 
 resource "aws_s3_object" "user_events_csv" {
   bucket = aws_s3_bucket.cp-s3.id
-  key    = "csv/user_events.csv"
+  key    = "csv/user_events/user_events.csv"
   source = "user_events.csv"
   etag   = filemd5("user_events.csv")
 }
@@ -79,7 +79,7 @@ resource "aws_glue_crawler" "csv_crawler" {
   database_name = aws_glue_catalog_database.cp_data_lake_db.name
 
   s3_target {
-    path = "s3://${aws_s3_bucket.cp-s3.id}/csv"
+    path = "s3://${aws_s3_bucket.cp-s3.id}/csv/user_events"
   }
 
   configuration = jsonencode({
