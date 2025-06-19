@@ -50,7 +50,7 @@ aws glue start-crawler --name csv-data-crawler --region us-east-1
 ```
 
 Now we can run `SELECT * FROM user_events` via AWS Athena. So we can run our Python
-program and enjoy the new output file it created:
+program and enjoy the new output file it creates:
 
 ```
 ✗ python3 query.py
