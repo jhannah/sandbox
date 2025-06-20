@@ -59,7 +59,7 @@ program and enjoy the new output file it creates:
 Uploading python_out/user_events_with_lag.csv to S3
 ```
 
-(Do we want to switch to SQLAlchemy? Normally I would, but I that's probably out of scope for this demo?)
+(Do we want to switch to SQLAlchemy? Normally I would, but that's probably out of scope for this demo?)
 
 ```
 ✗ aws s3 cp s3://cp-s3-bucket-fy02qh9e/python_out/user_events_with_lag.csv /dev/stdout --quiet
