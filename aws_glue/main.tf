@@ -22,7 +22,7 @@ resource "aws_s3_object" "parquet_files" {
     acl = "private"
     key = each.key
     source = "data/${each.value}"
-    etag   = filemd5("data/${each.value}")
+    source_hash = filemd5("data/${each.value}")
 }
 
 
