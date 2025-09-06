@@ -31,40 +31,17 @@ Our S3 bucket name is randomized. In our case it ended up with this name:
 
 ```
 aws s3 ls s3://nyc-gov-zuo8vaqv
-aws s3 cp s3://cp-s3-bucket-fy02qh9e/csv/user_events.csv /dev/stdout --quiet
 ```
 
-We have to run our Terraform-defined AWS Glue Crawler once to discover our input CSV file
-and "turn it into" an AWS Glue Table. (The data actually lives in S3 forever, it's not actually
-"pulled into" AWS Glue. AWS Glue just auto-discovers and remembers the CSV meta-data for us.)
+We have to run our Terraform-defined AWS Glue Crawler once to discover our input parquet files
+and "turn them into" an AWS Glue Table. (The data actually lives in S3 forever, it's not actually
+"pulled into" AWS Glue. AWS Glue just auto-discovers and remembers the meta-data for us.)
 
 ```
-aws glue start-crawler --name csv-data-crawler --region us-east-1
+aws glue start-crawler --name parquet-data-crawler --region us-east-1
 ```
 
-Now we can run `SELECT * FROM user_events` via AWS Athena. So we can run our Python
-program and enjoy the new output file it creates:
-
-```
-✗ python3 query.py
-/Users/jhannah/src/sandbox/cp/query.py:22: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
-  df = pd.read_sql(query, conn)
-Uploading python_out/user_events_with_lag.csv to S3
-```
-
-(Do we want to switch to SQLAlchemy? Normally I would, but that's probably out of scope for this demo?)
-
-```
-✗ aws s3 cp s3://cp-s3-bucket-fy02qh9e/python_out/user_events_with_lag.csv /dev/stdout --quiet
-
-user_id,event_type,event_time,lag_seconds
-1,login,2023-01-01 09:00:00,
-1,click,2023-01-01 09:05:00,300.0
-1,logout,2023-01-01 09:10:00,300.0
-2,login,2023-01-01 10:00:00,
-2,click,2023-01-01 10:05:00,300.0
-2,click,2023-01-01 10:10:00,300.0
-```
+Now we can run `SELECT COUNT(*) FROM nyc_gov_zuo8vaqv` via AWS Athena.
 
 It's working, yay!
 
@@ -76,4 +53,25 @@ to make sure steps are working, debug them:
 * [AWS Glue Tables](https://us-east-1.console.aws.amazon.com/glue/home?region=us-east-1#/v2/data-catalog/tables)
 * [AWS Athena SQL](https://us-east-1.console.aws.amazon.com/athena/home?region=us-east-1#/query-editor/history/da2df5ac-e759-4ac0-a6fb-1efd3dbfd118)
   * `SHOW TABLES;`
-  * `SELECT * FROM user_events;`
+  * `SELECT COUNT(*) FROM nyc_gov_zuo8vaqv;`
+
+Misc other things you can do:
+
+```
+aws athena get-table-metadata \
+  --catalog-name AwsDataCatalog \
+  --database-name nyc_gov_data_lake \
+  --table-name nyc_gov_zuo8vaqv \
+  --region us-east-1
+```
+
+```sql
+SELECT
+  year(tpep_pickup_datetime) year,
+  month(tpep_pickup_datetime) month,
+  count(*) trips,
+  format ('$%, .2f', sum(fare_amount)) total_fare_amount
+FROM nyc_gov_zuo8vaqv
+GROUP BY 1,2
+ORDER BY 1,2
+```
