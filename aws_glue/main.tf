@@ -25,10 +25,8 @@ resource "aws_s3_object" "parquet_files" {
     source_hash = filemd5("data/${each.value}")
 }
 
-
-/*
-resource "aws_glue_catalog_database" "cp_data_lake_db" {
-  name = "cp_data_lake"
+resource "aws_glue_catalog_database" "nyc_gov_data_lake_db" {
+  name = "nyc_gov_data_lake"
 }
 
 resource "aws_iam_role" "glue_crawler_role" {
@@ -64,8 +62,8 @@ resource "aws_iam_policy" "glue_s3_access" {
           "s3:ListBucket"
         ],
         Resource = [
-          aws_s3_bucket.cp-s3.arn,
-          "${aws_s3_bucket.cp-s3.arn}/*"
+          aws_s3_bucket.nyc-gov.arn,
+          "${aws_s3_bucket.nyc-gov.arn}/*"
         ]
       }
     ]
@@ -77,13 +75,13 @@ resource "aws_iam_role_policy_attachment" "glue_s3_access_attach" {
   policy_arn = aws_iam_policy.glue_s3_access.arn
 }
 
-resource "aws_glue_crawler" "csv_crawler" {
-  name          = "csv-data-crawler"
+resource "aws_glue_crawler" "parquet_crawler" {
+  name          = "parquet-data-crawler"
   role          = aws_iam_role.glue_crawler_role.arn
-  database_name = aws_glue_catalog_database.cp_data_lake_db.name
+  database_name = aws_glue_catalog_database.nyc_gov_data_lake_db.name
 
   s3_target {
-    path = "s3://${aws_s3_bucket.cp-s3.id}/csv/user_events"
+    path = "s3://${aws_s3_bucket.nyc-gov.id}"
   }
 
   configuration = jsonencode({
@@ -96,4 +94,3 @@ resource "aws_glue_crawler" "csv_crawler" {
   schedule = null  # on-demand; remove or change to run automatically
 }
 
-*/
