@@ -1,7 +1,7 @@
 # Terraform, AWS Glue, Athena Demo
 
 ```mermaid
-flowchart TD
+flowchart LR
     P(".parquet<br/>(fancy CSVs)") -- Terraform --> S3
     S3 -- Glue Crawler --> T["AWS Glue Tables<br/>(metadata)"]
     T --> A["Athena SQL"]
@@ -30,7 +30,7 @@ tofu apply tf.out
 Our S3 bucket name is randomized. In our case it ended up with this name:
 
 ```
-aws s3 ls s3://cp-s3-bucket-fy02qh9e
+aws s3 ls s3://nyc-gov-zuo8vaqv
 aws s3 cp s3://cp-s3-bucket-fy02qh9e/csv/user_events.csv /dev/stdout --quiet
 ```
 

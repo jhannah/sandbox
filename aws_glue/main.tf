@@ -16,15 +16,17 @@ resource "aws_s3_bucket" "nyc-gov" {
   force_destroy = true
 }
 
-/*
-
-resource "aws_s3_object" "user_events_csv" {
-  bucket = aws_s3_bucket.cp-s3.id
-  key    = "csv/user_events/user_events.csv"
-  source = "user_events.csv"
-  etag   = filemd5("user_events.csv")
+resource "aws_s3_object" "parquet_files" {
+    for_each = fileset("data/", "*.parquet")
+    bucket = aws_s3_bucket.nyc-gov.id
+    acl = "private"
+    key = each.key
+    source = "data/${each.value}"
+    etag   = filemd5("data/${each.value}")
 }
 
+
+/*
 resource "aws_glue_catalog_database" "cp_data_lake_db" {
   name = "cp_data_lake"
 }
