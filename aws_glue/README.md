@@ -8,8 +8,9 @@ flowchart LR
     S3 --> A
 ```
 
-Using Terraform to configure all AWS resources, let's upload a CSV to S3 and use AWS Glue to treat
-that CSV as a database ("AWS Glue Tables" created via an "AWS Glue Crawler").
+Using Terraform to configure all AWS resources, let's upload CSVs to S3 and use AWS Glue to treat
+those CSVs as a database. ("AWS Glue Tables" created via an "AWS Glue Crawler," queried with SQL
+via "Amazon Athena".)
 
 ## Local (macOS) installation, run
 ```
