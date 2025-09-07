@@ -19,7 +19,8 @@ aws configure
 aws sts get-caller-identity --no-cli-pager
 ```
 
-Terraform isn't OSI-compliant as of Apr 2025. So we'll use https://opentofu.org/ as a drop-in replacement instead.
+Terraform isn't OSI-compliant as of Apr 2025. So we'll use
+[OpenTofu](https://opentofu.org/) as a drop-in replacement instead:
 
 ```
 brew install opentofu
@@ -56,10 +57,10 @@ to make sure steps are working, debug them:
   * `SHOW TABLES;`
   * `SELECT COUNT(*) FROM nyc_gov_zuo8vaqv;`
 
-Misc other things you can do:
+## Misc
 
 ```
-aws athena get-table-metadata \
+$ aws athena get-table-metadata \
   --catalog-name AwsDataCatalog \
   --database-name nyc_gov_data_lake \
   --table-name nyc_gov_zuo8vaqv \
@@ -76,6 +77,8 @@ FROM nyc_gov_zuo8vaqv
 GROUP BY 1,2
 ORDER BY 1,2
 ```
+
+## Slides
 
 In September 2025, I presented this as a talk to the
 [Omaha Web Services Meetup](https://www.meetup.com/omaha-amazon-web-services-meetup/events/310573705/?recId=bfc7ca69-2883-403d-b4cf-eb382c41c26d&recSource=event-search&searchId=c03bf7d6-b012-475e-be3c-d3ff00d9f871&eventOrigin=find_page%24all).
