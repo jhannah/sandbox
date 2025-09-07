@@ -76,3 +76,9 @@ FROM nyc_gov_zuo8vaqv
 GROUP BY 1,2
 ORDER BY 1,2
 ```
+
+In September 2025, I presented this as a talk to the
+[Omaha Web Services Meetup](https://www.meetup.com/omaha-amazon-web-services-meetup/events/310573705/?recId=bfc7ca69-2883-403d-b4cf-eb382c41c26d&recSource=event-search&searchId=c03bf7d6-b012-475e-be3c-d3ff00d9f871&eventOrigin=find_page%24all).
+My slide deck:
+[PDF](https://www.dropbox.com/scl/fi/jzqgsofh2z6sv52ccea51/2025-AWS-Glue.pdf?rlkey=pjkp8mtvlpl9nm2mfm4f56l6d&dl=0),
+[Keynote](https://www.dropbox.com/scl/fi/8wbuchswgb7hpl59ps1j7/2025-AWS-Glue.key?rlkey=fy99pmqtgiqja4cyy58942twu&dl=0).
