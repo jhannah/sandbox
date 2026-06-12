@@ -23,8 +23,7 @@ def main():
     while hp > 0:
         attack = roll(20) + 6
         if attack >= args.ac:
-            b = roll(8)
-            damage = b + 3
+            damage = roll(8) + 3
             hp = max(0, hp - damage)
             print(f"Hit! {damage} piercing damage + Sapped. ({hp} HP remaining)")
         else:
