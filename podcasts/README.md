@@ -36,7 +36,7 @@ are happy to send you a GDPR dump of all your data (back to 2018).
 Then you can use `import_to_sqlite.py` to turn that text file dump into a SQLite database.
 Then you can query your SQLite database. e.g.:
 
-```
+```sql
 ✗ sqlite3 -header -column jhannah_pocketcasts.sqlite3 "
 SELECT substr(modified,1,7) AS yyyymm,
        COUNT(*) AS episodes_touched,
@@ -52,5 +52,34 @@ ORDER BY 1;
 2018-06  44                31.6
 2018-07  101               59.3
 2018-08  79                68.5
+...
+
+✗ sqlite3 -header -column jhannah_pocketcasts.sqlite3 "
+WITH map AS (
+  SELECT uuid AS episode, podcast FROM history
+  UNION SELECT uuid, podcast FROM up_next
+  UNION SELECT episode, podcast FROM bookmarks
+),
+agg AS (
+  SELECT COALESCE(n.title, m.podcast) AS podcast,
+         COUNT(*)                     AS episodes,
+         ROUND(SUM(CAST(e.played_up_to AS REAL))/3600.0, 1) AS hours
+  FROM episodes e
+  JOIN map m ON m.episode = e.uuid
+  LEFT JOIN podcast_names n ON n.uuid = m.podcast
+  WHERE e.playing_status IN ('2','3')
+  GROUP BY m.podcast
+)
+SELECT ROW_NUMBER() OVER (ORDER BY hours DESC) AS rank,
+       podcast, episodes, hours
+FROM agg
+ORDER BY hours DESC
+LIMIT 20;
+"
+rank  podcast                                    episodes  hours
+----  -----------------------------------------  --------  -----
+1     Up First from NPR                          789       229.9
+2     Drunk Ex-Pastors                           135       207.6
+3     1st Sky Omaha                              88        164.1
 ...
 ```
