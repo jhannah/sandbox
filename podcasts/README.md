@@ -53,7 +53,13 @@ ORDER BY 1;
 2018-07  101               59.3
 2018-08  79                68.5
 ...
+```
 
+When you also want the names of the podcasts, you can run `fetch_podcast_names.py` to grab
+those names (and other metadata) from the Pocket Casts API. Then you can run queries like
+"show me my top 20 podcasts of all time, by listening hours":
+
+```sql
 ✗ sqlite3 -header -column jhannah_pocketcasts.sqlite3 "
 WITH map AS (
   SELECT uuid AS episode, podcast FROM history
