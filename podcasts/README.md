@@ -47,7 +47,7 @@ WHERE playing_status IN ('2','3')          -- in-progress + completed
 GROUP BY 1
 ORDER BY 1;
 "
-\yyyymm   episodes_touched  hours_listened
+yyyymm   episodes_touched  hours_listened
 -------  ----------------  --------------
 2018-06  44                31.6
 2018-07  101               59.3
