@@ -11,7 +11,7 @@ This software generates RSS feeds you can stick in your podcast player app.
 Paladin audition tapes, an introduction, a synopsis, and cast biographies):
 * [Read all about the program and volunteers](https://archive.org/details/OTRR_Maintained_Have_Gun_Will_Travel)
   who saved the original audio.
-* [RSS](https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/otrr/have_gun_will_travel.rss)
+* [RSS](https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/archive.org/otrr/have_gun_will_travel.rss)
   URL for your podcast player.
 
 ### Generating the feed

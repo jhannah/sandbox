@@ -15,7 +15,7 @@ The feed contains these collections from the Internet Archive:
 * Garrison Keillor Archive Vol. 05 - A Prairie Home Christmas-The Family Radio-Gospel Birds Pt. 1
 * Garrison Keillor Archive Vol. 06 - Comedy Theater & Rhubarb cassette sets
 
-[RSS URL](https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/GarrisonKeillor/GarrisonKeillor.rss)
+[RSS URL](https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/archive.org/GarrisonKeillor/GarrisonKeillor.rss)
 for your podcast player.
 
 ### Generating the feed
