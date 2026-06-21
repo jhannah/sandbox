@@ -30,10 +30,11 @@ while (<DATA>) {
 my $vars = {
   title      => 'Garrison Keillor Archive - More News from Lake Wobegon',
   owner_name => 'Garrison Keillor',
-  image      => 'https://dn710306.ca.archive.org/0/items/GarrisonKeillor-MoreNewsFromLakeWobegon/Garrison%20Keillor%20-%20More%20News%20from%20Lake%20Wobegon.jpg',
+  # Drew didn't unload any square image I can use. Podcast players needs square images.
+  # So use this square image from another Internet Archive uploader:
+  image      => 'https://archive.org/download/garrison-keillor/Garrison%20Keillor.png',
   link       => 'https://archive.org/details/GarrisonKeillor-MoreNewsFromLakeWobegon',
-  summary    => 'Thanks to my fiance\'s spectacular (and nearly all out of print) Garrison Keillor audio collection, we thus begin a series of Garrison Keillor Archives.
-In this first installment we present the four-cd set from 1989, More News from Lake Wobegon, which contains many excellent and classic recitations by Mr. Keillor.',
+  summary    => 'Thanks to my fiance\'s spectacular (and nearly all out of print) Garrison Keillor audio collection, we thus begin a series of Garrison Keillor Archives from 1989. Contains many excellent and classic recitations by Mr. Keillor. Internet Archive\'d by Drew Evan Dobbs.',
   per_ep_root_url => 'https://archive.org/download',
   episodes   => [ @episodes ],
 };
