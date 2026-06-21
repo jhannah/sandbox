@@ -1,11 +1,12 @@
 
 [Drew Evan Dobbs](https://archive.org/details/GarrisonKeillor-MoreNewsFromLakeWobegon)
-has compiled 75 episodes of Garrison Keillor (More News from Lake Wobegon) onto the
+has compiled 75 episodes of Garrison Keillor (News from Lake Wobegon) onto the
 [Internet Archive](https://archive.org/).
 
 I love my podcast player, so I want to listen to those shows as podcasts.
 
-This software generates RSS feeds you can stick in your podcast player app.
+This software generates an RSS feed you can stick in your podcast player app.
+The feed contains these collections from the Internet Archive:
 
 * Garrison Keillor Archive Vol. 01 - More News from Lake Wobegon
 * Garrison Keillor Archive Vol. 02 - Seasons Four-Cassette Set

@@ -36,9 +36,9 @@ while (<DATA>) {
   };
 }
 my $vars = {
-  title      => 'Garrison Keillor Archive - More News from Lake Wobegon',
+  title      => 'Garrison Keillor Archive - News from Lake Wobegon',
   owner_name => 'Garrison Keillor',
-  # Drew didn't unload any square image I can use. Podcast players needs square images.
+  # Drew didn't unload any square image I can use. Podcast players need square images.
   # So use this square image from another Internet Archive uploader:
   image      => 'https://archive.org/download/garrison-keillor/Garrison%20Keillor.png',
   link       => 'https://archive.org/details/GarrisonKeillor-MoreNewsFromLakeWobegon',
