@@ -13,9 +13,8 @@ while (<DATA>) {
   chomp;
   next unless /\w/;
   # GarrisonKeillor-MoreNewsFromLakeWobegon/01-Pontoon Boat-Garrison Keillor.mp3
-  my ($folder, $rest) = split m{/}, $_, 2;
-  my ($ep_number, $filename) = split /-/, $rest, 2;
-  my $title = $filename;
+  my ($folder, $filename) = split m{/}, $_, 2;
+  my ($ep_number, $title) = split /[- ]/, $filename, 2;
   $title =~ s/\-Garrison Keillor\.mp3$//;
   my $pub_date = '1989-01-01';   # We don't actually know this per track from here
   push @episodes, {

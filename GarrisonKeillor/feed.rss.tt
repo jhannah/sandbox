@@ -13,7 +13,8 @@
 		<itunes:explicit>no</itunes:explicit>
 		<itunes:category text="Comedy"/>
 		[% FOREACH e = episodes %]
-			[% SET this_url = per_ep_root_url _ "/" _ e.folder _ "/" _ e.ep_number _ "-" _ e.filename | url %]
+		    [% SET this_filename = e.filename | url %]
+			[% SET this_url = per_ep_root_url _ "/" _ e.folder _ "/" _ this_filename %]
 			<item>
 				<title>[% e.title %]</title>
 				<pubDate>[% e.pub_date %]</pubDate>
