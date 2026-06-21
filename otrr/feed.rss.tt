@@ -15,7 +15,7 @@
 			<item>
 				<title>[% e.title %]</title>
 				<itunes:image href="[% image %]"/>
-				<enclosure url="[% per_ep_root_url %]/[% e.filename | url %]"/>
+				<enclosure url="[% per_ep_root_url %]/[% e.filename | url %]" length="[% e.size %]" type="audio/mpeg"/>
 				<guid>[% per_ep_root_url %]/[% e.filename | url %]</guid>
 				<pubDate>[% e.pub_date %]</pubDate>
 				<itunes:episode>[% e.ep_number %]</itunes:episode>

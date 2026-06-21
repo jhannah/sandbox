@@ -2,6 +2,51 @@
 
 use 5.40.0;
 use Template;
+use JSON::PP;
+use Encode qw(encode_utf8);
+use POSIX qw(strftime);
+use Time::Local qw(timegm);
+
+# Cached archive.org metadata (byte size + runtime per file), built by
+# fetch_metadata.pl so this generator never touches the network. decode_json
+# returns filenames as character strings, so re-encode the keys to UTF-8 bytes
+# to match the raw bytes we read from __DATA__ (the em-dash in
+# "Have Gun—Will Travel" is multi-byte).
+my $META = 'metadata.json';
+open my $mfh, '<', $META
+  or die "Can't read $META: $! (run ./fetch_metadata.pl first)\n";
+my $raw = decode_json(do { local $/; <$mfh> });
+close $mfh;
+my %meta = map { encode_utf8($_) => $raw->{$_} } keys %$raw;
+
+# Convert an ISO YYYY-MM-DD date to the RFC 822 format RSS requires. Use noon
+# UTC so converting to a US timezone can't roll the displayed date back a day.
+sub rfc822_date {
+  my ($iso) = @_;
+  my ($y, $m, $d) = split /-/, $iso;
+  # Pass the full 4-digit year: Time::Local maps 0-99 via a sliding window
+  # (so 58 would become 2058, not 1958), but treats >=1000 as a literal year.
+  my $epoch = timegm(0, 0, 12, $d, $m - 1, $y);
+  return strftime('%a, %d %b %Y %H:%M:%S +0000', gmtime($epoch));
+}
+
+# Format seconds as H:MM:SS for itunes:duration.
+sub hms {
+  my ($secs) = @_;
+  $secs = int($secs + 0.5);
+  return sprintf '%d:%02d:%02d', int($secs / 3600), int(($secs % 3600) / 60), $secs % 60;
+}
+
+# Look up real size (bytes) and runtime (H:MM:SS) for a file, with a fallback
+# duration when the file isn't in the cached metadata.
+sub size_and_duration {
+  my ($filename, $fallback_duration) = @_;
+  my $m = $meta{$filename};
+  warn "No cached metadata for $filename\n" unless $m;
+  my $size     = $m ? $m->{size} : 0;
+  my $duration = ($m && defined $m->{length}) ? hms($m->{length}) : $fallback_duration;
+  return ($size, $duration);
+}
 
 my $tt = Template->new({
   # INCLUDE_PATH => 'templates',
@@ -13,24 +58,28 @@ while (<DATA>) {
   chomp;
   my $ep = {};
   if (/Introduction/) {
+    my ($size, $duration) = size_and_duration($_, "0:03:00");
     push @episodes, {
       filename  => $_,
       title     => "OTRR Introduction",
-      pub_date  => "2024-05-19",
+      pub_date  => rfc822_date("2024-05-19"),
       ep_number => 0,
-      duration  => "0:03:00",    # 3 minutes
+      size      => $size,
+      duration  => $duration,
     };
   } else {
     my $filename = $_;
     # Have Gun—Will Travel 1958-11-23 (001) Strange Vendetta.mp3
     my ($pub_date, $ep_number, $title) = ($filename =~ /Have Gun—Will Travel ([\d\-]+) \((\d+)\) ([\w\s]+)/);
     $ep_number =~ s/^0+//;
+    my ($size, $duration) = size_and_duration($filename, "0:24:00");
     push @episodes, {
       filename  => $filename,
       title     => $title,
-      pub_date  => $pub_date,
+      pub_date  => rfc822_date($pub_date),
       ep_number => $ep_number,
-      duration  => "0:24:00",   # 24 minutes
+      size      => $size,
+      duration  => $duration,
     };
   }
 }
