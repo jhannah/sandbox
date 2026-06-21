@@ -1,7 +1,7 @@
 
 [Drew Evan Dobbs](https://archive.org/details/GarrisonKeillor-MoreNewsFromLakeWobegon)
-has compiled 75 episodes of Garrison Keillor (News from Lake Wobegon) onto the
-[Internet Archive](https://archive.org/).
+has compiled 75 episodes of Garrison Keillor: A Prairie Home Companion: News from Lake Wobegon (and more)
+onto the [Internet Archive](https://archive.org/).
 
 I love my podcast player, so I want to listen to those shows as podcasts.
 
