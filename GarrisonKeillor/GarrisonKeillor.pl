@@ -2,6 +2,12 @@
 
 use 5.40.0;
 use Template;
+use POSIX qw(strftime);
+use Time::Local qw(timegm);
+
+# Placeholder base date: noon UTC on 1989-01-01. Noon (not midnight) so that
+# converting to a US timezone can't roll the displayed date back a day.
+my $base_epoch = timegm(0, 0, 12, 1, 0, 1989 - 1900);
 
 my $tt = Template->new({
   # INCLUDE_PATH => 'templates',
@@ -16,7 +22,10 @@ while (<DATA>) {
   my ($folder, $filename) = split m{/}, $_, 2;
   my ($ep_number, $title) = split /[- ]/, $filename, 2;
   $title =~ s/\-Garrison Keillor\.mp3$//;
-  my $pub_date = '1989-01-01';   # We don't actually know this per track from here
+  # We don't actually know the real date per track. Stagger one day per episode
+  # from the base so players that sort by pubDate keep them in episode order.
+  my $epoch = $base_epoch + ($ep_number - 1) * 86400;
+  my $pub_date = strftime('%a, %d %b %Y %H:%M:%S +0000', gmtime($epoch));
   push @episodes, {
     filename  => $filename,
     title     => $title,
