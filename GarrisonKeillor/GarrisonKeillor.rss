@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<channel>
-		<title>Garrison Keillor Archive - More News from Lake Wobegon</title>
+		<title>Garrison Keillor Archive - News from Lake Wobegon</title>
 		<link>https://archive.org/details/GarrisonKeillor-MoreNewsFromLakeWobegon</link>
 		<language>en</language>
 		<itunes:summary>Thanks to my fiance's spectacular (and nearly all out of print) Garrison Keillor audio collection, we thus begin a series of Garrison Keillor Archives from 1989. Contains many excellent and classic recitations by Mr. Keillor. Internet Archive'd by Drew Evan Dobbs.</itunes:summary>
@@ -19,11 +19,11 @@
 			<item>
 				<title>Pontoon Boat</title>
 				<pubDate>Sun, 01 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/01-Pontoon Boat-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/01-Pontoon Boat-Garrison Keillor.mp3" length="44864805" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/01-Pontoon Boat-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>01</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>23:22</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -33,11 +33,11 @@
 			<item>
 				<title>Author</title>
 				<pubDate>Mon, 02 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/02-Author-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/02-Author-Garrison Keillor.mp3" length="31729177" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/02-Author-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>02</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>16:32</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -47,11 +47,11 @@
 			<item>
 				<title>The Freedon Of The Press</title>
 				<pubDate>Tue, 03 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/03-The Freedon Of The Press-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/03-The Freedon Of The Press-Garrison Keillor.mp3" length="31077179" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/03-The Freedon Of The Press-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>03</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>16:11</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -61,11 +61,11 @@
 			<item>
 				<title>Vicks</title>
 				<pubDate>Wed, 04 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/04-Vicks-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/04-Vicks-Garrison Keillor.mp3" length="28195750" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/04-Vicks-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>04</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>14:41</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -75,11 +75,11 @@
 			<item>
 				<title>Truckstop</title>
 				<pubDate>Thu, 05 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/05-Truckstop-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/05-Truckstop-Garrison Keillor.mp3" length="39230712" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/05-Truckstop-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>05</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>20:26</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -89,11 +89,11 @@
 			<item>
 				<title>Smokes</title>
 				<pubDate>Fri, 06 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/06-Smokes-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/06-Smokes-Garrison Keillor.mp3" length="41554562" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/06-Smokes-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>06</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>21:39</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -103,11 +103,11 @@
 			<item>
 				<title>The Perils Of Spring</title>
 				<pubDate>Sat, 07 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/07-The Perils Of Spring-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/07-The Perils Of Spring-Garrison Keillor.mp3" length="23553074" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/07-The Perils Of Spring-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>07</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>12:16</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -117,11 +117,11 @@
 			<item>
 				<title>Let Us Pray</title>
 				<pubDate>Sun, 08 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/08-Let Us Pray-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/08-Let Us Pray-Garrison Keillor.mp3" length="37182714" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/08-Let Us Pray-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>08</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>19:22</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -131,11 +131,11 @@
 			<item>
 				<title>Alaska</title>
 				<pubDate>Mon, 09 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/09-Alaska-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/09-Alaska-Garrison Keillor.mp3" length="55653997" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/09-Alaska-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>09</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>28:59</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -145,11 +145,11 @@
 			<item>
 				<title>Uncle Al's Gift</title>
 				<pubDate>Tue, 10 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/10-Uncle Al's Gift-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/10-Uncle Al's Gift-Garrison Keillor.mp3" length="24536945" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/10-Uncle Al's Gift-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>10</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>12:47</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -159,11 +159,11 @@
 			<item>
 				<title>Skinny Dip</title>
 				<pubDate>Wed, 11 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/11-Skinny Dip-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/11-Skinny Dip-Garrison Keillor.mp3" length="25082795" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/11-Skinny Dip-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>11</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>13:04</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -173,11 +173,11 @@
 			<item>
 				<title>Homecoming</title>
 				<pubDate>Thu, 12 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/12-Homecoming-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/12-Homecoming-Garrison Keillor.mp3" length="36575836" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/12-Homecoming-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>12</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>19:03</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -187,11 +187,11 @@
 			<item>
 				<title>Rotten Apples</title>
 				<pubDate>Fri, 13 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/13 Rotten Apples-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/13 Rotten Apples-Garrison Keillor.mp3" length="29756417" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/13 Rotten Apples-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>13</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>15:30</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -201,11 +201,11 @@
 			<item>
 				<title>O Death</title>
 				<pubDate>Sat, 14 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/14 O Death-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/14 O Death-Garrison Keillor.mp3" length="34749352" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/14 O Death-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>14</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>18:06</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -215,11 +215,11 @@
 			<item>
 				<title>The Wise Men</title>
 				<pubDate>Sun, 15 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/15 The Wise Men-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/15 The Wise Men-Garrison Keillor.mp3" length="33477089" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/15 The Wise Men-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>15</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>17:26</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -229,11 +229,11 @@
 			<item>
 				<title>A Trip to Grand Rapids</title>
 				<pubDate>Mon, 16 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/16 A Trip to Grand Rapids-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/16 A Trip to Grand Rapids-Garrison Keillor.mp3" length="43954500" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillor-MoreNewsFromLakeWobegon/16 A Trip to Grand Rapids-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>16</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>22:54</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -243,11 +243,11 @@
 			<item>
 				<title>Me and Choir</title>
 				<pubDate>Tue, 17 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/17 Me and Choir-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/17 Me and Choir-Garrison Keillor.mp3" length="56179813" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/17 Me and Choir-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>17</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>29:16</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -257,11 +257,11 @@
 			<item>
 				<title>A Day in the Life of Clarence Bunsen</title>
 				<pubDate>Wed, 18 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/18 A Day in the Life of Clarence Bunsen-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/18 A Day in the Life of Clarence Bunsen-Garrison Keillor.mp3" length="26529812" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/18 A Day in the Life of Clarence Bunsen-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>18</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>13:49</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -271,11 +271,11 @@
 			<item>
 				<title>A Letter from Jim-Fiction</title>
 				<pubDate>Thu, 19 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/19 A Letter from Jim-Fiction-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/19 A Letter from Jim-Fiction-Garrison Keillor.mp3" length="30658402" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/19 A Letter from Jim-Fiction-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>19</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>15:58</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -285,11 +285,11 @@
 			<item>
 				<title>The Living Flag</title>
 				<pubDate>Fri, 20 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/20 The Living Flag-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/20 The Living Flag-Garrison Keillor.mp3" length="10238578" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/20 The Living Flag-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>20</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>5:20</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -299,11 +299,11 @@
 			<item>
 				<title>The Tollefson Boy Goes to College</title>
 				<pubDate>Sat, 21 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/21 The Tollefson Boy Goes to College-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/21 The Tollefson Boy Goes to College-Garrison Keillor.mp3" length="22014178" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/21 The Tollefson Boy Goes to College-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>21</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>11:28</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -313,11 +313,11 @@
 			<item>
 				<title>Tomato Butt</title>
 				<pubDate>Sun, 22 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/22 Tomato Butt-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/22 Tomato Butt-Garrison Keillor.mp3" length="22285830" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/22 Tomato Butt-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>22</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>11:36</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -327,11 +327,11 @@
 			<item>
 				<title>Chamber of Commerce</title>
 				<pubDate>Mon, 23 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/23 Chamber of Commerce-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/23 Chamber of Commerce-Garrison Keillor.mp3" length="4329475" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/23 Chamber of Commerce-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>23</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>2:15</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -341,11 +341,11 @@
 			<item>
 				<title>Dog Days of August</title>
 				<pubDate>Tue, 24 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/24 Dog Days of August-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/24 Dog Days of August-Garrison Keillor.mp3" length="21561931" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/24 Dog Days of August-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>24</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>11:14</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -355,11 +355,11 @@
 			<item>
 				<title>Mrs Bergey and the Schubert Carillon Piano</title>
 				<pubDate>Wed, 25 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/25 Mrs Bergey and the Schubert Carillon Piano-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/25 Mrs Bergey and the Schubert Carillon Piano-Garrison Keillor.mp3" length="27668339" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/25 Mrs Bergey and the Schubert Carillon Piano-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>25</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>14:25</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -369,11 +369,11 @@
 			<item>
 				<title>Giant Decoys</title>
 				<pubDate>Thu, 26 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/26 Giant Decoys-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/26 Giant Decoys-Garrison Keillor.mp3" length="11703104" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/26 Giant Decoys-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>26</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>6:06</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -383,11 +383,11 @@
 			<item>
 				<title>Daryl Tolleruds Long Day</title>
 				<pubDate>Fri, 27 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/27 Daryl Tolleruds Long Day-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/27 Daryl Tolleruds Long Day-Garrison Keillor.mp3" length="18499968" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/27 Daryl Tolleruds Long Day-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>27</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>9:38</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -397,11 +397,11 @@
 			<item>
 				<title>Hog Slaughter</title>
 				<pubDate>Sat, 28 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/28 Hog Slaughter-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/28 Hog Slaughter-Garrison Keillor.mp3" length="26532297" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/28 Hog Slaughter-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>28</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>13:49</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -411,11 +411,11 @@
 			<item>
 				<title>Thanksgiving</title>
 				<pubDate>Sun, 29 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/29 Thanksgiving-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/29 Thanksgiving-Garrison Keillor.mp3" length="20178480" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/29 Thanksgiving-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>29</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>10:31</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -425,11 +425,11 @@
 			<item>
 				<title>The Royal Family</title>
 				<pubDate>Mon, 30 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/30 The Royal Family-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/30 The Royal Family-Garrison Keillor.mp3" length="39126246" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/30 The Royal Family-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>30</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>20:23</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -439,11 +439,11 @@
 			<item>
 				<title>Guys on Ice</title>
 				<pubDate>Tue, 31 Jan 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/31 Guys on Ice-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/31 Guys on Ice-Garrison Keillor.mp3" length="10244426" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/31 Guys on Ice-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>31</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>5:20</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -453,11 +453,11 @@
 			<item>
 				<title>James Lundeens Christmas</title>
 				<pubDate>Wed, 01 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/32 James Lundeens Christmas-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/32 James Lundeens Christmas-Garrison Keillor.mp3" length="26187910" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/32 James Lundeens Christmas-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>32</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>13:38</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -467,11 +467,11 @@
 			<item>
 				<title>The Christmas Story Re-Told</title>
 				<pubDate>Thu, 02 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/33 The Christmas Story Re-Told-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/33 The Christmas Story Re-Told-Garrison Keillor.mp3" length="22130365" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/33 The Christmas Story Re-Told-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>33</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>11:32</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -481,11 +481,11 @@
 			<item>
 				<title>New Years Eve from New York</title>
 				<pubDate>Fri, 03 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/34 New Years Eve from New York-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/34 New Years Eve from New York-Garrison Keillor.mp3" length="29303380" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/34 New Years Eve from New York-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>34</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>15:16</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -495,11 +495,11 @@
 			<item>
 				<title>Storm Home</title>
 				<pubDate>Sat, 04 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/35 Storm Home-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/35 Storm Home-Garrison Keillor.mp3" length="26538981" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/35 Storm Home-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>35</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>13:49</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -509,11 +509,11 @@
 			<item>
 				<title>Meeting Donny Hart at the Bus Stop</title>
 				<pubDate>Sun, 05 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/36 Meeting Donny Hart at the Bus Stop-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/36 Meeting Donny Hart at the Bus Stop-Garrison Keillor.mp3" length="19090137" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/36 Meeting Donny Hart at the Bus Stop-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>36</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>9:57</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -523,11 +523,11 @@
 			<item>
 				<title>A Day at the Circus with Mazumbo</title>
 				<pubDate>Mon, 06 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/37 A Day at the Circus with Mazumbo-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/37 A Day at the Circus with Mazumbo-Garrison Keillor.mp3" length="26880894" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/37 A Day at the Circus with Mazumbo-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>37</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>14:00</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -537,11 +537,11 @@
 			<item>
 				<title>The Tolleruds Korean Baby</title>
 				<pubDate>Tue, 07 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/38 The Tolleruds Korean Baby-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/38 The Tolleruds Korean Baby-Garrison Keillor.mp3" length="43468851" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/38 The Tolleruds Korean Baby-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>38</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>22:38</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -551,11 +551,11 @@
 			<item>
 				<title>Sylvester Kruegers Desk</title>
 				<pubDate>Wed, 08 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/39 Sylvester Kruegers Desk-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/39 Sylvester Kruegers Desk-Garrison Keillor.mp3" length="35843602" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/39 Sylvester Kruegers Desk-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>39</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>18:40</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -565,11 +565,11 @@
 			<item>
 				<title>Babe Ruth Visits Lake Woebegon</title>
 				<pubDate>Thu, 09 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/40 Babe Ruth Visits Lake Woebegon-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/40 Babe Ruth Visits Lake Woebegon-Garrison Keillor.mp3" length="55137441" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol02-SeasonsFourCassetteSet/40 Babe Ruth Visits Lake Woebegon-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>40</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>28:43</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -579,11 +579,11 @@
 			<item>
 				<title>Mammoth Concert Tickets</title>
 				<pubDate>Fri, 10 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/41 Mammoth Concert Tickets-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/41 Mammoth Concert Tickets-Garrison Keillor.mp3" length="36585897" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/41 Mammoth Concert Tickets-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>41</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>19:03</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -593,11 +593,11 @@
 			<item>
 				<title>Bruno, the Fishing Dog</title>
 				<pubDate>Sat, 11 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/42 Bruno, the Fishing Dog-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/42 Bruno, the Fishing Dog-Garrison Keillor.mp3" length="42666366" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/42 Bruno, the Fishing Dog-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>42</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>22:13</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -607,11 +607,11 @@
 			<item>
 				<title>Gospel Birds</title>
 				<pubDate>Sun, 12 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/43 Gospel Birds-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/43 Gospel Birds-Garrison Keillor.mp3" length="34207698" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol.03-GospelBirdsPt2/43 Gospel Birds-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>43</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>17:49</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -621,11 +621,11 @@
 			<item>
 				<title>O Captain, My Captain</title>
 				<pubDate>Mon, 13 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/44 O Captain, My Captain-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/44 O Captain, My Captain-Garrison Keillor.mp3" length="32002555" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/44 O Captain, My Captain-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>44</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>16:40</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -635,11 +635,11 @@
 			<item>
 				<title>Casey at the Bat</title>
 				<pubDate>Tue, 14 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/45 Casey at the Bat-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/45 Casey at the Bat-Garrison Keillor.mp3" length="12140293" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/45 Casey at the Bat-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>45</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>6:19</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -649,11 +649,11 @@
 			<item>
 				<title>Rhubarb-01-</title>
 				<pubDate>Wed, 15 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/46 Rhubarb-01--Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/46 Rhubarb-01--Garrison Keillor.mp3" length="7765092" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/46 Rhubarb-01--Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>46</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>4:03</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -663,11 +663,11 @@
 			<item>
 				<title>Revival Tent</title>
 				<pubDate>Thu, 16 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/47 Revival Tent-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/47 Revival Tent-Garrison Keillor.mp3" length="33346703" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/47 Revival Tent-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>47</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>17:22</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -677,11 +677,11 @@
 			<item>
 				<title>The Perfect Day</title>
 				<pubDate>Fri, 17 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/48 The Perfect Day-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/48 The Perfect Day-Garrison Keillor.mp3" length="35711519" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/48 The Perfect Day-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>48</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>18:36</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -691,11 +691,11 @@
 			<item>
 				<title>Carl's Dog Story</title>
 				<pubDate>Sat, 18 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/49 Carl's Dog Story-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/49 Carl's Dog Story-Garrison Keillor.mp3" length="34328911" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/49 Carl's Dog Story-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>49</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>17:53</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -705,11 +705,11 @@
 			<item>
 				<title>The Lake Superior Canyon Project</title>
 				<pubDate>Sun, 19 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/50 The Lake Superior Canyon Project-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/50 The Lake Superior Canyon Project-Garrison Keillor.mp3" length="36229805" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/50 The Lake Superior Canyon Project-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>50</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>18:52</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -719,11 +719,11 @@
 			<item>
 				<title>The Elegance of Winter</title>
 				<pubDate>Mon, 20 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/51 The Elegance of Winter-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/51 The Elegance of Winter-Garrison Keillor.mp3" length="22218967" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/51 The Elegance of Winter-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>51</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>11:34</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -733,11 +733,11 @@
 			<item>
 				<title>Answering Machine</title>
 				<pubDate>Tue, 21 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/52 Answering Machine-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/52 Answering Machine-Garrison Keillor.mp3" length="12595034" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/52 Answering Machine-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>52</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>6:34</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -747,11 +747,11 @@
 			<item>
 				<title>A Kohler Thanksgiving</title>
 				<pubDate>Wed, 22 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/53 A Kohler Thanksgiving-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/53 A Kohler Thanksgiving-Garrison Keillor.mp3" length="32471505" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/53 A Kohler Thanksgiving-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>53</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>16:55</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -761,11 +761,11 @@
 			<item>
 				<title>The Living Flag</title>
 				<pubDate>Thu, 23 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/54 The Living Flag-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/54 The Living Flag-Garrison Keillor.mp3" length="9477892" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/54 The Living Flag-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>54</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>4:56</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -775,11 +775,11 @@
 			<item>
 				<title>Buddy Holly and the Pharaohs of Rhythm</title>
 				<pubDate>Fri, 24 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/55 Buddy Holly and the Pharaohs of Rhythm-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/55 Buddy Holly and the Pharaohs of Rhythm-Garrison Keillor.mp3" length="41125785" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/55 Buddy Holly and the Pharaohs of Rhythm-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>55</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>21:25</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -789,11 +789,11 @@
 			<item>
 				<title>Cherry Picker</title>
 				<pubDate>Sat, 25 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/56 Cherry Picker-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/56 Cherry Picker-Garrison Keillor.mp3" length="35667213" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/56 Cherry Picker-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>56</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>18:35</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -803,11 +803,11 @@
 			<item>
 				<title>Graduation Day</title>
 				<pubDate>Sun, 26 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/57 Graduation Day-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/57 Graduation Day-Garrison Keillor.mp3" length="37353261" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/57 Graduation Day-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>57</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>19:27</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -817,11 +817,11 @@
 			<item>
 				<title>Raccoons</title>
 				<pubDate>Mon, 27 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/58 Raccoons-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/58 Raccoons-Garrison Keillor.mp3" length="29427077" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchive04-20thAnniversary-4-CDset/58 Raccoons-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>58</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>15:20</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -831,11 +831,11 @@
 			<item>
 				<title>Mr. Bergy's Christmas</title>
 				<pubDate>Tue, 28 Feb 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/59 Mr. Bergy's Christmas-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/59 Mr. Bergy's Christmas-Garrison Keillor.mp3" length="27168439" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/59 Mr. Bergy's Christmas-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>59</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>14:09</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -845,11 +845,11 @@
 			<item>
 				<title>Powdermilk Biscuits-Shy People</title>
 				<pubDate>Wed, 01 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/60 Powdermilk Biscuits-Shy People-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/60 Powdermilk Biscuits-Shy People-Garrison Keillor.mp3" length="6571419" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/60 Powdermilk Biscuits-Shy People-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>60</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>3:25</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -859,11 +859,11 @@
 			<item>
 				<title>Fearmonger's Shoppe</title>
 				<pubDate>Thu, 02 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/61 Fearmonger's Shoppe-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/61 Fearmonger's Shoppe-Garrison Keillor.mp3" length="4122167" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/61 Fearmonger's Shoppe-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>61</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>2:09</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -873,11 +873,11 @@
 			<item>
 				<title>Rex the Hokstaeder's Dog</title>
 				<pubDate>Fri, 03 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/62 Rex the Hokstaeder's Dog-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/62 Rex the Hokstaeder's Dog-Garrison Keillor.mp3" length="7920586" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/62 Rex the Hokstaeder's Dog-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>62</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>4:08</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -887,11 +887,11 @@
 			<item>
 				<title>Uncle Ed Tollefson</title>
 				<pubDate>Sat, 04 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/63 Uncle Ed Tollefson-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/63 Uncle Ed Tollefson-Garrison Keillor.mp3" length="23102529" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/63 Uncle Ed Tollefson-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>63</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>12:02</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -901,11 +901,11 @@
 			<item>
 				<title>Hotel Minnesota</title>
 				<pubDate>Sun, 05 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/64 Hotel Minnesota-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/64 Hotel Minnesota-Garrison Keillor.mp3" length="5913537" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/64 Hotel Minnesota-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>64</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>3:05</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -915,11 +915,11 @@
 			<item>
 				<title>Ajua!</title>
 				<pubDate>Mon, 06 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/65 Ajua!-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/65 Ajua!-Garrison Keillor.mp3" length="6387492" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/65 Ajua!-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>65</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>3:20</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -929,11 +929,11 @@
 			<item>
 				<title>Pastor Ingquist's Trip to Orlando</title>
 				<pubDate>Tue, 07 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/66 Pastor Ingquist's Trip to Orlando-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/66 Pastor Ingquist's Trip to Orlando-Garrison Keillor.mp3" length="38867964" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol05-aPrairieHomeChristmas-TheFamilyRadio-GospelBirdsPt1/66 Pastor Ingquist's Trip to Orlando-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>66</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>20:15</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -943,11 +943,11 @@
 			<item>
 				<title>Berthas Kitty Boutique-Cat Box Video</title>
 				<pubDate>Wed, 08 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/67 Berthas Kitty Boutique-Cat Box Video-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/67 Berthas Kitty Boutique-Cat Box Video-Garrison Keillor.mp3" length="3884784" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/67 Berthas Kitty Boutique-Cat Box Video-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>67</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>2:01</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -957,11 +957,11 @@
 			<item>
 				<title>Greenwich Village Days</title>
 				<pubDate>Thu, 09 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/68 Greenwich Village Days-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/68 Greenwich Village Days-Garrison Keillor.mp3" length="15371124" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/68 Greenwich Village Days-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>68</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>8:00</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -971,11 +971,11 @@
 			<item>
 				<title>Cafe Boeuf Secrets of the Kitchen</title>
 				<pubDate>Fri, 10 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/69 Cafe Boeuf Secrets of the Kitchen-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/69 Cafe Boeuf Secrets of the Kitchen-Garrison Keillor.mp3" length="4336177" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/69 Cafe Boeuf Secrets of the Kitchen-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>69</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>2:16</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -985,11 +985,11 @@
 			<item>
 				<title>Mels Big Boy Buffet</title>
 				<pubDate>Sat, 11 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/70 Mels Big Boy Buffet-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/70 Mels Big Boy Buffet-Garrison Keillor.mp3" length="5103536" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/70 Mels Big Boy Buffet-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>70</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>2:39</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -999,11 +999,11 @@
 			<item>
 				<title>The Ketchup Advisory Board</title>
 				<pubDate>Sun, 12 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/71 The Ketchup Advisory Board-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/71 The Ketchup Advisory Board-Garrison Keillor.mp3" length="2587428" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/71 The Ketchup Advisory Board-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>71</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>1:21</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -1013,11 +1013,11 @@
 			<item>
 				<title>Rhubarb</title>
 				<pubDate>Mon, 13 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/72 Rhubarb-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/72 Rhubarb-Garrison Keillor.mp3" length="32387899" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/72 Rhubarb-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>72</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>16:52</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -1027,11 +1027,11 @@
 			<item>
 				<title>Sweet Corn</title>
 				<pubDate>Tue, 14 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/73 Sweet Corn-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/73 Sweet Corn-Garrison Keillor.mp3" length="37960134" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/73 Sweet Corn-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>73</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>19:46</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -1041,11 +1041,11 @@
 			<item>
 				<title>The Suns Gonna Shine Someday</title>
 				<pubDate>Wed, 15 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/74 The Suns Gonna Shine Someday-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/74 The Suns Gonna Shine Someday-Garrison Keillor.mp3" length="34438428" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/74 The Suns Gonna Shine Someday-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>74</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>17:56</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		
@@ -1055,11 +1055,11 @@
 			<item>
 				<title>Yellow Ribbon</title>
 				<pubDate>Thu, 16 Mar 1989 12:00:00 +0000</pubDate>
-				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/75 Yellow Ribbon-Garrison Keillor.mp3" type="audio/mpeg"/>
+				<enclosure url="https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/75 Yellow Ribbon-Garrison Keillor.mp3" length="32291775" type="audio/mpeg"/>
 				<guid>https://archive.org/download/GarrisonKeillorArchiveVol06-ComedyTheater-RhubarbCassettes/75 Yellow Ribbon-Garrison Keillor.mp3</guid>
 				<itunes:image href="https://archive.org/download/garrison-keillor/Garrison%20Keillor.png"/>
 				<itunes:episode>75</itunes:episode>
-				<itunes:duration>0:20:00</itunes:duration>
+				<itunes:duration>16:49</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
 		

@@ -19,7 +19,7 @@
 			<item>
 				<title>[% e.title %]</title>
 				<pubDate>[% e.pub_date %]</pubDate>
-				<enclosure url="[% this_url %]" type="audio/mpeg"/>
+				<enclosure url="[% this_url %]" length="[% e.size %]" type="audio/mpeg"/>
 				<guid>[% this_url %]</guid>
 				<itunes:image href="[% image %]"/>
 				<itunes:episode>[% e.ep_number %]</itunes:episode>
