@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+	<channel>
+		<title>[% title %]</title>
+		<link>[% link %]</link>
+		<language>en</language>
+		<itunes:summary>[% summary %]</itunes:summary>
+		<description>[% summary %]</description>
+		<itunes:owner>
+			<itunes:name>[% owner_name %]</itunes:name>
+		</itunes:owner>
+		<itunes:image href="[% image %]"/>
+		<itunes:explicit>no</itunes:explicit>
+		[% FOREACH e = episodes %]
+			<item>
+				<title>[% e.title %]</title>
+				<itunes:image href="[% image %]"/>
+				<enclosure url="[% per_ep_root_url %]/[% e.filename | url %]"/>
+				<guid>[% per_ep_root_url %]/[% e.folder %]/[% e.ep_number %]-[% e.filename | url %]</guid>
+				<pubDate>[% e.pub_date %]</pubDate>
+				<itunes:episode>[% e.ep_number %]</itunes:episode>
+				<itunes:duration>[% e.duration %]</itunes:duration>
+				<itunes:explicit>no</itunes:explicit>
+			</item>
+		[% END %]
+	</channel>
+</rss>
