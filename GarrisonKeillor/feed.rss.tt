@@ -11,14 +11,15 @@
 		</itunes:owner>
 		<itunes:image href="[% image %]"/>
 		<itunes:explicit>no</itunes:explicit>
+		<itunes:category text="Comedy"/>
 		[% FOREACH e = episodes %]
 			[% SET this_url = per_ep_root_url _ "/" _ e.folder _ "/" _ e.ep_number _ "-" _ e.filename | url %]
 			<item>
 				<title>[% e.title %]</title>
-				<itunes:image href="[% image %]"/>
+				<pubDate>[% e.pub_date %]</pubDate>
 				<enclosure url="[% this_url %]" type="audio/mpeg"/>
 				<guid>[% this_url %]</guid>
-				<pubDate>[% e.pub_date %]</pubDate>
+				<itunes:image href="[% image %]"/>
 				<itunes:episode>[% e.ep_number %]</itunes:episode>
 				<itunes:duration>[% e.duration %]</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
