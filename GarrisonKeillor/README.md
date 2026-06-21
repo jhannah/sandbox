@@ -19,4 +19,4 @@ for your podcast player.
 
 ### Debugging Notes
 
-[RSS validation](https://podba.se/validate/?url=https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/GarrisonKeillor/GarrisonKeillor.rss)
+[RSS validation](https://beamly.com/tools/podcast-feed-validator/)
