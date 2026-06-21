@@ -18,7 +18,7 @@
 				<enclosure url="[% per_ep_root_url %]/[% e.filename | url %]" length="[% e.size %]" type="audio/mpeg"/>
 				<guid>[% per_ep_root_url %]/[% e.filename | url %]</guid>
 				<pubDate>[% e.pub_date %]</pubDate>
-				<itunes:episode>[% e.ep_number %]</itunes:episode>
+				[% IF e.ep_number.defined %]<itunes:episode>[% e.ep_number %]</itunes:episode>[% END %]
 				<itunes:duration>[% e.duration %]</itunes:duration>
 				<itunes:explicit>no</itunes:explicit>
 			</item>
