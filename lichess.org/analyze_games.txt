@@ -1,0 +1,35 @@
+Opponent             Type               W    L    D   Score%  Live
+------------------------------------------------------------------
+DanTup               antichess         24   21    3     53.1     1
+DanTup               atomic             3    6    0     33.3     1
+DanTup               chess960           1    0    0    100.0      
+DanTup               correspondence   113    9    2     91.9     3
+DanTup               crazyhouse        38    7    0     84.4     1
+DanTup               horde              6    0    0    100.0     1
+DanTup               kingOfTheHill      8    4    0     66.7      
+DanTup               racingKings       18   11    5     60.3     1
+DanTup               threeCheck        15    5    0     75.0      
+Bearded_Bard         antichess          3    0    0    100.0      
+Bearded_Bard         atomic             1    2    0     33.3      
+Bearded_Bard         correspondence     4   10    0     28.6     2
+Bearded_Bard         horde              0    0    0        -     2
+Bearded_Bard         racingKings        2    0    0    100.0      
+Armin700             correspondence     1    0    0    100.0      
+ErzhanBanana         blitz              0    1    0      0.0      
+maudegone            correspondence     1    0    0    100.0      
+nryz1361-xxx1361     blitz              1    0    0    100.0      
+ShadowEngine         blitz              0    0    1     50.0      
+
+TOTAL by type                           W    L    D   Score%  Live
+------------------------------------------------------------------
+                     antichess         27   21    3     55.9     1
+                     atomic             4    8    0     33.3     1
+                     blitz              1    1    1     50.0      
+                     chess960           1    0    0    100.0      
+                     correspondence   119   19    2     85.7     5
+                     crazyhouse        38    7    0     84.4     1
+                     horde              6    0    0    100.0     3
+                     kingOfTheHill      8    4    0     66.7      
+                     racingKings       20   11    5     62.5     1
+                     threeCheck        15    5    0     75.0      
+                     ALL              239   76   11     75.0    12
