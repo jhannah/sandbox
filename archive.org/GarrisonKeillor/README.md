@@ -18,7 +18,9 @@ The feed contains these collections from the Internet Archive:
 [RSS URL](https://raw.githubusercontent.com/jhannah/sandbox/refs/heads/main/archive.org/GarrisonKeillor/GarrisonKeillor.rss)
 for your podcast player.
 
-### Generating the feed
+*That's the news from Lake Wobegon. Where all the women are strong, all the men are good-looking, and all the children are above average.*
+
+## Generating the feed
 
 The feed is built in two steps. The episode list, file sizes, and runtimes all
 come straight from the source [Internet Archive](https://archive.org/) items, so
